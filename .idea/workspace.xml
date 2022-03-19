@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added categories to characters">
-      <change afterPath="$PROJECT_DIR$/JS/loadFullOrPartialMatch.js" afterDir="false" />
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added partial and full match">
+      <change afterPath="$PROJECT_DIR$/partial-match.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/categories.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/categories.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterCategories.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterFullMatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterFullMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterFullMatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterPartialMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterPartialMatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/loadFullOrPartialMatch.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +62,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterThumb" />
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterType" />
@@ -135,7 +139,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647686827991</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added partial and full match">
+      <created>1647701299268</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1647701299268</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added partial and full match">
+      <created>1647701303675</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1647701303675</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +180,7 @@
     <MESSAGE value="added charInfo.js that inserts data to characters" />
     <MESSAGE value="added 15 more characters" />
     <MESSAGE value="added all categories avalable" />
-    <option name="LAST_COMMIT_MESSAGE" value="added all categories avalable" />
+    <MESSAGE value="added partial and full match" />
+    <option name="LAST_COMMIT_MESSAGE" value="added partial and full match" />
   </component>
 </project>

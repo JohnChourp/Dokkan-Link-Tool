@@ -2,8 +2,6 @@ function filterFullMatch(){
 	let btnList = [] , catList = [];
 	let categories = document.getElementsByClassName("categories");
 	
-	let showAllCategories = document.getElementById("show-all-categories");
-	
 	btnList[0] = document.getElementById("ds");
 	catList[0] = document.getElementsByClassName("ds");
 	
@@ -250,20 +248,8 @@ function filterFullMatch(){
 	btnList[81] = document.getElementById("dbh");
 	catList[81] = document.getElementsByClassName("dbh");
 	
-	showAllCategories.addEventListener("click" , function(){
-		for(let i = 0; i < categories.length; i ++){
-			categories.item(i).style.display = "inline-block";
-		}
-	});
-	
 	for(let i = 0; i < categories.length; i ++){
 		categories.item(i).style.display = "none";
-	}
-	
-	for(let j = 0; j < btnList.length; j ++){
-		if(btnList[j].classList.contains("catChecked")){
-			btnList[j].classList.remove("catChecked");
-		}
 	}
 	
 	for(let j = 0; j < btnList.length; j ++){

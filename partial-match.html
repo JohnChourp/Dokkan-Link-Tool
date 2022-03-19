@@ -4,17 +4,17 @@
 	<meta charset="UTF-8">
 	<link href="CSS/index.css" rel="stylesheet" type="text/css"/>
 	<link href="CSS/categories.css" rel="stylesheet" type="text/css"/>
-	<script src="JS/filterFullMatch.js" type="text/javascript"></script>
+	<script src="JS/filterPartialMatch.js" type="text/javascript"></script>
 	<script src="JS/charInfo.js" type="text/javascript"></script>
 	<title>Dokkan Link Tool</title>
 </head>
-<body onload="charInfo(); filterFullMatch();">
+<body onload="charInfo(); filterPartialMatch();">
 <label class="container">Full Match
-	<input id="full-match-input" checked type="radio" name="radio">
+	<input id="full-match-input" onclick="window.location.href='index.html'" type="radio" name="radio">
 	<span class="checkmark"></span>
 </label>
 <label class="container">Partial Match
-	<input id="partial-match-input" onclick="window.location.href='partial-match.html'" type="radio" name="radio">
+	<input id="partial-match-input" checked type="radio" name="radio">
 	<span class="checkmark"></span>
 </label>
 <br><br>
