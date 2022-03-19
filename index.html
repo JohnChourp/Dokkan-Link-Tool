@@ -4,11 +4,21 @@
 	<meta charset="UTF-8">
 	<link href="CSS/index.css" rel="stylesheet" type="text/css"/>
 	<link href="CSS/categories.css" rel="stylesheet" type="text/css"/>
-	<script src="JS/filterCategories.js" type="text/javascript"></script>
+	<script src="JS/filterFullMatch.js" type="text/javascript"></script>
+	<script src="JS/filterPartialMatch.js" type="text/javascript"></script>
 	<script src="JS/charInfo.js" type="text/javascript"></script>
 	<title>Dokkan Link Tool</title>
 </head>
-<body onload="charInfo(); filterCategories();">
+<body onload="charInfo();">
+<label class="container">Full Match
+	<input id="full-match-input" onclick="filterFullMatch();" type="radio" name="radio">
+	<span class="checkmark"></span>
+</label>
+<label class="container">Partial Match
+	<input id="partial-match-input" onclick="filterPartialMatch();" checked type="radio" name="radio">
+	<span class="checkmark"></span>
+</label>
+<br><br>
 <div class="CategoriesFilter">
 	<button id="show-all-categories" type="button">Show All Categories</button>
 	<div class="categoriesOrange">

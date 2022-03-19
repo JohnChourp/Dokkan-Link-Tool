@@ -69,3 +69,12 @@
 	padding-top:10px;
 	padding-bottom:10px;
 }
+
+.catChecked {
+	background-color: #EFE40C;
+}
+
+.container {
+	border:1px solid;
+	color:white;
+}
