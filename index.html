@@ -3,160 +3,260 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="CSS/index.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/categories.css" rel="stylesheet" type="text/css"/>
 	<script src="JS/filterCategories.js" type="text/javascript"></script>
 	<script src="JS/charInfo.js" type="text/javascript"></script>
 	<title>Dokkan Link Tool</title>
 </head>
 <body onload="charInfo(); filterCategories();">
-<button id="show-all-categories" type="button">Show All Categories</button>
-<button id="world-tournament" type="button">World Tournament</button>
-<button id="hybrid-saiyans" type="button">Hybrid Saiyans</button>
+<div class="CategoriesFilter">
+	<button id="show-all-categories" type="button">Show All Categories</button>
+	<div class="categoriesOrange">
+		<button id="ds" type="button">DB Saga</button>
+		<button id="pns" type="button">Planet Namek Saga</button>
+		<button id="acs" type="button">Androids/Cell Saga</button>
+		<button id="mbs" type="button">Majin Buu Saga</button>
+		<button id="fs" type="button">Future Saga</button>
+		<button id="uss" type="button">Universe Survival Saga</button>
+		<button id="sds" type="button">Shadow Dragon Saga</button>
+	</div>
+	<div class="categoriesGreen">
+		<button id="ps" type="button">Pure Saiyans</button>
+		<button id="hs" type="button">Hybrid Saiyans</button>
+		<button id="e" type="button">Earthlings</button>
+		<button id="n" type="button">Namekians</button>
+		<button id="a" type="button">Androids</button>
+		<button id="alf" type="button">Artificial Life Forms</button>
+		<button id="gfa" type="button">Goku's Family</button>
+		<button id="vf" type="button">Vegeta's Family</button>
+		<button id="wb" type="button">Wicked Bloodline</button>
+		<button id="y" type="button">Youth</button>
+		<button id="pg" type="button">Peppy Gals</button>
+	</div>
+	<div class="categoriesYellow">
+		<button id="ss" type="button">Super Saiyans</button>
+		<button id="ss2" type="button">Super Saiyan 2</button>
+		<button id="ss3" type="button">Super Saiyan 3</button>
+		<button id="f" type="button">Fusion</button>
+		<button id="p" type="button">Potara</button>
+		<button id="gfo" type="button">Giant Form</button>
+		<button id="tbo" type="button">Transformation Boost</button>
+		<button id="pa" type="button">Power Absorption</button>
+		<button id="k" type="button">Kamehameha</button>
+	</div>
+	<div class="categoriesCyan">
+		<button id="rog" type="button">Realm of Gods</button>
+		<button id="fp" type="button">Full Power</button>
+		<button id="gap" type="button">Giant Ape Power</button>
+		<button id="mp" type="button">Majin Power</button>
+		<button id="pc" type="button">Powerful Comeback</button>
+		<button id="ma" type="button">Miraculous Awakening</button>
+		<button id="cbam" type="button">Corroded Body and Mind</button>
+		<button id="rg" type="button">Rapid Growth</button>
+		<button id="me" type="button">Mastered Evolution</button>
+		<button id="tl" type="button">Time Limit</button>
+		<button id="ftc" type="button">Final Trump Card</button>
+	</div>
+	<div class="categoriesBlue">
+		<button id="wr" type="button">Worthy Rivals</button>
+		<button id="se" type="button">Sworn Enemies</button>
+		<button id="jf" type="button">Joined Forces</button>
+		<button id="sb" type="button">Siblings' Bond</button>
+		<button id="bof" type="button">Bond of Friendship</button>
+		<button id="bomad" type="button">Bond of Master and Disciple</button>
+	</div>
+	<div class="categoriesPurple">
+		<button id="gf" type="button">Ginyu Force</button>
+		<button id="tba" type="button">Team Bardock</button>
+		<button id="u6" type="button">Universe 6</button>
+		<button id="rou7" type="button">Representatives of Universe 7</button>
+		<button id="u11" type="button">Universe 11</button>
+		<button id="gh" type="button">GT Heroes</button>
+		<button id="gb" type="button">GT Bosses</button>
+		<button id="mh" type="button">Movie Heroes</button>
+		<button id="mb" type="button">Movie Bosses</button>
+		<button id="ts" type="button">Turtle School</button>
+		<button id="wt" type="button">World Tournament</button>
+	</div>
+	<div class="categoriesRed">
+		<button id="lcw" type="button">Low-Class Warrior</button>
+		<button id="gw" type="button">Gifted Warriors</button>
+		<button id="ow" type="button">Otherworld Warriors</button>
+		<button id="rw" type="button">Resurrected Warriors</button>
+		<button id="stw" type="button">Space-Traveling Warriors</button>
+		<button id="tt" type="button">Time Travelers</button>
+		<button id="dbs" type="button">Dragon Ball Seekers</button>
+		<button id="sf" type="button">Storied Figures</button>
+		<button id="le" type="button">Legendary Existence</button>
+		<button id="s" type="button">Saviors</button>
+		<button id="doj" type="button">Defenders of Justice</button>
+	</div>
+	<div class="categoriesDarkGreen">
+		<button id="r" type="button">Revenge</button>
+		<button id="tg" type="button">Target: Goku</button>
+		<button id="tc" type="button">Terrifying Conquerors</button>
+		<button id="ide" type="button">Inhuman Deeds</button>
+		<button id="pd" type="button">Planetary Destruction</button>
+		<button id="er" type="button">Exploding Rage</button>
+		<button id="ch" type="button">Connected Hope</button>
+		<button id="ew" type="button">Entrusted Will</button>
+		<button id="aos" type="button">All-Out Struggle</button>
+		<button id="bow" type="button">Battle of Wits</button>
+		<button id="ab" type="button">Accelerated Battle</button>
+		<button id="he" type="button">Heavenly Events</button>
+		<button id="wc" type="button">Worldwide Chaos</button>
+	</div>
+	<div class="categoriesDarkBlue">
+		<button id="c" type="button">Crossover</button>
+		<button id="dbh" type="button">Dragon Ball Heroes</button>
+	</div>
+</div>
 <div class="flex-cards">
-	<div class="categories world-tournament hybrid-saiyans joined-forces youth super-saiyans gt-heroes">
+	<div class="categories wt hs jf y ss gth">
 		<div class="char-base-type-margin">agl</div>
 		<div class="card-thumb-margin">1023860</div>
 		<div class="card-type-margin">super</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories hybrid-saiyans future-saga joined-forces androids-cell-saga bond-of-master-and-disciple all-out-struggle connected-hope powerful-comeback">
+	<div class="categories hs fs jf acs bomad aos ch pc">
 		<div class="char-base-type-margin">agl</div>
 		<div class="card-thumb-margin">1023420</div>
 		<div class="card-type-margin">super</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories movie-bosses transformation-boost exploding-rage corroded-body-and-mind accelerated-battle">
+	<div class="categories mb tbo er cbam ab">
 		<div class="char-base-type-margin">phy</div>
 		<div class="card-thumb-margin">1022590</div>
 		<div class="card-type-margin">extreme</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories low-class-warrior pure-saiyans full-power gokus-family kamehameha turtle-school bond-of-friendship accelerated-battle">
+	<div class="categories lcw ps fp gfa k ts bof ab">
 		<div class="char-base-type-margin">phy</div>
 		<div class="card-thumb-margin">1022780</div>
 		<div class="card-type-margin">super</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories hybrid-saiyans gokus-family youth exploding-rage">
+	<div class="categories hs gfa y er">
 		<div class="char-base-type-margin">str</div>
 		<div class="card-thumb-margin">1022810</div>
 		<div class="card-type-margin">super</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories shadow-dragon-saga joined-forces gt-bosses">
+	<div class="categories sds jf gtb">
 		<div class="char-base-type-margin">int</div>
 		<div class="card-thumb-margin">1021880</div>
 		<div class="card-type-margin">extreme</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories universe-survival-saga joined-forces legendary-existence accelerated-battle">
+	<div class="categories uss jf le ab">
 		<div class="char-base-type-margin">str</div>
 		<div class="card-thumb-margin">1023090</div>
 		<div class="card-type-margin">extreme</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories hybrid-saiyans future-saga time-travelers vegetas-family androids-cell-saga bond-of-master-and-disciple battle-of-wits entrusted-will">
+	<div class="categories hs fs tt vf acs bomad bow ew">
 		<div class="char-base-type-margin">str</div>
 		<div class="card-thumb-margin">1021650</div>
 		<div class="card-type-margin">super</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories fusion pure-saiyans joined-forces movie-heroes super-saiyans kamehameha otherworld-warriors final-trump-card connected-hope powerful-comeback time-limit">
+	<div class="categories f ps jf mh ss k ow ftc ch pc tl">
 		<div class="char-base-type-margin">teq</div>
 		<div class="card-thumb-margin">1022190</div>
 		<div class="card-type-margin">super</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories dbs ds sb tg e se">
 		<div class="char-base-type-margin">str</div>
 		<div class="card-thumb-margin">1022340</div>
 		<div class="card-type-margin">extreme</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories">
 		<div class="char-base-type-margin">int</div>
 		<div class="card-thumb-margin">1022120</div>
 		<div class="card-type-margin">super</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories">
 		<div class="char-base-type-margin">agl</div>
 		<div class="card-thumb-margin">1022940</div>
 		<div class="card-type-margin">super</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories">
 		<div class="char-base-type-margin">int</div>
 		<div class="card-thumb-margin">1023040</div>
 		<div class="card-type-margin">extreme</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories">
 		<div class="char-base-type-margin">int</div>
 		<div class="card-thumb-margin">1022630</div>
 		<div class="card-type-margin">super</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories">
 		<div class="char-base-type-margin">agl</div>
 		<div class="card-thumb-margin">1022750</div>
 		<div class="card-type-margin">extreme</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories">
 		<div class="char-base-type-margin">phy</div>
 		<div class="card-thumb-margin">1021430</div>
 		<div class="card-type-margin">extreme</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories">
 		<div class="char-base-type-margin">int</div>
 		<div class="card-thumb-margin">1021480</div>
 		<div class="card-type-margin">super</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories">
 		<div class="char-base-type-margin">phy</div>
 		<div class="card-thumb-margin">1021620</div>
 		<div class="card-type-margin">super</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories">
 		<div class="char-base-type-margin">agl</div>
 		<div class="card-thumb-margin">1020310</div>
 		<div class="card-type-margin">super</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories">
 		<div class="char-base-type-margin">int</div>
 		<div class="card-thumb-margin">1020340</div>
 		<div class="card-type-margin">super</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories">
 		<div class="char-base-type-margin">str</div>
 		<div class="card-thumb-margin">1021970</div>
 		<div class="card-type-margin">super</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories">
 		<div class="char-base-type-margin">teq</div>
 		<div class="card-thumb-margin">1022090</div>
 		<div class="card-type-margin">extreme</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories">
 		<div class="char-base-type-margin">phy</div>
 		<div class="card-thumb-margin">1021010</div>
 		<div class="card-type-margin">extreme</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories">
 		<div class="char-base-type-margin">str</div>
 		<div class="card-thumb-margin">1020750</div>
 		<div class="card-type-margin">extreme</div>
 		<div class="card-rarity-margin">lr</div>
 	</div>
-	<div class="categories dragon-ball-seekers db-saga siblings-bond target-goku earthlings sworn-enemies">
+	<div class="categories">
 		<div class="char-base-type-margin">teq</div>
 		<div class="card-thumb-margin">1019910</div>
 		<div class="card-type-margin">super</div>
