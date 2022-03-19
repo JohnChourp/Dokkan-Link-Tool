@@ -1,0 +1,49 @@
+body {
+	background-color: #343A40;
+}
+
+.flex-cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.char-base-type {
+	height: 90px;
+	width: 90px;
+}
+
+.char-base-type-margin {
+	margin-top:50px;
+	margin-left:50px;
+}
+
+.card-thumb {
+	height: 120px;
+	width: 120px;
+}
+
+.card-thumb-margin {
+	margin-top: -110px;
+	margin-left:35px;
+}
+
+.card-type {
+	height: 40px;
+	width: 40px;
+}
+
+.card-type-margin {
+	margin-left:120px;
+	margin-top: -125px;
+}
+
+.card-rarity {
+	height: 45px;
+	width: 45px;
+}
+
+.card-rarity-margin {
+	margin-left:45px;
+	margin-top:30px;
+}
