@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="done">
-      <change afterPath="$PROJECT_DIR$/JS/charBase.js" afterDir="false" />
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added charInfo.js that inserts data to characters">
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1020310_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1021430_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1021480_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1021620_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1022120_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1022630_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1022750_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1022940_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1023040_thumb.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -26,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-some-characters-in-the-main-page-" />
+        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-the-information-of-the-characters-easier-with-js" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1647633754545</updated>
       <workItem from="1647633756340" duration="5661000" />
-      <workItem from="1647670780324" duration="5099000" />
+      <workItem from="1647670780324" duration="5732000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -112,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647672407921</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added charInfo.js that inserts data to characters">
+      <created>1647676302296</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647676302296</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +151,7 @@
     <MESSAGE value="renamed some files for better understanding" />
     <MESSAGE value="added 5 more characters with a show all categories button" />
     <MESSAGE value="done" />
-    <option name="LAST_COMMIT_MESSAGE" value="done" />
+    <MESSAGE value="added charInfo.js that inserts data to characters" />
+    <option name="LAST_COMMIT_MESSAGE" value="added charInfo.js that inserts data to characters" />
   </component>
 </project>
