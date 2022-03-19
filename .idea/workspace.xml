@@ -4,22 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added 5 characters with 2 filter categories">
-      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_int.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_teq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterType/char_type_extreme_int.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterType/char_type_extreme_str.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterType/char_type_super_int.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterType/char_type_super_teq.png" afterDir="false" />
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="renamed some files for better understanding">
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1021650_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1021880_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1022190_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1022340_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1023090_thumb.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterBase/cha_base_00_05.png" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterBase/char_base_agl.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterBase/cha_base_03_05.png" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterBase/char_base_str.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterBase/cha_base_04_05.png" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterBase/char_base_phy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterRarity/cha_rare_sm_lr.png" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterRarity/char_rarity_lr.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterType/cha_type_icon_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterType/char_type_super_agl.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterType/cha_type_icon_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterType/char_type_super_str.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterType/cha_type_icon_14.png" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterType/char_type_super_phy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterType/cha_type_icon_24.png" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterType/char_type_extreme_phy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,9 +60,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterThumb" />
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterType" />
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterBase" />
-      <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterThumb" />
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterRarity" />
     </key>
   </component>
@@ -82,7 +74,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647633754545</updated>
-      <workItem from="1647633756340" duration="5440000" />
+      <workItem from="1647633756340" duration="5661000" />
+      <workItem from="1647670780324" duration="1278000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -98,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647638757714</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="renamed some files for better understanding">
+      <created>1647639452526</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647639452526</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +119,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First Commit" />
     <MESSAGE value="added 5 characters with 2 filter categories" />
-    <option name="LAST_COMMIT_MESSAGE" value="added 5 characters with 2 filter categories" />
+    <MESSAGE value="renamed some files for better understanding" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed some files for better understanding" />
   </component>
 </project>

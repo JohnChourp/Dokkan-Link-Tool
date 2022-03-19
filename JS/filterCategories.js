@@ -1,10 +1,19 @@
 function filterCategories(){
 	let categories = document.getElementsByClassName("categories");
+	
+	let showAllCategories = document.getElementById("show-all-categories");
+	
 	let worldTournamentCategory = document.getElementsByClassName("world-tournament");
 	let worldTournamentBtn = document.getElementById("world-tournament");
 	
 	let hybridSaiyansCategory = document.getElementsByClassName("hybrid-saiyans");
 	let hybridSaiyansBtn = document.getElementById("hybrid-saiyans");
+	
+	showAllCategories.addEventListener("click" , function(){
+		for(let i = 0; i < categories.length; i ++){
+			categories.item(i).style.display = "inline-block";
+		}
+	});
 	
 	worldTournamentBtn.addEventListener("click" , function(){
 		for(let i = 0; i < categories.length; i ++){
