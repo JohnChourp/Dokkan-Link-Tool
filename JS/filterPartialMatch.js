@@ -270,3 +270,17 @@ function filterPartialMatch(){
 		});
 	}
 }
+
+function showAllCat(){
+	let categories = document.getElementsByClassName("categories");
+	let categoriesBtn = document.getElementsByClassName("categories-btn");
+	for(let i = 0; i < categories.length; i ++){
+		categories.item(i).style.display = "inline-block";
+	}
+	
+	for(let j = 0; j < 82; j ++){
+		if(categoriesBtn.item(j).classList.contains("catChecked")){
+			categoriesBtn[j].classList.remove("catChecked");
+		}
+	}
+}

@@ -248,10 +248,6 @@ function filterFullMatch(){
 	btnList[81] = document.getElementById("dbh");
 	catList[81] = document.getElementsByClassName("dbh");
 	
-	for(let i = 0; i < categories.length; i ++){
-		categories.item(i).style.display = "none";
-	}
-	
 	for(let j = 0; j < btnList.length; j ++){
 		btnList[j].addEventListener("click" , function(){
 			for(let i = 0; i < categories.length; i ++){
@@ -262,5 +258,12 @@ function filterFullMatch(){
 				catList[j].item(i).style.display = "inline-block";
 			}
 		});
+	}
+}
+
+function showAllCat(){
+	let categories = document.getElementsByClassName("categories");
+	for(let i = 0; i < categories.length; i ++){
+		categories.item(i).style.display = "inline-block";
 	}
 }
