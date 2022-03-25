@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="done">
-      <change afterPath="$PROJECT_DIR$/JS/charBase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="fixed bugs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-some-characters-in-the-main-page-" />
+        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-the-information-of-the-characters-easier-with-js" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,6 +55,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterThumb" />
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterType" />
@@ -75,7 +74,8 @@
       <option name="presentableId" value="Default" />
       <updated>1647633754545</updated>
       <workItem from="1647633756340" duration="5661000" />
-      <workItem from="1647670780324" duration="5099000" />
+      <workItem from="1647670780324" duration="16301000" />
+      <workItem from="1648243050807" duration="1416000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -112,7 +112,56 @@
       <option name="project" value="LOCAL" />
       <updated>1647672407921</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added charInfo.js that inserts data to characters">
+      <created>1647676302296</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647676302296</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added 15 more characters">
+      <created>1647676997104</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1647676997104</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added all categories avalable">
+      <created>1647686827991</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1647686827991</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added partial and full match">
+      <created>1647701299268</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1647701299268</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added partial and full match">
+      <created>1647701303675</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1647701303675</updated>
+    </task>
+    <task id="LOCAL-00011" summary="seperated in different pages full and partial match">
+      <created>1647702612496</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1647702612496</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fixed bugs">
+      <created>1648244463008</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1648244463008</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +185,12 @@
     <MESSAGE value="renamed some files for better understanding" />
     <MESSAGE value="added 5 more characters with a show all categories button" />
     <MESSAGE value="done" />
-    <option name="LAST_COMMIT_MESSAGE" value="done" />
+    <MESSAGE value="added charInfo.js that inserts data to characters" />
+    <MESSAGE value="added 15 more characters" />
+    <MESSAGE value="added all categories avalable" />
+    <MESSAGE value="added partial and full match" />
+    <MESSAGE value="seperated in different pages full and partial match" />
+    <MESSAGE value="fixed bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bugs" />
   </component>
 </project>
