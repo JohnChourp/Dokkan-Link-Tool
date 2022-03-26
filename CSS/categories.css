@@ -1,3 +1,15 @@
+.CategoriesFilter {
+	display:flex;
+	justify-content: space-evenly;
+}
+
+.categories-btn {
+	background-color: transparent;
+	border: none;
+	cursor:pointer;
+	margin: 5px 5px 5px 5px;
+}
+
 .categoriesOrange {
 	background-color: #FD7E01;
 	margin-top:20px;
