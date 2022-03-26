@@ -271,43 +271,16 @@ function filterPartialMatch(){
 	}
 }
 
-function showAllCat(){
+function hideAllCat(){
 	let categories = document.getElementsByClassName("categories");
 	let categoriesBtn = document.getElementsByClassName("categories-btn");
 	for(let i = 0; i < categories.length; i ++){
-		categories.item(i).style.display = "inline-block";
+		categories.item(i).style.display = "none";
 	}
 	
 	for(let j = 0; j < 82; j ++){
 		if(categoriesBtn.item(j).classList.contains("catChecked")){
 			categoriesBtn[j].classList.remove("catChecked");
-		}
-	}
-}
-
-function hoverThumbInit(){
-	let db_saga_input = document.getElementById("ds");
-	db_saga_input.onmouseover = function (){
-		db_saga_input.src="CategoryThumb/db_saga_hover.png";
-		if(db_saga_input.classList.contains("clicked")){
-			db_saga_input.src = "CategoryThumb/db_saga_active.png";
-		}
-	}
-	
-	db_saga_input.onmouseout = function (){
-		db_saga_input.src="CategoryThumb/db_saga_inactive.png";
-		if(db_saga_input.classList.contains("clicked")){
-			db_saga_input.src = "CategoryThumb/db_saga_active.png";
-		}
-	}
-	
-	db_saga_input.onclick = function (){
-		db_saga_input.src = "CategoryThumb/db_saga_active.png";
-		if(db_saga_input.classList.contains("clicked")){
-			db_saga_input.classList.remove("clicked");
-			db_saga_input.src="CategoryThumb/db_saga_inactive.png";
-		}else{
-			db_saga_input.classList.add("clicked");
 		}
 	}
 }

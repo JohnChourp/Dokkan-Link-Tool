@@ -59,7 +59,7 @@
 .categories-btn-cyan {
 	cursor:pointer;
 	margin: 5px 5px 5px 5px;
-	background-color: #299696;
+	background-color: #1D6E6E;
 	color: #fff;
 	font-weight: bold;
 	text-shadow: 2px 2px 2px #000;
@@ -76,7 +76,7 @@
 .categories-btn-blue {
 	cursor:pointer;
 	margin: 5px 5px 5px 5px;
-	background-color: #0873F0;
+	background-color: #1D4477;
 	color: #fff;
 	font-weight: bold;
 	text-shadow: 2px 2px 2px #000;
@@ -93,7 +93,7 @@
 .categories-btn-purple {
 	cursor:pointer;
 	margin: 5px 5px 5px 5px;
-	background-color: #8842E4;
+	background-color: #482077;
 	color: #fff;
 	font-weight: bold;
 	text-shadow: 2px 2px 2px #000;
@@ -110,7 +110,7 @@
 .categories-btn-red {
 	cursor:pointer;
 	margin: 5px 5px 5px 5px;
-	background-color: #E71855;
+	background-color: #881539;
 	color: #fff;
 	font-weight: bold;
 	text-shadow: 2px 2px 2px #000;
@@ -127,7 +127,7 @@
 .categories-btn-dark-green {
 	cursor:pointer;
 	margin: 5px 5px 5px 5px;
-	background-color: #008554;
+	background-color: #17523B;
 	color: #fff;
 	font-weight: bold;
 	text-shadow: 2px 2px 2px #000;
@@ -144,7 +144,7 @@
 .categories-btn-dark-blue {
 	cursor:pointer;
 	margin: 5px 5px 5px 5px;
-	background-color: #1C3088;
+	background-color: #162669;
 	color: #fff;
 	font-weight: bold;
 	text-shadow: 2px 2px 2px #000;
@@ -156,10 +156,6 @@
 	margin-bottom:20px;
 	padding-top:10px;
 	padding-bottom:10px;
-}
-
-.catChecked {
-	background-color: #EFE40C;
 }
 
 .container {
