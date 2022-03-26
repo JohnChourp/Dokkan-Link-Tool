@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="now yellow and cyan categories are working properly">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="now all categories are working properly and full match is complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/categories.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/categories.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryThumb/db_saga_active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryThumb/db_saga_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CategoryThumb/db_saga_inactive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterFullMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterFullMatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/filterPartialMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterPartialMatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/partial-match.html" beforeDir="false" afterPath="$PROJECT_DIR$/partial-match.html" afterDir="false" />
@@ -90,7 +86,7 @@
       <workItem from="1648287236806" duration="5358000" />
       <workItem from="1648316570015" duration="92000" />
       <workItem from="1648316674094" duration="1557000" />
-      <workItem from="1648318255460" duration="11899000" />
+      <workItem from="1648318255460" duration="12816000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -211,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648328206409</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="now all categories are working properly and full match is complete">
+      <created>1648331642891</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1648331642891</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +249,7 @@
     <MESSAGE value="added image button for db_saga and for partial match" />
     <MESSAGE value="now orange and green categories are functioning as expected" />
     <MESSAGE value="now yellow and cyan categories are working properly" />
-    <option name="LAST_COMMIT_MESSAGE" value="now yellow and cyan categories are working properly" />
+    <MESSAGE value="now all categories are working properly and full match is complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="now all categories are working properly and full match is complete" />
   </component>
 </project>

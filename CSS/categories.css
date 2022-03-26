@@ -158,6 +158,10 @@
 	padding-bottom:10px;
 }
 
+.catChecked {
+	background: #FC0;
+}
+
 .container {
 	border:1px solid;
 	color:white;
