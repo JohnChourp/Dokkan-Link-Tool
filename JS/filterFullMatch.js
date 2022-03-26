@@ -112,10 +112,44 @@ function filterFullMatch(){
 				categories.item(i).style.display = "none";
 			}
 			
-			for(let i = 0; i < catList[j].length; i ++){
-				catList[j].item(i).style.display = "inline-block";
+			for(let i = 0; i < catList[j+categoriesOrange.length].length; i ++){
+				catList[j+categoriesOrange.length].item(i).style.display = "inline-block";
 			}
 			changeDefaultGreen(j);
+		});
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let j = 0; j < categoriesYellow.length; j ++){
+		categoriesYellow.item(j).addEventListener("click" , function(){
+			categoriesYellow.item(j).classList.add("clicked");
+			
+			for(let i = 0; i < categories.length; i ++){
+				categories.item(i).style.display = "none";
+			}
+			
+			for(let i = 0; i < catList[j+categoriesOrange.length+categoriesGreen.length].length; i ++){
+				catList[j+categoriesOrange.length+categoriesGreen.length].item(i).style.display = "inline-block";
+			}
+			changeDefaultYellow(j);
+		});
+	}
+	
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let j = 0; j < categoriesCyan.length; j ++){
+		categoriesCyan.item(j).addEventListener("click" , function(){
+			categoriesCyan.item(j).classList.add("clicked");
+			
+			for(let i = 0; i < categories.length; i ++){
+				categories.item(i).style.display = "none";
+			}
+			
+			for(let i = 0; i < catList[j+categoriesOrange.length+categoriesGreen.length+categoriesYellow.length].length; i ++){
+				catList[j+categoriesOrange.length+categoriesGreen.length+categoriesYellow.length].item(i).style.display = "inline-block";
+			}
+			changeDefaultCyan(j);
 		});
 	}
 }
@@ -173,9 +207,67 @@ function hoverThumbInit(){
 			categoriesGreen.item(i).style.backgroundColor = "#79ff00";
 		}
 	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let i = 0; i < categoriesYellow.length; i ++){
+		categoriesYellow.item(i).onmouseover = function(){
+			categoriesYellow.item(i).style.backgroundColor = "#ffdd79";
+			if(categoriesYellow.item(i).classList.contains("clicked")){
+				categoriesYellow.item(i).style.backgroundColor = "#ffd800";
+			}
+		}
+		
+		categoriesYellow.item(i).onmouseout = function(){
+			categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+			if(categoriesYellow.item(i).classList.contains("clicked")){
+				categoriesYellow.item(i).style.backgroundColor = "#ffd800";
+			}
+		}
+		
+		categoriesYellow.item(i).onclick = function(){
+			categoriesYellow.item(i).style.backgroundColor = "#ffd800";
+		}
+	}
+	
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let i = 0; i < categoriesCyan.length; i ++){
+		categoriesCyan.item(i).onmouseover = function(){
+			categoriesCyan.item(i).style.backgroundColor = "#a0ffff";
+			if(categoriesCyan.item(i).classList.contains("clicked")){
+				categoriesCyan.item(i).style.backgroundColor = "#00e5e5";
+			}
+		}
+		
+		categoriesCyan.item(i).onmouseout = function(){
+			categoriesCyan.item(i).style.backgroundColor = "#299696";
+			if(categoriesCyan.item(i).classList.contains("clicked")){
+				categoriesCyan.item(i).style.backgroundColor = "#00e5e5";
+			}
+		}
+		
+		categoriesCyan.item(i).onclick = function(){
+			categoriesCyan.item(i).style.backgroundColor = "#00e5e5";
+		}
+	}
 }
 
 function changeDefaultOrange(n){
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let i = 0; i < categoriesCyan.length; i ++){
+		categoriesCyan.item(i).style.backgroundColor = "#299696";
+		categoriesCyan.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let i = 0; i < categoriesYellow.length; i ++){
+		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+		categoriesYellow.item(i).classList.remove("clicked");
+	}
+	
 	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
 	
 	for(let i = 0; i < categoriesGreen.length; i ++){
@@ -195,6 +287,20 @@ function changeDefaultOrange(n){
 }
 
 function changeDefaultGreen(n){
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let i = 0; i < categoriesCyan.length; i ++){
+		categoriesCyan.item(i).style.backgroundColor = "#299696";
+		categoriesCyan.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let i = 0; i < categoriesYellow.length; i ++){
+		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+		categoriesYellow.item(i).classList.remove("clicked");
+	}
+	
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
 	
 	for(let i = 0; i < categoriesOrange.length; i ++){
@@ -211,4 +317,69 @@ function changeDefaultGreen(n){
 	
 	categoriesGreen.item(n).style.backgroundColor = "#79ff00";
 	categoriesGreen.item(n).classList.add("clicked");
+}
+
+function changeDefaultYellow(n){
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let i = 0; i < categoriesCyan.length; i ++){
+		categoriesCyan.item(i).style.backgroundColor = "#299696";
+		categoriesCyan.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
+	
+	for(let i = 0; i < categoriesOrange.length; i ++){
+		categoriesOrange.item(i).style.backgroundColor = "#83451F";
+		categoriesOrange.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
+	
+	for(let i = 0; i < categoriesGreen.length; i ++){
+		categoriesGreen.item(i).style.backgroundColor = "#56941D";
+		categoriesGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let i = 0; i < categoriesYellow.length; i ++){
+		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+		categoriesYellow.item(i).classList.remove("clicked");
+	}
+	categoriesYellow.item(n).style.backgroundColor = "#ffd500";
+	categoriesYellow.item(n).classList.add("clicked");
+}
+
+function changeDefaultCyan(n){
+	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
+	
+	for(let i = 0; i < categoriesOrange.length; i ++){
+		categoriesOrange.item(i).style.backgroundColor = "#83451F";
+		categoriesOrange.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
+	
+	for(let i = 0; i < categoriesGreen.length; i ++){
+		categoriesGreen.item(i).style.backgroundColor = "#56941D";
+		categoriesGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let i = 0; i < categoriesYellow.length; i ++){
+		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+		categoriesYellow.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let i = 0; i < categoriesCyan.length; i ++){
+		categoriesCyan.item(i).style.backgroundColor = "#299696";
+		categoriesCyan.item(i).classList.remove("clicked");
+	}
+	
+	categoriesCyan.item(n).style.backgroundColor = "#00e5e5";
+	categoriesCyan.item(n).classList.add("clicked");
 }
