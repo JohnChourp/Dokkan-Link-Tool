@@ -1,255 +1,96 @@
 function filterFullMatch(){
-	let btnList = [] , catList = [];
+	let catList = [];
 	let categories = document.getElementsByClassName("categories");
 	
-	btnList[0] = document.getElementById("ds");
 	catList[0] = document.getElementsByClassName("ds");
-	
-	btnList[1] = document.getElementById("pns");
 	catList[1] = document.getElementsByClassName("pns");
-	
-	btnList[2] = document.getElementById("acs");
 	catList[2] = document.getElementsByClassName("acs");
-	
-	btnList[3] = document.getElementById("mbs");
 	catList[3] = document.getElementsByClassName("mbs");
-	
-	btnList[4] = document.getElementById("fs");
 	catList[4] = document.getElementsByClassName("fs");
-	
-	btnList[5] = document.getElementById("uss");
 	catList[5] = document.getElementsByClassName("uss");
-	
-	btnList[6] = document.getElementById("sds");
 	catList[6] = document.getElementsByClassName("sds");
-	
-	btnList[7] = document.getElementById("ps");
 	catList[7] = document.getElementsByClassName("ps");
-	
-	btnList[8] = document.getElementById("hs");
 	catList[8] = document.getElementsByClassName("hs");
-	
-	btnList[9] = document.getElementById("e");
 	catList[9] = document.getElementsByClassName("e");
-	
-	btnList[10] = document.getElementById("n");
 	catList[10] = document.getElementsByClassName("n");
-	
-	btnList[11] = document.getElementById("a");
 	catList[11] = document.getElementsByClassName("a");
-	
-	btnList[12] = document.getElementById("alf");
 	catList[12] = document.getElementsByClassName("alf");
-	
-	btnList[13] = document.getElementById("gfa");
 	catList[13] = document.getElementsByClassName("gfa");
-	
-	btnList[14] = document.getElementById("vf");
 	catList[14] = document.getElementsByClassName("vf");
-	
-	btnList[15] = document.getElementById("wb");
 	catList[15] = document.getElementsByClassName("wb");
-	
-	btnList[16] = document.getElementById("y");
 	catList[16] = document.getElementsByClassName("y");
-	
-	btnList[17] = document.getElementById("pg");
 	catList[17] = document.getElementsByClassName("pg");
-	
-	btnList[18] = document.getElementById("ss");
 	catList[18] = document.getElementsByClassName("ss");
-	
-	btnList[19] = document.getElementById("ss2");
 	catList[19] = document.getElementsByClassName("ss2");
-	
-	btnList[20] = document.getElementById("ss3");
 	catList[20] = document.getElementsByClassName("ss3");
-	
-	btnList[21] = document.getElementById("f");
 	catList[21] = document.getElementsByClassName("f");
-	
-	btnList[22] = document.getElementById("p");
 	catList[22] = document.getElementsByClassName("p");
-	
-	btnList[23] = document.getElementById("gfo");
 	catList[23] = document.getElementsByClassName("gfo");
-	
-	btnList[24] = document.getElementById("tbo");
 	catList[24] = document.getElementsByClassName("tbo");
-	
-	btnList[25] = document.getElementById("pa");
 	catList[25] = document.getElementsByClassName("pa");
-	
-	btnList[26] = document.getElementById("k");
 	catList[26] = document.getElementsByClassName("k");
-	
-	btnList[27] = document.getElementById("rog");
 	catList[27] = document.getElementsByClassName("rog");
-	
-	btnList[28] = document.getElementById("fp");
 	catList[28] = document.getElementsByClassName("fp");
-	
-	btnList[29] = document.getElementById("gap");
 	catList[29] = document.getElementsByClassName("gap");
-	
-	btnList[30] = document.getElementById("mp");
 	catList[30] = document.getElementsByClassName("mp");
-	
-	btnList[31] = document.getElementById("pc");
 	catList[31] = document.getElementsByClassName("pc");
-	
-	btnList[32] = document.getElementById("ma");
 	catList[32] = document.getElementsByClassName("ma");
-	
-	btnList[33] = document.getElementById("cbam");
 	catList[33] = document.getElementsByClassName("cbam");
-	
-	btnList[34] = document.getElementById("rg");
 	catList[34] = document.getElementsByClassName("rg");
-	
-	btnList[35] = document.getElementById("me");
 	catList[35] = document.getElementsByClassName("me");
-	
-	btnList[36] = document.getElementById("tl");
 	catList[36] = document.getElementsByClassName("tl");
-	
-	btnList[37] = document.getElementById("ftc");
 	catList[37] = document.getElementsByClassName("ftc");
-	
-	btnList[38] = document.getElementById("wr");
 	catList[38] = document.getElementsByClassName("wr");
-	
-	btnList[39] = document.getElementById("se");
 	catList[39] = document.getElementsByClassName("se");
-	
-	btnList[40] = document.getElementById("jf");
 	catList[40] = document.getElementsByClassName("jf");
-	
-	btnList[41] = document.getElementById("sb");
 	catList[41] = document.getElementsByClassName("sb");
-	
-	btnList[42] = document.getElementById("bof");
 	catList[42] = document.getElementsByClassName("bof");
-	
-	btnList[43] = document.getElementById("bomad");
 	catList[43] = document.getElementsByClassName("bomad");
-	
-	btnList[44] = document.getElementById("gf");
 	catList[44] = document.getElementsByClassName("gf");
-	
-	btnList[45] = document.getElementById("tba");
 	catList[45] = document.getElementsByClassName("tba");
-	
-	btnList[46] = document.getElementById("u6");
 	catList[46] = document.getElementsByClassName("u6");
-	
-	btnList[47] = document.getElementById("rou7");
 	catList[47] = document.getElementsByClassName("rou7");
-	
-	btnList[48] = document.getElementById("u11");
 	catList[48] = document.getElementsByClassName("u11");
-	
-	btnList[49] = document.getElementById("gh");
 	catList[49] = document.getElementsByClassName("gh");
-	
-	btnList[50] = document.getElementById("gb");
 	catList[50] = document.getElementsByClassName("gb");
-	
-	btnList[51] = document.getElementById("mh");
 	catList[51] = document.getElementsByClassName("mh");
-	
-	btnList[52] = document.getElementById("mb");
 	catList[52] = document.getElementsByClassName("mb");
-	
-	btnList[53] = document.getElementById("ts");
 	catList[53] = document.getElementsByClassName("ts");
-	
-	btnList[54] = document.getElementById("wt");
 	catList[54] = document.getElementsByClassName("wt");
-	
-	btnList[55] = document.getElementById("lcw");
 	catList[55] = document.getElementsByClassName("lcw");
-	
-	btnList[56] = document.getElementById("gw");
 	catList[56] = document.getElementsByClassName("gw");
-	
-	btnList[57] = document.getElementById("ow");
 	catList[57] = document.getElementsByClassName("ow");
-	
-	btnList[58] = document.getElementById("rw");
 	catList[58] = document.getElementsByClassName("rw");
-	
-	btnList[59] = document.getElementById("stw");
 	catList[59] = document.getElementsByClassName("stw");
-	
-	btnList[60] = document.getElementById("tt");
 	catList[60] = document.getElementsByClassName("tt");
-	
-	btnList[61] = document.getElementById("dbs");
 	catList[61] = document.getElementsByClassName("dbs");
-	
-	btnList[62] = document.getElementById("sf");
 	catList[62] = document.getElementsByClassName("sf");
-	
-	btnList[63] = document.getElementById("le");
 	catList[63] = document.getElementsByClassName("le");
-	
-	btnList[64] = document.getElementById("s");
 	catList[64] = document.getElementsByClassName("s");
-	
-	btnList[65] = document.getElementById("doj");
 	catList[65] = document.getElementsByClassName("doj");
-	
-	btnList[66] = document.getElementById("r");
 	catList[66] = document.getElementsByClassName("r");
-	
-	btnList[67] = document.getElementById("tg");
 	catList[67] = document.getElementsByClassName("tg");
-	
-	btnList[68] = document.getElementById("tc");
 	catList[68] = document.getElementsByClassName("tc");
-	
-	btnList[69] = document.getElementById("ide");
 	catList[69] = document.getElementsByClassName("ide");
-	
-	btnList[70] = document.getElementById("pd");
 	catList[70] = document.getElementsByClassName("pd");
-	
-	btnList[71] = document.getElementById("er");
 	catList[71] = document.getElementsByClassName("er");
-	
-	btnList[72] = document.getElementById("ch");
 	catList[72] = document.getElementsByClassName("ch");
-	
-	btnList[73] = document.getElementById("ew");
 	catList[73] = document.getElementsByClassName("ew");
-	
-	btnList[74] = document.getElementById("aos");
 	catList[74] = document.getElementsByClassName("aos");
-	
-	btnList[75] = document.getElementById("bow");
 	catList[75] = document.getElementsByClassName("bow");
-	
-	btnList[76] = document.getElementById("ab");
 	catList[76] = document.getElementsByClassName("ab");
-	
-	btnList[77] = document.getElementById("he");
 	catList[77] = document.getElementsByClassName("he");
-	
-	btnList[78] = document.getElementById("sp");
 	catList[78] = document.getElementsByClassName("sp");
-	
-	btnList[79] = document.getElementById("wc");
 	catList[79] = document.getElementsByClassName("wc");
-	
-	btnList[80] = document.getElementById("c");
 	catList[80] = document.getElementsByClassName("c");
-	
-	btnList[81] = document.getElementById("dbh");
 	catList[81] = document.getElementsByClassName("dbh");
 	
-	for(let j = 0; j < btnList.length; j ++){
-		btnList[j].addEventListener("click" , function(){
+	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
+	
+	for(let j = 0; j < categoriesOrange.length; j ++){
+		categoriesOrange.item(j).addEventListener("click" , function(){
+			categoriesOrange.item(j).classList.add("clicked");
+			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
 			}
@@ -257,6 +98,143 @@ function filterFullMatch(){
 			for(let i = 0; i < catList[j].length; i ++){
 				catList[j].item(i).style.display = "inline-block";
 			}
+			changeDefaultOrange(j);
+		});
+	}
+	
+	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
+	
+	for(let j = 0; j < categoriesGreen.length; j ++){
+		categoriesGreen.item(j).addEventListener("click" , function(){
+			categoriesGreen.item(j).classList.add("clicked");
+			
+			for(let i = 0; i < categories.length; i ++){
+				categories.item(i).style.display = "none";
+			}
+			
+			for(let i = 0; i < catList[j + categoriesOrange.length].length; i ++){
+				catList[j + categoriesOrange.length].item(i).style.display = "inline-block";
+			}
+			changeDefaultGreen(j);
+		});
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let j = 0; j < categoriesYellow.length; j ++){
+		categoriesYellow.item(j).addEventListener("click" , function(){
+			categoriesYellow.item(j).classList.add("clicked");
+			
+			for(let i = 0; i < categories.length; i ++){
+				categories.item(i).style.display = "none";
+			}
+			
+			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length].length; i ++){
+				catList[j + categoriesOrange.length + categoriesGreen.length].item(i).style.display = "inline-block";
+			}
+			changeDefaultYellow(j);
+		});
+	}
+	
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let j = 0; j < categoriesCyan.length; j ++){
+		categoriesCyan.item(j).addEventListener("click" , function(){
+			categoriesCyan.item(j).classList.add("clicked");
+			
+			for(let i = 0; i < categories.length; i ++){
+				categories.item(i).style.display = "none";
+			}
+			
+			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length].length; i ++){
+				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length].item(i).style.display = "inline-block";
+			}
+			changeDefaultCyan(j);
+		});
+	}
+	
+	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
+	
+	for(let j = 0; j < categoriesBlue.length; j ++){
+		categoriesBlue.item(j).addEventListener("click" , function(){
+			categoriesBlue.item(j).classList.add("clicked");
+			
+			for(let i = 0; i < categories.length; i ++){
+				categories.item(i).style.display = "none";
+			}
+			
+			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length].length; i ++){
+				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length].item(i).style.display = "inline-block";
+			}
+			changeDefaultBlue(j);
+		});
+	}
+	
+	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
+	
+	for(let j = 0; j < categoriesPurple.length; j ++){
+		categoriesPurple.item(j).addEventListener("click" , function(){
+			categoriesPurple.item(j).classList.add("clicked");
+			
+			for(let i = 0; i < categories.length; i ++){
+				categories.item(i).style.display = "none";
+			}
+			
+			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length].length; i ++){
+				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length].item(i).style.display = "inline-block";
+			}
+			changeDefaultPurple(j);
+		});
+	}
+	
+	let categoriesRed = document.getElementsByClassName("categories-btn-red");
+	
+	for(let j = 0; j < categoriesRed.length; j ++){
+		categoriesRed.item(j).addEventListener("click" , function(){
+			categoriesRed.item(j).classList.add("clicked");
+			
+			for(let i = 0; i < categories.length; i ++){
+				categories.item(i).style.display = "none";
+			}
+			
+			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].length; i ++){
+				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].item(i).style.display = "inline-block";
+			}
+			changeDefaultRed(j);
+		});
+	}
+	
+	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
+	
+	for(let j = 0; j < categoriesDarkGreen.length; j ++){
+		categoriesDarkGreen.item(j).addEventListener("click" , function(){
+			categoriesDarkGreen.item(j).classList.add("clicked");
+			
+			for(let i = 0; i < categories.length; i ++){
+				categories.item(i).style.display = "none";
+			}
+			
+			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].length; i ++){
+				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].item(i).style.display = "inline-block";
+			}
+			changeDefaultDarkGreen(j);
+		});
+	}
+	
+	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
+	
+	for(let j = 0; j < categoriesDarkBlue.length; j ++){
+		categoriesDarkBlue.item(j).addEventListener("click" , function(){
+			categoriesDarkBlue.item(j).classList.add("clicked");
+			
+			for(let i = 0; i < categories.length; i ++){
+				categories.item(i).style.display = "none";
+			}
+
+			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkGreen.length].length; i ++){
+				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkGreen.length].item(i).style.display = "inline-block";
+			}
+			changeDefaultDarkBlue(j);
 		});
 	}
 }
@@ -266,4 +244,817 @@ function showAllCat(){
 	for(let i = 0; i < categories.length; i ++){
 		categories.item(i).style.display = "inline-block";
 	}
+}
+
+function hoverThumbInit(){
+	document.getElementsByClassName("CategoriesFilter").item(0).classList.remove("CategoriesFilterShow");
+	
+	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
+	
+	for(let i = 0; i < categoriesOrange.length; i ++){
+		categoriesOrange.item(i).onmouseover = function(){
+			categoriesOrange.item(i).style.backgroundColor = "#FDAC67";
+			if(categoriesOrange.item(i).classList.contains("clicked")){
+				categoriesOrange.item(i).style.backgroundColor = "#FF6200";
+			}
+		}
+		
+		categoriesOrange.item(i).onmouseout = function(){
+			categoriesOrange.item(i).style.backgroundColor = "#83451F";
+			if(categoriesOrange.item(i).classList.contains("clicked")){
+				categoriesOrange.item(i).style.backgroundColor = "#FF6200";
+			}
+		}
+		
+		categoriesOrange.item(i).onclick = function(){
+			categoriesOrange.item(i).style.backgroundColor = "#FF6200";
+		}
+	}
+	
+	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
+	
+	for(let i = 0; i < categoriesGreen.length; i ++){
+		categoriesGreen.item(i).onmouseover = function(){
+			categoriesGreen.item(i).style.backgroundColor = "#ADF373";
+			if(categoriesGreen.item(i).classList.contains("clicked")){
+				categoriesGreen.item(i).style.backgroundColor = "#79FF00";
+			}
+		}
+		
+		categoriesGreen.item(i).onmouseout = function(){
+			categoriesGreen.item(i).style.backgroundColor = "#56941D";
+			if(categoriesGreen.item(i).classList.contains("clicked")){
+				categoriesGreen.item(i).style.backgroundColor = "#79FF00";
+			}
+		}
+		
+		categoriesGreen.item(i).onclick = function(){
+			categoriesGreen.item(i).style.backgroundColor = "#79FF00";
+		}
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let i = 0; i < categoriesYellow.length; i ++){
+		categoriesYellow.item(i).onmouseover = function(){
+			categoriesYellow.item(i).style.backgroundColor = "#FFDD79";
+			if(categoriesYellow.item(i).classList.contains("clicked")){
+				categoriesYellow.item(i).style.backgroundColor = "#FFD800";
+			}
+		}
+		
+		categoriesYellow.item(i).onmouseout = function(){
+			categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+			if(categoriesYellow.item(i).classList.contains("clicked")){
+				categoriesYellow.item(i).style.backgroundColor = "#FFD800";
+			}
+		}
+		
+		categoriesYellow.item(i).onclick = function(){
+			categoriesYellow.item(i).style.backgroundColor = "#FFD800";
+		}
+	}
+	
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let i = 0; i < categoriesCyan.length; i ++){
+		categoriesCyan.item(i).onmouseover = function(){
+			categoriesCyan.item(i).style.backgroundColor = "#A0FFFF";
+			if(categoriesCyan.item(i).classList.contains("clicked")){
+				categoriesCyan.item(i).style.backgroundColor = "#00E5E5";
+			}
+		}
+		
+		categoriesCyan.item(i).onmouseout = function(){
+			categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
+			if(categoriesCyan.item(i).classList.contains("clicked")){
+				categoriesCyan.item(i).style.backgroundColor = "#00E5E5";
+			}
+		}
+		
+		categoriesCyan.item(i).onclick = function(){
+			categoriesCyan.item(i).style.backgroundColor = "#00E5E5";
+		}
+	}
+	
+	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
+	
+	for(let i = 0; i < categoriesBlue.length; i ++){
+		categoriesBlue.item(i).onmouseover = function(){
+			categoriesBlue.item(i).style.backgroundColor = "#5395FD";
+			if(categoriesBlue.item(i).classList.contains("clicked")){
+				categoriesBlue.item(i).style.backgroundColor = "#0067FF";
+			}
+		}
+		
+		categoriesBlue.item(i).onmouseout = function(){
+			categoriesBlue.item(i).style.backgroundColor = "#1D4477";
+			if(categoriesBlue.item(i).classList.contains("clicked")){
+				categoriesBlue.item(i).style.backgroundColor = "#0067FF";
+			}
+		}
+		
+		categoriesBlue.item(i).onclick = function(){
+			categoriesBlue.item(i).style.backgroundColor = "#0067FF";
+		}
+	}
+	
+	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
+	
+	for(let i = 0; i < categoriesPurple.length; i ++){
+		categoriesPurple.item(i).onmouseover = function(){
+			categoriesPurple.item(i).style.backgroundColor = "#BD88FF";
+			if(categoriesPurple.item(i).classList.contains("clicked")){
+				categoriesPurple.item(i).style.backgroundColor = "#6100FF";
+			}
+		}
+		
+		categoriesPurple.item(i).onmouseout = function(){
+			categoriesPurple.item(i).style.backgroundColor = "#482077";
+			if(categoriesPurple.item(i).classList.contains("clicked")){
+				categoriesPurple.item(i).style.backgroundColor = "#6100FF";
+			}
+		}
+		
+		categoriesPurple.item(i).onclick = function(){
+			categoriesPurple.item(i).style.backgroundColor = "#6100FF";
+		}
+	}
+	
+	let categoriesRed = document.getElementsByClassName("categories-btn-red");
+	
+	for(let i = 0; i < categoriesRed.length; i ++){
+		categoriesRed.item(i).onmouseover = function(){
+			categoriesRed.item(i).style.backgroundColor = "#FD5E94";
+			if(categoriesRed.item(i).classList.contains("clicked")){
+				categoriesRed.item(i).style.backgroundColor = "#FF0054";
+			}
+		}
+		
+		categoriesRed.item(i).onmouseout = function(){
+			categoriesRed.item(i).style.backgroundColor = "#881539";
+			if(categoriesRed.item(i).classList.contains("clicked")){
+				categoriesRed.item(i).style.backgroundColor = "#FF0054";
+			}
+		}
+		
+		categoriesRed.item(i).onclick = function(){
+			categoriesRed.item(i).style.backgroundColor = "#FF0054";
+		}
+	}
+	
+	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
+	
+	for(let i = 0; i < categoriesDarkGreen.length; i ++){
+		categoriesDarkGreen.item(i).onmouseover = function(){
+			categoriesDarkGreen.item(i).style.backgroundColor = "#73F6C4";
+			if(categoriesDarkGreen.item(i).classList.contains("clicked")){
+				categoriesDarkGreen.item(i).style.backgroundColor = "#05BD76";
+			}
+		}
+		
+		categoriesDarkGreen.item(i).onmouseout = function(){
+			categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
+			if(categoriesDarkGreen.item(i).classList.contains("clicked")){
+				categoriesDarkGreen.item(i).style.backgroundColor = "#05BD76";
+			}
+		}
+		
+		categoriesDarkGreen.item(i).onclick = function(){
+			categoriesDarkGreen.item(i).style.backgroundColor = "#05BD76";
+		}
+	}
+	
+	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
+	
+	for(let i = 0; i < categoriesDarkBlue.length; i ++){
+		categoriesDarkBlue.item(i).onmouseover = function(){
+			categoriesDarkBlue.item(i).style.backgroundColor = "#4266E0";
+			if(categoriesDarkBlue.item(i).classList.contains("clicked")){
+				categoriesDarkBlue.item(i).style.backgroundColor = "#002DC0";
+			}
+		}
+		
+		categoriesDarkBlue.item(i).onmouseout = function(){
+			categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
+			if(categoriesDarkBlue.item(i).classList.contains("clicked")){
+				categoriesDarkBlue.item(i).style.backgroundColor = "#002DC0";
+			}
+		}
+		
+		categoriesDarkBlue.item(i).onclick = function(){
+			categoriesDarkBlue.item(i).style.backgroundColor = "#002DC0";
+		}
+	}
+}
+
+function changeDefaultOrange(n){
+	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
+	
+	for(let i = 0; i < categoriesDarkBlue.length; i ++){
+		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
+		categoriesDarkBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
+	
+	for(let i = 0; i < categoriesDarkGreen.length; i ++){
+		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
+		categoriesDarkGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesRed = document.getElementsByClassName("categories-btn-red");
+	
+	for(let i = 0; i < categoriesRed.length; i ++){
+		categoriesRed.item(i).style.backgroundColor = "#881539";
+		categoriesRed.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
+	
+	for(let i = 0; i < categoriesPurple.length; i ++){
+		categoriesPurple.item(i).style.backgroundColor = "#482077";
+		categoriesPurple.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
+	
+	for(let i = 0; i < categoriesBlue.length; i ++){
+		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
+		categoriesBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let i = 0; i < categoriesCyan.length; i ++){
+		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
+		categoriesCyan.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let i = 0; i < categoriesYellow.length; i ++){
+		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+		categoriesYellow.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
+	
+	for(let i = 0; i < categoriesGreen.length; i ++){
+		categoriesGreen.item(i).style.backgroundColor = "#56941D";
+		categoriesGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
+	
+	for(let i = 0; i < categoriesOrange.length; i ++){
+		categoriesOrange.item(i).style.backgroundColor = "#83451F";
+		categoriesOrange.item(i).classList.remove("clicked");
+	}
+	
+	categoriesOrange.item(n).style.backgroundColor = "#FF6200";
+	categoriesOrange.item(n).classList.add("clicked");
+}
+
+function changeDefaultGreen(n){
+	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
+	
+	for(let i = 0; i < categoriesDarkBlue.length; i ++){
+		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
+		categoriesDarkBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
+	
+	for(let i = 0; i < categoriesDarkGreen.length; i ++){
+		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
+		categoriesDarkGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesRed = document.getElementsByClassName("categories-btn-red");
+	
+	for(let i = 0; i < categoriesRed.length; i ++){
+		categoriesRed.item(i).style.backgroundColor = "#881539";
+		categoriesRed.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
+	
+	for(let i = 0; i < categoriesPurple.length; i ++){
+		categoriesPurple.item(i).style.backgroundColor = "#482077";
+		categoriesPurple.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
+	
+	for(let i = 0; i < categoriesBlue.length; i ++){
+		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
+		categoriesBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let i = 0; i < categoriesCyan.length; i ++){
+		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
+		categoriesCyan.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let i = 0; i < categoriesYellow.length; i ++){
+		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+		categoriesYellow.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
+	
+	for(let i = 0; i < categoriesOrange.length; i ++){
+		categoriesOrange.item(i).style.backgroundColor = "#83451F";
+		categoriesOrange.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
+	
+	for(let i = 0; i < categoriesGreen.length; i ++){
+		categoriesGreen.item(i).style.backgroundColor = "#56941D";
+		categoriesGreen.item(i).classList.remove("clicked");
+	}
+	
+	categoriesGreen.item(n).style.backgroundColor = "#79FF00";
+	categoriesGreen.item(n).classList.add("clicked");
+}
+
+function changeDefaultYellow(n){
+	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
+	
+	for(let i = 0; i < categoriesDarkBlue.length; i ++){
+		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
+		categoriesDarkBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
+	
+	for(let i = 0; i < categoriesDarkGreen.length; i ++){
+		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
+		categoriesDarkGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesRed = document.getElementsByClassName("categories-btn-red");
+	
+	for(let i = 0; i < categoriesRed.length; i ++){
+		categoriesRed.item(i).style.backgroundColor = "#881539";
+		categoriesRed.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
+	
+	for(let i = 0; i < categoriesPurple.length; i ++){
+		categoriesPurple.item(i).style.backgroundColor = "#482077";
+		categoriesPurple.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
+	
+	for(let i = 0; i < categoriesBlue.length; i ++){
+		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
+		categoriesBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let i = 0; i < categoriesCyan.length; i ++){
+		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
+		categoriesCyan.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
+	
+	for(let i = 0; i < categoriesOrange.length; i ++){
+		categoriesOrange.item(i).style.backgroundColor = "#83451F";
+		categoriesOrange.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
+	
+	for(let i = 0; i < categoriesGreen.length; i ++){
+		categoriesGreen.item(i).style.backgroundColor = "#56941D";
+		categoriesGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let i = 0; i < categoriesYellow.length; i ++){
+		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+		categoriesYellow.item(i).classList.remove("clicked");
+	}
+	categoriesYellow.item(n).style.backgroundColor = "#FFD500";
+	categoriesYellow.item(n).classList.add("clicked");
+}
+
+function changeDefaultCyan(n){
+	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
+	
+	for(let i = 0; i < categoriesDarkBlue.length; i ++){
+		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
+		categoriesDarkBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
+	
+	for(let i = 0; i < categoriesDarkGreen.length; i ++){
+		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
+		categoriesDarkGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesRed = document.getElementsByClassName("categories-btn-red");
+	
+	for(let i = 0; i < categoriesRed.length; i ++){
+		categoriesRed.item(i).style.backgroundColor = "#881539";
+		categoriesRed.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
+	
+	for(let i = 0; i < categoriesPurple.length; i ++){
+		categoriesPurple.item(i).style.backgroundColor = "#482077";
+		categoriesPurple.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
+	
+	for(let i = 0; i < categoriesBlue.length; i ++){
+		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
+		categoriesBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
+	
+	for(let i = 0; i < categoriesOrange.length; i ++){
+		categoriesOrange.item(i).style.backgroundColor = "#83451F";
+		categoriesOrange.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
+	
+	for(let i = 0; i < categoriesGreen.length; i ++){
+		categoriesGreen.item(i).style.backgroundColor = "#56941D";
+		categoriesGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let i = 0; i < categoriesYellow.length; i ++){
+		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+		categoriesYellow.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let i = 0; i < categoriesCyan.length; i ++){
+		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
+		categoriesCyan.item(i).classList.remove("clicked");
+	}
+	
+	categoriesCyan.item(n).style.backgroundColor = "#00E5E5";
+	categoriesCyan.item(n).classList.add("clicked");
+}
+
+function changeDefaultBlue(n){
+	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
+	
+	for(let i = 0; i < categoriesDarkBlue.length; i ++){
+		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
+		categoriesDarkBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
+	
+	for(let i = 0; i < categoriesDarkGreen.length; i ++){
+		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
+		categoriesDarkGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesRed = document.getElementsByClassName("categories-btn-red");
+	
+	for(let i = 0; i < categoriesRed.length; i ++){
+		categoriesRed.item(i).style.backgroundColor = "#881539";
+		categoriesRed.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
+	
+	for(let i = 0; i < categoriesPurple.length; i ++){
+		categoriesPurple.item(i).style.backgroundColor = "#482077";
+		categoriesPurple.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
+	
+	for(let i = 0; i < categoriesOrange.length; i ++){
+		categoriesOrange.item(i).style.backgroundColor = "#83451F";
+		categoriesOrange.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
+	
+	for(let i = 0; i < categoriesGreen.length; i ++){
+		categoriesGreen.item(i).style.backgroundColor = "#56941D";
+		categoriesGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let i = 0; i < categoriesYellow.length; i ++){
+		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+		categoriesYellow.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let i = 0; i < categoriesCyan.length; i ++){
+		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
+		categoriesCyan.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
+	
+	for(let i = 0; i < categoriesBlue.length; i ++){
+		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
+		categoriesBlue.item(i).classList.remove("clicked");
+	}
+	
+	categoriesBlue.item(n).style.backgroundColor = "#0067FF";
+	categoriesBlue.item(n).classList.add("clicked");
+}
+
+function changeDefaultPurple(n){
+	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
+	
+	for(let i = 0; i < categoriesDarkBlue.length; i ++){
+		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
+		categoriesDarkBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
+	
+	for(let i = 0; i < categoriesDarkGreen.length; i ++){
+		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
+		categoriesDarkGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesRed = document.getElementsByClassName("categories-btn-red");
+	
+	for(let i = 0; i < categoriesRed.length; i ++){
+		categoriesRed.item(i).style.backgroundColor = "#881539";
+		categoriesRed.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
+	
+	for(let i = 0; i < categoriesOrange.length; i ++){
+		categoriesOrange.item(i).style.backgroundColor = "#83451F";
+		categoriesOrange.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
+	
+	for(let i = 0; i < categoriesGreen.length; i ++){
+		categoriesGreen.item(i).style.backgroundColor = "#56941D";
+		categoriesGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let i = 0; i < categoriesYellow.length; i ++){
+		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+		categoriesYellow.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let i = 0; i < categoriesCyan.length; i ++){
+		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
+		categoriesCyan.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
+	
+	for(let i = 0; i < categoriesBlue.length; i ++){
+		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
+		categoriesBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
+	
+	for(let i = 0; i < categoriesPurple.length; i ++){
+		categoriesPurple.item(i).style.backgroundColor = "#482077";
+		categoriesPurple.item(i).classList.remove("clicked");
+	}
+	
+	categoriesPurple.item(n).style.backgroundColor = "#6100FF";
+	categoriesPurple.item(n).classList.add("clicked");
+}
+
+function changeDefaultRed(n){
+	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
+	
+	for(let i = 0; i < categoriesDarkBlue.length; i ++){
+		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
+		categoriesDarkBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
+	
+	for(let i = 0; i < categoriesDarkGreen.length; i ++){
+		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
+		categoriesDarkGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
+	
+	for(let i = 0; i < categoriesOrange.length; i ++){
+		categoriesOrange.item(i).style.backgroundColor = "#83451F";
+		categoriesOrange.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
+	
+	for(let i = 0; i < categoriesGreen.length; i ++){
+		categoriesGreen.item(i).style.backgroundColor = "#56941D";
+		categoriesGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let i = 0; i < categoriesYellow.length; i ++){
+		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+		categoriesYellow.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let i = 0; i < categoriesCyan.length; i ++){
+		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
+		categoriesCyan.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
+	
+	for(let i = 0; i < categoriesBlue.length; i ++){
+		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
+		categoriesBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
+	
+	for(let i = 0; i < categoriesPurple.length; i ++){
+		categoriesPurple.item(i).style.backgroundColor = "#482077";
+		categoriesPurple.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesRed = document.getElementsByClassName("categories-btn-red");
+	
+	for(let i = 0; i < categoriesRed.length; i ++){
+		categoriesRed.item(i).style.backgroundColor = "#881539";
+		categoriesRed.item(i).classList.remove("clicked");
+	}
+	
+	categoriesRed.item(n).style.backgroundColor = "#FF0054";
+	categoriesRed.item(n).classList.add("clicked");
+}
+
+function changeDefaultDarkGreen(n){
+	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
+	
+	for(let i = 0; i < categoriesDarkBlue.length; i ++){
+		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
+		categoriesDarkBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
+	
+	for(let i = 0; i < categoriesOrange.length; i ++){
+		categoriesOrange.item(i).style.backgroundColor = "#83451F";
+		categoriesOrange.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
+	
+	for(let i = 0; i < categoriesGreen.length; i ++){
+		categoriesGreen.item(i).style.backgroundColor = "#56941D";
+		categoriesGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let i = 0; i < categoriesYellow.length; i ++){
+		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+		categoriesYellow.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let i = 0; i < categoriesCyan.length; i ++){
+		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
+		categoriesCyan.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
+	
+	for(let i = 0; i < categoriesBlue.length; i ++){
+		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
+		categoriesBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
+	
+	for(let i = 0; i < categoriesPurple.length; i ++){
+		categoriesPurple.item(i).style.backgroundColor = "#482077";
+		categoriesPurple.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesRed = document.getElementsByClassName("categories-btn-red");
+	
+	for(let i = 0; i < categoriesRed.length; i ++){
+		categoriesRed.item(i).style.backgroundColor = "#881539";
+		categoriesRed.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
+	
+	for(let i = 0; i < categoriesDarkGreen.length; i ++){
+		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
+		categoriesDarkGreen.item(i).classList.remove("clicked");
+	}
+	
+	categoriesDarkGreen.item(n).style.backgroundColor = "#05BD76";
+	categoriesDarkGreen.item(n).classList.add("clicked");
+}
+
+function changeDefaultDarkBlue(n){
+	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
+	
+	for(let i = 0; i < categoriesOrange.length; i ++){
+		categoriesOrange.item(i).style.backgroundColor = "#83451F";
+		categoriesOrange.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
+	
+	for(let i = 0; i < categoriesGreen.length; i ++){
+		categoriesGreen.item(i).style.backgroundColor = "#56941D";
+		categoriesGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	
+	for(let i = 0; i < categoriesYellow.length; i ++){
+		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+		categoriesYellow.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	
+	for(let i = 0; i < categoriesCyan.length; i ++){
+		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
+		categoriesCyan.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
+	
+	for(let i = 0; i < categoriesBlue.length; i ++){
+		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
+		categoriesBlue.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
+	
+	for(let i = 0; i < categoriesPurple.length; i ++){
+		categoriesPurple.item(i).style.backgroundColor = "#482077";
+		categoriesPurple.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesRed = document.getElementsByClassName("categories-btn-red");
+	
+	for(let i = 0; i < categoriesRed.length; i ++){
+		categoriesRed.item(i).style.backgroundColor = "#881539";
+		categoriesRed.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
+	
+	for(let i = 0; i < categoriesDarkGreen.length; i ++){
+		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
+		categoriesDarkGreen.item(i).classList.remove("clicked");
+	}
+	
+	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
+	
+	for(let i = 0; i < categoriesDarkBlue.length; i ++){
+		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
+		categoriesDarkBlue.item(i).classList.remove("clicked");
+	}
+	
+	categoriesDarkBlue.item(n).style.backgroundColor = "#002DC0";
+	categoriesDarkBlue.item(n).classList.add("clicked");
 }
