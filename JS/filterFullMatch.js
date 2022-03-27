@@ -112,10 +112,12 @@ function filterFullMatch(){
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appeared");
 			}
 			
 			for(let i = 0; i < catList[j + categoriesOrange.length].length; i ++){
 				catList[j + categoriesOrange.length].item(i).style.display = "inline-block";
+				catList[j + categoriesOrange.length].item(i).classList.add("appeared");
 			}
 			changeDefaultGreen(j);
 		});
@@ -129,10 +131,12 @@ function filterFullMatch(){
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appeared");
 			}
 			
 			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length].length; i ++){
 				catList[j + categoriesOrange.length + categoriesGreen.length].item(i).style.display = "inline-block";
+				catList[j + categoriesOrange.length + categoriesGreen.length].item(i).classList.add("appeared");
 			}
 			changeDefaultYellow(j);
 		});
@@ -146,10 +150,12 @@ function filterFullMatch(){
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appeared");
 			}
 			
 			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length].length; i ++){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length].item(i).style.display = "inline-block";
+				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length].item(i).classList.add("appeared");
 			}
 			changeDefaultCyan(j);
 		});
@@ -163,10 +169,12 @@ function filterFullMatch(){
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appeared");
 			}
 			
 			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length].length; i ++){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length].item(i).style.display = "inline-block";
+				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length].item(i).classList.add("appeared");
 			}
 			changeDefaultBlue(j);
 		});
@@ -180,10 +188,12 @@ function filterFullMatch(){
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appeared");
 			}
 			
 			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length].length; i ++){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length].item(i).style.display = "inline-block";
+				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length].item(i).classList.add("appeared");
 			}
 			changeDefaultPurple(j);
 		});
@@ -197,10 +207,12 @@ function filterFullMatch(){
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appeared");
 			}
 			
 			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].length; i ++){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].item(i).style.display = "inline-block";
+				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].item(i).classList.add("appeared");
 			}
 			changeDefaultRed(j);
 		});
@@ -214,10 +226,12 @@ function filterFullMatch(){
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appeared");
 			}
 			
 			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].length; i ++){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].item(i).style.display = "inline-block";
+				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].item(i).classList.add("appeared");
 			}
 			changeDefaultDarkGreen(j);
 		});
@@ -231,10 +245,12 @@ function filterFullMatch(){
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appeared");
 			}
 			
-			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkGreen.length].length; i ++){
-				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkGreen.length].item(i).style.display = "inline-block";
+			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkBlue].length; i ++){
+				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkBlue].item(i).style.display = "inline-block";
+				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkBlue].item(i).classList.add("appeared");
 			}
 			changeDefaultDarkBlue(j);
 		});
