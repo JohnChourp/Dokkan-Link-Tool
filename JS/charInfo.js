@@ -16,6 +16,13 @@ function charInfo(){
 			charBaseType.item(i).innerHTML = "";
 			charBaseType.item(i).appendChild(charBaseTypeImage);
 			
+			if(charType.item(i).innerHTML === "normal"){
+				charTypeImage.classList.add("card-type");
+				charTypeImage.src = "CharacterType/char_type_agl.png";
+				charType.item(i).innerHTML = "";
+				charType.item(i).appendChild(charTypeImage);
+			}
+			
 			if(charType.item(i).innerHTML === "super"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_super_agl.png";
@@ -36,6 +43,13 @@ function charInfo(){
 			charBaseTypeImage.src = "CharacterBase/char_base_int.png";
 			charBaseType.item(i).innerHTML = "";
 			charBaseType.item(i).appendChild(charBaseTypeImage);
+			
+			if(charType.item(i).innerHTML === "normal"){
+				charTypeImage.classList.add("card-type");
+				charTypeImage.src = "CharacterType/char_type_int.png";
+				charType.item(i).innerHTML = "";
+				charType.item(i).appendChild(charTypeImage);
+			}
 			
 			if(charType.item(i).innerHTML === "super"){
 				charTypeImage.classList.add("card-type");
@@ -58,6 +72,13 @@ function charInfo(){
 			charBaseType.item(i).innerHTML = "";
 			charBaseType.item(i).appendChild(charBaseTypeImage);
 			
+			if(charType.item(i).innerHTML === "normal"){
+				charTypeImage.classList.add("card-type");
+				charTypeImage.src = "CharacterType/char_type_phy.png";
+				charType.item(i).innerHTML = "";
+				charType.item(i).appendChild(charTypeImage);
+			}
+			
 			if(charType.item(i).innerHTML === "super"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_super_phy.png";
@@ -79,6 +100,13 @@ function charInfo(){
 			charBaseType.item(i).innerHTML = "";
 			charBaseType.item(i).appendChild(charBaseTypeImage);
 			
+			if(charType.item(i).innerHTML === "normal"){
+				charTypeImage.classList.add("card-type");
+				charTypeImage.src = "CharacterType/char_type_str.png";
+				charType.item(i).innerHTML = "";
+				charType.item(i).appendChild(charTypeImage);
+			}
+			
 			if(charType.item(i).innerHTML === "super"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_super_str.png";
@@ -99,6 +127,13 @@ function charInfo(){
 			charBaseTypeImage.src = "CharacterBase/char_base_teq.png";
 			charBaseType.item(i).innerHTML = "";
 			charBaseType.item(i).appendChild(charBaseTypeImage);
+			
+			if(charType.item(i).innerHTML === "normal"){
+				charTypeImage.classList.add("card-type");
+				charTypeImage.src = "CharacterType/char_type_teq.png";
+				charType.item(i).innerHTML = "";
+				charType.item(i).appendChild(charTypeImage);
+			}
 			
 			if(charType.item(i).innerHTML === "super"){
 				charTypeImage.classList.add("card-type");
@@ -126,5 +161,47 @@ function charInfo(){
 			charRarityType.item(i).innerHTML = "";
 			charRarityType.item(i).appendChild(charRarityImage);
 		}
+		
+		if(charRarityType.item(i).innerHTML === "ur"){
+			charRarityImage.classList.add("card-rarity");
+			charRarityImage.src = "CharacterRarity/char_rarity_ur.png";
+			charRarityType.item(i).innerHTML = "";
+			charRarityType.item(i).appendChild(charRarityImage);
+		}
+		
+		if(charRarityType.item(i).innerHTML === "ssr"){
+			charRarityImage.classList.add("card-rarity");
+			charRarityImage.src = "CharacterRarity/char_rarity_ssr.png";
+			charRarityType.item(i).innerHTML = "";
+			charRarityType.item(i).appendChild(charRarityImage);
+		}
+		
+		if(charRarityType.item(i).innerHTML === "sr"){
+			charRarityImage.classList.add("card-rarity");
+			charRarityImage.src = "CharacterRarity/char_rarity_sr.png";
+			charRarityType.item(i).innerHTML = "";
+			charRarityType.item(i).appendChild(charRarityImage);
+		}
+		
+		if(charRarityType.item(i).innerHTML === "r"){
+			charRarityImage.classList.add("card-rarity");
+			charRarityImage.src = "CharacterRarity/char_rarity_r.png";
+			charRarityType.item(i).innerHTML = "";
+			charRarityType.item(i).appendChild(charRarityImage);
+		}
+		
+		if(charRarityType.item(i).innerHTML === "n"){
+			charRarityImage.classList.add("card-rarity");
+			charRarityImage.src = "CharacterRarity/char_rarity_n.png";
+			charRarityType.item(i).innerHTML = "";
+			charRarityType.item(i).appendChild(charRarityImage);
+		}
 	}
 }
+function loadingScriptFile(){
+	window.addEventListener('load',function(){
+		let container = document.getElementsByClassName("container-cards").item(0);
+		container.style.display = "block";
+	});
+}
+loadingScriptFile();
