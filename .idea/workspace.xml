@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="improved filter type">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="now all categories work properply with the type filter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/filterFullMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterFullMatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +98,7 @@
       <workItem from="1648365412980" duration="8897000" />
       <workItem from="1648375549284" duration="606000" />
       <workItem from="1648378782563" duration="7487000" />
-      <workItem from="1648399584740" duration="1155000" />
+      <workItem from="1648399584740" duration="2563000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -260,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648386236052</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="now all categories work properply with the type filter">
+      <created>1648400792378</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1648400792378</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +309,7 @@
     <MESSAGE value="added 40 more characters" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="improved filter type" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved filter type" />
+    <MESSAGE value="now all categories work properply with the type filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="now all categories work properply with the type filter" />
   </component>
 </project>

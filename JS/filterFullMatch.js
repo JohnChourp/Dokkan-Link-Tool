@@ -524,7 +524,7 @@ function initTypeFilter(){
 	});
 }
 
-function hoverThumbInit(){
+function resetFilterType(){
 	document.getElementsByClassName("typeFilter").item(0).classList.add("typeFilterShow");
 	document.getElementsByClassName("CategoriesFilter").item(0).classList.remove("CategoriesFilterShow");
 	
@@ -543,6 +543,14 @@ function hoverThumbInit(){
 	let teq_filter = document.getElementById("teq");
 	teq_filter.style.backgroundColor = "#008E08";
 	
+	let categories = document.getElementsByClassName("categories");
+	for(let i = 0; i < categories.length; i ++){
+		categories.item(i).classList.remove("appeared");
+	}
+}
+
+function hoverCategories(){
+	resetFilterType();
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
 	
 	for(let i = 0; i < categoriesOrange.length; i ++){
