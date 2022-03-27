@@ -4,9 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="now partial match working properly">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="now categories button are a little pretier">
+      <change afterPath="$PROJECT_DIR$/CharacterRarity/char_rarity_n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterRarity/char_rarity_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterRarity/char_rarity_sr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterRarity/char_rarity_ssr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterRarity/char_rarity_ur.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000010_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000020_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000030_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000040_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000050_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000060_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000070_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000080_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000090_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000100_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterType/char_type_agl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterType/char_type_int.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterType/char_type_phy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterType/char_type_str.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterType/char_type_teq.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/categories.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/categories.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/charInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/charInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +85,11 @@
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CategoryThumb" />
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterThumb" />
+      <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterRarity" />
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterType" />
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterBase" />
-      <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterRarity" />
+      <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CategoryThumb" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -86,7 +108,7 @@
       <workItem from="1648316674094" duration="1557000" />
       <workItem from="1648318255460" duration="12816000" />
       <workItem from="1648332986583" duration="15000" />
-      <workItem from="1648365412980" duration="2006000" />
+      <workItem from="1648365412980" duration="5643000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -214,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648331642891</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="now categories button are a little pretier">
+      <created>1648367555900</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1648367555900</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +279,7 @@
     <MESSAGE value="now orange and green categories are functioning as expected" />
     <MESSAGE value="now yellow and cyan categories are working properly" />
     <MESSAGE value="now all categories are working properly and full match is complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="now all categories are working properly and full match is complete" />
+    <MESSAGE value="now categories button are a little pretier" />
+    <option name="LAST_COMMIT_MESSAGE" value="now categories button are a little pretier" />
   </component>
 </project>
