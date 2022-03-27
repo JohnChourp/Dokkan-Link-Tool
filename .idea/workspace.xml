@@ -4,30 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="now categories button are a little pretier">
-      <change afterPath="$PROJECT_DIR$/CharacterRarity/char_rarity_n.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterRarity/char_rarity_r.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterRarity/char_rarity_sr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterRarity/char_rarity_ssr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterRarity/char_rarity_ur.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000010_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000020_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000030_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000040_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000050_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000060_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000070_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000080_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000090_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000100_thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterType/char_type_agl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterType/char_type_int.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterType/char_type_phy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterType/char_type_str.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CharacterType/char_type_teq.png" afterDir="false" />
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added 10 more characters">
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000110_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000120_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000130_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000140_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000150_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000160_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000170_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000180_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000190_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000200_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000210_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000220_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000230_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000240_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000250_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000260_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000270_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000280_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000290_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000300_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000310_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000320_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000330_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000340_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000350_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000360_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000370_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000380_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000390_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000400_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000410_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000420_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000430_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000440_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000450_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000460_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000470_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000480_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000490_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000500_thumb.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/charInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/charInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +126,7 @@
       <workItem from="1648316674094" duration="1557000" />
       <workItem from="1648318255460" duration="12816000" />
       <workItem from="1648332986583" duration="15000" />
-      <workItem from="1648365412980" duration="5643000" />
+      <workItem from="1648365412980" duration="8077000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -243,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648367555900</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added 10 more characters">
+      <created>1648371414976</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1648371414976</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +305,7 @@
     <MESSAGE value="now yellow and cyan categories are working properly" />
     <MESSAGE value="now all categories are working properly and full match is complete" />
     <MESSAGE value="now categories button are a little pretier" />
-    <option name="LAST_COMMIT_MESSAGE" value="now categories button are a little pretier" />
+    <MESSAGE value="added 10 more characters" />
+    <option name="LAST_COMMIT_MESSAGE" value="added 10 more characters" />
   </component>
 </project>
