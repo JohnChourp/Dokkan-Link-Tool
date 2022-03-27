@@ -85,6 +85,8 @@ function filterFullMatch(){
 	catList[80] = document.getElementsByClassName("c");
 	catList[81] = document.getElementsByClassName("dbh");
 	
+	let appearedType = document.getElementsByClassName("appearedType");
+	
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
 	
 	for(let j = 0; j < categoriesOrange.length; j ++){
@@ -99,6 +101,16 @@ function filterFullMatch(){
 			for(let i = 0; i < catList[j].length; i ++){
 				catList[j].item(i).style.display = "inline-block";
 				catList[j].item(i).classList.add("appeared");
+			}
+			if(appearedType.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appeared");
+				}
+				for(let i = 0; i < catList[j].length; i ++){
+					appearedType.item(i).style.display = "inline-block";
+					appearedType.item(i).classList.add("appeared");
+				}
 			}
 			changeDefaultOrange(j);
 		});
@@ -119,6 +131,16 @@ function filterFullMatch(){
 				catList[j + categoriesOrange.length].item(i).style.display = "inline-block";
 				catList[j + categoriesOrange.length].item(i).classList.add("appeared");
 			}
+			if(appearedType.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appeared");
+				}
+				for(let i = 0; i < catList[j].length; i ++){
+					appearedType.item(i).style.display = "inline-block";
+					appearedType.item(i).classList.add("appeared");
+				}
+			}
 			changeDefaultGreen(j);
 		});
 	}
@@ -137,6 +159,16 @@ function filterFullMatch(){
 			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length].length; i ++){
 				catList[j + categoriesOrange.length + categoriesGreen.length].item(i).style.display = "inline-block";
 				catList[j + categoriesOrange.length + categoriesGreen.length].item(i).classList.add("appeared");
+			}
+			if(appearedType.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appeared");
+				}
+				for(let i = 0; i < catList[j].length; i ++){
+					appearedType.item(i).style.display = "inline-block";
+					appearedType.item(i).classList.add("appeared");
+				}
 			}
 			changeDefaultYellow(j);
 		});
@@ -157,6 +189,16 @@ function filterFullMatch(){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length].item(i).style.display = "inline-block";
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length].item(i).classList.add("appeared");
 			}
+			if(appearedType.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appeared");
+				}
+				for(let i = 0; i < catList[j].length; i ++){
+					appearedType.item(i).style.display = "inline-block";
+					appearedType.item(i).classList.add("appeared");
+				}
+			}
 			changeDefaultCyan(j);
 		});
 	}
@@ -175,6 +217,16 @@ function filterFullMatch(){
 			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length].length; i ++){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length].item(i).style.display = "inline-block";
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length].item(i).classList.add("appeared");
+			}
+			if(appearedType.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appeared");
+				}
+				for(let i = 0; i < catList[j].length; i ++){
+					appearedType.item(i).style.display = "inline-block";
+					appearedType.item(i).classList.add("appeared");
+				}
 			}
 			changeDefaultBlue(j);
 		});
@@ -195,6 +247,16 @@ function filterFullMatch(){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length].item(i).style.display = "inline-block";
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length].item(i).classList.add("appeared");
 			}
+			if(appearedType.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appeared");
+				}
+				for(let i = 0; i < catList[j].length; i ++){
+					appearedType.item(i).style.display = "inline-block";
+					appearedType.item(i).classList.add("appeared");
+				}
+			}
 			changeDefaultPurple(j);
 		});
 	}
@@ -213,6 +275,16 @@ function filterFullMatch(){
 			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].length; i ++){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].item(i).style.display = "inline-block";
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].item(i).classList.add("appeared");
+			}
+			if(appearedType.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appeared");
+				}
+				for(let i = 0; i < catList[j].length; i ++){
+					appearedType.item(i).style.display = "inline-block";
+					appearedType.item(i).classList.add("appeared");
+				}
 			}
 			changeDefaultRed(j);
 		});
@@ -233,6 +305,16 @@ function filterFullMatch(){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].item(i).style.display = "inline-block";
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].item(i).classList.add("appeared");
 			}
+			if(appearedType.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appeared");
+				}
+				for(let i = 0; i < catList[j].length; i ++){
+					appearedType.item(i).style.display = "inline-block";
+					appearedType.item(i).classList.add("appeared");
+				}
+			}
 			changeDefaultDarkGreen(j);
 		});
 	}
@@ -251,6 +333,16 @@ function filterFullMatch(){
 			for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkBlue].length; i ++){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkBlue].item(i).style.display = "inline-block";
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkBlue].item(i).classList.add("appeared");
+			}
+			if(appearedType.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appeared");
+				}
+				for(let i = 0; i < catList[j].length; i ++){
+					appearedType.item(i).style.display = "inline-block";
+					appearedType.item(i).classList.add("appeared");
+				}
 			}
 			changeDefaultDarkBlue(j);
 		});
@@ -275,6 +367,7 @@ function hideAllCat(){
 function initTypeFilter(){
 	let categories = document.getElementsByClassName("categories");
 	let charBaseType = document.getElementsByClassName("char-base-type");
+	let cardType = document.getElementsByClassName("card-type");
 	let appeared = document.getElementsByClassName("appeared");
 	
 	let agl_filter = document.getElementById("agl");
@@ -282,6 +375,8 @@ function initTypeFilter(){
 	let phy_filter = document.getElementById("phy");
 	let str_filter = document.getElementById("str");
 	let teq_filter = document.getElementById("teq");
+	let super_type_filter = document.getElementById("super_type");
+	let extreme_type_filter = document.getElementById("extreme_type");
 	
 	agl_filter.addEventListener('click' , function(){
 		for(let i = 0; i < charBaseType.length; i ++){
@@ -328,6 +423,12 @@ function initTypeFilter(){
 			
 			teq_filter.style.backgroundColor = "#008E08";
 			teq_filter.classList.remove("checkedTypeBtn");
+			
+			super_type_filter.style.backgroundColor = "#6E6E6E";
+			super_type_filter.classList.remove("checkedTypeBtn");
+			
+			extreme_type_filter.style.backgroundColor = "#6E6E6E";
+			extreme_type_filter.classList.remove("checkedTypeBtn");
 		}
 	});
 	
@@ -376,6 +477,12 @@ function initTypeFilter(){
 			
 			teq_filter.style.backgroundColor = "#008E08";
 			teq_filter.classList.remove("checkedTypeBtn");
+			
+			super_type_filter.style.backgroundColor = "#6E6E6E";
+			super_type_filter.classList.remove("checkedTypeBtn");
+			
+			extreme_type_filter.style.backgroundColor = "#6E6E6E";
+			extreme_type_filter.classList.remove("checkedTypeBtn");
 		}
 	});
 	
@@ -424,6 +531,12 @@ function initTypeFilter(){
 			
 			teq_filter.style.backgroundColor = "#008E08";
 			teq_filter.classList.remove("checkedTypeBtn");
+			
+			super_type_filter.style.backgroundColor = "#6E6E6E";
+			super_type_filter.classList.remove("checkedTypeBtn");
+			
+			extreme_type_filter.style.backgroundColor = "#6E6E6E";
+			extreme_type_filter.classList.remove("checkedTypeBtn");
 		}
 	});
 	
@@ -472,6 +585,12 @@ function initTypeFilter(){
 			
 			teq_filter.style.backgroundColor = "#008E08";
 			teq_filter.classList.remove("checkedTypeBtn");
+			
+			super_type_filter.style.backgroundColor = "#6E6E6E";
+			super_type_filter.classList.remove("checkedTypeBtn");
+			
+			extreme_type_filter.style.backgroundColor = "#6E6E6E";
+			extreme_type_filter.classList.remove("checkedTypeBtn");
 		}
 	});
 	
@@ -520,6 +639,119 @@ function initTypeFilter(){
 			
 			str_filter.style.backgroundColor = "#CE2C33";
 			str_filter.classList.remove("checkedTypeBtn");
+			
+			super_type_filter.style.backgroundColor = "#6E6E6E";
+			super_type_filter.classList.remove("checkedTypeBtn");
+			
+			extreme_type_filter.style.backgroundColor = "#6E6E6E";
+			extreme_type_filter.classList.remove("checkedTypeBtn");
+		}
+	});
+	super_type_filter.addEventListener('click' , function(){
+		for(let i = 0; i < charBaseType.length; i ++){
+			if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png")) {
+				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appearedType");
+			}else{
+				categories.item(i).style.display = "inline-block";
+				categories.item(i).classList.add("appearedType");
+			}
+		}
+		
+		for(let i = 0; i < charBaseType.length; i ++){
+			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
+				categories.item(i).style.display = "inline-block";
+			}else{
+				categories.item(i).style.display = "none";
+			}
+		}
+		
+		if(appeared.length < 1){
+			for(let i = 0; i < charBaseType.length; i ++){
+				if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png")) {
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}else{
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}
+			}
+		}
+		if(!super_type_filter.classList.contains("checkedTypeBtn")){
+			super_type_filter.style.backgroundColor = "#EEC310";
+			super_type_filter.classList.add("checkedTypeBtn");
+			
+			agl_filter.style.backgroundColor = "#076CDC";
+			agl_filter.classList.remove("checkedTypeBtn");
+			
+			int_filter.style.backgroundColor = "#A75EC2";
+			int_filter.classList.remove("checkedTypeBtn");
+			
+			phy_filter.style.backgroundColor = "#A55D03";
+			phy_filter.classList.remove("checkedTypeBtn");
+			
+			str_filter.style.backgroundColor = "#CE2C33";
+			str_filter.classList.remove("checkedTypeBtn");
+			
+			teq_filter.style.backgroundColor = "#008E08";
+			teq_filter.classList.remove("checkedTypeBtn");
+			
+			extreme_type_filter.style.backgroundColor = "#6E6E6E";
+			extreme_type_filter.classList.remove("checkedTypeBtn");
+		}
+	});
+	
+	extreme_type_filter.addEventListener('click' , function(){
+		for(let i = 0; i < charBaseType.length; i ++){
+			if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png")) {
+				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appearedType");
+			}else{
+				categories.item(i).style.display = "inline-block";
+				categories.item(i).classList.add("appearedType");
+			}
+		}
+		
+		for(let i = 0; i < charBaseType.length; i ++){
+			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
+				categories.item(i).style.display = "inline-block";
+			}else{
+				categories.item(i).style.display = "none";
+			}
+		}
+		
+		if(appeared.length < 1){
+			for(let i = 0; i < charBaseType.length; i ++){
+				if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png")) {
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}else{
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}
+			}
+		}
+		if(!extreme_type_filter.classList.contains("checkedTypeBtn")){
+			extreme_type_filter.style.backgroundColor = "#EEC310";
+			extreme_type_filter.classList.add("checkedTypeBtn");
+			
+			agl_filter.style.backgroundColor = "#076CDC";
+			agl_filter.classList.remove("checkedTypeBtn");
+			
+			int_filter.style.backgroundColor = "#A75EC2";
+			int_filter.classList.remove("checkedTypeBtn");
+			
+			phy_filter.style.backgroundColor = "#A55D03";
+			phy_filter.classList.remove("checkedTypeBtn");
+			
+			str_filter.style.backgroundColor = "#CE2C33";
+			str_filter.classList.remove("checkedTypeBtn");
+			
+			teq_filter.style.backgroundColor = "#008E08";
+			teq_filter.classList.remove("checkedTypeBtn");
+			
+			super_type_filter.style.backgroundColor = "#6E6E6E";
+			super_type_filter.classList.remove("checkedTypeBtn");
 		}
 	});
 }
