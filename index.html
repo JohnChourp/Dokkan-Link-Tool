@@ -4,11 +4,12 @@
 	<meta charset="UTF-8">
 	<link href="CSS/index.css" rel="stylesheet" type="text/css"/>
 	<link href="CSS/categories.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/type.css" rel="stylesheet" type="text/css"/>
 	<script src="JS/filterFullMatch.js" type="text/javascript"></script>
 	<script src="JS/charInfo.js" type="text/javascript"></script>
 	<title>Dokkan Link Tool</title>
 </head>
-<body onload="charInfo();">
+<body onload="charInfo(); initTypeFilter();">
 <label class="container">Full Match
 	<input id="full-match-input" checked type="radio" name="radio">
 	<span class="checkmark"></span>
@@ -18,8 +19,23 @@
 	<span class="checkmark"></span>
 </label>
 <br><br>
-<button onclick="showAllCat();">Show All</button>
+<button onclick="showAllCharacters();">Show All</button>
 <button onclick="filterFullMatch(); hoverThumbInit();" id="select_category" type="button">Select Category</button>
+<button onclick="hideAllCat();" id="select_type" type="button">Select Type</button>
+<div class="typeFilter typeFilterShow">
+	<div class="allTypes">
+		<button class="type-btn" id="agl" type="button">AGL</button>
+		<button class="type-btn" id="int" type="button">INT</button>
+		<button class="type-btn" id="phy" type="button">PHY</button>
+		<button class="type-btn" id="str" type="button">STR</button>
+		<button class="type-btn" id="teq" type="button">TEQ</button>
+	</div>
+	<br><br>
+	<div class="superOrExtremeType">
+		<button class="type-btn" id="super_type" type="button">Super</button>
+		<button class="type-btn" id="extreme_type" type="button">Extreme</button>
+	</div>
+</div>
 <div class="CategoriesFilter CategoriesFilterShow">
 	<div class="categoriesOrange">
 		<button class="categories-btn categories-btn-orange" id="ds" type="button">DB Saga</button>
