@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="now super and extreme type filter is working almost properly">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="simplified activeCategory class added when press a category">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/filterFullMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterFullMatch.js" afterDir="false" />
     </list>
@@ -99,7 +99,7 @@
       <workItem from="1648378782563" duration="7487000" />
       <workItem from="1648399584740" duration="3535000" />
       <workItem from="1648407062169" duration="1956000" />
-      <workItem from="1648484829278" duration="2346000" />
+      <workItem from="1648484829278" duration="4453000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -276,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648403988494</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="simplified activeCategory class added when press a category">
+      <created>1648487453773</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1648487453774</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +326,7 @@
     <MESSAGE value="improved filter type" />
     <MESSAGE value="now all categories work properply with the type filter" />
     <MESSAGE value="minor bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor bug fixes" />
+    <MESSAGE value="simplified activeCategory class added when press a category" />
+    <option name="LAST_COMMIT_MESSAGE" value="simplified activeCategory class added when press a category" />
   </component>
 </project>
