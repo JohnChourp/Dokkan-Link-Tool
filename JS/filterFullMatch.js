@@ -309,24 +309,21 @@ function filterFullMatch(){
 	}
 }
 
-function showAllCharacters(){
+function ResetSelectionFilters(){
 	let categories = document.getElementsByClassName("categories");
+	let categoriesBtn = document.getElementsByClassName("categories-btn");
+	
 	for(let i = 0; i < categories.length; i ++){
 		categories.item(i).style.display = "inline-block";
 		categories.item(i).classList.remove("appeared");
 		categories.item(i).classList.remove("appearedType");
+		categories.item(i).classList.remove("appearedSuperType");
+		categories.item(i).classList.remove("appearedExtremeType");
 	}
 	
-}
-
-function hideAllCat(){
-	document.getElementsByClassName("CategoriesFilter").item(0).classList.add("CategoriesFilterShow");
-	document.getElementsByClassName("typeFilter").item(0).classList.remove("typeFilterShow");
-}
-
-function resetFilterType(){
-	document.getElementsByClassName("typeFilter").item(0).classList.add("typeFilterShow");
-	document.getElementsByClassName("CategoriesFilter").item(0).classList.remove("CategoriesFilterShow");
+	for(let i = 0; i < categoriesBtn.length; i ++){
+		categoriesBtn.item(i).classList.remove("activeCategory");
+	}
 	
 	let agl_filter = document.getElementById("agl");
 	agl_filter.style.backgroundColor = "#076CDC";
@@ -343,16 +340,61 @@ function resetFilterType(){
 	let teq_filter = document.getElementById("teq");
 	teq_filter.style.backgroundColor = "#008E08";
 	
-	let categories = document.getElementsByClassName("categories");
-	for(let i = 0; i < categories.length; i ++){
-		categories.item(i).classList.remove("appeared");
+	let super_filter = document.getElementById("super_type");
+	super_filter.style.backgroundColor = "#6E6E6E";
+	
+	let extreme_filter = document.getElementById("extreme_type");
+	extreme_filter.style.backgroundColor = "#6E6E6E";
+	
+	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
+	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
+	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
+	let categoriesRed = document.getElementsByClassName("categories-btn-red");
+	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
+	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
+	
+	for(let i=0;i<categoriesOrange.length;i++){
+		categoriesOrange.item(i).style.backgroundColor = "#83451F";
+	}
+	for(let i=0;i<categoriesGreen.length;i++){
+		categoriesGreen.item(i).style.backgroundColor = "#56941D";
+	}
+	for(let i=0;i<categoriesYellow.length;i++){
+		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+	}
+	for(let i=0;i<categoriesCyan.length;i++){
+		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
+	}
+	for(let i=0;i<categoriesBlue.length;i++){
+		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
+	}
+	for(let i=0;i<categoriesPurple.length;i++){
+		categoriesPurple.item(i).style.backgroundColor = "#482077";
+	}
+	for(let i=0;i<categoriesRed.length;i++){
+		categoriesRed.item(i).style.backgroundColor = "#881539";
+	}
+	for(let i=0;i<categoriesDarkGreen.length;i++){
+		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
+	}
+	for(let i=0;i<categoriesDarkBlue.length;i++){
+		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
 	}
 }
 
+function showFilterType(){
+	document.getElementsByClassName("typeFilter").item(0).classList.remove("typeFilterShow");
+}
+
+function showCategories(){
+	document.getElementsByClassName("CategoriesFilter").item(0).classList.remove("CategoriesFilterShow");
+}
+
 function hoverCategories(){
-	resetFilterType();
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
-	
 	for(let i = 0; i < categoriesOrange.length; i ++){
 		categoriesOrange.item(i).onmouseover = function(){
 			categoriesOrange.item(i).style.backgroundColor = "#FDAC67";
@@ -374,7 +416,6 @@ function hoverCategories(){
 	}
 	
 	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
-	
 	for(let i = 0; i < categoriesGreen.length; i ++){
 		categoriesGreen.item(i).onmouseover = function(){
 			categoriesGreen.item(i).style.backgroundColor = "#ADF373";
@@ -396,7 +437,6 @@ function hoverCategories(){
 	}
 	
 	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
-	
 	for(let i = 0; i < categoriesYellow.length; i ++){
 		categoriesYellow.item(i).onmouseover = function(){
 			categoriesYellow.item(i).style.backgroundColor = "#FFDD79";
@@ -418,7 +458,6 @@ function hoverCategories(){
 	}
 	
 	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
-	
 	for(let i = 0; i < categoriesCyan.length; i ++){
 		categoriesCyan.item(i).onmouseover = function(){
 			categoriesCyan.item(i).style.backgroundColor = "#A0FFFF";
@@ -440,7 +479,6 @@ function hoverCategories(){
 	}
 	
 	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
-	
 	for(let i = 0; i < categoriesBlue.length; i ++){
 		categoriesBlue.item(i).onmouseover = function(){
 			categoriesBlue.item(i).style.backgroundColor = "#5395FD";
@@ -462,7 +500,6 @@ function hoverCategories(){
 	}
 	
 	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
-	
 	for(let i = 0; i < categoriesPurple.length; i ++){
 		categoriesPurple.item(i).onmouseover = function(){
 			categoriesPurple.item(i).style.backgroundColor = "#BD88FF";
@@ -484,7 +521,6 @@ function hoverCategories(){
 	}
 	
 	let categoriesRed = document.getElementsByClassName("categories-btn-red");
-	
 	for(let i = 0; i < categoriesRed.length; i ++){
 		categoriesRed.item(i).onmouseover = function(){
 			categoriesRed.item(i).style.backgroundColor = "#FD5E94";
@@ -506,7 +542,6 @@ function hoverCategories(){
 	}
 	
 	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
-	
 	for(let i = 0; i < categoriesDarkGreen.length; i ++){
 		categoriesDarkGreen.item(i).onmouseover = function(){
 			categoriesDarkGreen.item(i).style.backgroundColor = "#73F6C4";
@@ -528,7 +563,6 @@ function hoverCategories(){
 	}
 	
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
-	
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
 		categoriesDarkBlue.item(i).onmouseover = function(){
 			categoriesDarkBlue.item(i).style.backgroundColor = "#4266E0";
