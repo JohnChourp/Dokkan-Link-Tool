@@ -1,97 +1,30 @@
 function filterFullMatch(){
 	let catList = [];
 	let categories = document.getElementsByClassName("categories");
-	
-	catList[0] = document.getElementsByClassName("ds");
-	catList[1] = document.getElementsByClassName("pns");
-	catList[2] = document.getElementsByClassName("acs");
-	catList[3] = document.getElementsByClassName("mbs");
-	catList[4] = document.getElementsByClassName("fs");
-	catList[5] = document.getElementsByClassName("uss");
-	catList[6] = document.getElementsByClassName("sds");
-	catList[7] = document.getElementsByClassName("ps");
-	catList[8] = document.getElementsByClassName("hs");
-	catList[9] = document.getElementsByClassName("e");
-	catList[10] = document.getElementsByClassName("n");
-	catList[11] = document.getElementsByClassName("a");
-	catList[12] = document.getElementsByClassName("alf");
-	catList[13] = document.getElementsByClassName("gfa");
-	catList[14] = document.getElementsByClassName("vf");
-	catList[15] = document.getElementsByClassName("wb");
-	catList[16] = document.getElementsByClassName("y");
-	catList[17] = document.getElementsByClassName("pg");
-	catList[18] = document.getElementsByClassName("ss");
-	catList[19] = document.getElementsByClassName("ss2");
-	catList[20] = document.getElementsByClassName("ss3");
-	catList[21] = document.getElementsByClassName("f");
-	catList[22] = document.getElementsByClassName("p");
-	catList[23] = document.getElementsByClassName("gfo");
-	catList[24] = document.getElementsByClassName("tbo");
-	catList[25] = document.getElementsByClassName("pa");
-	catList[26] = document.getElementsByClassName("k");
-	catList[27] = document.getElementsByClassName("rog");
-	catList[28] = document.getElementsByClassName("fp");
-	catList[29] = document.getElementsByClassName("gap");
-	catList[30] = document.getElementsByClassName("mp");
-	catList[31] = document.getElementsByClassName("pc");
-	catList[32] = document.getElementsByClassName("ma");
-	catList[33] = document.getElementsByClassName("cbam");
-	catList[34] = document.getElementsByClassName("rg");
-	catList[35] = document.getElementsByClassName("me");
-	catList[36] = document.getElementsByClassName("tl");
-	catList[37] = document.getElementsByClassName("ftc");
-	catList[38] = document.getElementsByClassName("wr");
-	catList[39] = document.getElementsByClassName("se");
-	catList[40] = document.getElementsByClassName("jf");
-	catList[41] = document.getElementsByClassName("sb");
-	catList[42] = document.getElementsByClassName("bof");
-	catList[43] = document.getElementsByClassName("bomad");
-	catList[44] = document.getElementsByClassName("gf");
-	catList[45] = document.getElementsByClassName("tba");
-	catList[46] = document.getElementsByClassName("u6");
-	catList[47] = document.getElementsByClassName("rou7");
-	catList[48] = document.getElementsByClassName("u11");
-	catList[49] = document.getElementsByClassName("gh");
-	catList[50] = document.getElementsByClassName("gb");
-	catList[51] = document.getElementsByClassName("mh");
-	catList[52] = document.getElementsByClassName("mb");
-	catList[53] = document.getElementsByClassName("ts");
-	catList[54] = document.getElementsByClassName("wt");
-	catList[55] = document.getElementsByClassName("lcw");
-	catList[56] = document.getElementsByClassName("gw");
-	catList[57] = document.getElementsByClassName("ow");
-	catList[58] = document.getElementsByClassName("rw");
-	catList[59] = document.getElementsByClassName("stw");
-	catList[60] = document.getElementsByClassName("tt");
-	catList[61] = document.getElementsByClassName("dbs");
-	catList[62] = document.getElementsByClassName("sf");
-	catList[63] = document.getElementsByClassName("le");
-	catList[64] = document.getElementsByClassName("s");
-	catList[65] = document.getElementsByClassName("doj");
-	catList[66] = document.getElementsByClassName("r");
-	catList[67] = document.getElementsByClassName("tg");
-	catList[68] = document.getElementsByClassName("tc");
-	catList[69] = document.getElementsByClassName("ide");
-	catList[70] = document.getElementsByClassName("pd");
-	catList[71] = document.getElementsByClassName("er");
-	catList[72] = document.getElementsByClassName("ch");
-	catList[73] = document.getElementsByClassName("ew");
-	catList[74] = document.getElementsByClassName("aos");
-	catList[75] = document.getElementsByClassName("bow");
-	catList[76] = document.getElementsByClassName("ab");
-	catList[77] = document.getElementsByClassName("he");
-	catList[78] = document.getElementsByClassName("sp");
-	catList[79] = document.getElementsByClassName("wc");
-	catList[80] = document.getElementsByClassName("c");
-	catList[81] = document.getElementsByClassName("dbh");
-	
+	let categoriesBtn = document.getElementsByClassName("categories-btn");
 	let appearedType = document.getElementsByClassName("appearedType");
+	
+	for(let i = 0; i < categoriesBtn.length; i ++){
+		catList[i] = document.getElementsByClassName(categoriesBtn.item(i).id);
+	}
 	
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
 	
 	for(let j = 0; j < categoriesOrange.length; j ++){
 		categoriesOrange.item(j).addEventListener("click" , function(){
-			categoriesOrange.item(j).classList.add("clicked");
+			//add and remove activeCategory
+			for(let i = 0; i < categoriesBtn.length; i ++){
+				categoriesBtn.item(j).classList.remove("activeCategory");
+			}
+			
+			categoriesOrange.item(j).classList.add("activeCategory");
+			
+			for(let i = 0; i < categoriesOrange.length; i ++){
+				if(i !== j){
+					categoriesOrange.item(i).classList.remove("activeCategory");
+				}
+			}
+			//add and remove activeCategory
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
@@ -102,6 +35,7 @@ function filterFullMatch(){
 				catList[j].item(i).style.display = "inline-block";
 				catList[j].item(i).classList.add("appeared");
 			}
+			
 			if(appearedType.length > 0){
 				for(let i = 0; i < categories.length; i ++){
 					categories.item(i).style.display = "none";
@@ -120,7 +54,19 @@ function filterFullMatch(){
 	
 	for(let j = 0; j < categoriesGreen.length; j ++){
 		categoriesGreen.item(j).addEventListener("click" , function(){
-			categoriesGreen.item(j).classList.add("clicked");
+			//add and remove activeCategory
+			for(let i = 0; i < categoriesBtn.length; i ++){
+				categoriesBtn.item(j).classList.remove("activeCategory");
+			}
+			
+			categoriesGreen.item(j).classList.add("activeCategory");
+			
+			for(let i = 0; i < categoriesGreen.length; i ++){
+				if(i !== j){
+					categoriesGreen.item(i).classList.remove("activeCategory");
+				}
+			}
+			//add and remove activeCategory
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
@@ -149,7 +95,19 @@ function filterFullMatch(){
 	
 	for(let j = 0; j < categoriesYellow.length; j ++){
 		categoriesYellow.item(j).addEventListener("click" , function(){
-			categoriesYellow.item(j).classList.add("clicked");
+			//add and remove activeCategory
+			for(let i = 0; i < categoriesBtn.length; i ++){
+				categoriesBtn.item(j).classList.remove("activeCategory");
+			}
+			
+			categoriesYellow.item(j).classList.add("activeCategory");
+			
+			for(let i = 0; i < categoriesYellow.length; i ++){
+				if(i !== j){
+					categoriesYellow.item(i).classList.remove("activeCategory");
+				}
+			}
+			//add and remove activeCategory
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
@@ -178,7 +136,19 @@ function filterFullMatch(){
 	
 	for(let j = 0; j < categoriesCyan.length; j ++){
 		categoriesCyan.item(j).addEventListener("click" , function(){
-			categoriesCyan.item(j).classList.add("clicked");
+			//add and remove activeCategory
+			for(let i = 0; i < categoriesBtn.length; i ++){
+				categoriesBtn.item(j).classList.remove("activeCategory");
+			}
+			
+			categoriesCyan.item(j).classList.add("activeCategory");
+			
+			for(let i = 0; i < categoriesCyan.length; i ++){
+				if(i !== j){
+					categoriesCyan.item(i).classList.remove("activeCategory");
+				}
+			}
+			//add and remove activeCategory
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
@@ -207,7 +177,19 @@ function filterFullMatch(){
 	
 	for(let j = 0; j < categoriesBlue.length; j ++){
 		categoriesBlue.item(j).addEventListener("click" , function(){
-			categoriesBlue.item(j).classList.add("clicked");
+			//add and remove activeCategory
+			for(let i = 0; i < categoriesBtn.length; i ++){
+				categoriesBtn.item(j).classList.remove("activeCategory");
+			}
+			
+			categoriesBlue.item(j).classList.add("activeCategory");
+			
+			for(let i = 0; i < categoriesBlue.length; i ++){
+				if(i !== j){
+					categoriesBlue.item(i).classList.remove("activeCategory");
+				}
+			}
+			//add and remove activeCategory
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
@@ -236,7 +218,19 @@ function filterFullMatch(){
 	
 	for(let j = 0; j < categoriesPurple.length; j ++){
 		categoriesPurple.item(j).addEventListener("click" , function(){
-			categoriesPurple.item(j).classList.add("clicked");
+			//add and remove activeCategory
+			for(let i = 0; i < categoriesBtn.length; i ++){
+				categoriesBtn.item(j).classList.remove("activeCategory");
+			}
+			
+			categoriesPurple.item(j).classList.add("activeCategory");
+			
+			for(let i = 0; i < categoriesPurple.length; i ++){
+				if(i !== j){
+					categoriesPurple.item(i).classList.remove("activeCategory");
+				}
+			}
+			//add and remove activeCategory
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
@@ -265,7 +259,19 @@ function filterFullMatch(){
 	
 	for(let j = 0; j < categoriesRed.length; j ++){
 		categoriesRed.item(j).addEventListener("click" , function(){
-			categoriesRed.item(j).classList.add("clicked");
+			//add and remove activeCategory
+			for(let i = 0; i < categoriesBtn.length; i ++){
+				categoriesBtn.item(j).classList.remove("activeCategory");
+			}
+			
+			categoriesRed.item(j).classList.add("activeCategory");
+			
+			for(let i = 0; i < categoriesRed.length; i ++){
+				if(i !== j){
+					categoriesRed.item(i).classList.remove("activeCategory");
+				}
+			}
+			//add and remove activeCategory
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
@@ -294,7 +300,19 @@ function filterFullMatch(){
 	
 	for(let j = 0; j < categoriesDarkGreen.length; j ++){
 		categoriesDarkGreen.item(j).addEventListener("click" , function(){
-			categoriesDarkGreen.item(j).classList.add("clicked");
+			//add and remove activeCategory
+			for(let i = 0; i < categoriesBtn.length; i ++){
+				categoriesBtn.item(j).classList.remove("activeCategory");
+			}
+			
+			categoriesDarkGreen.item(j).classList.add("activeCategory");
+			
+			for(let i = 0; i < categoriesDarkGreen.length; i ++){
+				if(i !== j){
+					categoriesDarkGreen.item(i).classList.remove("activeCategory");
+				}
+			}
+			//add and remove activeCategory
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
@@ -323,7 +341,19 @@ function filterFullMatch(){
 	
 	for(let j = 0; j < categoriesDarkBlue.length; j ++){
 		categoriesDarkBlue.item(j).addEventListener("click" , function(){
-			categoriesDarkBlue.item(j).classList.add("clicked");
+			//add and remove activeCategory
+			for(let i = 0; i < categoriesBtn.length; i ++){
+				categoriesBtn.item(j).classList.remove("activeCategory");
+			}
+			
+			categoriesDarkBlue.item(j).classList.add("activeCategory");
+			
+			for(let i = 0; i < categoriesDarkBlue.length; i ++){
+				if(i !== j){
+					categoriesDarkBlue.item(i).classList.remove("activeCategory");
+				}
+			}
+			//add and remove activeCategory
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
@@ -649,12 +679,14 @@ function initTypeFilter(){
 	});
 	super_type_filter.addEventListener('click' , function(){
 		for(let i = 0; i < charBaseType.length; i ++){
-			if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png")) {
+			if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png")){
 				categories.item(i).style.display = "none";
 				categories.item(i).classList.remove("appearedType");
+				categories.item(i).classList.remove("appearedSuperType");
 			}else{
 				categories.item(i).style.display = "inline-block";
 				categories.item(i).classList.add("appearedType");
+				categories.item(i).classList.add("appearedSuperType");
 			}
 		}
 		
@@ -668,12 +700,14 @@ function initTypeFilter(){
 		
 		if(appeared.length < 1){
 			for(let i = 0; i < charBaseType.length; i ++){
-				if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png")) {
+				if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png")){
 					categories.item(i).style.display = "none";
 					categories.item(i).classList.remove("appearedType");
+					categories.item(i).classList.remove("appearedSuperType");
 				}else{
 					categories.item(i).style.display = "inline-block";
 					categories.item(i).classList.add("appearedType");
+					categories.item(i).classList.add("appearedSuperType");
 				}
 			}
 		}
@@ -703,12 +737,14 @@ function initTypeFilter(){
 	
 	extreme_type_filter.addEventListener('click' , function(){
 		for(let i = 0; i < charBaseType.length; i ++){
-			if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png")) {
+			if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png")){
 				categories.item(i).style.display = "none";
 				categories.item(i).classList.remove("appearedType");
+				categories.item(i).classList.remove("appearedExtremeType");
 			}else{
 				categories.item(i).style.display = "inline-block";
 				categories.item(i).classList.add("appearedType");
+				categories.item(i).classList.add("appearedExtremeType");
 			}
 		}
 		
@@ -722,12 +758,14 @@ function initTypeFilter(){
 		
 		if(appeared.length < 1){
 			for(let i = 0; i < charBaseType.length; i ++){
-				if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png")) {
+				if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png")){
 					categories.item(i).style.display = "none";
 					categories.item(i).classList.remove("appearedType");
+					categories.item(i).classList.remove("appearedExtremeType");
 				}else{
 					categories.item(i).style.display = "inline-block";
 					categories.item(i).classList.add("appearedType");
+					categories.item(i).classList.add("appearedExtremeType");
 				}
 			}
 		}
@@ -788,14 +826,14 @@ function hoverCategories(){
 	for(let i = 0; i < categoriesOrange.length; i ++){
 		categoriesOrange.item(i).onmouseover = function(){
 			categoriesOrange.item(i).style.backgroundColor = "#FDAC67";
-			if(categoriesOrange.item(i).classList.contains("clicked")){
+			if(categoriesOrange.item(i).classList.contains("activeCategory")){
 				categoriesOrange.item(i).style.backgroundColor = "#FF6200";
 			}
 		}
 		
 		categoriesOrange.item(i).onmouseout = function(){
 			categoriesOrange.item(i).style.backgroundColor = "#83451F";
-			if(categoriesOrange.item(i).classList.contains("clicked")){
+			if(categoriesOrange.item(i).classList.contains("activeCategory")){
 				categoriesOrange.item(i).style.backgroundColor = "#FF6200";
 			}
 		}
@@ -810,14 +848,14 @@ function hoverCategories(){
 	for(let i = 0; i < categoriesGreen.length; i ++){
 		categoriesGreen.item(i).onmouseover = function(){
 			categoriesGreen.item(i).style.backgroundColor = "#ADF373";
-			if(categoriesGreen.item(i).classList.contains("clicked")){
+			if(categoriesGreen.item(i).classList.contains("activeCategory")){
 				categoriesGreen.item(i).style.backgroundColor = "#79FF00";
 			}
 		}
 		
 		categoriesGreen.item(i).onmouseout = function(){
 			categoriesGreen.item(i).style.backgroundColor = "#56941D";
-			if(categoriesGreen.item(i).classList.contains("clicked")){
+			if(categoriesGreen.item(i).classList.contains("activeCategory")){
 				categoriesGreen.item(i).style.backgroundColor = "#79FF00";
 			}
 		}
@@ -832,14 +870,14 @@ function hoverCategories(){
 	for(let i = 0; i < categoriesYellow.length; i ++){
 		categoriesYellow.item(i).onmouseover = function(){
 			categoriesYellow.item(i).style.backgroundColor = "#FFDD79";
-			if(categoriesYellow.item(i).classList.contains("clicked")){
+			if(categoriesYellow.item(i).classList.contains("activeCategory")){
 				categoriesYellow.item(i).style.backgroundColor = "#FFD800";
 			}
 		}
 		
 		categoriesYellow.item(i).onmouseout = function(){
 			categoriesYellow.item(i).style.backgroundColor = "#A28E23";
-			if(categoriesYellow.item(i).classList.contains("clicked")){
+			if(categoriesYellow.item(i).classList.contains("activeCategory")){
 				categoriesYellow.item(i).style.backgroundColor = "#FFD800";
 			}
 		}
@@ -854,14 +892,14 @@ function hoverCategories(){
 	for(let i = 0; i < categoriesCyan.length; i ++){
 		categoriesCyan.item(i).onmouseover = function(){
 			categoriesCyan.item(i).style.backgroundColor = "#A0FFFF";
-			if(categoriesCyan.item(i).classList.contains("clicked")){
+			if(categoriesCyan.item(i).classList.contains("activeCategory")){
 				categoriesCyan.item(i).style.backgroundColor = "#00E5E5";
 			}
 		}
 		
 		categoriesCyan.item(i).onmouseout = function(){
 			categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
-			if(categoriesCyan.item(i).classList.contains("clicked")){
+			if(categoriesCyan.item(i).classList.contains("activeCategory")){
 				categoriesCyan.item(i).style.backgroundColor = "#00E5E5";
 			}
 		}
@@ -876,14 +914,14 @@ function hoverCategories(){
 	for(let i = 0; i < categoriesBlue.length; i ++){
 		categoriesBlue.item(i).onmouseover = function(){
 			categoriesBlue.item(i).style.backgroundColor = "#5395FD";
-			if(categoriesBlue.item(i).classList.contains("clicked")){
+			if(categoriesBlue.item(i).classList.contains("activeCategory")){
 				categoriesBlue.item(i).style.backgroundColor = "#0067FF";
 			}
 		}
 		
 		categoriesBlue.item(i).onmouseout = function(){
 			categoriesBlue.item(i).style.backgroundColor = "#1D4477";
-			if(categoriesBlue.item(i).classList.contains("clicked")){
+			if(categoriesBlue.item(i).classList.contains("activeCategory")){
 				categoriesBlue.item(i).style.backgroundColor = "#0067FF";
 			}
 		}
@@ -898,14 +936,14 @@ function hoverCategories(){
 	for(let i = 0; i < categoriesPurple.length; i ++){
 		categoriesPurple.item(i).onmouseover = function(){
 			categoriesPurple.item(i).style.backgroundColor = "#BD88FF";
-			if(categoriesPurple.item(i).classList.contains("clicked")){
+			if(categoriesPurple.item(i).classList.contains("activeCategory")){
 				categoriesPurple.item(i).style.backgroundColor = "#6100FF";
 			}
 		}
 		
 		categoriesPurple.item(i).onmouseout = function(){
 			categoriesPurple.item(i).style.backgroundColor = "#482077";
-			if(categoriesPurple.item(i).classList.contains("clicked")){
+			if(categoriesPurple.item(i).classList.contains("activeCategory")){
 				categoriesPurple.item(i).style.backgroundColor = "#6100FF";
 			}
 		}
@@ -920,14 +958,14 @@ function hoverCategories(){
 	for(let i = 0; i < categoriesRed.length; i ++){
 		categoriesRed.item(i).onmouseover = function(){
 			categoriesRed.item(i).style.backgroundColor = "#FD5E94";
-			if(categoriesRed.item(i).classList.contains("clicked")){
+			if(categoriesRed.item(i).classList.contains("activeCategory")){
 				categoriesRed.item(i).style.backgroundColor = "#FF0054";
 			}
 		}
 		
 		categoriesRed.item(i).onmouseout = function(){
 			categoriesRed.item(i).style.backgroundColor = "#881539";
-			if(categoriesRed.item(i).classList.contains("clicked")){
+			if(categoriesRed.item(i).classList.contains("activeCategory")){
 				categoriesRed.item(i).style.backgroundColor = "#FF0054";
 			}
 		}
@@ -942,14 +980,14 @@ function hoverCategories(){
 	for(let i = 0; i < categoriesDarkGreen.length; i ++){
 		categoriesDarkGreen.item(i).onmouseover = function(){
 			categoriesDarkGreen.item(i).style.backgroundColor = "#73F6C4";
-			if(categoriesDarkGreen.item(i).classList.contains("clicked")){
+			if(categoriesDarkGreen.item(i).classList.contains("activeCategory")){
 				categoriesDarkGreen.item(i).style.backgroundColor = "#05BD76";
 			}
 		}
 		
 		categoriesDarkGreen.item(i).onmouseout = function(){
 			categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
-			if(categoriesDarkGreen.item(i).classList.contains("clicked")){
+			if(categoriesDarkGreen.item(i).classList.contains("activeCategory")){
 				categoriesDarkGreen.item(i).style.backgroundColor = "#05BD76";
 			}
 		}
@@ -964,14 +1002,14 @@ function hoverCategories(){
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
 		categoriesDarkBlue.item(i).onmouseover = function(){
 			categoriesDarkBlue.item(i).style.backgroundColor = "#4266E0";
-			if(categoriesDarkBlue.item(i).classList.contains("clicked")){
+			if(categoriesDarkBlue.item(i).classList.contains("activeCategory")){
 				categoriesDarkBlue.item(i).style.backgroundColor = "#002DC0";
 			}
 		}
 		
 		categoriesDarkBlue.item(i).onmouseout = function(){
 			categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
-			if(categoriesDarkBlue.item(i).classList.contains("clicked")){
+			if(categoriesDarkBlue.item(i).classList.contains("activeCategory")){
 				categoriesDarkBlue.item(i).style.backgroundColor = "#002DC0";
 			}
 		}
@@ -984,611 +1022,431 @@ function hoverCategories(){
 
 function changeDefaultOrange(n){
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
-	
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
 		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
-		categoriesDarkBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
-	
 	for(let i = 0; i < categoriesDarkGreen.length; i ++){
 		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
-		categoriesDarkGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesRed = document.getElementsByClassName("categories-btn-red");
-	
 	for(let i = 0; i < categoriesRed.length; i ++){
 		categoriesRed.item(i).style.backgroundColor = "#881539";
-		categoriesRed.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
-	
 	for(let i = 0; i < categoriesPurple.length; i ++){
 		categoriesPurple.item(i).style.backgroundColor = "#482077";
-		categoriesPurple.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
-	
 	for(let i = 0; i < categoriesBlue.length; i ++){
 		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
-		categoriesBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
-	
 	for(let i = 0; i < categoriesCyan.length; i ++){
 		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
-		categoriesCyan.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
-	
 	for(let i = 0; i < categoriesYellow.length; i ++){
 		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
-		categoriesYellow.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
-	
 	for(let i = 0; i < categoriesGreen.length; i ++){
 		categoriesGreen.item(i).style.backgroundColor = "#56941D";
-		categoriesGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
-	
 	for(let i = 0; i < categoriesOrange.length; i ++){
 		categoriesOrange.item(i).style.backgroundColor = "#83451F";
-		categoriesOrange.item(i).classList.remove("clicked");
 	}
-	
 	categoriesOrange.item(n).style.backgroundColor = "#FF6200";
-	categoriesOrange.item(n).classList.add("clicked");
 }
 
 function changeDefaultGreen(n){
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
-	
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
 		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
-		categoriesDarkBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
-	
 	for(let i = 0; i < categoriesDarkGreen.length; i ++){
 		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
-		categoriesDarkGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesRed = document.getElementsByClassName("categories-btn-red");
-	
 	for(let i = 0; i < categoriesRed.length; i ++){
 		categoriesRed.item(i).style.backgroundColor = "#881539";
-		categoriesRed.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
-	
 	for(let i = 0; i < categoriesPurple.length; i ++){
 		categoriesPurple.item(i).style.backgroundColor = "#482077";
-		categoriesPurple.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
-	
 	for(let i = 0; i < categoriesBlue.length; i ++){
 		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
-		categoriesBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
-	
 	for(let i = 0; i < categoriesCyan.length; i ++){
 		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
-		categoriesCyan.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
-	
 	for(let i = 0; i < categoriesYellow.length; i ++){
 		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
-		categoriesYellow.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
-	
 	for(let i = 0; i < categoriesOrange.length; i ++){
 		categoriesOrange.item(i).style.backgroundColor = "#83451F";
-		categoriesOrange.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
-	
 	for(let i = 0; i < categoriesGreen.length; i ++){
 		categoriesGreen.item(i).style.backgroundColor = "#56941D";
-		categoriesGreen.item(i).classList.remove("clicked");
 	}
-	
 	categoriesGreen.item(n).style.backgroundColor = "#79FF00";
-	categoriesGreen.item(n).classList.add("clicked");
 }
 
 function changeDefaultYellow(n){
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
-	
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
 		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
-		categoriesDarkBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
-	
 	for(let i = 0; i < categoriesDarkGreen.length; i ++){
 		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
-		categoriesDarkGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesRed = document.getElementsByClassName("categories-btn-red");
-	
 	for(let i = 0; i < categoriesRed.length; i ++){
 		categoriesRed.item(i).style.backgroundColor = "#881539";
-		categoriesRed.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
-	
 	for(let i = 0; i < categoriesPurple.length; i ++){
 		categoriesPurple.item(i).style.backgroundColor = "#482077";
-		categoriesPurple.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
-	
 	for(let i = 0; i < categoriesBlue.length; i ++){
 		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
-		categoriesBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
-	
 	for(let i = 0; i < categoriesCyan.length; i ++){
 		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
-		categoriesCyan.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
-	
 	for(let i = 0; i < categoriesOrange.length; i ++){
 		categoriesOrange.item(i).style.backgroundColor = "#83451F";
-		categoriesOrange.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
-	
 	for(let i = 0; i < categoriesGreen.length; i ++){
 		categoriesGreen.item(i).style.backgroundColor = "#56941D";
-		categoriesGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
-	
 	for(let i = 0; i < categoriesYellow.length; i ++){
 		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
-		categoriesYellow.item(i).classList.remove("clicked");
 	}
 	categoriesYellow.item(n).style.backgroundColor = "#FFD500";
-	categoriesYellow.item(n).classList.add("clicked");
 }
 
 function changeDefaultCyan(n){
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
-	
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
 		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
-		categoriesDarkBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
-	
 	for(let i = 0; i < categoriesDarkGreen.length; i ++){
 		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
-		categoriesDarkGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesRed = document.getElementsByClassName("categories-btn-red");
-	
 	for(let i = 0; i < categoriesRed.length; i ++){
 		categoriesRed.item(i).style.backgroundColor = "#881539";
-		categoriesRed.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
-	
 	for(let i = 0; i < categoriesPurple.length; i ++){
 		categoriesPurple.item(i).style.backgroundColor = "#482077";
-		categoriesPurple.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
-	
 	for(let i = 0; i < categoriesBlue.length; i ++){
 		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
-		categoriesBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
-	
 	for(let i = 0; i < categoriesOrange.length; i ++){
 		categoriesOrange.item(i).style.backgroundColor = "#83451F";
-		categoriesOrange.item(i).classList.remove("clicked");
 	}
-	
 	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
-	
 	for(let i = 0; i < categoriesGreen.length; i ++){
 		categoriesGreen.item(i).style.backgroundColor = "#56941D";
-		categoriesGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
-	
 	for(let i = 0; i < categoriesYellow.length; i ++){
 		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
-		categoriesYellow.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
-	
 	for(let i = 0; i < categoriesCyan.length; i ++){
 		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
-		categoriesCyan.item(i).classList.remove("clicked");
 	}
-	
 	categoriesCyan.item(n).style.backgroundColor = "#00E5E5";
-	categoriesCyan.item(n).classList.add("clicked");
 }
 
 function changeDefaultBlue(n){
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
-	
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
 		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
-		categoriesDarkBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
-	
 	for(let i = 0; i < categoriesDarkGreen.length; i ++){
 		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
-		categoriesDarkGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesRed = document.getElementsByClassName("categories-btn-red");
-	
 	for(let i = 0; i < categoriesRed.length; i ++){
 		categoriesRed.item(i).style.backgroundColor = "#881539";
-		categoriesRed.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
-	
 	for(let i = 0; i < categoriesPurple.length; i ++){
 		categoriesPurple.item(i).style.backgroundColor = "#482077";
-		categoriesPurple.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
-	
 	for(let i = 0; i < categoriesOrange.length; i ++){
 		categoriesOrange.item(i).style.backgroundColor = "#83451F";
-		categoriesOrange.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
-	
 	for(let i = 0; i < categoriesGreen.length; i ++){
 		categoriesGreen.item(i).style.backgroundColor = "#56941D";
-		categoriesGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
-	
 	for(let i = 0; i < categoriesYellow.length; i ++){
 		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
-		categoriesYellow.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
-	
 	for(let i = 0; i < categoriesCyan.length; i ++){
 		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
-		categoriesCyan.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
-	
 	for(let i = 0; i < categoriesBlue.length; i ++){
 		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
-		categoriesBlue.item(i).classList.remove("clicked");
 	}
-	
 	categoriesBlue.item(n).style.backgroundColor = "#0067FF";
-	categoriesBlue.item(n).classList.add("clicked");
 }
 
 function changeDefaultPurple(n){
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
-	
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
 		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
-		categoriesDarkBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
-	
 	for(let i = 0; i < categoriesDarkGreen.length; i ++){
 		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
-		categoriesDarkGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesRed = document.getElementsByClassName("categories-btn-red");
-	
 	for(let i = 0; i < categoriesRed.length; i ++){
 		categoriesRed.item(i).style.backgroundColor = "#881539";
-		categoriesRed.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
-	
 	for(let i = 0; i < categoriesOrange.length; i ++){
 		categoriesOrange.item(i).style.backgroundColor = "#83451F";
-		categoriesOrange.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
-	
 	for(let i = 0; i < categoriesGreen.length; i ++){
 		categoriesGreen.item(i).style.backgroundColor = "#56941D";
-		categoriesGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
-	
 	for(let i = 0; i < categoriesYellow.length; i ++){
 		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
-		categoriesYellow.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
-	
 	for(let i = 0; i < categoriesCyan.length; i ++){
 		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
-		categoriesCyan.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
-	
 	for(let i = 0; i < categoriesBlue.length; i ++){
 		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
-		categoriesBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
-	
 	for(let i = 0; i < categoriesPurple.length; i ++){
 		categoriesPurple.item(i).style.backgroundColor = "#482077";
-		categoriesPurple.item(i).classList.remove("clicked");
 	}
-	
 	categoriesPurple.item(n).style.backgroundColor = "#6100FF";
-	categoriesPurple.item(n).classList.add("clicked");
 }
 
 function changeDefaultRed(n){
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
-	
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
 		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
-		categoriesDarkBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
-	
 	for(let i = 0; i < categoriesDarkGreen.length; i ++){
 		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
-		categoriesDarkGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
-	
 	for(let i = 0; i < categoriesOrange.length; i ++){
 		categoriesOrange.item(i).style.backgroundColor = "#83451F";
-		categoriesOrange.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
-	
 	for(let i = 0; i < categoriesGreen.length; i ++){
 		categoriesGreen.item(i).style.backgroundColor = "#56941D";
-		categoriesGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
-	
 	for(let i = 0; i < categoriesYellow.length; i ++){
 		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
-		categoriesYellow.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
-	
 	for(let i = 0; i < categoriesCyan.length; i ++){
 		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
-		categoriesCyan.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
-	
 	for(let i = 0; i < categoriesBlue.length; i ++){
 		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
-		categoriesBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
-	
 	for(let i = 0; i < categoriesPurple.length; i ++){
 		categoriesPurple.item(i).style.backgroundColor = "#482077";
-		categoriesPurple.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesRed = document.getElementsByClassName("categories-btn-red");
-	
 	for(let i = 0; i < categoriesRed.length; i ++){
 		categoriesRed.item(i).style.backgroundColor = "#881539";
-		categoriesRed.item(i).classList.remove("clicked");
 	}
-	
 	categoriesRed.item(n).style.backgroundColor = "#FF0054";
-	categoriesRed.item(n).classList.add("clicked");
 }
 
 function changeDefaultDarkGreen(n){
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
-	
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
 		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
-		categoriesDarkBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
-	
 	for(let i = 0; i < categoriesOrange.length; i ++){
 		categoriesOrange.item(i).style.backgroundColor = "#83451F";
-		categoriesOrange.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
-	
 	for(let i = 0; i < categoriesGreen.length; i ++){
 		categoriesGreen.item(i).style.backgroundColor = "#56941D";
-		categoriesGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
-	
 	for(let i = 0; i < categoriesYellow.length; i ++){
 		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
-		categoriesYellow.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
-	
 	for(let i = 0; i < categoriesCyan.length; i ++){
 		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
-		categoriesCyan.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
-	
 	for(let i = 0; i < categoriesBlue.length; i ++){
 		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
-		categoriesBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
-	
 	for(let i = 0; i < categoriesPurple.length; i ++){
 		categoriesPurple.item(i).style.backgroundColor = "#482077";
-		categoriesPurple.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesRed = document.getElementsByClassName("categories-btn-red");
-	
 	for(let i = 0; i < categoriesRed.length; i ++){
 		categoriesRed.item(i).style.backgroundColor = "#881539";
-		categoriesRed.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
-	
 	for(let i = 0; i < categoriesDarkGreen.length; i ++){
 		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
-		categoriesDarkGreen.item(i).classList.remove("clicked");
 	}
-	
 	categoriesDarkGreen.item(n).style.backgroundColor = "#05BD76";
-	categoriesDarkGreen.item(n).classList.add("clicked");
 }
 
 function changeDefaultDarkBlue(n){
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
-	
 	for(let i = 0; i < categoriesOrange.length; i ++){
 		categoriesOrange.item(i).style.backgroundColor = "#83451F";
-		categoriesOrange.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
-	
 	for(let i = 0; i < categoriesGreen.length; i ++){
 		categoriesGreen.item(i).style.backgroundColor = "#56941D";
-		categoriesGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
-	
 	for(let i = 0; i < categoriesYellow.length; i ++){
 		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
-		categoriesYellow.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
-	
 	for(let i = 0; i < categoriesCyan.length; i ++){
 		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
-		categoriesCyan.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
-	
 	for(let i = 0; i < categoriesBlue.length; i ++){
 		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
-		categoriesBlue.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
-	
 	for(let i = 0; i < categoriesPurple.length; i ++){
 		categoriesPurple.item(i).style.backgroundColor = "#482077";
-		categoriesPurple.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesRed = document.getElementsByClassName("categories-btn-red");
-	
 	for(let i = 0; i < categoriesRed.length; i ++){
 		categoriesRed.item(i).style.backgroundColor = "#881539";
-		categoriesRed.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
-	
 	for(let i = 0; i < categoriesDarkGreen.length; i ++){
 		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
-		categoriesDarkGreen.item(i).classList.remove("clicked");
 	}
 	
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
-	
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
 		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
-		categoriesDarkBlue.item(i).classList.remove("clicked");
 	}
-	
 	categoriesDarkBlue.item(n).style.backgroundColor = "#002DC0";
-	categoriesDarkBlue.item(n).classList.add("clicked");
 }
