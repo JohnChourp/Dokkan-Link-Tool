@@ -324,406 +324,6 @@ function hideAllCat(){
 	document.getElementsByClassName("typeFilter").item(0).classList.remove("typeFilterShow");
 }
 
-function initTypeFilter(){
-	let categories = document.getElementsByClassName("categories");
-	let charBaseType = document.getElementsByClassName("char-base-type");
-	let cardType = document.getElementsByClassName("card-type");
-	let appeared = document.getElementsByClassName("appeared");
-	
-	let agl_filter = document.getElementById("agl");
-	let int_filter = document.getElementById("int");
-	let phy_filter = document.getElementById("phy");
-	let str_filter = document.getElementById("str");
-	let teq_filter = document.getElementById("teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.addEventListener('click' , function(){
-		for(let i = 0; i < charBaseType.length; i ++){
-			if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_agl.png"){
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}else{
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}
-		}
-		
-		for(let i = 0; i < charBaseType.length; i ++){
-			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
-				categories.item(i).style.display = "inline-block";
-			}else{
-				categories.item(i).style.display = "none";
-			}
-		}
-		
-		if(appeared.length < 1){
-			for(let i = 0; i < charBaseType.length; i ++){
-				if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_agl.png"){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appearedType");
-				}else{
-					categories.item(i).style.display = "inline-block";
-					categories.item(i).classList.add("appearedType");
-				}
-			}
-		}
-		if(!agl_filter.classList.contains("checkedTypeBtn")){
-			agl_filter.style.backgroundColor = "#EEC310";
-			agl_filter.classList.add("checkedTypeBtn");
-			
-			int_filter.style.backgroundColor = "#A75EC2";
-			int_filter.classList.remove("checkedTypeBtn");
-			
-			phy_filter.style.backgroundColor = "#A55D03";
-			phy_filter.classList.remove("checkedTypeBtn");
-			
-			str_filter.style.backgroundColor = "#CE2C33";
-			str_filter.classList.remove("checkedTypeBtn");
-			
-			teq_filter.style.backgroundColor = "#008E08";
-			teq_filter.classList.remove("checkedTypeBtn");
-			
-			super_type_filter.style.backgroundColor = "#6E6E6E";
-			super_type_filter.classList.remove("checkedTypeBtn");
-			
-			extreme_type_filter.style.backgroundColor = "#6E6E6E";
-			extreme_type_filter.classList.remove("checkedTypeBtn");
-		}
-	});
-	
-	int_filter.addEventListener('click' , function(){
-		for(let i = 0; i < charBaseType.length; i ++){
-			if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_int.png"){
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}else{
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}
-		}
-		
-		for(let i = 0; i < charBaseType.length; i ++){
-			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
-				categories.item(i).style.display = "inline-block";
-			}else{
-				categories.item(i).style.display = "none";
-			}
-		}
-		
-		if(appeared.length < 1){
-			for(let i = 0; i < charBaseType.length; i ++){
-				if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_int.png"){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appearedType");
-				}else{
-					categories.item(i).style.display = "inline-block";
-					categories.item(i).classList.add("appearedType");
-				}
-			}
-		}
-		if(!int_filter.classList.contains("checkedTypeBtn")){
-			int_filter.style.backgroundColor = "#EEC310";
-			int_filter.classList.add("checkedTypeBtn");
-			
-			agl_filter.style.backgroundColor = "#076CDC";
-			agl_filter.classList.remove("checkedTypeBtn");
-			
-			phy_filter.style.backgroundColor = "#A55D03";
-			phy_filter.classList.remove("checkedTypeBtn");
-			
-			str_filter.style.backgroundColor = "#CE2C33";
-			str_filter.classList.remove("checkedTypeBtn");
-			
-			teq_filter.style.backgroundColor = "#008E08";
-			teq_filter.classList.remove("checkedTypeBtn");
-			
-			super_type_filter.style.backgroundColor = "#6E6E6E";
-			super_type_filter.classList.remove("checkedTypeBtn");
-			
-			extreme_type_filter.style.backgroundColor = "#6E6E6E";
-			extreme_type_filter.classList.remove("checkedTypeBtn");
-		}
-	});
-	
-	phy_filter.addEventListener('click' , function(){
-		for(let i = 0; i < charBaseType.length; i ++){
-			if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_phy.png"){
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}else{
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}
-		}
-		
-		for(let i = 0; i < charBaseType.length; i ++){
-			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
-				categories.item(i).style.display = "inline-block";
-			}else{
-				categories.item(i).style.display = "none";
-			}
-		}
-		
-		if(appeared.length < 1){
-			for(let i = 0; i < charBaseType.length; i ++){
-				if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_phy.png"){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appearedType");
-				}else{
-					categories.item(i).style.display = "inline-block";
-					categories.item(i).classList.add("appearedType");
-				}
-			}
-		}
-		if(!phy_filter.classList.contains("checkedTypeBtn")){
-			phy_filter.style.backgroundColor = "#EEC310";
-			phy_filter.classList.add("checkedTypeBtn");
-			
-			agl_filter.style.backgroundColor = "#076CDC";
-			agl_filter.classList.remove("checkedTypeBtn");
-			
-			int_filter.style.backgroundColor = "#A75EC2";
-			int_filter.classList.remove("checkedTypeBtn");
-			
-			str_filter.style.backgroundColor = "#CE2C33";
-			str_filter.classList.remove("checkedTypeBtn");
-			
-			teq_filter.style.backgroundColor = "#008E08";
-			teq_filter.classList.remove("checkedTypeBtn");
-			
-			super_type_filter.style.backgroundColor = "#6E6E6E";
-			super_type_filter.classList.remove("checkedTypeBtn");
-			
-			extreme_type_filter.style.backgroundColor = "#6E6E6E";
-			extreme_type_filter.classList.remove("checkedTypeBtn");
-		}
-	});
-	
-	str_filter.addEventListener('click' , function(){
-		for(let i = 0; i < charBaseType.length; i ++){
-			if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_str.png"){
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}else{
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}
-		}
-		
-		for(let i = 0; i < charBaseType.length; i ++){
-			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
-				categories.item(i).style.display = "inline-block";
-			}else{
-				categories.item(i).style.display = "none";
-			}
-		}
-		
-		if(appeared.length < 1){
-			for(let i = 0; i < charBaseType.length; i ++){
-				if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_str.png"){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appearedType");
-				}else{
-					categories.item(i).style.display = "inline-block";
-					categories.item(i).classList.add("appearedType");
-				}
-			}
-		}
-		if(!str_filter.classList.contains("checkedTypeBtn")){
-			str_filter.style.backgroundColor = "#EEC310";
-			str_filter.classList.add("checkedTypeBtn");
-			
-			agl_filter.style.backgroundColor = "#076CDC";
-			agl_filter.classList.remove("checkedTypeBtn");
-			
-			int_filter.style.backgroundColor = "#A75EC2";
-			int_filter.classList.remove("checkedTypeBtn");
-			
-			phy_filter.style.backgroundColor = "#A55D03";
-			phy_filter.classList.remove("checkedTypeBtn");
-			
-			teq_filter.style.backgroundColor = "#008E08";
-			teq_filter.classList.remove("checkedTypeBtn");
-			
-			super_type_filter.style.backgroundColor = "#6E6E6E";
-			super_type_filter.classList.remove("checkedTypeBtn");
-			
-			extreme_type_filter.style.backgroundColor = "#6E6E6E";
-			extreme_type_filter.classList.remove("checkedTypeBtn");
-		}
-	});
-	
-	teq_filter.addEventListener('click' , function(){
-		for(let i = 0; i < charBaseType.length; i ++){
-			if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_teq.png"){
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}else{
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}
-		}
-		
-		for(let i = 0; i < charBaseType.length; i ++){
-			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
-				categories.item(i).style.display = "inline-block";
-			}else{
-				categories.item(i).style.display = "none";
-			}
-		}
-		
-		if(appeared.length < 1){
-			for(let i = 0; i < charBaseType.length; i ++){
-				if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_teq.png"){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appearedType");
-				}else{
-					categories.item(i).style.display = "inline-block";
-					categories.item(i).classList.add("appearedType");
-				}
-			}
-		}
-		if(!teq_filter.classList.contains("checkedTypeBtn")){
-			teq_filter.style.backgroundColor = "#EEC310";
-			teq_filter.classList.add("checkedTypeBtn");
-			
-			agl_filter.style.backgroundColor = "#076CDC";
-			agl_filter.classList.remove("checkedTypeBtn");
-			
-			int_filter.style.backgroundColor = "#A75EC2";
-			int_filter.classList.remove("checkedTypeBtn");
-			
-			phy_filter.style.backgroundColor = "#A55D03";
-			phy_filter.classList.remove("checkedTypeBtn");
-			
-			str_filter.style.backgroundColor = "#CE2C33";
-			str_filter.classList.remove("checkedTypeBtn");
-			
-			super_type_filter.style.backgroundColor = "#6E6E6E";
-			super_type_filter.classList.remove("checkedTypeBtn");
-			
-			extreme_type_filter.style.backgroundColor = "#6E6E6E";
-			extreme_type_filter.classList.remove("checkedTypeBtn");
-		}
-	});
-	super_type_filter.addEventListener('click' , function(){
-		for(let i = 0; i < charBaseType.length; i ++){
-			if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png")){
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appearedSuperType");
-			}else{
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appearedSuperType");
-			}
-		}
-		
-		for(let i = 0; i < charBaseType.length; i ++){
-			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
-				categories.item(i).style.display = "inline-block";
-			}else{
-				categories.item(i).style.display = "none";
-			}
-		}
-		
-		if(appeared.length < 1){
-			for(let i = 0; i < charBaseType.length; i ++){
-				if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png")){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appearedType");
-					categories.item(i).classList.remove("appearedSuperType");
-				}else{
-					categories.item(i).style.display = "inline-block";
-					categories.item(i).classList.add("appearedType");
-					categories.item(i).classList.add("appearedSuperType");
-				}
-			}
-		}
-		if(!super_type_filter.classList.contains("checkedTypeBtn")){
-			super_type_filter.style.backgroundColor = "#EEC310";
-			super_type_filter.classList.add("checkedTypeBtn");
-			
-			agl_filter.style.backgroundColor = "#076CDC";
-			agl_filter.classList.remove("checkedTypeBtn");
-			
-			int_filter.style.backgroundColor = "#A75EC2";
-			int_filter.classList.remove("checkedTypeBtn");
-			
-			phy_filter.style.backgroundColor = "#A55D03";
-			phy_filter.classList.remove("checkedTypeBtn");
-			
-			str_filter.style.backgroundColor = "#CE2C33";
-			str_filter.classList.remove("checkedTypeBtn");
-			
-			teq_filter.style.backgroundColor = "#008E08";
-			teq_filter.classList.remove("checkedTypeBtn");
-			
-			extreme_type_filter.style.backgroundColor = "#6E6E6E";
-			extreme_type_filter.classList.remove("checkedTypeBtn");
-		}
-	});
-	
-	extreme_type_filter.addEventListener('click' , function(){
-		for(let i = 0; i < charBaseType.length; i ++){
-			if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png")){
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appearedExtremeType");
-			}else{
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appearedExtremeType");
-			}
-		}
-		
-		for(let i = 0; i < charBaseType.length; i ++){
-			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
-				categories.item(i).style.display = "inline-block";
-			}else{
-				categories.item(i).style.display = "none";
-			}
-		}
-		
-		if(appeared.length < 1){
-			for(let i = 0; i < charBaseType.length; i ++){
-				if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png")){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appearedType");
-					categories.item(i).classList.remove("appearedExtremeType");
-				}else{
-					categories.item(i).style.display = "inline-block";
-					categories.item(i).classList.add("appearedType");
-					categories.item(i).classList.add("appearedExtremeType");
-				}
-			}
-		}
-		if(!extreme_type_filter.classList.contains("checkedTypeBtn")){
-			extreme_type_filter.style.backgroundColor = "#EEC310";
-			extreme_type_filter.classList.add("checkedTypeBtn");
-			
-			agl_filter.style.backgroundColor = "#076CDC";
-			agl_filter.classList.remove("checkedTypeBtn");
-			
-			int_filter.style.backgroundColor = "#A75EC2";
-			int_filter.classList.remove("checkedTypeBtn");
-			
-			phy_filter.style.backgroundColor = "#A55D03";
-			phy_filter.classList.remove("checkedTypeBtn");
-			
-			str_filter.style.backgroundColor = "#CE2C33";
-			str_filter.classList.remove("checkedTypeBtn");
-			
-			teq_filter.style.backgroundColor = "#008E08";
-			teq_filter.classList.remove("checkedTypeBtn");
-			
-			super_type_filter.style.backgroundColor = "#6E6E6E";
-			super_type_filter.classList.remove("checkedTypeBtn");
-		}
-	});
-}
-
 function resetFilterType(){
 	document.getElementsByClassName("typeFilter").item(0).classList.add("typeFilterShow");
 	document.getElementsByClassName("CategoriesFilter").item(0).classList.remove("CategoriesFilterShow");
@@ -947,6 +547,491 @@ function hoverCategories(){
 		categoriesDarkBlue.item(i).onclick = function(){
 			categoriesDarkBlue.item(i).style.backgroundColor = "#002DC0";
 		}
+	}
+}
+
+function initTypeFilter(){
+	let categories = document.getElementsByClassName("categories");
+	let charBaseType = document.getElementsByClassName("char-base-type");
+	let cardType = document.getElementsByClassName("card-type");
+	let appeared = document.getElementsByClassName("appeared");
+	
+	let agl_filter = document.getElementById("agl");
+	let int_filter = document.getElementById("int");
+	let phy_filter = document.getElementById("phy");
+	let str_filter = document.getElementById("str");
+	let teq_filter = document.getElementById("teq");
+	let super_type_filter = document.getElementById("super_type");
+	let extreme_type_filter = document.getElementById("extreme_type");
+	
+	agl_filter.addEventListener('click' , function(){
+		for(let i = 0; i < charBaseType.length; i ++){
+			if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_agl.png"){
+				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appearedType");
+			}else{
+				categories.item(i).style.display = "inline-block";
+				categories.item(i).classList.add("appearedType");
+			}
+		}
+		
+		for(let i = 0; i < charBaseType.length; i ++){
+			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
+				categories.item(i).style.display = "inline-block";
+			}else{
+				categories.item(i).style.display = "none";
+			}
+		}
+		
+		if(appeared.length < 1){
+			for(let i = 0; i < charBaseType.length; i ++){
+				if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_agl.png"){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}else{
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}
+			}
+		}
+		defaultAglFilter();
+	});
+	
+	int_filter.addEventListener('click' , function(){
+		for(let i = 0; i < charBaseType.length; i ++){
+			if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_int.png"){
+				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appearedType");
+			}else{
+				categories.item(i).style.display = "inline-block";
+				categories.item(i).classList.add("appearedType");
+			}
+		}
+		
+		for(let i = 0; i < charBaseType.length; i ++){
+			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
+				categories.item(i).style.display = "inline-block";
+			}else{
+				categories.item(i).style.display = "none";
+			}
+		}
+		
+		if(appeared.length < 1){
+			for(let i = 0; i < charBaseType.length; i ++){
+				if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_int.png"){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}else{
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}
+			}
+		}
+		defaultIntFilter();
+	});
+	
+	phy_filter.addEventListener('click' , function(){
+		for(let i = 0; i < charBaseType.length; i ++){
+			if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_phy.png"){
+				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appearedType");
+			}else{
+				categories.item(i).style.display = "inline-block";
+				categories.item(i).classList.add("appearedType");
+			}
+		}
+		
+		for(let i = 0; i < charBaseType.length; i ++){
+			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
+				categories.item(i).style.display = "inline-block";
+			}else{
+				categories.item(i).style.display = "none";
+			}
+		}
+		
+		if(appeared.length < 1){
+			for(let i = 0; i < charBaseType.length; i ++){
+				if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_phy.png"){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}else{
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}
+			}
+		}
+		defaultPhyFilter();
+	});
+	
+	str_filter.addEventListener('click' , function(){
+		for(let i = 0; i < charBaseType.length; i ++){
+			if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_str.png"){
+				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appearedType");
+			}else{
+				categories.item(i).style.display = "inline-block";
+				categories.item(i).classList.add("appearedType");
+			}
+		}
+		
+		for(let i = 0; i < charBaseType.length; i ++){
+			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
+				categories.item(i).style.display = "inline-block";
+			}else{
+				categories.item(i).style.display = "none";
+			}
+		}
+		
+		if(appeared.length < 1){
+			for(let i = 0; i < charBaseType.length; i ++){
+				if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_str.png"){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}else{
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}
+			}
+		}
+		defaultStrFilter();
+	});
+	
+	teq_filter.addEventListener('click' , function(){
+		for(let i = 0; i < charBaseType.length; i ++){
+			if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_teq.png"){
+				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appearedType");
+			}else{
+				categories.item(i).style.display = "inline-block";
+				categories.item(i).classList.add("appearedType");
+			}
+		}
+		
+		for(let i = 0; i < charBaseType.length; i ++){
+			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
+				categories.item(i).style.display = "inline-block";
+			}else{
+				categories.item(i).style.display = "none";
+			}
+		}
+		
+		if(appeared.length < 1){
+			for(let i = 0; i < charBaseType.length; i ++){
+				if(charBaseType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterBase/char_base_teq.png"){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}else{
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}
+			}
+		}
+		defaultTeqFilter();
+	});
+	
+	super_type_filter.addEventListener('click' , function(){
+		for(let i = 0; i < charBaseType.length; i ++){
+			if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png")){
+				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appearedType");
+				categories.item(i).classList.remove("appearedSuperType");
+			}else{
+				categories.item(i).style.display = "inline-block";
+				categories.item(i).classList.add("appearedType");
+				categories.item(i).classList.add("appearedSuperType");
+			}
+		}
+		
+		for(let i = 0; i < charBaseType.length; i ++){
+			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
+				categories.item(i).style.display = "inline-block";
+			}else{
+				categories.item(i).style.display = "none";
+			}
+		}
+		
+		if(appeared.length < 1){
+			for(let i = 0; i < charBaseType.length; i ++){
+				if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png")){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+					categories.item(i).classList.remove("appearedSuperType");
+				}else{
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+					categories.item(i).classList.add("appearedSuperType");
+				}
+			}
+		}
+		defaultSuperFilter();
+	});
+	
+	extreme_type_filter.addEventListener('click' , function(){
+		for(let i = 0; i < charBaseType.length; i ++){
+			if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png")){
+				categories.item(i).style.display = "none";
+				categories.item(i).classList.remove("appearedType");
+				categories.item(i).classList.remove("appearedExtremeType");
+			}else{
+				categories.item(i).style.display = "inline-block";
+				categories.item(i).classList.add("appearedType");
+				categories.item(i).classList.add("appearedExtremeType");
+			}
+		}
+		
+		for(let i = 0; i < charBaseType.length; i ++){
+			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType")){
+				categories.item(i).style.display = "inline-block";
+			}else{
+				categories.item(i).style.display = "none";
+			}
+		}
+		
+		if(appeared.length < 1){
+			for(let i = 0; i < charBaseType.length; i ++){
+				if((cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png") && (cardType.item(i).src !== "http://localhost:8090/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png")){
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+					categories.item(i).classList.remove("appearedExtremeType");
+				}else{
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+					categories.item(i).classList.add("appearedExtremeType");
+				}
+			}
+		}
+		defaultExtremeFilter();
+	});
+}
+
+function defaultAglFilter(){
+	let agl_filter = document.getElementById("agl");
+	let int_filter = document.getElementById("int");
+	let phy_filter = document.getElementById("phy");
+	let str_filter = document.getElementById("str");
+	let teq_filter = document.getElementById("teq");
+	let super_type_filter = document.getElementById("super_type");
+	let extreme_type_filter = document.getElementById("extreme_type");
+	
+	if(!agl_filter.classList.contains("checkedTypeBtn")){
+		agl_filter.style.backgroundColor = "#EEC310";
+		agl_filter.classList.add("checkedTypeBtn");
+		
+		int_filter.style.backgroundColor = "#A75EC2";
+		int_filter.classList.remove("checkedTypeBtn");
+		
+		phy_filter.style.backgroundColor = "#A55D03";
+		phy_filter.classList.remove("checkedTypeBtn");
+		
+		str_filter.style.backgroundColor = "#CE2C33";
+		str_filter.classList.remove("checkedTypeBtn");
+		
+		teq_filter.style.backgroundColor = "#008E08";
+		teq_filter.classList.remove("checkedTypeBtn");
+		
+		super_type_filter.style.backgroundColor = "#6E6E6E";
+		super_type_filter.classList.remove("checkedTypeBtn");
+		
+		extreme_type_filter.style.backgroundColor = "#6E6E6E";
+		extreme_type_filter.classList.remove("checkedTypeBtn");
+	}
+}
+
+function defaultIntFilter(){
+	let agl_filter = document.getElementById("agl");
+	let int_filter = document.getElementById("int");
+	let phy_filter = document.getElementById("phy");
+	let str_filter = document.getElementById("str");
+	let teq_filter = document.getElementById("teq");
+	let super_type_filter = document.getElementById("super_type");
+	let extreme_type_filter = document.getElementById("extreme_type");
+	
+	if(!int_filter.classList.contains("checkedTypeBtn")){
+		int_filter.style.backgroundColor = "#EEC310";
+		int_filter.classList.add("checkedTypeBtn");
+		
+		agl_filter.style.backgroundColor = "#076CDC";
+		agl_filter.classList.remove("checkedTypeBtn");
+		
+		phy_filter.style.backgroundColor = "#A55D03";
+		phy_filter.classList.remove("checkedTypeBtn");
+		
+		str_filter.style.backgroundColor = "#CE2C33";
+		str_filter.classList.remove("checkedTypeBtn");
+		
+		teq_filter.style.backgroundColor = "#008E08";
+		teq_filter.classList.remove("checkedTypeBtn");
+		
+		super_type_filter.style.backgroundColor = "#6E6E6E";
+		super_type_filter.classList.remove("checkedTypeBtn");
+		
+		extreme_type_filter.style.backgroundColor = "#6E6E6E";
+		extreme_type_filter.classList.remove("checkedTypeBtn");
+	}
+}
+
+function defaultPhyFilter(){
+	let agl_filter = document.getElementById("agl");
+	let int_filter = document.getElementById("int");
+	let phy_filter = document.getElementById("phy");
+	let str_filter = document.getElementById("str");
+	let teq_filter = document.getElementById("teq");
+	let super_type_filter = document.getElementById("super_type");
+	let extreme_type_filter = document.getElementById("extreme_type");
+	
+	if(!phy_filter.classList.contains("checkedTypeBtn")){
+		phy_filter.style.backgroundColor = "#EEC310";
+		phy_filter.classList.add("checkedTypeBtn");
+		
+		agl_filter.style.backgroundColor = "#076CDC";
+		agl_filter.classList.remove("checkedTypeBtn");
+		
+		int_filter.style.backgroundColor = "#A75EC2";
+		int_filter.classList.remove("checkedTypeBtn");
+		
+		str_filter.style.backgroundColor = "#CE2C33";
+		str_filter.classList.remove("checkedTypeBtn");
+		
+		teq_filter.style.backgroundColor = "#008E08";
+		teq_filter.classList.remove("checkedTypeBtn");
+		
+		super_type_filter.style.backgroundColor = "#6E6E6E";
+		super_type_filter.classList.remove("checkedTypeBtn");
+		
+		extreme_type_filter.style.backgroundColor = "#6E6E6E";
+		extreme_type_filter.classList.remove("checkedTypeBtn");
+	}
+}
+
+function defaultStrFilter(){
+	let agl_filter = document.getElementById("agl");
+	let int_filter = document.getElementById("int");
+	let phy_filter = document.getElementById("phy");
+	let str_filter = document.getElementById("str");
+	let teq_filter = document.getElementById("teq");
+	let super_type_filter = document.getElementById("super_type");
+	let extreme_type_filter = document.getElementById("extreme_type");
+	
+	if(!str_filter.classList.contains("checkedTypeBtn")){
+		str_filter.style.backgroundColor = "#EEC310";
+		str_filter.classList.add("checkedTypeBtn");
+		
+		agl_filter.style.backgroundColor = "#076CDC";
+		agl_filter.classList.remove("checkedTypeBtn");
+		
+		int_filter.style.backgroundColor = "#A75EC2";
+		int_filter.classList.remove("checkedTypeBtn");
+		
+		phy_filter.style.backgroundColor = "#A55D03";
+		phy_filter.classList.remove("checkedTypeBtn");
+		
+		teq_filter.style.backgroundColor = "#008E08";
+		teq_filter.classList.remove("checkedTypeBtn");
+		
+		super_type_filter.style.backgroundColor = "#6E6E6E";
+		super_type_filter.classList.remove("checkedTypeBtn");
+		
+		extreme_type_filter.style.backgroundColor = "#6E6E6E";
+		extreme_type_filter.classList.remove("checkedTypeBtn");
+	}
+}
+
+function defaultTeqFilter(){
+	let agl_filter = document.getElementById("agl");
+	let int_filter = document.getElementById("int");
+	let phy_filter = document.getElementById("phy");
+	let str_filter = document.getElementById("str");
+	let teq_filter = document.getElementById("teq");
+	let super_type_filter = document.getElementById("super_type");
+	let extreme_type_filter = document.getElementById("extreme_type");
+	
+	if(!teq_filter.classList.contains("checkedTypeBtn")){
+		teq_filter.style.backgroundColor = "#EEC310";
+		teq_filter.classList.add("checkedTypeBtn");
+		
+		agl_filter.style.backgroundColor = "#076CDC";
+		agl_filter.classList.remove("checkedTypeBtn");
+		
+		int_filter.style.backgroundColor = "#A75EC2";
+		int_filter.classList.remove("checkedTypeBtn");
+		
+		phy_filter.style.backgroundColor = "#A55D03";
+		phy_filter.classList.remove("checkedTypeBtn");
+		
+		str_filter.style.backgroundColor = "#CE2C33";
+		str_filter.classList.remove("checkedTypeBtn");
+		
+		super_type_filter.style.backgroundColor = "#6E6E6E";
+		super_type_filter.classList.remove("checkedTypeBtn");
+		
+		extreme_type_filter.style.backgroundColor = "#6E6E6E";
+		extreme_type_filter.classList.remove("checkedTypeBtn");
+	}
+}
+
+function defaultSuperFilter(){
+	let agl_filter = document.getElementById("agl");
+	let int_filter = document.getElementById("int");
+	let phy_filter = document.getElementById("phy");
+	let str_filter = document.getElementById("str");
+	let teq_filter = document.getElementById("teq");
+	let super_type_filter = document.getElementById("super_type");
+	let extreme_type_filter = document.getElementById("extreme_type");
+	
+	if(!super_type_filter.classList.contains("checkedTypeBtn")){
+		super_type_filter.style.backgroundColor = "#EEC310";
+		super_type_filter.classList.add("checkedTypeBtn");
+		
+		agl_filter.style.backgroundColor = "#076CDC";
+		agl_filter.classList.remove("checkedTypeBtn");
+		
+		int_filter.style.backgroundColor = "#A75EC2";
+		int_filter.classList.remove("checkedTypeBtn");
+		
+		phy_filter.style.backgroundColor = "#A55D03";
+		phy_filter.classList.remove("checkedTypeBtn");
+		
+		str_filter.style.backgroundColor = "#CE2C33";
+		str_filter.classList.remove("checkedTypeBtn");
+		
+		teq_filter.style.backgroundColor = "#008E08";
+		teq_filter.classList.remove("checkedTypeBtn");
+		
+		extreme_type_filter.style.backgroundColor = "#6E6E6E";
+		extreme_type_filter.classList.remove("checkedTypeBtn");
+	}
+}
+
+function defaultExtremeFilter(){
+	let agl_filter = document.getElementById("agl");
+	let int_filter = document.getElementById("int");
+	let phy_filter = document.getElementById("phy");
+	let str_filter = document.getElementById("str");
+	let teq_filter = document.getElementById("teq");
+	let super_type_filter = document.getElementById("super_type");
+	let extreme_type_filter = document.getElementById("extreme_type");
+	
+	if(!extreme_type_filter.classList.contains("checkedTypeBtn")){
+		extreme_type_filter.style.backgroundColor = "#EEC310";
+		extreme_type_filter.classList.add("checkedTypeBtn");
+		
+		agl_filter.style.backgroundColor = "#076CDC";
+		agl_filter.classList.remove("checkedTypeBtn");
+		
+		int_filter.style.backgroundColor = "#A75EC2";
+		int_filter.classList.remove("checkedTypeBtn");
+		
+		phy_filter.style.backgroundColor = "#A55D03";
+		phy_filter.classList.remove("checkedTypeBtn");
+		
+		str_filter.style.backgroundColor = "#CE2C33";
+		str_filter.classList.remove("checkedTypeBtn");
+		
+		teq_filter.style.backgroundColor = "#008E08";
+		teq_filter.classList.remove("checkedTypeBtn");
+		
+		super_type_filter.style.backgroundColor = "#6E6E6E";
+		super_type_filter.classList.remove("checkedTypeBtn");
 	}
 }
 
