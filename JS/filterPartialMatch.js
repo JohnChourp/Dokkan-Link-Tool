@@ -21,6 +21,14 @@ function filterPartialMatch(){
 	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
 	
+	let agl_filter = document.getElementById("agl");
+	let int_filter = document.getElementById("int");
+	let phy_filter = document.getElementById("phy");
+	let str_filter = document.getElementById("str");
+	let teq_filter = document.getElementById("teq");
+	let super_type_filter = document.getElementById("super_type");
+	let extreme_type_filter = document.getElementById("extreme_type");
+	
 	for(let j = 0; j < categoriesOrange.length; j ++){
 		categoriesOrange.item(j).addEventListener('click' , function(){
 			if(categoriesOrange.item(j).classList.contains("activeCategory")){
@@ -38,6 +46,7 @@ function filterPartialMatch(){
 					catList[j].item(i).classList.add("appeared");
 				}
 			}
+			filterTypePerformClick(agl_filter , int_filter , phy_filter , str_filter , teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -58,6 +67,7 @@ function filterPartialMatch(){
 					catList[j + categoriesOrange.length].item(i).classList.add("appeared");
 				}
 			}
+			filterTypePerformClick(agl_filter , int_filter , phy_filter , str_filter , teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -78,6 +88,7 @@ function filterPartialMatch(){
 					catList[j + categoriesOrange.length + categoriesGreen.length].item(i).classList.add("appeared");
 				}
 			}
+			filterTypePerformClick(agl_filter , int_filter , phy_filter , str_filter , teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -98,6 +109,7 @@ function filterPartialMatch(){
 					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length].item(i).classList.add("appeared");
 				}
 			}
+			filterTypePerformClick(agl_filter , int_filter , phy_filter , str_filter , teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -118,6 +130,7 @@ function filterPartialMatch(){
 					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length].item(i).classList.add("appeared");
 				}
 			}
+			filterTypePerformClick(agl_filter , int_filter , phy_filter , str_filter , teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -138,6 +151,7 @@ function filterPartialMatch(){
 					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length].item(i).classList.add("appeared");
 				}
 			}
+			filterTypePerformClick(agl_filter , int_filter , phy_filter , str_filter , teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -158,6 +172,7 @@ function filterPartialMatch(){
 					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].item(i).classList.add("appeared");
 				}
 			}
+			filterTypePerformClick(agl_filter , int_filter , phy_filter , str_filter , teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -178,6 +193,7 @@ function filterPartialMatch(){
 					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].item(i).classList.add("appeared");
 				}
 			}
+			filterTypePerformClick(agl_filter , int_filter , phy_filter , str_filter , teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -198,6 +214,7 @@ function filterPartialMatch(){
 					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkGreen.length].item(i).classList.add("appeared");
 				}
 			}
+			filterTypePerformClick(agl_filter , int_filter , phy_filter , str_filter , teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 }
@@ -582,6 +599,30 @@ function hoverCategories(){
 		categoriesDarkBlue.item(i).onclick = function(){
 			categoriesDarkBlue.item(i).style.backgroundColor = "#002DC0";
 		}
+	}
+}
+
+function filterTypePerformClick(agl_filter , int_filter , phy_filter , str_filter , teq_filter , super_type_filter , extreme_type_filter){
+	if(agl_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
+		agl_filter.click();
+	}
+	if(int_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
+		int_filter.click();
+	}
+	if(phy_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
+		phy_filter.click();
+	}
+	if(str_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
+		str_filter.click();
+	}
+	if(teq_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
+		teq_filter.click();
+	}
+	if(super_type_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
+		super_type_filter.click();
+	}
+	if(extreme_type_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
+		extreme_type_filter.click();
 	}
 }
 
