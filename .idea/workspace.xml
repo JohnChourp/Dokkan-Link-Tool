@@ -4,12 +4,75 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added super and extreme type filter for partial match search">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="bug fixing">
+      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_agl_n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_agl_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_agl_sr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_int_n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_int_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_int_sr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_phy_n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_phy_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_phy_sr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_str_n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_str_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_str_sr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_teq_n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_teq_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterBase/char_base_teq_sr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000510_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000520_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000530_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000540_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000550_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000560_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000570_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000580_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000590_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000600_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000610_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000620_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000630_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000640_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000650_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000660_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000670_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000680_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000690_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000700_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000710_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000720_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000730_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000740_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000750_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000760_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000770_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000780_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000790_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000800_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000810_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000820_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000830_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000840_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000850_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000860_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000870_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000880_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000890_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000900_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000910_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000920_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000930_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000940_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000950_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000960_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000970_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000980_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1000990_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1001000_thumb.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterFullMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterFullMatch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterPartialMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterPartialMatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/charInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/charInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partial-match.html" beforeDir="false" afterPath="$PROJECT_DIR$/partial-match.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +138,9 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterThumb" />
+      <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterBase" />
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterRarity" />
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterType" />
-      <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterBase" />
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CategoryThumb" />
     </key>
   </component>
@@ -105,7 +168,7 @@
       <workItem from="1648484829278" duration="11066000" />
       <workItem from="1648542437020" duration="7999000" />
       <workItem from="1648568195483" duration="3090000" />
-      <workItem from="1648571326090" duration="642000" />
+      <workItem from="1648571326090" duration="5111000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -373,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648571175201</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="bug fixing">
+      <created>1648572077303</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1648572077303</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,7 +462,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added image button for db_saga" />
     <MESSAGE value="added image button for db_saga and for partial match" />
     <MESSAGE value="now orange and green categories are functioning as expected" />
     <MESSAGE value="now yellow and cyan categories are working properly" />
@@ -417,6 +486,7 @@
     <MESSAGE value="now simple type filters are only show normal type" />
     <MESSAGE value="added super and extreme type filter for full match search" />
     <MESSAGE value="added super and extreme type filter for partial match search" />
-    <option name="LAST_COMMIT_MESSAGE" value="added super and extreme type filter for partial match search" />
+    <MESSAGE value="bug fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixing" />
   </component>
 </project>

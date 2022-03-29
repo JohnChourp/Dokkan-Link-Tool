@@ -11,10 +11,30 @@ function charInfo(){
 		let charRarityImage = document.createElement("img");
 		
 		if(charBaseType.item(i).innerHTML === "agl"){
-			charBaseTypeImage.classList.add("char-base-type");
-			charBaseTypeImage.src = "CharacterBase/char_base_agl.png";
-			charBaseType.item(i).innerHTML = "";
-			charBaseType.item(i).appendChild(charBaseTypeImage);
+			if((charRarityType.item(i).innerHTML === "lr") || (charRarityType.item(i).innerHTML === "ur") || (charRarityType.item(i).innerHTML === "ssr")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_agl.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
+			if((charRarityType.item(i).innerHTML === "sr")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_agl_sr.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
+			if((charRarityType.item(i).innerHTML === "r")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_agl_r.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
+			if((charRarityType.item(i).innerHTML === "n")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_agl_n.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
 			
 			if(charType.item(i).innerHTML === "normal"){
 				charTypeImage.classList.add("card-type");
@@ -39,10 +59,30 @@ function charInfo(){
 		}
 		
 		if(charBaseType.item(i).innerHTML === "int"){
-			charBaseTypeImage.classList.add("char-base-type");
-			charBaseTypeImage.src = "CharacterBase/char_base_int.png";
-			charBaseType.item(i).innerHTML = "";
-			charBaseType.item(i).appendChild(charBaseTypeImage);
+			if((charRarityType.item(i).innerHTML === "lr") || (charRarityType.item(i).innerHTML === "ur") || (charRarityType.item(i).innerHTML === "ssr")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_int.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
+			if((charRarityType.item(i).innerHTML === "sr")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_int_sr.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
+			if((charRarityType.item(i).innerHTML === "r")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_int_r.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
+			if((charRarityType.item(i).innerHTML === "n")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_int_n.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
 			
 			if(charType.item(i).innerHTML === "normal"){
 				charTypeImage.classList.add("card-type");
@@ -67,10 +107,30 @@ function charInfo(){
 		}
 		
 		if(charBaseType.item(i).innerHTML === "phy"){
-			charBaseTypeImage.classList.add("char-base-type");
-			charBaseTypeImage.src = "CharacterBase/char_base_phy.png";
-			charBaseType.item(i).innerHTML = "";
-			charBaseType.item(i).appendChild(charBaseTypeImage);
+			if((charRarityType.item(i).innerHTML === "lr") || (charRarityType.item(i).innerHTML === "ur") || (charRarityType.item(i).innerHTML === "ssr")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_phy.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
+			if((charRarityType.item(i).innerHTML === "sr")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_phy_sr.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
+			if((charRarityType.item(i).innerHTML === "r")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_phy_r.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
+			if((charRarityType.item(i).innerHTML === "n")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_phy_n.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
 			
 			if(charType.item(i).innerHTML === "normal"){
 				charTypeImage.classList.add("card-type");
@@ -95,10 +155,30 @@ function charInfo(){
 		}
 		
 		if(charBaseType.item(i).innerHTML === "str"){
-			charBaseTypeImage.classList.add("char-base-type");
-			charBaseTypeImage.src = "CharacterBase/char_base_str.png";
-			charBaseType.item(i).innerHTML = "";
-			charBaseType.item(i).appendChild(charBaseTypeImage);
+			if((charRarityType.item(i).innerHTML === "lr") || (charRarityType.item(i).innerHTML === "ur") || (charRarityType.item(i).innerHTML === "ssr")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_str.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
+			if((charRarityType.item(i).innerHTML === "sr")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_str_sr.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
+			if((charRarityType.item(i).innerHTML === "r")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_str_r.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
+			if((charRarityType.item(i).innerHTML === "n")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_str_n.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
 			
 			if(charType.item(i).innerHTML === "normal"){
 				charTypeImage.classList.add("card-type");
@@ -123,10 +203,30 @@ function charInfo(){
 		}
 		
 		if(charBaseType.item(i).innerHTML === "teq"){
-			charBaseTypeImage.classList.add("char-base-type");
-			charBaseTypeImage.src = "CharacterBase/char_base_teq.png";
-			charBaseType.item(i).innerHTML = "";
-			charBaseType.item(i).appendChild(charBaseTypeImage);
+			if((charRarityType.item(i).innerHTML === "lr") || (charRarityType.item(i).innerHTML === "ur") || (charRarityType.item(i).innerHTML === "ssr")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_teq.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
+			if((charRarityType.item(i).innerHTML === "sr")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_teq_sr.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
+			if((charRarityType.item(i).innerHTML === "r")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_teq_r.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
+			if((charRarityType.item(i).innerHTML === "n")){
+				charBaseTypeImage.classList.add("char-base-type");
+				charBaseTypeImage.src = "CharacterBase/char_base_teq_n.png";
+				charBaseType.item(i).innerHTML = "";
+				charBaseType.item(i).appendChild(charBaseTypeImage);
+			}
 			
 			if(charType.item(i).innerHTML === "normal"){
 				charTypeImage.classList.add("card-type");
