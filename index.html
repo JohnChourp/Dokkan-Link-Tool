@@ -18,7 +18,7 @@
 	<input id="partial-match-input" onclick="window.location.href='partial-match.html'" type="radio" name="radio">
 	<span class="checkmark"></span>
 </label>
-<br><br>
+<p class="instructions">First Choose Category and then Type</p>
 <button onclick="ResetSelectionFilters();">Reset All Filters</button>
 <button onclick="showCategories();" id="select_category" type="button">Select Category</button>
 <button onclick="showFilterType();" id="select_type" type="button">Select Type</button>
@@ -30,10 +30,23 @@
 		<button class="type-btn" id="str" type="button">STR</button>
 		<button class="type-btn" id="teq" type="button">TEQ</button>
 	</div>
-	<br><br>
 	<div class="superOrExtremeType">
 		<button class="type-btn" id="super_type" type="button">Super</button>
 		<button class="type-btn" id="extreme_type" type="button">Extreme</button>
+	</div>
+	<div class="allTypesSuper">
+		<button class="type-btn" id="super_agl" type="button">Super AGL</button>
+		<button class="type-btn" id="super_int" type="button">Super INT</button>
+		<button class="type-btn" id="super_phy" type="button">Super PHY</button>
+		<button class="type-btn" id="super_str" type="button">Super STR</button>
+		<button class="type-btn" id="super_teq" type="button">Super TEQ</button>
+	</div>
+	<div class="allTypesExtreme">
+		<button class="type-btn" id="extreme_agl" type="button">Extreme AGL</button>
+		<button class="type-btn" id="extreme_int" type="button">Extreme INT</button>
+		<button class="type-btn" id="extreme_phy" type="button">Extreme PHY</button>
+		<button class="type-btn" id="extreme_str" type="button">Extreme STR</button>
+		<button class="type-btn" id="extreme_teq" type="button">Extreme TEQ</button>
 	</div>
 </div>
 <div class="CategoriesFilter CategoriesFilterShow">
