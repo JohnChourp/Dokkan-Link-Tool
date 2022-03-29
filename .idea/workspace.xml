@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="minro fix for filter type">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/categories.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/categories.css" afterDir="false" />
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="fixed link for partial match and full match">
+      <change beforePath="$PROJECT_DIR$/JS/filterFullMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterFullMatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/filterPartialMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterPartialMatch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partial-match.html" beforeDir="false" afterPath="$PROJECT_DIR$/partial-match.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +100,7 @@
       <workItem from="1648399584740" duration="3535000" />
       <workItem from="1648407062169" duration="1956000" />
       <workItem from="1648484829278" duration="11066000" />
-      <workItem from="1648542437020" duration="2648000" />
+      <workItem from="1648542437020" duration="3019000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -329,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648544351735</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="fixed link for partial match and full match">
+      <created>1648545222493</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1648545222493</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +352,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added 15 more characters" />
     <MESSAGE value="added all categories avalable" />
     <MESSAGE value="added partial and full match" />
     <MESSAGE value="seperated in different pages full and partial match" />
@@ -373,6 +376,7 @@
     <MESSAGE value="fixed color changing when hover over filter type" />
     <MESSAGE value="minor fixes for partial search" />
     <MESSAGE value="minro fix for filter type" />
-    <option name="LAST_COMMIT_MESSAGE" value="minro fix for filter type" />
+    <MESSAGE value="fixed link for partial match and full match" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed link for partial match and full match" />
   </component>
 </project>
