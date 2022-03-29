@@ -19,6 +19,7 @@ function charInfo(){
 			if(charType.item(i).innerHTML === "normal"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_agl.png";
+				charTypeImage.alt = charType.item(i).innerHTML;
 				charType.item(i).innerHTML = "";
 				charType.item(i).appendChild(charTypeImage);
 			}
@@ -26,6 +27,7 @@ function charInfo(){
 			if(charType.item(i).innerHTML === "super"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_super_agl.png";
+				charTypeImage.alt = charType.item(i).innerHTML;
 				charType.item(i).innerHTML = "";
 				charType.item(i).appendChild(charTypeImage);
 			}
@@ -33,6 +35,7 @@ function charInfo(){
 			if(charType.item(i).innerHTML === "extreme"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_extreme_agl.png";
+				charTypeImage.alt = charType.item(i).innerHTML;
 				charType.item(i).innerHTML = "";
 				charType.item(i).appendChild(charTypeImage);
 			}
@@ -47,6 +50,7 @@ function charInfo(){
 			if(charType.item(i).innerHTML === "normal"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_int.png";
+				charTypeImage.alt = charType.item(i).innerHTML;
 				charType.item(i).innerHTML = "";
 				charType.item(i).appendChild(charTypeImage);
 			}
@@ -54,6 +58,7 @@ function charInfo(){
 			if(charType.item(i).innerHTML === "super"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_super_int.png";
+				charTypeImage.alt = charType.item(i).innerHTML;
 				charType.item(i).innerHTML = "";
 				charType.item(i).appendChild(charTypeImage);
 			}
@@ -61,6 +66,7 @@ function charInfo(){
 			if(charType.item(i).innerHTML === "extreme"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_extreme_int.png";
+				charTypeImage.alt = charType.item(i).innerHTML;
 				charType.item(i).innerHTML = "";
 				charType.item(i).appendChild(charTypeImage);
 			}
@@ -75,6 +81,7 @@ function charInfo(){
 			if(charType.item(i).innerHTML === "normal"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_phy.png";
+				charTypeImage.alt = charType.item(i).innerHTML;
 				charType.item(i).innerHTML = "";
 				charType.item(i).appendChild(charTypeImage);
 			}
@@ -82,6 +89,7 @@ function charInfo(){
 			if(charType.item(i).innerHTML === "super"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_super_phy.png";
+				charTypeImage.alt = charType.item(i).innerHTML;
 				charType.item(i).innerHTML = "";
 				charType.item(i).appendChild(charTypeImage);
 			}
@@ -89,6 +97,7 @@ function charInfo(){
 			if(charType.item(i).innerHTML === "extreme"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_extreme_phy.png";
+				charTypeImage.alt = charType.item(i).innerHTML;
 				charType.item(i).innerHTML = "";
 				charType.item(i).appendChild(charTypeImage);
 			}
@@ -103,6 +112,7 @@ function charInfo(){
 			if(charType.item(i).innerHTML === "normal"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_str.png";
+				charTypeImage.alt = charType.item(i).innerHTML;
 				charType.item(i).innerHTML = "";
 				charType.item(i).appendChild(charTypeImage);
 			}
@@ -110,6 +120,7 @@ function charInfo(){
 			if(charType.item(i).innerHTML === "super"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_super_str.png";
+				charTypeImage.alt = charType.item(i).innerHTML;
 				charType.item(i).innerHTML = "";
 				charType.item(i).appendChild(charTypeImage);
 			}
@@ -117,6 +128,7 @@ function charInfo(){
 			if(charType.item(i).innerHTML === "extreme"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_extreme_str.png";
+				charTypeImage.alt = charType.item(i).innerHTML;
 				charType.item(i).innerHTML = "";
 				charType.item(i).appendChild(charTypeImage);
 			}
@@ -131,6 +143,7 @@ function charInfo(){
 			if(charType.item(i).innerHTML === "normal"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_teq.png";
+				charTypeImage.alt = charType.item(i).innerHTML;
 				charType.item(i).innerHTML = "";
 				charType.item(i).appendChild(charTypeImage);
 			}
@@ -138,6 +151,7 @@ function charInfo(){
 			if(charType.item(i).innerHTML === "super"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_super_teq.png";
+				charTypeImage.alt = charType.item(i).innerHTML;
 				charType.item(i).innerHTML = "";
 				charType.item(i).appendChild(charTypeImage);
 			}
@@ -145,6 +159,7 @@ function charInfo(){
 			if(charType.item(i).innerHTML === "extreme"){
 				charTypeImage.classList.add("card-type");
 				charTypeImage.src = "CharacterType/char_type_extreme_teq.png";
+				charTypeImage.alt = charType.item(i).innerHTML;
 				charType.item(i).innerHTML = "";
 				charType.item(i).appendChild(charTypeImage);
 			}

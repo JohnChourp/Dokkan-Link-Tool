@@ -1,6 +1,9 @@
 .typeFilter {
 	display:flex;
-	justify-content: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	width:700px;
 }
 
 .typeFilterShow {
@@ -23,7 +26,23 @@
 	background-color: #064794;
 }
 
+#super_agl {
+	background-color: #064794;
+}
+
+#extreme_agl {
+	background-color: #064794;
+}
+
 #int {
+	background-color: #6e3e80;
+}
+
+#super_int {
+	background-color: #6e3e80;
+}
+
+#extreme_int {
 	background-color: #6e3e80;
 }
 
@@ -31,11 +50,35 @@
 	background-color: #673A03;
 }
 
+#super_phy {
+	background-color: #673A03;
+}
+
+#extreme_phy {
+	background-color: #673A03;
+}
+
 #str {
 	background-color: #7C1A1E;
 }
 
+#super_str {
+	background-color: #7C1A1E;
+}
+
+#extreme_str {
+	background-color: #7C1A1E;
+}
+
 #teq {
+	background-color: #015907;
+}
+
+#super_teq {
+	background-color: #015907;
+}
+
+#extreme_teq {
 	background-color: #015907;
 }
 

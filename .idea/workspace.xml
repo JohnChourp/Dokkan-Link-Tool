@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="fixed links http and https for localhost">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="now filterType is working properply">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/categories.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/categories.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/type.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/type.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/charInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/charInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterFullMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterFullMatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/filterPartialMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterPartialMatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/partial-match.html" beforeDir="false" afterPath="$PROJECT_DIR$/partial-match.html" afterDir="false" />
@@ -29,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-more-characters" />
+        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-a-filter-type" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,7 +105,7 @@
       <workItem from="1648399584740" duration="3535000" />
       <workItem from="1648407062169" duration="1956000" />
       <workItem from="1648484829278" duration="11066000" />
-      <workItem from="1648542437020" duration="4461000" />
+      <workItem from="1648542437020" duration="6653000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -343,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648545651380</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="now filterType is working properply">
+      <created>1648547094308</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1648547094308</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +371,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added partial and full match" />
     <MESSAGE value="seperated in different pages full and partial match" />
     <MESSAGE value="fixed bugs" />
     <MESSAGE value="changed workspace.xml" />
@@ -387,6 +395,7 @@
     <MESSAGE value="minro fix for filter type" />
     <MESSAGE value="fixed link for partial match and full match" />
     <MESSAGE value="fixed links http and https for localhost" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed links http and https for localhost" />
+    <MESSAGE value="now filterType is working properply" />
+    <option name="LAST_COMMIT_MESSAGE" value="now filterType is working properply" />
   </component>
 </project>
