@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="now simple type filters are only show normal type">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added super and extreme type filter for full match search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/charInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/charInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/filterFullMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterFullMatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterPartialMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterPartialMatch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +102,7 @@
       <workItem from="1648407062169" duration="1956000" />
       <workItem from="1648484829278" duration="11066000" />
       <workItem from="1648542437020" duration="7999000" />
-      <workItem from="1648568195483" duration="1983000" />
+      <workItem from="1648568195483" duration="2903000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -356,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648549283731</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="added super and extreme type filter for full match search">
+      <created>1648570472566</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1648570472566</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +382,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed bugs" />
     <MESSAGE value="changed workspace.xml" />
     <MESSAGE value="added image button for db_saga" />
     <MESSAGE value="added image button for db_saga and for partial match" />
@@ -400,6 +406,7 @@
     <MESSAGE value="fixed links http and https for localhost" />
     <MESSAGE value="now filterType is working properply" />
     <MESSAGE value="now simple type filters are only show normal type" />
-    <option name="LAST_COMMIT_MESSAGE" value="now simple type filters are only show normal type" />
+    <MESSAGE value="added super and extreme type filter for full match search" />
+    <option name="LAST_COMMIT_MESSAGE" value="added super and extreme type filter for full match search" />
   </component>
 </project>

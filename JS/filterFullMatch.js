@@ -405,271 +405,9 @@ function ResetSelectionFilters(){
 	}
 }
 
-function showFilterType(){
-	document.getElementsByClassName("typeFilter").item(0).classList.remove("typeFilterShow");
-}
-
-function hoverFilterType(){
-	let agl_filter = document.getElementById("agl");
-	agl_filter.onmouseover = function(){
-		agl_filter.style.backgroundColor = "#0a7fff";
-		if(agl_filter.classList.contains("checkedTypeBtn")){
-			agl_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	agl_filter.onmouseout = function(){
-		agl_filter.style.backgroundColor = "#064794";
-		if(agl_filter.classList.contains("checkedTypeBtn")){
-			agl_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let super_agl_filter = document.getElementById("super_agl");
-	super_agl_filter.onmouseover = function(){
-		super_agl_filter.style.backgroundColor = "#0a7fff";
-		if(super_agl_filter.classList.contains("checkedTypeBtn")){
-			super_agl_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	super_agl_filter.onmouseout = function(){
-		super_agl_filter.style.backgroundColor = "#064794";
-		if(super_agl_filter.classList.contains("checkedTypeBtn")){
-			super_agl_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	extreme_agl_filter.onmouseover = function(){
-		extreme_agl_filter.style.backgroundColor = "#0a7fff";
-		if(extreme_agl_filter.classList.contains("checkedTypeBtn")){
-			extreme_agl_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	extreme_agl_filter.onmouseout = function(){
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		if(extreme_agl_filter.classList.contains("checkedTypeBtn")){
-			extreme_agl_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let int_filter = document.getElementById("int");
-	int_filter.onmouseover = function(){
-		int_filter.style.backgroundColor = "#b367d7";
-		if(int_filter.classList.contains("checkedTypeBtn")){
-			int_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	int_filter.onmouseout = function(){
-		int_filter.style.backgroundColor = "#6e3e80";
-		if(int_filter.classList.contains("checkedTypeBtn")){
-			int_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let super_int_filter = document.getElementById("super_int");
-	super_int_filter.onmouseover = function(){
-		super_int_filter.style.backgroundColor = "#b367d7";
-		if(super_int_filter.classList.contains("checkedTypeBtn")){
-			super_int_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	super_int_filter.onmouseout = function(){
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		if(super_int_filter.classList.contains("checkedTypeBtn")){
-			super_int_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let extreme_int_filter = document.getElementById("extreme_int");
-	extreme_int_filter.onmouseover = function(){
-		extreme_int_filter.style.backgroundColor = "#b367d7";
-		if(extreme_int_filter.classList.contains("checkedTypeBtn")){
-			extreme_int_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	extreme_int_filter.onmouseout = function(){
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		if(extreme_int_filter.classList.contains("checkedTypeBtn")){
-			extreme_int_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let phy_filter = document.getElementById("phy");
-	phy_filter.onmouseover = function(){
-		phy_filter.style.backgroundColor = "#c06d06";
-		if(phy_filter.classList.contains("checkedTypeBtn")){
-			phy_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	phy_filter.onmouseout = function(){
-		phy_filter.style.backgroundColor = "#673A03";
-		if(phy_filter.classList.contains("checkedTypeBtn")){
-			phy_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let super_phy_filter = document.getElementById("super_phy");
-	super_phy_filter.onmouseover = function(){
-		super_phy_filter.style.backgroundColor = "#c06d06";
-		if(super_phy_filter.classList.contains("checkedTypeBtn")){
-			super_phy_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	super_phy_filter.onmouseout = function(){
-		super_phy_filter.style.backgroundColor = "#673A03";
-		if(super_phy_filter.classList.contains("checkedTypeBtn")){
-			super_phy_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	extreme_phy_filter.onmouseover = function(){
-		extreme_phy_filter.style.backgroundColor = "#c06d06";
-		if(extreme_phy_filter.classList.contains("checkedTypeBtn")){
-			extreme_phy_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	extreme_phy_filter.onmouseout = function(){
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		if(extreme_phy_filter.classList.contains("checkedTypeBtn")){
-			extreme_phy_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let str_filter = document.getElementById("str");
-	str_filter.onmouseover = function(){
-		str_filter.style.backgroundColor = "#c72931";
-		if(str_filter.classList.contains("checkedTypeBtn")){
-			str_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	str_filter.onmouseout = function(){
-		str_filter.style.backgroundColor = "#7C1A1E";
-		if(str_filter.classList.contains("checkedTypeBtn")){
-			str_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let super_str_filter = document.getElementById("super_str");
-	super_str_filter.onmouseover = function(){
-		super_str_filter.style.backgroundColor = "#c72931";
-		if(super_str_filter.classList.contains("checkedTypeBtn")){
-			super_str_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	super_str_filter.onmouseout = function(){
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		if(super_str_filter.classList.contains("checkedTypeBtn")){
-			super_str_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let extreme_str_filter = document.getElementById("extreme_str");
-	extreme_str_filter.onmouseover = function(){
-		extreme_str_filter.style.backgroundColor = "#c72931";
-		if(extreme_str_filter.classList.contains("checkedTypeBtn")){
-			extreme_str_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	extreme_str_filter.onmouseout = function(){
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		if(extreme_str_filter.classList.contains("checkedTypeBtn")){
-			extreme_str_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let teq_filter = document.getElementById("teq");
-	teq_filter.onmouseover = function(){
-		teq_filter.style.backgroundColor = "#00b712";
-		if(teq_filter.classList.contains("checkedTypeBtn")){
-			teq_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	teq_filter.onmouseout = function(){
-		teq_filter.style.backgroundColor = "#015907";
-		if(teq_filter.classList.contains("checkedTypeBtn")){
-			teq_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let super_teq_filter = document.getElementById("super_teq");
-	super_teq_filter.onmouseover = function(){
-		super_teq_filter.style.backgroundColor = "#00b712";
-		if(super_teq_filter.classList.contains("checkedTypeBtn")){
-			super_teq_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	super_teq_filter.onmouseout = function(){
-		super_teq_filter.style.backgroundColor = "#015907";
-		if(super_teq_filter.classList.contains("checkedTypeBtn")){
-			super_teq_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	extreme_teq_filter.onmouseover = function(){
-		extreme_teq_filter.style.backgroundColor = "#00b712";
-		if(extreme_teq_filter.classList.contains("checkedTypeBtn")){
-			extreme_teq_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	extreme_teq_filter.onmouseout = function(){
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		if(extreme_teq_filter.classList.contains("checkedTypeBtn")){
-			extreme_teq_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let super_filter = document.getElementById("super_type");
-	super_filter.onmouseover = function(){
-		super_filter.style.backgroundColor = "#919090";
-		if(super_filter.classList.contains("checkedTypeBtn")){
-			super_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	super_filter.onmouseout = function(){
-		super_filter.style.backgroundColor = "#494949";
-		if(super_filter.classList.contains("checkedTypeBtn")){
-			super_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let extreme_filter = document.getElementById("extreme_type");
-	extreme_filter.onmouseover = function(){
-		extreme_filter.style.backgroundColor = "#919090";
-		if(extreme_filter.classList.contains("checkedTypeBtn")){
-			extreme_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	extreme_filter.onmouseout = function(){
-		extreme_filter.style.backgroundColor = "#494949";
-		if(extreme_filter.classList.contains("checkedTypeBtn")){
-			extreme_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-}
-
 function showCategories(){
 	document.getElementsByClassName("CategoriesFilter").item(0).classList.remove("CategoriesFilterShow");
 }
-
 function hoverCategories(){
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
 	for(let i = 0; i < categoriesOrange.length; i ++){
@@ -861,6 +599,9 @@ function hoverCategories(){
 	}
 }
 
+function showFilterType(){
+	document.getElementsByClassName("typeFilter").item(0).classList.remove("typeFilterShow");
+}
 function initTypeFilter(){
 	let httpLink;
 	let hostName = window.location.host;
@@ -1462,6 +1203,262 @@ function initTypeFilter(){
 		defaultExtremeFilter();
 	});
 }
+function hoverFilterType(){
+	let agl_filter = document.getElementById("agl");
+	agl_filter.onmouseover = function(){
+		agl_filter.style.backgroundColor = "#0a7fff";
+		if(agl_filter.classList.contains("checkedTypeBtn")){
+			agl_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	agl_filter.onmouseout = function(){
+		agl_filter.style.backgroundColor = "#064794";
+		if(agl_filter.classList.contains("checkedTypeBtn")){
+			agl_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let super_agl_filter = document.getElementById("super_agl");
+	super_agl_filter.onmouseover = function(){
+		super_agl_filter.style.backgroundColor = "#0a7fff";
+		if(super_agl_filter.classList.contains("checkedTypeBtn")){
+			super_agl_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	super_agl_filter.onmouseout = function(){
+		super_agl_filter.style.backgroundColor = "#064794";
+		if(super_agl_filter.classList.contains("checkedTypeBtn")){
+			super_agl_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let extreme_agl_filter = document.getElementById("extreme_agl");
+	extreme_agl_filter.onmouseover = function(){
+		extreme_agl_filter.style.backgroundColor = "#0a7fff";
+		if(extreme_agl_filter.classList.contains("checkedTypeBtn")){
+			extreme_agl_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	extreme_agl_filter.onmouseout = function(){
+		extreme_agl_filter.style.backgroundColor = "#064794";
+		if(extreme_agl_filter.classList.contains("checkedTypeBtn")){
+			extreme_agl_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let int_filter = document.getElementById("int");
+	int_filter.onmouseover = function(){
+		int_filter.style.backgroundColor = "#b367d7";
+		if(int_filter.classList.contains("checkedTypeBtn")){
+			int_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	int_filter.onmouseout = function(){
+		int_filter.style.backgroundColor = "#6e3e80";
+		if(int_filter.classList.contains("checkedTypeBtn")){
+			int_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let super_int_filter = document.getElementById("super_int");
+	super_int_filter.onmouseover = function(){
+		super_int_filter.style.backgroundColor = "#b367d7";
+		if(super_int_filter.classList.contains("checkedTypeBtn")){
+			super_int_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	super_int_filter.onmouseout = function(){
+		super_int_filter.style.backgroundColor = "#6e3e80";
+		if(super_int_filter.classList.contains("checkedTypeBtn")){
+			super_int_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let extreme_int_filter = document.getElementById("extreme_int");
+	extreme_int_filter.onmouseover = function(){
+		extreme_int_filter.style.backgroundColor = "#b367d7";
+		if(extreme_int_filter.classList.contains("checkedTypeBtn")){
+			extreme_int_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	extreme_int_filter.onmouseout = function(){
+		extreme_int_filter.style.backgroundColor = "#6e3e80";
+		if(extreme_int_filter.classList.contains("checkedTypeBtn")){
+			extreme_int_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let phy_filter = document.getElementById("phy");
+	phy_filter.onmouseover = function(){
+		phy_filter.style.backgroundColor = "#c06d06";
+		if(phy_filter.classList.contains("checkedTypeBtn")){
+			phy_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	phy_filter.onmouseout = function(){
+		phy_filter.style.backgroundColor = "#673A03";
+		if(phy_filter.classList.contains("checkedTypeBtn")){
+			phy_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let super_phy_filter = document.getElementById("super_phy");
+	super_phy_filter.onmouseover = function(){
+		super_phy_filter.style.backgroundColor = "#c06d06";
+		if(super_phy_filter.classList.contains("checkedTypeBtn")){
+			super_phy_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	super_phy_filter.onmouseout = function(){
+		super_phy_filter.style.backgroundColor = "#673A03";
+		if(super_phy_filter.classList.contains("checkedTypeBtn")){
+			super_phy_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let extreme_phy_filter = document.getElementById("extreme_phy");
+	extreme_phy_filter.onmouseover = function(){
+		extreme_phy_filter.style.backgroundColor = "#c06d06";
+		if(extreme_phy_filter.classList.contains("checkedTypeBtn")){
+			extreme_phy_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	extreme_phy_filter.onmouseout = function(){
+		extreme_phy_filter.style.backgroundColor = "#673A03";
+		if(extreme_phy_filter.classList.contains("checkedTypeBtn")){
+			extreme_phy_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let str_filter = document.getElementById("str");
+	str_filter.onmouseover = function(){
+		str_filter.style.backgroundColor = "#c72931";
+		if(str_filter.classList.contains("checkedTypeBtn")){
+			str_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	str_filter.onmouseout = function(){
+		str_filter.style.backgroundColor = "#7C1A1E";
+		if(str_filter.classList.contains("checkedTypeBtn")){
+			str_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let super_str_filter = document.getElementById("super_str");
+	super_str_filter.onmouseover = function(){
+		super_str_filter.style.backgroundColor = "#c72931";
+		if(super_str_filter.classList.contains("checkedTypeBtn")){
+			super_str_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	super_str_filter.onmouseout = function(){
+		super_str_filter.style.backgroundColor = "#7C1A1E";
+		if(super_str_filter.classList.contains("checkedTypeBtn")){
+			super_str_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let extreme_str_filter = document.getElementById("extreme_str");
+	extreme_str_filter.onmouseover = function(){
+		extreme_str_filter.style.backgroundColor = "#c72931";
+		if(extreme_str_filter.classList.contains("checkedTypeBtn")){
+			extreme_str_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	extreme_str_filter.onmouseout = function(){
+		extreme_str_filter.style.backgroundColor = "#7C1A1E";
+		if(extreme_str_filter.classList.contains("checkedTypeBtn")){
+			extreme_str_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let teq_filter = document.getElementById("teq");
+	teq_filter.onmouseover = function(){
+		teq_filter.style.backgroundColor = "#00b712";
+		if(teq_filter.classList.contains("checkedTypeBtn")){
+			teq_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	teq_filter.onmouseout = function(){
+		teq_filter.style.backgroundColor = "#015907";
+		if(teq_filter.classList.contains("checkedTypeBtn")){
+			teq_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let super_teq_filter = document.getElementById("super_teq");
+	super_teq_filter.onmouseover = function(){
+		super_teq_filter.style.backgroundColor = "#00b712";
+		if(super_teq_filter.classList.contains("checkedTypeBtn")){
+			super_teq_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	super_teq_filter.onmouseout = function(){
+		super_teq_filter.style.backgroundColor = "#015907";
+		if(super_teq_filter.classList.contains("checkedTypeBtn")){
+			super_teq_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let extreme_teq_filter = document.getElementById("extreme_teq");
+	extreme_teq_filter.onmouseover = function(){
+		extreme_teq_filter.style.backgroundColor = "#00b712";
+		if(extreme_teq_filter.classList.contains("checkedTypeBtn")){
+			extreme_teq_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	extreme_teq_filter.onmouseout = function(){
+		extreme_teq_filter.style.backgroundColor = "#015907";
+		if(extreme_teq_filter.classList.contains("checkedTypeBtn")){
+			extreme_teq_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let super_filter = document.getElementById("super_type");
+	super_filter.onmouseover = function(){
+		super_filter.style.backgroundColor = "#919090";
+		if(super_filter.classList.contains("checkedTypeBtn")){
+			super_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	super_filter.onmouseout = function(){
+		super_filter.style.backgroundColor = "#494949";
+		if(super_filter.classList.contains("checkedTypeBtn")){
+			super_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	let extreme_filter = document.getElementById("extreme_type");
+	extreme_filter.onmouseover = function(){
+		extreme_filter.style.backgroundColor = "#919090";
+		if(extreme_filter.classList.contains("checkedTypeBtn")){
+			extreme_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+	
+	extreme_filter.onmouseout = function(){
+		extreme_filter.style.backgroundColor = "#494949";
+		if(extreme_filter.classList.contains("checkedTypeBtn")){
+			extreme_filter.style.backgroundColor = "#EEC310";
+		}
+	}
+}
 
 function defaultAglFilter(){
 	let agl_filter = document.getElementById("agl");
@@ -1526,7 +1523,6 @@ function defaultAglFilter(){
 		extreme_type_filter.classList.remove("checkedTypeBtn");
 	}
 }
-
 function defaultSuperAglFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1590,7 +1586,6 @@ function defaultSuperAglFilter(){
 		extreme_type_filter.classList.remove("checkedTypeBtn");
 	}
 }
-
 function defaultExtremeAglFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1718,7 +1713,6 @@ function defaultIntFilter(){
 		extreme_type_filter.classList.remove("checkedTypeBtn");
 	}
 }
-
 function defaultSuperIntFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1782,7 +1776,6 @@ function defaultSuperIntFilter(){
 		extreme_type_filter.classList.remove("checkedTypeBtn");
 	}
 }
-
 function defaultExtremeIntFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1910,7 +1903,6 @@ function defaultPhyFilter(){
 		extreme_type_filter.classList.remove("checkedTypeBtn");
 	}
 }
-
 function defaultSuperPhyFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1974,7 +1966,6 @@ function defaultSuperPhyFilter(){
 		extreme_type_filter.classList.remove("checkedTypeBtn");
 	}
 }
-
 function defaultExtremePhyFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -2102,7 +2093,6 @@ function defaultStrFilter(){
 		extreme_type_filter.classList.remove("checkedTypeBtn");
 	}
 }
-
 function defaultSuperStrFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -2166,7 +2156,6 @@ function defaultSuperStrFilter(){
 		extreme_type_filter.classList.remove("checkedTypeBtn");
 	}
 }
-
 function defaultExtremeStrFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -2294,7 +2283,6 @@ function defaultTeqFilter(){
 		extreme_type_filter.classList.remove("checkedTypeBtn");
 	}
 }
-
 function defaultSuperTeqFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -2358,7 +2346,6 @@ function defaultSuperTeqFilter(){
 		extreme_type_filter.classList.remove("checkedTypeBtn");
 	}
 }
-
 function defaultExtremeTeqFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -2485,7 +2472,6 @@ function defaultSuperFilter(){
 		extreme_type_filter.classList.remove("checkedTypeBtn");
 	}
 }
-
 function defaultExtremeFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -2596,7 +2582,6 @@ function changeDefaultOrange(n){
 	}
 	categoriesOrange.item(n).style.backgroundColor = "#FF6200";
 }
-
 function changeDefaultGreen(n){
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
@@ -2644,7 +2629,6 @@ function changeDefaultGreen(n){
 	}
 	categoriesGreen.item(n).style.backgroundColor = "#79FF00";
 }
-
 function changeDefaultYellow(n){
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
@@ -2692,7 +2676,6 @@ function changeDefaultYellow(n){
 	}
 	categoriesYellow.item(n).style.backgroundColor = "#FFD500";
 }
-
 function changeDefaultCyan(n){
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
@@ -2739,7 +2722,6 @@ function changeDefaultCyan(n){
 	}
 	categoriesCyan.item(n).style.backgroundColor = "#00E5E5";
 }
-
 function changeDefaultBlue(n){
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
@@ -2787,7 +2769,6 @@ function changeDefaultBlue(n){
 	}
 	categoriesBlue.item(n).style.backgroundColor = "#0067FF";
 }
-
 function changeDefaultPurple(n){
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
@@ -2835,7 +2816,6 @@ function changeDefaultPurple(n){
 	}
 	categoriesPurple.item(n).style.backgroundColor = "#6100FF";
 }
-
 function changeDefaultRed(n){
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
@@ -2883,7 +2863,6 @@ function changeDefaultRed(n){
 	}
 	categoriesRed.item(n).style.backgroundColor = "#FF0054";
 }
-
 function changeDefaultDarkGreen(n){
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
 	for(let i = 0; i < categoriesDarkBlue.length; i ++){
@@ -2931,7 +2910,6 @@ function changeDefaultDarkGreen(n){
 	}
 	categoriesDarkGreen.item(n).style.backgroundColor = "#05BD76";
 }
-
 function changeDefaultDarkBlue(n){
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
 	for(let i = 0; i < categoriesOrange.length; i ++){
