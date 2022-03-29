@@ -309,16 +309,32 @@ function filterFullMatch(){
 	}
 }
 
-function ResetSelectionFilters(){
+function ResetSelectionFilters(n){
 	let categories = document.getElementsByClassName("categories");
 	let categoriesBtn = document.getElementsByClassName("categories-btn");
+	let typeBtn = document.getElementsByClassName("type-btn");
 	
 	for(let i = 0; i < categories.length; i ++){
-		categories.item(i).style.display = "inline-block";
 		categories.item(i).classList.remove("appeared");
 		categories.item(i).classList.remove("appearedType");
 		categories.item(i).classList.remove("appearedSuperType");
 		categories.item(i).classList.remove("appearedExtremeType");
+	}
+	
+	for(let i = 0; i < typeBtn.length; i ++){
+		typeBtn.item(i).classList.remove("checkedTypeBtn");
+	}
+	
+	if(n === 0){
+		for(let i = 0; i < categories.length; i ++){
+			categories.item(i).style.display = "inline-block";
+		}
+	}
+	
+	if(n === 1){
+		for(let i = 0; i < categories.length; i ++){
+			categories.item(i).style.display = "none";
+		}
 	}
 	
 	for(let i = 0; i < categoriesBtn.length; i ++){

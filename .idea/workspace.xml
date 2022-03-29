@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added super and extreme type filter for full match search">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added super and extreme type filter for partial match search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/filterFullMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterFullMatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/filterPartialMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterPartialMatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partial-match.html" beforeDir="false" afterPath="$PROJECT_DIR$/partial-match.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-a-filter-type" />
+        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-type-filters-for-super-and-extreme" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -102,7 +104,8 @@
       <workItem from="1648407062169" duration="1956000" />
       <workItem from="1648484829278" duration="11066000" />
       <workItem from="1648542437020" duration="7999000" />
-      <workItem from="1648568195483" duration="2903000" />
+      <workItem from="1648568195483" duration="3090000" />
+      <workItem from="1648571326090" duration="642000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -363,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648570472566</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="added super and extreme type filter for partial match search">
+      <created>1648571175201</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1648571175201</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,7 +392,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="changed workspace.xml" />
     <MESSAGE value="added image button for db_saga" />
     <MESSAGE value="added image button for db_saga and for partial match" />
     <MESSAGE value="now orange and green categories are functioning as expected" />
@@ -407,6 +416,7 @@
     <MESSAGE value="now filterType is working properply" />
     <MESSAGE value="now simple type filters are only show normal type" />
     <MESSAGE value="added super and extreme type filter for full match search" />
-    <option name="LAST_COMMIT_MESSAGE" value="added super and extreme type filter for full match search" />
+    <MESSAGE value="added super and extreme type filter for partial match search" />
+    <option name="LAST_COMMIT_MESSAGE" value="added super and extreme type filter for partial match search" />
   </component>
 </project>
