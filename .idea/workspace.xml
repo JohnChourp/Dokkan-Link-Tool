@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="fixed color changing when hover over filter type">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="minor fixes for partial search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/filterPartialMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterPartialMatch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partial-match.html" beforeDir="false" afterPath="$PROJECT_DIR$/partial-match.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +99,8 @@
       <workItem from="1648378782563" duration="7487000" />
       <workItem from="1648399584740" duration="3535000" />
       <workItem from="1648407062169" duration="1956000" />
-      <workItem from="1648484829278" duration="10591000" />
+      <workItem from="1648484829278" duration="11066000" />
+      <workItem from="1648542437020" duration="1716000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -312,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648494824500</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="minor fixes for partial search">
+      <created>1648495783481</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1648495783481</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +338,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="done" />
     <MESSAGE value="added charInfo.js that inserts data to characters" />
     <MESSAGE value="added 15 more characters" />
     <MESSAGE value="added all categories avalable" />
@@ -356,6 +362,7 @@
     <MESSAGE value="simplified type filter" />
     <MESSAGE value="simplified type filter and category filter to show and hide" />
     <MESSAGE value="fixed color changing when hover over filter type" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed color changing when hover over filter type" />
+    <MESSAGE value="minor fixes for partial search" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor fixes for partial search" />
   </component>
 </project>
