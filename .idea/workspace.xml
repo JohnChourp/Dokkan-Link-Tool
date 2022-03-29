@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added 40 more characters">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="fixed links http and https for localhost">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/charInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/charInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/categories.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/categories.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterPartialMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterPartialMatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partial-match.html" beforeDir="false" afterPath="$PROJECT_DIR$/partial-match.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,10 +29,18 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-reorganize-better-the-category-buttons" />
+        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-more-characters" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -87,7 +97,13 @@
       <workItem from="1648316674094" duration="1557000" />
       <workItem from="1648318255460" duration="12816000" />
       <workItem from="1648332986583" duration="15000" />
-      <workItem from="1648365412980" duration="8699000" />
+      <workItem from="1648365412980" duration="8897000" />
+      <workItem from="1648375549284" duration="606000" />
+      <workItem from="1648378782563" duration="7487000" />
+      <workItem from="1648399584740" duration="3535000" />
+      <workItem from="1648407062169" duration="1956000" />
+      <workItem from="1648484829278" duration="11066000" />
+      <workItem from="1648542437020" duration="4461000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -236,7 +252,98 @@
       <option name="project" value="LOCAL" />
       <updated>1648374141381</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="bug fix">
+      <created>1648374607772</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1648374607772</updated>
+    </task>
+    <task id="LOCAL-00023" summary="improved filter type">
+      <created>1648386236052</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1648386236052</updated>
+    </task>
+    <task id="LOCAL-00024" summary="now all categories work properply with the type filter">
+      <created>1648400792378</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1648400792378</updated>
+    </task>
+    <task id="LOCAL-00025" summary="minor bug fixes">
+      <created>1648403988494</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1648403988494</updated>
+    </task>
+    <task id="LOCAL-00026" summary="simplified activeCategory class added when press a category">
+      <created>1648487453773</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1648487453774</updated>
+    </task>
+    <task id="LOCAL-00027" summary="simplified activeCategory even more and now is working properly">
+      <created>1648489431063</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1648489431063</updated>
+    </task>
+    <task id="LOCAL-00028" summary="simplified type filter">
+      <created>1648489992872</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1648489992872</updated>
+    </task>
+    <task id="LOCAL-00029" summary="simplified type filter and category filter to show and hide">
+      <created>1648491443725</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1648491443725</updated>
+    </task>
+    <task id="LOCAL-00030" summary="fixed color changing when hover over filter type">
+      <created>1648494824500</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1648494824500</updated>
+    </task>
+    <task id="LOCAL-00031" summary="minor fixes for partial search">
+      <created>1648495783481</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1648495783481</updated>
+    </task>
+    <task id="LOCAL-00032" summary="minro fix for filter type">
+      <created>1648544351735</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1648544351735</updated>
+    </task>
+    <task id="LOCAL-00033" summary="fixed link for partial match and full match">
+      <created>1648545222493</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1648545222493</updated>
+    </task>
+    <task id="LOCAL-00034" summary="fixed links http and https for localhost">
+      <created>1648545651380</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1648545651380</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,14 +362,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="First Commit" />
-    <MESSAGE value="added 5 characters with 2 filter categories" />
-    <MESSAGE value="renamed some files for better understanding" />
-    <MESSAGE value="added 5 more characters with a show all categories button" />
-    <MESSAGE value="done" />
-    <MESSAGE value="added charInfo.js that inserts data to characters" />
-    <MESSAGE value="added 15 more characters" />
-    <MESSAGE value="added all categories avalable" />
     <MESSAGE value="added partial and full match" />
     <MESSAGE value="seperated in different pages full and partial match" />
     <MESSAGE value="fixed bugs" />
@@ -275,6 +374,19 @@
     <MESSAGE value="now categories button are a little pretier" />
     <MESSAGE value="added 10 more characters" />
     <MESSAGE value="added 40 more characters" />
-    <option name="LAST_COMMIT_MESSAGE" value="added 40 more characters" />
+    <MESSAGE value="bug fix" />
+    <MESSAGE value="improved filter type" />
+    <MESSAGE value="now all categories work properply with the type filter" />
+    <MESSAGE value="minor bug fixes" />
+    <MESSAGE value="simplified activeCategory class added when press a category" />
+    <MESSAGE value="simplified activeCategory even more and now is working properly" />
+    <MESSAGE value="simplified type filter" />
+    <MESSAGE value="simplified type filter and category filter to show and hide" />
+    <MESSAGE value="fixed color changing when hover over filter type" />
+    <MESSAGE value="minor fixes for partial search" />
+    <MESSAGE value="minro fix for filter type" />
+    <MESSAGE value="fixed link for partial match and full match" />
+    <MESSAGE value="fixed links http and https for localhost" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed links http and https for localhost" />
   </component>
 </project>
