@@ -11,14 +11,14 @@
 </head>
 <body onload="charInfo(); initTypeFilter(); filterPartialMatch(); hoverCategories(); hoverFilterType();">
 <label class="container">Full Match
-	<input id="full-match-input" type="radio" name="radio">
+	<input id="full-match-input" onclick="window.location.href='index.html'" type="radio" name="radio">
 	<span class="checkmark"></span>
 </label>
 <label class="container">Partial Match
-	<input id="partial-match-input" checked onclick="window.location.href='index.html'" type="radio" name="radio">
+	<input id="partial-match-input" checked type="radio" name="radio">
 	<span class="checkmark"></span>
 </label>
-<br><br>
+<p class="container-text">First choose from the Categories to show and then choose from the type filter</p>
 <button onclick="ResetSelectionFilters();">Reset All Filters</button>
 <button onclick="showCategories();" id="select_category" type="button">Select Category</button>
 <button onclick="showFilterType();" id="select_type" type="button">Select Type</button>

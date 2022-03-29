@@ -2,7 +2,6 @@ function filterPartialMatch(){
 	let catList = [];
 	let categories = document.getElementsByClassName("categories");
 	let categoriesBtn = document.getElementsByClassName("categories-btn");
-	let appearedType = document.getElementsByClassName("appearedType");
 	
 	for(let i = 0; i < categoriesBtn.length; i ++){
 		catList[i] = document.getElementsByClassName(categoriesBtn.item(i).id);
