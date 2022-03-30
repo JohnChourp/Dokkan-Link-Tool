@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added Series 1 101-200 characters">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="fixed bond of friendship category">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -105,7 +105,8 @@
       <workItem from="1648571326090" duration="5331000" />
       <workItem from="1648618951254" duration="6410000" />
       <workItem from="1648656332577" duration="4892000" />
-      <workItem from="1648661468240" duration="1359000" />
+      <workItem from="1648661468240" duration="1577000" />
+      <workItem from="1648668509450" duration="155000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -401,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648661231533</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="fixed bond of friendship category">
+      <created>1648663050046</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1648663050046</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,7 +428,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="now all categories are working properly and full match is complete" />
     <MESSAGE value="now categories button are a little pretier" />
     <MESSAGE value="added 10 more characters" />
     <MESSAGE value="added 40 more characters" />
@@ -445,6 +452,7 @@
     <MESSAGE value="added 50 more characters" />
     <MESSAGE value="added all series 2 and 3 character" />
     <MESSAGE value="added Series 1 101-200 characters" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Series 1 101-200 characters" />
+    <MESSAGE value="fixed bond of friendship category" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bond of friendship category" />
   </component>
 </project>
