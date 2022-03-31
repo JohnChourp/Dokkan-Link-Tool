@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added 201-300 series 1 character also added 3 new categories">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added 78 character thumb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -108,7 +108,8 @@
       <workItem from="1648661468240" duration="1577000" />
       <workItem from="1648668509450" duration="155000" />
       <workItem from="1648728781171" duration="91000" />
-      <workItem from="1648739434139" duration="8593000" />
+      <workItem from="1648739434139" duration="8697000" />
+      <workItem from="1648757298037" duration="2217000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -418,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648747154063</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="added 78 character thumb">
+      <created>1648748787989</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1648748787989</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +445,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added 10 more characters" />
     <MESSAGE value="added 40 more characters" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="improved filter type" />
@@ -462,6 +469,7 @@
     <MESSAGE value="added Series 1 101-200 characters" />
     <MESSAGE value="fixed bond of friendship category" />
     <MESSAGE value="added 201-300 series 1 character also added 3 new categories" />
-    <option name="LAST_COMMIT_MESSAGE" value="added 201-300 series 1 character also added 3 new categories" />
+    <MESSAGE value="added 78 character thumb" />
+    <option name="LAST_COMMIT_MESSAGE" value="added 78 character thumb" />
   </component>
 </project>
