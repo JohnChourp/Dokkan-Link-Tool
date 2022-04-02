@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added saiyan saga category" />
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="removed duplicate character thumb">
+      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1003560_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CharacterThumb/card_1001880_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterThumb/card_1003910_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +112,8 @@
       <workItem from="1648728781171" duration="91000" />
       <workItem from="1648739434139" duration="8697000" />
       <workItem from="1648757298037" duration="2590000" />
-      <workItem from="1648894919495" duration="1246000" />
+      <workItem from="1648894919495" duration="1873000" />
+      <workItem from="1648911571054" duration="3703000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -438,7 +444,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648895528241</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="added 70 more character thumb 400-500 series 1">
+      <created>1648896843939</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1648896843939</updated>
+    </task>
+    <task id="LOCAL-00049" summary="removed duplicate character thumb">
+      <created>1648896885167</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1648896885167</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,8 +477,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="improved filter type" />
-    <MESSAGE value="now all categories work properply with the type filter" />
     <MESSAGE value="minor bug fixes" />
     <MESSAGE value="simplified activeCategory class added when press a category" />
     <MESSAGE value="simplified activeCategory even more and now is working properly" />
@@ -482,6 +500,8 @@
     <MESSAGE value="added 78 character thumb" />
     <MESSAGE value="added 80 more characters" />
     <MESSAGE value="added saiyan saga category" />
-    <option name="LAST_COMMIT_MESSAGE" value="added saiyan saga category" />
+    <MESSAGE value="added 70 more character thumb 400-500 series 1" />
+    <MESSAGE value="removed duplicate character thumb" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed duplicate character thumb" />
   </component>
 </project>
