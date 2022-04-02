@@ -298,10 +298,12 @@ function charInfo(){
 		}
 	}
 }
+
 function loadingScriptFile(){
-	window.addEventListener('load',function(){
+	window.addEventListener('load' , function(){
 		let container = document.getElementsByClassName("container-cards").item(0);
 		container.style.display = "block";
 	});
 }
+
 loadingScriptFile();

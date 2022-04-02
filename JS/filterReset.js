@@ -17,6 +17,7 @@ function ResetSelectionFilters(n){
 	if(n === 0){
 		for(let i = 0; i < categories.length; i ++){
 			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appeared");
 		}
 	}
 	

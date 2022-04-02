@@ -2,7 +2,7 @@ function showFilterCategory(){
 	document.getElementsByClassName("CategoriesFilter").item(0).classList.remove("CategoriesFilterShow");
 }
 
-function hoverCategories(){
+function hoverCategory(){
 	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
 	for(let i = 0; i < categoriesOrange.length; i ++){
 		categoriesOrange.item(i).onmouseover = function(){
