@@ -54,6 +54,9 @@
 		<button class="categories-btn categories-btn-orange" id="ds" type="button">
 			<span class="gradient-text-filter">DB Saga</span>
 		</button>
+		<button class="categories-btn categories-btn-orange" id="ssag" type="button">
+			<span class="gradient-text-filter">Saiyan Saga</span>
+		</button>
 		<button class="categories-btn categories-btn-orange" id="pns" type="button"><span class="gradient-text-filter">Planet Namek Saga</span>
 		</button>
 		<button class="categories-btn categories-btn-orange" id="acs" type="button"><span class="gradient-text-filter">Androids/Cell Saga</span>
@@ -92,15 +95,19 @@
 		</button>
 	</div>
 	<div class="categoriesYellow">
-		<button class="categories-btn categories-btn-yellow" id="ss" type="button"><span class="gradient-text-filter">Super Saiyans</span>
+		<button class="categories-btn categories-btn-yellow" id="ssa" type="button"><span class="gradient-text-filter">Super Saiyans</span>
 		</button>
 		<button class="categories-btn categories-btn-yellow" id="ss2" type="button"><span class="gradient-text-filter">Super Saiyan 2</span>
 		</button>
 		<button class="categories-btn categories-btn-yellow" id="ss3" type="button"><span class="gradient-text-filter">Super Saiyan 3</span>
 		</button>
+		<button class="categories-btn categories-btn-yellow" id="bss" type="button"><span class="gradient-text-filter">Beyond Super Saiyan</span>
+		</button>
 		<button class="categories-btn categories-btn-yellow" id="f" type="button"><span class="gradient-text-filter">Fusion</span>
 		</button>
 		<button class="categories-btn categories-btn-yellow" id="p" type="button"><span class="gradient-text-filter">Potara</span>
+		</button>
+		<button class="categories-btn categories-btn-yellow" id="ff" type="button"><span class="gradient-text-filter">Fused Fighters</span>
 		</button>
 		<button class="categories-btn categories-btn-yellow" id="gfo" type="button"><span class="gradient-text-filter">Giant Form</span>
 		</button>
@@ -144,7 +151,7 @@
 		</button>
 		<button class="categories-btn categories-btn-blue" id="sb" type="button"><span class="gradient-text-filter">Siblings' Bond</span>
 		</button>
-		<button class="categories-btn categories-btn-blue" id="bof" type="button"><span class="gradient-text-filter">Bond of Friendship</span>
+		<button class="categories-btn categories-btn-blue" id="bofr" type="button"><span class="gradient-text-filter">Bond of Friendship</span>
 		</button>
 		<button class="categories-btn categories-btn-blue" id="bomad" type="button"><span class="gradient-text-filter">Bond of Master and Disciple</span>
 		</button>
@@ -220,6 +227,8 @@
 				class="gradient-text-filter">Battle of Wits</span></button>
 		<button class="categories-btn categories-btn-dark-green" id="ab" type="button"><span
 				class="gradient-text-filter">Accelerated Battle</span></button>
+		<button class="categories-btn categories-btn-dark-green" id="bofa" type="button"><span
+				class="gradient-text-filter">Battle of Fate</span></button>
 		<button class="categories-btn categories-btn-dark-green" id="he" type="button"><span
 				class="gradient-text-filter">Heavenly Events</span></button>
 		<button class="categories-btn categories-btn-dark-green" id="sp" type="button"><span
@@ -236,27 +245,45 @@
 </div>
 <div class="container-cards" style="display:none">
 	<div class="flex-cards">
-		<div class="categories ps gfa ss k ts bof">
+		<div class="categories ps gfa ssa k ts bofr">
 			<div class="char-base-type-margin">agl</div>
 			<div class="card-thumb-margin">1000010</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">ssr</div>
 		</div>
-		<div class="categories ps vf ss acs gw me">
+		<div class="categories hs gfa y er ssag">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">2000020</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories ps vf ssa acs gw me">
 			<div class="char-base-type-margin">teq</div>
 			<div class="card-thumb-margin">1000020</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">ssr</div>
 		</div>
-		<div class="categories lcw pns ps gfa k s ts bof">
+		<div class="categories lcw pns ps gfa k s ts bofr">
 			<div class="char-base-type-margin">str</div>
 			<div class="card-thumb-margin">1000030</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories ps dbs vf tc ide stw gw pd bof">
+		<div class="categories tbo wb tc ide gw pd se">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">2000040</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ps dbs vf tc ide stw gw pd bofa ssag">
 			<div class="char-base-type-margin">teq</div>
 			<div class="card-thumb-margin">1000040</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ps vf y tc stw gw">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">2000050</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
@@ -266,9 +293,21 @@
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
+		<div class="categories ps dbs vf tc ide stw gw pd ab bofa ssag">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">2000060</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
 		<div class="categories pns tb wb tc ide stw gw pd se">
 			<div class="char-base-type-margin">str</div>
 			<div class="card-thumb-margin">1000060</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rw wt sb r e se">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">2000070</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
@@ -284,7 +323,13 @@
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories hs gfa y bomad">
+		<div class="categories gf ds bomad ow e ts tl">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">2000090</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs gfa y bomad ssag">
 			<div class="char-base-type-margin">str</div>
 			<div class="card-thumb-margin">1000090</div>
 			<div class="card-type-margin">normal</div>
@@ -296,45 +341,81 @@
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories e bow ts bof">
+		<div class="categories e bow ts bofr ssag">
 			<div class="char-base-type-margin">teq</div>
 			<div class="card-thumb-margin">1000110</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories n wr bomad bow gw">
+		<div class="categories ps vf tc ide stw sf">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">2000120</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories n wr bomad bow gw ssag">
 			<div class="char-base-type-margin">agl</div>
 			<div class="card-thumb-margin">1000120</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories wr e bof">
+		<div class="categories wr ow s bow sf">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">2000130</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wr e bofr">
 			<div class="char-base-type-margin">teq</div>
 			<div class="card-thumb-margin">1000130</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories wr e bof">
+		<div class="categories lcw ps gf tba aos stw sf ew">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">2000140</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories wr e bofr ssag">
 			<div class="char-base-type-margin">int</div>
 			<div class="card-thumb-margin">1000140</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories wr e ts">
+		<div class="categories wr e ts ssag">
 			<div class="char-base-type-margin">agl</div>
 			<div class="card-thumb-margin">1000150</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories lcw ps gf tc stw">
+		<div class="categories hs tt vf bomad bow c doj ew">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">2000160</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories lcw ps gf tc stw ssag">
 			<div class="char-base-type-margin">teq</div>
 			<div class="card-thumb-margin">1000160</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories ps tc stw">
+		<div class="categories hs tt vf bomad bow c doj ew">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">2000170</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps tc stw ssag">
 			<div class="char-base-type-margin">str</div>
 			<div class="card-thumb-margin">1000170</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wb tc ide c stw sf">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">2000180</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
@@ -344,9 +425,21 @@
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
+		<div class="categories wb acs tc tg">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">2000190</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
 		<div class="categories pns gf dbs tc sp stw">
 			<div class="char-base-type-margin">int</div>
 			<div class="card-thumb-margin">1000190</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wt mbs">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">2000200</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
@@ -356,9 +449,33 @@
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
+		<div class="categories a alf acs k">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1000660</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories wt ds e bow pd ab">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">2000210</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
 		<div class="categories a acs tc tg r bow pa">
 			<div class="char-base-type-margin">int</div>
 			<div class="card-thumb-margin">1000210</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories a alf acs k">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1000660</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories hs fs vf acs bomad ew">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">2000220</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
@@ -368,11 +485,35 @@
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
+		<div class="categories a alf acs k">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1000660</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories hs fs gf ssa acs k bomad aos ch">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">2000230</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
 		<div class="categories pg a sb acs tg bow">
 			<div class="char-base-type-margin">str</div>
 			<div class="card-thumb-margin">1000230</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories a alf acs k">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1000660</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories fs a sb acs wc">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">2000240</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
 		</div>
 		<div class="categories a alf acs tg s">
 			<div class="char-base-type-margin">phy</div>
@@ -380,11 +521,29 @@
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
+		<div class="categories pg fs a sb acs wc">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">2000250</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
 		<div class="categories ds k bomad e bow ts">
 			<div class="char-base-type-margin">str</div>
 			<div class="card-thumb-margin">1000250</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ssag">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1000780</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories ps dbs vf tc ide stw gw pd ab bofa ssag">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">2000260</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
 		</div>
 		<div class="categories dbs ds sb tg e se">
 			<div class="char-base-type-margin">agl</div>
@@ -392,11 +551,35 @@
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories hs gfa y bomad">
+		<div class="categories ssag">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1000780</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories swr tc stw ssag">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">2000270</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories hs gfa y bomad ssag">
 			<div class="char-base-type-margin">int</div>
 			<div class="card-thumb-margin">1000270</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories ssag">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1000780</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories rw tbo wb tc tg r ide gw se">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">2000280</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
 		</div>
 		<div class="categories hs fs tt vf acs bomad s bow ew">
 			<div class="char-base-type-margin">agl</div>
@@ -404,7 +587,13 @@
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">r</div>
 		</div>
-		<div class="categories e bow ts bof">
+		<div class="categories ssag">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1000780</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories e bow ts bofr">
 			<div class="char-base-type-margin">phy</div>
 			<div class="card-thumb-margin">1000290</div>
 			<div class="card-type-margin">normal</div>
@@ -416,31 +605,31 @@
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">r</div>
 		</div>
-		<div class="categories wr e bof">
+		<div class="categories wr e bofr ssag">
 			<div class="char-base-type-margin">agl</div>
 			<div class="card-thumb-margin">1000310</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">r</div>
 		</div>
-		<div class="categories wr e bof">
+		<div class="categories wr e bofr ssag">
 			<div class="char-base-type-margin">teq</div>
 			<div class="card-thumb-margin">1000320</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">r</div>
 		</div>
-		<div class="categories wr e ts">
+		<div class="categories wr e ts ssag">
 			<div class="char-base-type-margin">teq</div>
 			<div class="card-thumb-margin">1000330</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">r</div>
 		</div>
-		<div class="categories lcw ps gf tc stw">
+		<div class="categories lcw ps gf tc stw ssag">
 			<div class="char-base-type-margin">agl</div>
 			<div class="card-thumb-margin">1000340</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">r</div>
 		</div>
-		<div class="categories ps tc stw">
+		<div class="categories ps tc stw ssag">
 			<div class="char-base-type-margin">phy</div>
 			<div class="card-thumb-margin">1000350</div>
 			<div class="card-type-margin">normal</div>
@@ -536,8 +725,2436 @@
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">r</div>
 		</div>
+		<div class="categories pns dbs tc ide stw">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1000510</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1000520</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1000530</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw ab">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1000540</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1000550</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns tc stw">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1000790</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories e ssag">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1000560</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns n ch">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1000570</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns tc stw">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1000790</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories wt mbs e s bofr">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1000580</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns tc stw">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1000790</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories pg mbs e dof">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1000590</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns tc stw">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1000790</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories a alf acs k">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1000600</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories wt mbs tc e cbam">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1000610</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories ps">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">2000620</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wt mbs tc e cbam">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1000620</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories ps">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">2000630</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mbs tc cbam">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1000630</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories mb ps fp tg er ide pd le bss">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">2000640</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories wt e s bofr">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1000640</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories pg mbs e doj">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1000650</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories a alf acs k">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1000660</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories ps gfa k ts">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">2000670</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories wt mbs tc e cbam">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1000670</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories tbo wb tc ide gw pd se">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">2000680</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wt mbs tc e cbam">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1000680</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories hs mbs gfa sp doj">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">2000690</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mbs tc cbam">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1000690</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories rw mb tt tc ide stw sf le">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">2000700</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mbs tc ide cbam">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1000700</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories pg rw tt tc stw sf">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">2000710</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pns tc stw">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1000710</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories rw tt tc stw sf">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">2000720</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns tc stw">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1000720</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories rw tt tc stw sf">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">2000730</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories mbs tc">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1000730</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories rw tt tc stw sf">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">2000740</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories wt mbs e">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1000740</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories lcw mb ps tc stw pd">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">2000750</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wt mbs e">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1000750</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories ps r">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">2000760</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wt mbs e">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1000760</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories rw pns mb fp tbo wb tc tg r ide stw gw pd me se bofa">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">2000770</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories alf ds">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1000770</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories rw pns mb fp tbo wb tc tg r ide stw gw pd me se bofa">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">2000770</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ssag">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1000780</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories rw pns mb fp tbo wb tc tg r ide stw gw pd me se bofa">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">2000770</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories pns tc stw">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1000790</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories rw pns mb fp tbo wb tc tg r ide stw gw pd me se bofa">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">2000770</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ds tc e">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1000800</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories rw pns mb fp tbo wb tc tg r ide stw gw pd me se bofa">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">2000770</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs fs tt vf acs bomad bow ew">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1000810</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rw pns mb fp tbo wb tc tg r ide stw gw pd me se bofa">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">2000770</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories wt mbs e s bofr">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1000820</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rw pns mb fp tbo wb tc tg r ide stw gw pd me se bofa">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">2000770</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps gfa ssa k ts bofr">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1000830</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw pns mb fp tbo wb tc tg r ide stw gw pd me se bofa">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">2000770</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps vf ssa acs gw me">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1000840</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw pns mb fp tbo wb tc tg r ide stw gw pd me se bofa">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">2000770</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories lcw ps gfa k ts bofr ssag">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1000850</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ps dbs vf tc gw pd ab bofa ssag">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1000860</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs gfa y bomad ssag">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1000870</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs fs tt vf acs bomad s bow ew">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1000880</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories e bow ts bofr">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1000890</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories n wr bomad bow gw">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1000900</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wr e bofr">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1000910</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wr e bofr ssag">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1000920</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wr e ts ssag">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1000930</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pns tbp dbs tc stw">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1000940</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1000950</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ps tc stw ssag">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1000960</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories a alf acs tg pa">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1000970</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories a acs tc tg r bow pa">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1000980</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories a sb acs tg">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1000990</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pg a sb acs tg bow">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001000</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories a alf acs tg s">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001010</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ds k bomad e bow ts">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001020</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories dbs ds sb tg e se">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001030</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pg wt gfa e">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001040</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pns dbs tc ide stw">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001050</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001060</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1001070</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw ab">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001080</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001090</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pns n ch">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1001100</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ds tc e">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1000800</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories pns tc stw">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001110</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pg mbs e doj">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001120</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ds tc e">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1000800</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories lcw ps gfa tc stw ssag">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1001130</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories ds tc e">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1000800</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories ps tc stw ssag">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001140</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories ds tc e">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1000800</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories hs gfa y bomad ssag">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001150</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories e bow ts bofr ssag">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001160</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories n wr bomad bow gw ssag">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1001170</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories wr e bofr">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001180</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories wr e bofr ssag">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1001190</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories wr e ts ssag">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001200</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns tbo dbs tc stw">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001210</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1001220</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories a alf acs tg pa">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001230</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories a acs tc tg r bow pa">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1001240</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories a sb acs tg">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001250</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pg a sb acs tg bow">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001260</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories a alf acs tg s">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001270</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pg wt e">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1001280</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns dbs tc ide stw">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001290</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001300</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1001310</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw ab">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001320</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1001330</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories e ssag">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001340</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns n ch">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1001350</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns tc stw">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1001360</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pg mbs e doj">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001370</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories ds sb bomad e">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1001380</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs gfa y ssa acs k bomad rg he me ew">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1001390</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps fp gfa k ftc aos ts bofr ab">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001400</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps tc stw ssag">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1001420</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories lcw ps gfa tc stw ssag">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001430</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wr k e ts ssag">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001440</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wr e bofr">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001450</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wr e bofr ssag">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001460</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mbs ps gfa k ss2 ts me bofr ab bss">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001480</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw ps tt gfa r c pc sf">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001490</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories lcw pg ps tba stw sf">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001500</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories lcw ps gfa tba aos stw sf ew">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001510</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories pns tbo wb tc ide stw gw pd se">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001520</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pns tbo dbs tc ftc stw">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001530</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories lcw ps tba stw sf">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1001540</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories lcw ps tba stw sf">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001550</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories lcw ps tba stw sf">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001560</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns n ch">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001570</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns tbo wb tc ide stw gw pd se">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1001580</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs fs tt vf ssa acs bomad s bow ew">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1001590</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories pns tbo wb tc ide stw gw pd se">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1001600</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw cbam">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001610</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs pns dbs gfa y bomad">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001620</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories n wr bomad bow gw">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001630</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories pns gf dbs tc sp stw">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001670</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pns dbs k e bow ts bofr">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001680</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pw a tbo tt alf acs k r ma pd se ab wc bofa">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1001690</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs fp gfa y acs k bomad ss2 er aos ma ew bofa bss">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001700</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories a tbo tt alf acs tg pa se ab wc">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001710</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories a tbo tt alf acs k tg pa se ab wc">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001720</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories fs a sb acs wc">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001730</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pg fs a sb acs wc">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1001740</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ps gf acs k ts bofr ab">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001750</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories hs wt mbs vf y gw he bofr ew">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1001760</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wt ds bomad e bofr">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001770</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rw mbs ps vf wr ss2 aos ch gw me bofa bss">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001790</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs fp tt vf ssa acs bomad rg s ch he me ew bss">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001800</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories a alf acs tg s ch">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1001820</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories a alf acs tg pa">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001830</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories a acs tc tg r bow pa">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001840</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs mbs gfa sb doj">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001850</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories hs fs tt vf acs bomad rg bow he ew">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001860</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wr e ts ssag">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1001890</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories wr e bofr">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001900</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories wr e bofr ssag">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1001910</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">n</div>
+		</div>
+		<div class="categories mbs ss3 ps gf ts me bofr ab bss">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001920</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw mbs ps vf wr ss2 cbam gw bss">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1001930</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw mbs tbo tt alf ide mp pa gw sf le se wc">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1001940</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mbs tbo alf k mp pa se wc">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1001950</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mbs tbo alf mp pa he se wc">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1001960</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw mbs tbo alf mp pd sf le se ab wc bofa">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001970</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mbs sb tc cbam">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1001980</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pg mbs e doj">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1001990</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs wt mbs gf y sb k gw bofr">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002000</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories hs mbs gfa sb k r rg s pc ew">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1002020</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw wt mbs y bomad e">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002030</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs wt mbs gfa y">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1002040</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories mbs tc ide wc">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1002050</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mbs tc cbam">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002060</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories mbs tc ide cbam">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002070</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories rog ps mh gfa k bomad ts me bofr ab bofa bss">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002080</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rog ps mh vf sb wr bomad gw me bofa bss">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002090</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw mb fp tbo wb tc tg r ide gw pd me se bofa">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1002100</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps gfa k bomad ts bofr ab">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1002130</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ps mh vf sb wr bomad gw">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1002140</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rw mb tbo wb tc tg r ide gw pd se">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002150</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories dbs tc tw">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1002160</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories dbs tc stw">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1002170</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories mh e bow ts doj bofr">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1002180</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories hs mh gfa sb">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1002190</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories hs mh gfa sb ss k">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1002200</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mh sp stw doj">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1002210</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories fp mh k bomad e bow ts">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002220</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories lcw ps dbs gfa y ds k bomad ts bofr">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002240</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories lcw wt ps dbs gfa y ds k bomad ts bofr">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002250</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw n dbs tt ds tc gw sf le se wc">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1002260</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw n fp ds tc gw sf le se ab wc bofa">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1002270</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories wt n tc tg r gw ew wc bofa">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1002280</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories dbs ds tc e">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002300</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories dbs ds tc e ide">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1002310</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pg wt y ds e">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002320</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories dbs ds wr e">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1002330</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wt y ds k bomad e bow ts bofr">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002340</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories fp mh ds k bomad e bow ts">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002350</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories wt ds e">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002360</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ds e">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002370</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories ds e">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002380</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories mbs p ftc bow ff">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1002390</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories f hs mbs y sp rg ch gw he tl ew ff">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002400</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories f mh k ow tl ff">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1002410</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rog ps mh gfa k bomad ts bofr ab me bofa bss">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1002420</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ps gfa k bomad ts bofr ab">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002430</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mbs ps gfa ftc ch ts bofr ab bofa">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002450</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mbs ps vf wr aos ch gw bofa">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1002460</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mb tbo wb tc tg stw pd">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1002470</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mb tbo wb tc tg ftc stw pd">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1002480</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories tc tg sp stw">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002490</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories tc tg sp stw">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1002500</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories tc tg sp stw">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1002510</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories mb a alf tg">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1002520</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mb a alf tg pa ff">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1002530</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw mb fp tt tc ide stw sf le">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002560</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs mbs vf y ss gw he bofr ew">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002570</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs mbs gfa y sb ss k gw he bofr ew">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002580</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories tc stw">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002590</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories mh wr e bofr">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1002600</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories n wr bomad bow gw ff">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002610</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories hs mbs mh vf y ss gw">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1002620</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rog mb wr bomad er stw pd le bofa">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1002660</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rog sb bomad stw">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1002670</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs mh gfa y bomad">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1002680</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories hs mh gfa y bomad">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1002690</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs fp mh gfa y k bomad ss2 er aos pc ew bss">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002700</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories pns ps gfa s ts bofr ab">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1002710</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mb tbo cbam">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002790</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mb tbo cbam ab">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1002800</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories lcw gfo ps gfa tba aos gap stw sf ew">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1002810</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories lcw gfo ps gfa tba aos gap stw sf type-gfo">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">4002810</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories lcw wt gfo ps dbs gfa y ds gap ts bofr">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1002820</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories lcw wt gfo ps dbs gfa y ds gap ts bofr type-gfo">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">4002820</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories gfo ps dbs vf tc ftc ide gap stw gw pd ab bofa ssag">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002830</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories gfo ps dbs vf tc ftc ide gap stw pd ab type-gfo">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">4002830</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps gfa acs k ow ts bofr ab">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002860</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs gfa y acs bomad">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002870</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories n wr acs bomad bow gw he ew ff">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1002880</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs fs tt vf acs bomad s bow ew">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002890</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wr e bofr">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002900</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wr e bofr ssag">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1002910</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories wr e ts ssag">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1002920</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories e bow ts bofr ssag">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002930</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories wt hs mbs mh gfa sb sp doj">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002940</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pg mbs mh e sp doj">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1002950</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps dbs gfa k stw ts gh bofr">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1002960</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs dbs gfa y stw gh bofr">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1002980</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs dbs vf sb ss bow stw gh bofr">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1002990</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps vf wr gw gh">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003000</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ps gfa ts gh bofr">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1003020</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps gfa ss2 ts gh bofr ab bss">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003030</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ss3 ps gfa k ts gh bofr ab bss">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1003040</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories wt e gh bofr">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003060</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories ss3 ps vf wr c gw bss">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003070</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs gfa sb ssa k gh">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003130</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wt mbs ps gfa k bomad ts bofr ab">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003140</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wt ds e">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1003150</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories dbs ds e tl">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003160</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pog ps mh gfa k bomad ts me bofr ab bss">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003170</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mbs ps gfa k ss2 ts me bofr ab bss">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003180</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps mh gfa ssa ts pc bofr ab">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003190</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mbs ps gfa k ss2 ts me bofr ab bss">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003200</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mbs ss3 ps fp mh gfa ftc ts me bofr ab bss">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1003210</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">ur</div>
+		</div>
+		<div class="categories ps vf ssa acs gw me">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003220</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ps vf wr ss2 gw me bss">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003230</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ss3 ps vf wr c gw bss">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003240</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs mbs gfa sb doj">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1003250</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs mbs gfa sb ssa k doj">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003260</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs mbs gfa sb k ss2 doj bss">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003270</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs fs tt vf ssa acs bomad s bow ew">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1003280</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs fs fp tt vf ssa acs bomad rg s ch he me ew bss">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003290</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw a tbo tt alf acs k r ma pd se ab wc bofa">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003300</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw mbs tbo alf mp pd sf le se ab wc bofa">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003310</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ur</div>
+		</div>
+		<div class="categories pns fp tbo wb tc ftc ide stw gw pd se bofa">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003320</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories wt mbs tbo alf wr mp pa">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003330</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ps fp gfa k ftc aos ts bofr ab bofa ssag">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003340</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rog ps mh gfa k ts ma le bofr ab bofa bss">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003350</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rog mb sb wr bomad er stw pd le bofa">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003360</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rog sb bomad stw">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003370</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories alf r c">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003380</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw r bow c">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003400</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ds bomad ftc e sf">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003450</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wt mbs p">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003460</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rog mbs p ff">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003470</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rog wt mbs p">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003480</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pns ps gfa ssa k er s ts ma pc le bofr ew bofa">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003500</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories n wr bomad bow gw">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003510</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wr acs e ts">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003520</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories fp mh ds k bomad e bow ts">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003530</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories pg wt y ds e">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003540</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mbs tbo alf mp pa se wc">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003550</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mbs tbo alf k ftc mp pa se wc">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003560</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mbs tbo alf ftc mp pa tl se wc">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003570</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wt hs mbs mh gfa sb sp doj">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1003580</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories pg mbs mh e sp doj">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003590</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rog ps mh vf sb wr bomad gw me bofa bss">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1003600</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mb tbo wb tc tg ftc stw pd">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003610</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw mb wb alf tc tg r cbam ab">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1003640</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories alf tc">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003650</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories lcw mb ps tc stw pd">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003660</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps mh gfa ftc ts bofr">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003670</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw ps tt gfa r c pc sf">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1003680</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rog ps gfa k ts ma le bofr ab bss">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1003690</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw wt mbs y bomad e">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1003700</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wr ow s bow sf">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003720</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories wt mbs e s bofr">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003730</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ps gfa k ts bofr ab">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003750</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rw fp a tbo tt alf acs k r ma pd se ab wc wc bofa">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003760</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ur</div>
+		</div>
+		<div class="categories rw mbs tbo alf mp pd sf le se ab wc bofa">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003770</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories pg a sb acs tg bow">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003780</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories a sb acs tg">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003790</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mb ps fp tg er ide pd le bss">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003800</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ur</div>
+		</div>
+		<div class="categories mbs sb tc cbam">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003820</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs rw mbs gfa sb s doj ew">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003830</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps gfa k ts bofr">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003840</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories ps vf wr gw">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003870</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pg pns dbs e">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003880</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories ps gfa ssa k ts bofr ab">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003890</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rog mb wr bomad er stw pd le bofa">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1003900</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories e bow ts bofr">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003910</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories tc stw pd ab">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1003920</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories tc stw pd">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003930</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories tc stw pd">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003940</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories sb tc stw pd">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003950</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories sb tc stw pd">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003960</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories pg dbs y ds e">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003980</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ps gfa ssa acs k t he">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003990</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories sds bomad e mp s ch gh ff">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1004000</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs fp gfa y acs k bomad ss2 er aos ma ew bofa bss">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004010</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs gfa sb k gh bofr">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1004020</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories sds ps vf ssa wr gw gh">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004040</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rog ps mh gfa k bomad ts me bofr ab bofa bss">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004070</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rog ps mh vf sb wr bomad gw me bofr bofa bss">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1004080</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw mb fp tbo wb tc tg r ide gw pd me se bofa">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004090</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories e">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004100</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories wt ds e bow pd ab">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004170</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories pg dbs ds e">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004180</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories pg ds e">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1004190</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ps gfa k ts">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004200</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw mbs ps gfa k ow ss2 ts tl me bofr ab bss">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004210</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mbs ss3 ps gfa ts me bofr ab bss">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004220</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories pns fp tbo wb tc ftc er ide stw gw pd se bofa">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1004250</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ur</div>
+		</div>
+		<div class="categories ps vf y tc stw gw">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004260</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories ps vf ssa wr acs gw me">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004280</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mb tbo wb tc tg stw pd">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004300</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mbs ps fp mh gfa ssa k ts bofr ab">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1004340</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs mbs fp mh gfa sb ssa k doj">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004350</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs mbs fp dbs mh gfa y sb ssa k gw">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1004360</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps fp vf ssa wr acs rg gw he me bss">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004370</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw ps tt gfa ssa er r c pc sf le">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1004380</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw mbs ps vf wr ss2 ftc aos ch cbam gw bss">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004390</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ur</div>
+		</div>
+		<div class="categories a tbo tt alf acs k tg pa se ab wc">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004400</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw mbs tbo tt alf mp pa he se wc">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004410</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories pns tbo wb dbs tc ide stw gw pd se ab">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1004420</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs mbs dbs mh vf y ssa gw bofr">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004440</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mbs k e bow ts bofr">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1004460</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rog mbs p sf">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1004470</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories pg mbs a mh sb wr bow">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1004480</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mbs tc ide wc">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1004490</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories gfa ds bomad ow e ts tl">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1004510</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories gpg dbs mh e doj">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1004520</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mh e s bow ts">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004530</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories a tbo tt alf acs tg pa se wc">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004540</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mbs tbo alf mp pa se wc">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1004560</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rw mbs tbo tt alf mp pa se wc">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004570</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rw mb wb alf tc tg r cbam ab">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1004600</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw mb wb alf tc tg r cbam ab">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1003640</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rw mb wb alf tc tg r cbam ab">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1003640</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rw mb wb alf tc tg r cbam ab">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1003640</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rw mb wb alf tc tg r cbam ab">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1003640</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rw fp a tbo tt alf acs k r ma pd se ab wc bofa">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004650</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ur</div>
+		</div>
+		<div class="categories wt ds">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004660</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories dbs ds tc e ide">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1004670</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">r</div>
+		</div>
+		<div class="categories ps gfa ssa k ts bofr">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004680</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs gfa y ssa acs k bomad rg he me ew">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1004690</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories n wr bomad bow gw">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004700</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs mbs gfa sb r rg s pc ew">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004710</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories f hs mbs y ssa sp rg ch gw he tl ew ff">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1004720</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs fp gfa y acs k bomad ss2 er aos ma ew bofa bss">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1004740</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps gfa ssa acs k bomad rg ts he bofr">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1004750</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories ps fp vf ssa wr acs rg gw he me bss">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1004760</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories f hs mbs y sp he tl ff">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1004800</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories f hs mbs y sp he tl ff">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004810</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories wb tc ide c stw sf">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1004820</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories fp mh k bomad e bow tc">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1004830</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories hs mh gfa sb ssa k">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1004840</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories mh sp stw doj">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004870</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">sr</div>
+		</div>
+		<div class="categories rog mb sb wr bomad er stw pd le bofa">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1004880</div>
+			<div class="card-type-margin">super</div>
+			<div class="card-rarity-margin">ur</div>
+		</div>
+		<div class="categories mb a alf tg">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004890</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mb a alf tg">
+			<div class="char-base-type-margin">str</div>
+			<div class="card-thumb-margin">1004900</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories mb a alf tg pa ff">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1004910</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw mb tt tc ide stw sf le">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004930</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw mb fp tt tc ide stw sf le">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004940</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rog n ds gw he">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1004950</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories pg tt sb bow c">
+			<div class="char-base-type-margin">teq</div>
+			<div class="card-thumb-margin">1004960</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories a tt alf k c">
+			<div class="char-base-type-margin">phy</div>
+			<div class="card-thumb-margin">1004970</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rog rw tt c sf">
+			<div class="char-base-type-margin">int</div>
+			<div class="card-thumb-margin">1004980</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories hs tt vf ssa bomad bow c doj ew">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1004990</div>
+			<div class="card-type-margin">normal</div>
+			<div class="card-rarity-margin">ssr</div>
+		</div>
+		<div class="categories rw mbs tbo alf mp pd sf le se ab wc bofa">
+			<div class="char-base-type-margin">agl</div>
+			<div class="card-thumb-margin">1005000</div>
+			<div class="card-type-margin">extreme</div>
+			<div class="card-rarity-margin">ur</div>
+		</div>
 		
-		<div class="categories wt hs jf y ss gh">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="categories wt hs jf y ssa gh">
 			<div class="char-base-type-margin">agl</div>
 			<div class="card-thumb-margin">1023860</div>
 			<div class="card-type-margin">super</div>
@@ -555,7 +3172,7 @@
 			<div class="card-type-margin">extreme</div>
 			<div class="card-rarity-margin">lr</div>
 		</div>
-		<div class="categories lcw ps fp gfa k ts bof ab">
+		<div class="categories lcw ps fp gfa k ts bofr ab">
 			<div class="char-base-type-margin">phy</div>
 			<div class="card-thumb-margin">1022780</div>
 			<div class="card-type-margin">super</div>
@@ -585,7 +3202,7 @@
 			<div class="card-type-margin">super</div>
 			<div class="card-rarity-margin">lr</div>
 		</div>
-		<div class="categories f ps jf mh ss k ow ftc ch pc tl">
+		<div class="categories f ps jf mh ssa k ow ftc ch pc tl">
 			<div class="char-base-type-margin">teq</div>
 			<div class="card-thumb-margin">1022190</div>
 			<div class="card-type-margin">super</div>
@@ -615,7 +3232,7 @@
 			<div class="card-type-margin">extreme</div>
 			<div class="card-rarity-margin">lr</div>
 		</div>
-		<div class="categories pns ps fp gfa ss k er s ts ma pc le bof ew">
+		<div class="categories pns ps fp gfa ssa k er s ts ma pc le bofr ew">
 			<div class="char-base-type-margin">int</div>
 			<div class="card-thumb-margin">1022630</div>
 			<div class="card-type-margin">super</div>
@@ -645,7 +3262,7 @@
 			<div class="card-type-margin">super</div>
 			<div class="card-rarity-margin">lr</div>
 		</div>
-		<div class="categories uss rog ps rou7 gfa k ts ma pc le bof ab ew">
+		<div class="categories uss rog ps rou7 gfa k ts ma pc le bofr ab ew">
 			<div class="char-base-type-margin">agl</div>
 			<div class="card-thumb-margin">1020310</div>
 			<div class="card-type-margin">super</div>
