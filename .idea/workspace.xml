@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added 80 more characters">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added saiyan saga category" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +107,7 @@
       <workItem from="1648728781171" duration="91000" />
       <workItem from="1648739434139" duration="8697000" />
       <workItem from="1648757298037" duration="2590000" />
-      <workItem from="1648894919495" duration="442000" />
+      <workItem from="1648894919495" duration="1246000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1647633840402</created>
@@ -434,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648759765236</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="added saiyan saga category">
+      <created>1648895528241</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1648895528241</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +457,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="bug fix" />
     <MESSAGE value="improved filter type" />
     <MESSAGE value="now all categories work properply with the type filter" />
     <MESSAGE value="minor bug fixes" />
@@ -478,6 +481,7 @@
     <MESSAGE value="added 201-300 series 1 character also added 3 new categories" />
     <MESSAGE value="added 78 character thumb" />
     <MESSAGE value="added 80 more characters" />
-    <option name="LAST_COMMIT_MESSAGE" value="added 80 more characters" />
+    <MESSAGE value="added saiyan saga category" />
+    <option name="LAST_COMMIT_MESSAGE" value="added saiyan saga category" />
   </component>
 </project>
