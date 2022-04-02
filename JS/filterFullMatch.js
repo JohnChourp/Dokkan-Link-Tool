@@ -2,6 +2,7 @@ function filterFullMatch(){
 	let catList = [];
 	let categories = document.getElementsByClassName("categories");
 	let categoriesBtn = document.getElementsByClassName("categories-btn");
+	let typeBtn = document.getElementsByClassName("type-btn");
 	let appearedType = document.getElementsByClassName("appearedType");
 	
 	for(let i = 0; i < categoriesBtn.length; i ++){
@@ -20,12 +21,10 @@ function filterFullMatch(){
 	
 	for(let j = 0; j < categoriesOrange.length; j ++){
 		categoriesOrange.item(j).addEventListener("click" , function(){
-			//add and remove activeCategory
 			for(let i = 0; i < categoriesBtn.length; i ++){
 				categoriesBtn.item(i).classList.remove("activeCategory");
 			}
 			categoriesOrange.item(j).classList.add("activeCategory");
-			//add and remove activeCategory
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
@@ -39,26 +38,28 @@ function filterFullMatch(){
 			
 			if(appearedType.length > 0){
 				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				for(let i = 0; i < catList[j].length; i ++){
-					appearedType.item(i).style.display = "inline-block";
-					appearedType.item(i).classList.add("appeared");
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesOrange.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+						categories.item(i).classList.add("appeared");
+						categories.item(i).classList.add("appearedType");
+					}else{
+						categories.item(i).style.display = "none";
+						categories.item(i).classList.remove("appeared");
+						categories.item(i).classList.remove("appearedType")
+					}
 				}
 			}
+			categoriesOrange.item(j).click();
 			changeDefaultOrange(j);
 		});
 	}
 	
 	for(let j = 0; j < categoriesGreen.length; j ++){
 		categoriesGreen.item(j).addEventListener("click" , function(){
-			//add and remove activeCategory
 			for(let i = 0; i < categoriesBtn.length; i ++){
 				categoriesBtn.item(i).classList.remove("activeCategory");
 			}
 			categoriesGreen.item(j).classList.add("activeCategory");
-			//add and remove activeCategory
 			
 			for(let i = 0; i < categories.length; i ++){
 				categories.item(i).style.display = "none";
@@ -72,12 +73,20 @@ function filterFullMatch(){
 			
 			if(appearedType.length > 0){
 				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesGreen.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+						categories.item(i).classList.add("appeared");
+						categories.item(i).classList.add("appearedType");
+					}else{
+						categories.item(i).style.display = "none";
+						categories.item(i).classList.remove("appeared");
+						categories.item(i).classList.remove("appearedType")
+					}
 				}
-				for(let i = 0; i < catList[j].length; i ++){
-					appearedType.item(i).style.display = "inline-block";
-					appearedType.item(i).classList.add("appeared");
+			}
+			for(let i = 0; i < typeBtn.length; i ++){
+				if(typeBtn.item(i).classList.contains("checkedTypeBtn")){
+					typeBtn.item(i).click();
 				}
 			}
 			changeDefaultGreen(j);

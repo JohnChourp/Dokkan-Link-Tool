@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="seperated function filterCategory and filterType in different files">
-      <change afterPath="$PROJECT_DIR$/CSS/filterRarity.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/filterRarity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/categories.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/filterCategory.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/type.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/filterType.css" afterDir="false" />
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="minor bug fixes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterFullMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterFullMatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterType.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterType.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partial-match.html" beforeDir="false" afterPath="$PROJECT_DIR$/partial-match.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,20 +114,6 @@
       <workItem from="1648757298037" duration="2590000" />
       <workItem from="1648894919495" duration="1873000" />
       <workItem from="1648911571054" duration="3703000" />
-    </task>
-    <task id="LOCAL-00002" summary="added 5 characters with 2 filter categories">
-      <created>1647638757714</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1647638757714</updated>
-    </task>
-    <task id="LOCAL-00003" summary="renamed some files for better understanding">
-      <created>1647639452526</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1647639452526</updated>
     </task>
     <task id="LOCAL-00004" summary="added 5 more characters with a show all categories button">
       <created>1647672317631</created>
@@ -460,7 +444,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648921163548</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="added filter rarity">
+      <created>1648921697991</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1648921697991</updated>
+    </task>
+    <task id="LOCAL-00052" summary="minor bug fixes">
+      <created>1648927071431</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1648927071431</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,8 +477,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="simplified activeCategory class added when press a category" />
-    <MESSAGE value="simplified activeCategory even more and now is working properly" />
     <MESSAGE value="simplified type filter" />
     <MESSAGE value="simplified type filter and category filter to show and hide" />
     <MESSAGE value="fixed color changing when hover over filter type" />
@@ -504,6 +500,8 @@
     <MESSAGE value="added 70 more character thumb 400-500 series 1" />
     <MESSAGE value="removed duplicate character thumb" />
     <MESSAGE value="seperated function filterCategory and filterType in different files" />
-    <option name="LAST_COMMIT_MESSAGE" value="seperated function filterCategory and filterType in different files" />
+    <MESSAGE value="added filter rarity" />
+    <MESSAGE value="minor bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor bug fixes" />
   </component>
 </project>
