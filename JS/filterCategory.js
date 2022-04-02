@@ -1,4 +1,4 @@
-function showCategories(){
+function showFilterCategory(){
 	document.getElementsByClassName("CategoriesFilter").item(0).classList.remove("CategoriesFilterShow");
 }
 
