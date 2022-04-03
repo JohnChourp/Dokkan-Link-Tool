@@ -8,7 +8,6 @@ function initTypeFilter(){
 		httpLink = "http://";
 	}
 	
-	let categoriesBtn = document.getElementsByClassName("categories-btn");
 	let categories = document.getElementsByClassName("categories");
 	let cardType = document.getElementsByClassName("card-type");
 	let appeared = document.getElementsByClassName("appeared");
@@ -63,22 +62,21 @@ function initTypeFilter(){
 		}
 		defaultFilter(0);
 	});
-	
 	super_agl_filter.addEventListener('click' , function(){
 		for(let i = 0; i < typeBtn.length; i ++){
 			typeBtn.item(i).classList.remove("checkedTypeBtn");
 		}
 		super_agl_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -89,35 +87,27 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
 			}
 		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
-			}
-		}
 		defaultFilter(7);
 	});
-	
 	extreme_agl_filter.addEventListener('click' , function(){
 		for(let i = 0; i < typeBtn.length; i ++){
 			typeBtn.item(i).classList.remove("checkedTypeBtn");
 		}
 		extreme_agl_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -128,15 +118,8 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
-			}
-		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
 			}
 		}
 		defaultFilter(12);
@@ -148,15 +131,15 @@ function initTypeFilter(){
 		}
 		int_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_int.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_int.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -167,35 +150,27 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
 			}
 		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
-			}
-		}
 		defaultFilter(1);
 	});
-	
 	super_int_filter.addEventListener('click' , function(){
 		for(let i = 0; i < typeBtn.length; i ++){
 			typeBtn.item(i).classList.remove("checkedTypeBtn");
 		}
 		super_int_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_int.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_int.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -206,35 +181,27 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
 			}
 		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
-			}
-		}
 		defaultFilter(8);
 	});
-	
 	extreme_int_filter.addEventListener('click' , function(){
 		for(let i = 0; i < typeBtn.length; i ++){
 			typeBtn.item(i).classList.remove("checkedTypeBtn");
 		}
 		extreme_int_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -245,15 +212,8 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
-			}
-		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
 			}
 		}
 		defaultFilter(13);
@@ -265,15 +225,15 @@ function initTypeFilter(){
 		}
 		phy_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_phy.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_phy.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -284,35 +244,27 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
 			}
 		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
-			}
-		}
 		defaultFilter(2);
 	});
-	
 	super_phy_filter.addEventListener('click' , function(){
 		for(let i = 0; i < typeBtn.length; i ++){
 			typeBtn.item(i).classList.remove("checkedTypeBtn");
 		}
 		super_phy_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -323,35 +275,27 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
 			}
 		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
-			}
-		}
 		defaultFilter(9);
 	});
-	
 	extreme_phy_filter.addEventListener('click' , function(){
 		for(let i = 0; i < typeBtn.length; i ++){
 			typeBtn.item(i).classList.remove("checkedTypeBtn");
 		}
 		extreme_phy_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -362,15 +306,8 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
-			}
-		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
 			}
 		}
 		defaultFilter(14);
@@ -382,15 +319,15 @@ function initTypeFilter(){
 		}
 		str_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_str.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_str.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -401,35 +338,27 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
 			}
 		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
-			}
-		}
 		defaultFilter(3);
 	});
-	
 	super_str_filter.addEventListener('click' , function(){
 		for(let i = 0; i < typeBtn.length; i ++){
 			typeBtn.item(i).classList.remove("checkedTypeBtn");
 		}
 		super_str_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_str.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_str.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -440,35 +369,27 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
 			}
 		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
-			}
-		}
 		defaultFilter(10);
 	});
-	
 	extreme_str_filter.addEventListener('click' , function(){
 		for(let i = 0; i < typeBtn.length; i ++){
 			typeBtn.item(i).classList.remove("checkedTypeBtn");
 		}
 		extreme_str_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -479,15 +400,8 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
-			}
-		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
 			}
 		}
 		defaultFilter(15);
@@ -499,15 +413,15 @@ function initTypeFilter(){
 		}
 		teq_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_teq.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_teq.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -518,35 +432,27 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
 			}
 		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
-			}
-		}
 		defaultFilter(4);
 	});
-	
 	super_teq_filter.addEventListener('click' , function(){
 		for(let i = 0; i < typeBtn.length; i ++){
 			typeBtn.item(i).classList.remove("checkedTypeBtn");
 		}
 		super_teq_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -557,35 +463,27 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
 			}
 		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
-			}
-		}
 		defaultFilter(11);
 	});
-	
 	extreme_teq_filter.addEventListener('click' , function(){
 		for(let i = 0; i < typeBtn.length; i ++){
 			typeBtn.item(i).classList.remove("checkedTypeBtn");
 		}
 		extreme_teq_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -596,15 +494,8 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
-			}
-		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
 			}
 		}
 		defaultFilter(16);
@@ -616,15 +507,15 @@ function initTypeFilter(){
 		}
 		super_type_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_int.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_str.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_int.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_str.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -635,35 +526,27 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
 			}
 		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
-			}
-		}
 		defaultFilter(5);
 	});
-	
 	extreme_type_filter.addEventListener('click' , function(){
 		for(let i = 0; i < typeBtn.length; i ++){
 			typeBtn.item(i).classList.remove("checkedTypeBtn");
 		}
 		extreme_type_filter.classList.add("checkedTypeBtn");
 		
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -674,19 +557,13 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
 			}
 		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
-			}
-		}
 		defaultFilter(6);
 	});
+	
 	hoverFilterType();
 }
 
