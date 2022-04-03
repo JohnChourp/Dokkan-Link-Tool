@@ -3,7 +3,6 @@ function filterFullMatch(){
 	let categories = document.getElementsByClassName("categories");
 	let categoriesBtn = document.getElementsByClassName("categories-btn");
 	let typeBtn = document.getElementsByClassName("type-btn");
-	let appeared = document.getElementsByClassName("appeared");
 	let appearedType = document.getElementsByClassName("appearedType");
 	
 	for(let i = 0; i < categoriesBtn.length; i ++){
@@ -48,7 +47,7 @@ function filterFullMatch(){
 					}
 				}
 			}
-			changeDefaultOrange(j);
+			changeDefaultCategoryActiveColors(j,"orange");
 		});
 	}
 	
@@ -87,7 +86,7 @@ function filterFullMatch(){
 					typeBtn.item(i).click();
 				}
 			}
-			changeDefaultGreen(j);
+			changeDefaultCategoryActiveColors(j,"green");
 		});
 	}
 	
@@ -119,7 +118,7 @@ function filterFullMatch(){
 					appearedType.item(i).classList.add("appeared");
 				}
 			}
-			changeDefaultYellow(j);
+			changeDefaultCategoryActiveColors(j,"yellow");
 		});
 	}
 	
@@ -151,7 +150,7 @@ function filterFullMatch(){
 					appearedType.item(i).classList.add("appeared");
 				}
 			}
-			changeDefaultCyan(j);
+			changeDefaultCategoryActiveColors(j,"cyan");
 		});
 	}
 	
@@ -183,7 +182,7 @@ function filterFullMatch(){
 					appearedType.item(i).classList.add("appeared");
 				}
 			}
-			changeDefaultBlue(j);
+			changeDefaultCategoryActiveColors(j,"blue");
 		});
 	}
 	
@@ -215,7 +214,7 @@ function filterFullMatch(){
 					appearedType.item(i).classList.add("appeared");
 				}
 			}
-			changeDefaultPurple(j);
+			changeDefaultCategoryActiveColors(j,"purple");
 		});
 	}
 	
@@ -247,7 +246,7 @@ function filterFullMatch(){
 					appearedType.item(i).classList.add("appeared");
 				}
 			}
-			changeDefaultRed(j);
+			changeDefaultCategoryActiveColors(j,"red");
 		});
 	}
 	
@@ -279,7 +278,7 @@ function filterFullMatch(){
 					appearedType.item(i).classList.add("appeared");
 				}
 			}
-			changeDefaultDarkGreen(j);
+			changeDefaultCategoryActiveColors(j,"darkGreen");
 		});
 	}
 	
@@ -311,7 +310,7 @@ function filterFullMatch(){
 					appearedType.item(i).classList.add("appeared");
 				}
 			}
-			changeDefaultDarkBlue(j);
+			changeDefaultCategoryActiveColors(j,"darkBlue");
 		});
 	}
 }
