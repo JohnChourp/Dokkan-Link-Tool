@@ -3,6 +3,7 @@ function filterFullMatch(){
 	let categories = document.getElementsByClassName("categories");
 	let categoriesBtn = document.getElementsByClassName("categories-btn");
 	let typeBtn = document.getElementsByClassName("type-btn");
+	let appeared = document.getElementsByClassName("appeared");
 	let appearedType = document.getElementsByClassName("appearedType");
 	
 	for(let i = 0; i < categoriesBtn.length; i ++){
@@ -35,7 +36,7 @@ function filterFullMatch(){
 				catList[j].item(i).style.display = "inline-block";
 				catList[j].item(i).classList.add("appeared");
 			}
-			
+
 			if(appearedType.length > 0){
 				for(let i = 0; i < categories.length; i ++){
 					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesOrange.item(j).id)){
@@ -49,7 +50,6 @@ function filterFullMatch(){
 					}
 				}
 			}
-			categoriesOrange.item(j).click();
 			changeDefaultOrange(j);
 		});
 	}

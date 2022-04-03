@@ -12,6 +12,7 @@ function initTypeFilter(){
 	let categories = document.getElementsByClassName("categories");
 	let cardType = document.getElementsByClassName("card-type");
 	let appeared = document.getElementsByClassName("appeared");
+	let typeBtn = document.getElementsByClassName("type-btn");
 	
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -32,15 +33,20 @@ function initTypeFilter(){
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
 	agl_filter.addEventListener('click' , function(){
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_agl.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-				categories.item(i).classList.add("appeared");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-				categories.item(i).classList.remove("appeared");
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		agl_filter.classList.add("checkedTypeBtn");
+		
+		if(appeared.length < 0){
+			for(let i = 0; i < cardType.length; i ++){
+				if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_agl.png"){
+					categories.item(i).style.display = "inline-block";
+					categories.item(i).classList.add("appearedType");
+				}else{
+					categories.item(i).style.display = "none";
+					categories.item(i).classList.remove("appearedType");
+				}
 			}
 		}
 		
@@ -51,21 +57,19 @@ function initTypeFilter(){
 					categories.item(i).classList.add("appearedType");
 				}else{
 					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
 					categories.item(i).classList.remove("appearedType");
 				}
-			}
-		}
-		
-		for(let i = 0; i < categoriesBtn.length; i ++){
-			if(categoriesBtn.item(i).classList.contains("activeCategory")){
-				categoriesBtn.item(i).click();
 			}
 		}
 		defaultAglFilter();
 	});
 	
 	super_agl_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		super_agl_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png"){
 				categories.item(i).style.display = "inline-block";
@@ -100,6 +104,11 @@ function initTypeFilter(){
 	});
 	
 	extreme_agl_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		extreme_agl_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png"){
 				categories.item(i).style.display = "inline-block";
@@ -134,6 +143,11 @@ function initTypeFilter(){
 	});
 	
 	int_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		int_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_int.png"){
 				categories.item(i).style.display = "inline-block";
@@ -168,6 +182,11 @@ function initTypeFilter(){
 	});
 	
 	super_int_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		super_int_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_int.png"){
 				categories.item(i).style.display = "inline-block";
@@ -202,6 +221,11 @@ function initTypeFilter(){
 	});
 	
 	extreme_int_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		extreme_int_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png"){
 				categories.item(i).style.display = "inline-block";
@@ -236,6 +260,11 @@ function initTypeFilter(){
 	});
 	
 	phy_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		phy_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_phy.png"){
 				categories.item(i).style.display = "inline-block";
@@ -270,6 +299,11 @@ function initTypeFilter(){
 	});
 	
 	super_phy_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		super_phy_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png"){
 				categories.item(i).style.display = "inline-block";
@@ -304,6 +338,11 @@ function initTypeFilter(){
 	});
 	
 	extreme_phy_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		extreme_phy_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png"){
 				categories.item(i).style.display = "inline-block";
@@ -338,6 +377,11 @@ function initTypeFilter(){
 	});
 	
 	str_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		str_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_str.png"){
 				categories.item(i).style.display = "inline-block";
@@ -372,6 +416,11 @@ function initTypeFilter(){
 	});
 	
 	super_str_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		super_str_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_str.png"){
 				categories.item(i).style.display = "inline-block";
@@ -406,6 +455,11 @@ function initTypeFilter(){
 	});
 	
 	extreme_str_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		extreme_str_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png"){
 				categories.item(i).style.display = "inline-block";
@@ -440,6 +494,11 @@ function initTypeFilter(){
 	});
 	
 	teq_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		teq_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_teq.png"){
 				categories.item(i).style.display = "inline-block";
@@ -474,6 +533,11 @@ function initTypeFilter(){
 	});
 	
 	super_teq_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		super_teq_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png"){
 				categories.item(i).style.display = "inline-block";
@@ -508,6 +572,11 @@ function initTypeFilter(){
 	});
 	
 	extreme_teq_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		extreme_teq_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png"){
 				categories.item(i).style.display = "inline-block";
@@ -542,6 +611,11 @@ function initTypeFilter(){
 	});
 	
 	super_type_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		super_type_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_int.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_str.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png"){
 				categories.item(i).style.display = "inline-block";
@@ -576,6 +650,11 @@ function initTypeFilter(){
 	});
 	
 	extreme_type_filter.addEventListener('click' , function(){
+		for(let i = 0; i < typeBtn.length; i ++){
+			typeBtn.item(i).classList.remove("checkedTypeBtn");
+		}
+		extreme_type_filter.classList.add("checkedTypeBtn");
+		
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png"){
 				categories.item(i).style.display = "inline-block";
@@ -610,13 +689,15 @@ function initTypeFilter(){
 	});
 	hoverFilterType();
 }
+
 function showFilterType(){
 	document.getElementsByClassName("typeFilter").item(0).classList.remove("typeFilterShow");
 }
+
 function hoverFilterType(){
 	let agl_filter = document.getElementById("agl");
 	agl_filter.onmouseover = function(){
-		agl_filter.style.backgroundColor = "#0a7fff";
+		agl_filter.style.backgroundColor = "#0A7FFF";
 		if(agl_filter.classList.contains("checkedTypeBtn")){
 			agl_filter.style.backgroundColor = "#EEC310";
 		}
@@ -631,7 +712,7 @@ function hoverFilterType(){
 	
 	let super_agl_filter = document.getElementById("super_agl");
 	super_agl_filter.onmouseover = function(){
-		super_agl_filter.style.backgroundColor = "#0a7fff";
+		super_agl_filter.style.backgroundColor = "#0A7FFF";
 		if(super_agl_filter.classList.contains("checkedTypeBtn")){
 			super_agl_filter.style.backgroundColor = "#EEC310";
 		}
@@ -646,7 +727,7 @@ function hoverFilterType(){
 	
 	let extreme_agl_filter = document.getElementById("extreme_agl");
 	extreme_agl_filter.onmouseover = function(){
-		extreme_agl_filter.style.backgroundColor = "#0a7fff";
+		extreme_agl_filter.style.backgroundColor = "#0A7FFF";
 		if(extreme_agl_filter.classList.contains("checkedTypeBtn")){
 			extreme_agl_filter.style.backgroundColor = "#EEC310";
 		}
@@ -661,14 +742,14 @@ function hoverFilterType(){
 	
 	let int_filter = document.getElementById("int");
 	int_filter.onmouseover = function(){
-		int_filter.style.backgroundColor = "#b367d7";
+		int_filter.style.backgroundColor = "#B367D7";
 		if(int_filter.classList.contains("checkedTypeBtn")){
 			int_filter.style.backgroundColor = "#EEC310";
 		}
 	}
 	
 	int_filter.onmouseout = function(){
-		int_filter.style.backgroundColor = "#6e3e80";
+		int_filter.style.backgroundColor = "#6E3E80";
 		if(int_filter.classList.contains("checkedTypeBtn")){
 			int_filter.style.backgroundColor = "#EEC310";
 		}
@@ -676,14 +757,14 @@ function hoverFilterType(){
 	
 	let super_int_filter = document.getElementById("super_int");
 	super_int_filter.onmouseover = function(){
-		super_int_filter.style.backgroundColor = "#b367d7";
+		super_int_filter.style.backgroundColor = "#B367D7";
 		if(super_int_filter.classList.contains("checkedTypeBtn")){
 			super_int_filter.style.backgroundColor = "#EEC310";
 		}
 	}
 	
 	super_int_filter.onmouseout = function(){
-		super_int_filter.style.backgroundColor = "#6e3e80";
+		super_int_filter.style.backgroundColor = "#6E3E80";
 		if(super_int_filter.classList.contains("checkedTypeBtn")){
 			super_int_filter.style.backgroundColor = "#EEC310";
 		}
@@ -691,14 +772,14 @@ function hoverFilterType(){
 	
 	let extreme_int_filter = document.getElementById("extreme_int");
 	extreme_int_filter.onmouseover = function(){
-		extreme_int_filter.style.backgroundColor = "#b367d7";
+		extreme_int_filter.style.backgroundColor = "#B367D7";
 		if(extreme_int_filter.classList.contains("checkedTypeBtn")){
 			extreme_int_filter.style.backgroundColor = "#EEC310";
 		}
 	}
 	
 	extreme_int_filter.onmouseout = function(){
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
+		extreme_int_filter.style.backgroundColor = "#6E3E80";
 		if(extreme_int_filter.classList.contains("checkedTypeBtn")){
 			extreme_int_filter.style.backgroundColor = "#EEC310";
 		}
@@ -706,7 +787,7 @@ function hoverFilterType(){
 	
 	let phy_filter = document.getElementById("phy");
 	phy_filter.onmouseover = function(){
-		phy_filter.style.backgroundColor = "#c06d06";
+		phy_filter.style.backgroundColor = "#C06D06";
 		if(phy_filter.classList.contains("checkedTypeBtn")){
 			phy_filter.style.backgroundColor = "#EEC310";
 		}
@@ -721,7 +802,7 @@ function hoverFilterType(){
 	
 	let super_phy_filter = document.getElementById("super_phy");
 	super_phy_filter.onmouseover = function(){
-		super_phy_filter.style.backgroundColor = "#c06d06";
+		super_phy_filter.style.backgroundColor = "#C06D06";
 		if(super_phy_filter.classList.contains("checkedTypeBtn")){
 			super_phy_filter.style.backgroundColor = "#EEC310";
 		}
@@ -736,7 +817,7 @@ function hoverFilterType(){
 	
 	let extreme_phy_filter = document.getElementById("extreme_phy");
 	extreme_phy_filter.onmouseover = function(){
-		extreme_phy_filter.style.backgroundColor = "#c06d06";
+		extreme_phy_filter.style.backgroundColor = "#C06D06";
 		if(extreme_phy_filter.classList.contains("checkedTypeBtn")){
 			extreme_phy_filter.style.backgroundColor = "#EEC310";
 		}
@@ -751,7 +832,7 @@ function hoverFilterType(){
 	
 	let str_filter = document.getElementById("str");
 	str_filter.onmouseover = function(){
-		str_filter.style.backgroundColor = "#c72931";
+		str_filter.style.backgroundColor = "#C72931";
 		if(str_filter.classList.contains("checkedTypeBtn")){
 			str_filter.style.backgroundColor = "#EEC310";
 		}
@@ -766,7 +847,7 @@ function hoverFilterType(){
 	
 	let super_str_filter = document.getElementById("super_str");
 	super_str_filter.onmouseover = function(){
-		super_str_filter.style.backgroundColor = "#c72931";
+		super_str_filter.style.backgroundColor = "#C72931";
 		if(super_str_filter.classList.contains("checkedTypeBtn")){
 			super_str_filter.style.backgroundColor = "#EEC310";
 		}
@@ -781,7 +862,7 @@ function hoverFilterType(){
 	
 	let extreme_str_filter = document.getElementById("extreme_str");
 	extreme_str_filter.onmouseover = function(){
-		extreme_str_filter.style.backgroundColor = "#c72931";
+		extreme_str_filter.style.backgroundColor = "#C72931";
 		if(extreme_str_filter.classList.contains("checkedTypeBtn")){
 			extreme_str_filter.style.backgroundColor = "#EEC310";
 		}
@@ -796,7 +877,7 @@ function hoverFilterType(){
 	
 	let teq_filter = document.getElementById("teq");
 	teq_filter.onmouseover = function(){
-		teq_filter.style.backgroundColor = "#00b712";
+		teq_filter.style.backgroundColor = "#00B712";
 		if(teq_filter.classList.contains("checkedTypeBtn")){
 			teq_filter.style.backgroundColor = "#EEC310";
 		}
@@ -811,7 +892,7 @@ function hoverFilterType(){
 	
 	let super_teq_filter = document.getElementById("super_teq");
 	super_teq_filter.onmouseover = function(){
-		super_teq_filter.style.backgroundColor = "#00b712";
+		super_teq_filter.style.backgroundColor = "#00B712";
 		if(super_teq_filter.classList.contains("checkedTypeBtn")){
 			super_teq_filter.style.backgroundColor = "#EEC310";
 		}
@@ -826,7 +907,7 @@ function hoverFilterType(){
 	
 	let extreme_teq_filter = document.getElementById("extreme_teq");
 	extreme_teq_filter.onmouseover = function(){
-		extreme_teq_filter.style.backgroundColor = "#00b712";
+		extreme_teq_filter.style.backgroundColor = "#00B712";
 		if(extreme_teq_filter.classList.contains("checkedTypeBtn")){
 			extreme_teq_filter.style.backgroundColor = "#EEC310";
 		}
@@ -869,6 +950,7 @@ function hoverFilterType(){
 		}
 	}
 }
+
 function filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter){
 	if(agl_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
 		agl_filter.click();
@@ -947,50 +1029,30 @@ function defaultAglFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!agl_filter.classList.contains("checkedTypeBtn")){
-		agl_filter.style.backgroundColor = "#EEC310";
-		agl_filter.classList.add("checkedTypeBtn");
-		
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#EEC310";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
+
 function defaultSuperAglFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1010,50 +1072,30 @@ function defaultSuperAglFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!super_agl_filter.classList.contains("checkedTypeBtn")){
-		super_agl_filter.style.backgroundColor = "#EEC310";
-		super_agl_filter.classList.add("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#EEC310";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
+
 function defaultExtremeAglFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1073,49 +1115,28 @@ function defaultExtremeAglFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!extreme_agl_filter.classList.contains("checkedTypeBtn")){
-		extreme_agl_filter.style.backgroundColor = "#EEC310";
-		extreme_agl_filter.classList.add("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#EEC310";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
 
 function defaultIntFilter(){
@@ -1137,50 +1158,30 @@ function defaultIntFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!int_filter.classList.contains("checkedTypeBtn")){
-		int_filter.style.backgroundColor = "#EEC310";
-		int_filter.classList.add("checkedTypeBtn");
-		
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#EEC310";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
+
 function defaultSuperIntFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1200,50 +1201,30 @@ function defaultSuperIntFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!super_int_filter.classList.contains("checkedTypeBtn")){
-		super_int_filter.style.backgroundColor = "#EEC310";
-		super_int_filter.classList.add("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#EEC310";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
+
 function defaultExtremeIntFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1263,49 +1244,28 @@ function defaultExtremeIntFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!extreme_int_filter.classList.contains("checkedTypeBtn")){
-		extreme_int_filter.style.backgroundColor = "#EEC310";
-		extreme_int_filter.classList.add("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#EEC310";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
 
 function defaultPhyFilter(){
@@ -1327,50 +1287,30 @@ function defaultPhyFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!phy_filter.classList.contains("checkedTypeBtn")){
-		phy_filter.style.backgroundColor = "#EEC310";
-		phy_filter.classList.add("checkedTypeBtn");
-		
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#EEC310";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
+
 function defaultSuperPhyFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1390,50 +1330,30 @@ function defaultSuperPhyFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!super_phy_filter.classList.contains("checkedTypeBtn")){
-		super_phy_filter.style.backgroundColor = "#EEC310";
-		super_phy_filter.classList.add("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#EEC310";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
+
 function defaultExtremePhyFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1453,49 +1373,28 @@ function defaultExtremePhyFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!extreme_phy_filter.classList.contains("checkedTypeBtn")){
-		extreme_phy_filter.style.backgroundColor = "#EEC310";
-		extreme_phy_filter.classList.add("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#EEC310";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
 
 function defaultStrFilter(){
@@ -1517,50 +1416,30 @@ function defaultStrFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!str_filter.classList.contains("checkedTypeBtn")){
-		str_filter.style.backgroundColor = "#EEC310";
-		str_filter.classList.add("checkedTypeBtn");
-		
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#EEC310";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
+
 function defaultSuperStrFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1580,50 +1459,30 @@ function defaultSuperStrFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!super_str_filter.classList.contains("checkedTypeBtn")){
-		super_str_filter.style.backgroundColor = "#EEC310";
-		super_str_filter.classList.add("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#EEC310";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
+
 function defaultExtremeStrFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1643,49 +1502,28 @@ function defaultExtremeStrFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!extreme_str_filter.classList.contains("checkedTypeBtn")){
-		extreme_str_filter.style.backgroundColor = "#EEC310";
-		extreme_str_filter.classList.add("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#EEC310";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
 
 function defaultTeqFilter(){
@@ -1707,50 +1545,30 @@ function defaultTeqFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!teq_filter.classList.contains("checkedTypeBtn")){
-		teq_filter.style.backgroundColor = "#EEC310";
-		teq_filter.classList.add("checkedTypeBtn");
-		
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#EEC310";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
+
 function defaultSuperTeqFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1770,50 +1588,30 @@ function defaultSuperTeqFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!super_teq_filter.classList.contains("checkedTypeBtn")){
-		super_teq_filter.style.backgroundColor = "#EEC310";
-		super_teq_filter.classList.add("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#EEC310";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
+
 function defaultExtremeTeqFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1833,49 +1631,28 @@ function defaultExtremeTeqFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!extreme_teq_filter.classList.contains("checkedTypeBtn")){
-		extreme_teq_filter.style.backgroundColor = "#EEC310";
-		extreme_teq_filter.classList.add("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#EEC310";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
 
 function defaultSuperFilter(){
@@ -1897,49 +1674,30 @@ function defaultSuperFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!super_type_filter.classList.contains("checkedTypeBtn")){
-		super_type_filter.style.backgroundColor = "#EEC310";
-		super_type_filter.classList.add("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		extreme_type_filter.style.backgroundColor = "#494949";
-		extreme_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#EEC310";
+	extreme_type_filter.style.backgroundColor = "#494949";
 }
+
 function defaultExtremeFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -1959,46 +1717,26 @@ function defaultExtremeFilter(){
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	if(!extreme_type_filter.classList.contains("checkedTypeBtn")){
-		extreme_type_filter.style.backgroundColor = "#EEC310";
-		extreme_type_filter.classList.add("checkedTypeBtn");
-		
-		agl_filter.style.backgroundColor = "#064794";
-		agl_filter.classList.remove("checkedTypeBtn");
-		super_agl_filter.style.backgroundColor = "#064794";
-		super_agl_filter.classList.remove("checkedTypeBtn");
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		extreme_agl_filter.classList.remove("checkedTypeBtn");
-		
-		int_filter.style.backgroundColor = "#6e3e80";
-		int_filter.classList.remove("checkedTypeBtn");
-		super_int_filter.style.backgroundColor = "#6e3e80";
-		super_int_filter.classList.remove("checkedTypeBtn");
-		extreme_int_filter.style.backgroundColor = "#6e3e80";
-		extreme_int_filter.classList.remove("checkedTypeBtn");
-		
-		phy_filter.style.backgroundColor = "#673A03";
-		phy_filter.classList.remove("checkedTypeBtn");
-		super_phy_filter.style.backgroundColor = "#673A03";
-		super_phy_filter.classList.remove("checkedTypeBtn");
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		extreme_phy_filter.classList.remove("checkedTypeBtn");
-		
-		str_filter.style.backgroundColor = "#7C1A1E";
-		str_filter.classList.remove("checkedTypeBtn");
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		super_str_filter.classList.remove("checkedTypeBtn");
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		extreme_str_filter.classList.remove("checkedTypeBtn");
-		
-		teq_filter.style.backgroundColor = "#015907";
-		teq_filter.classList.remove("checkedTypeBtn");
-		super_teq_filter.style.backgroundColor = "#015907";
-		super_teq_filter.classList.remove("checkedTypeBtn");
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		extreme_teq_filter.classList.remove("checkedTypeBtn");
-		
-		super_type_filter.style.backgroundColor = "#494949";
-		super_type_filter.classList.remove("checkedTypeBtn");
-	}
+	agl_filter.style.backgroundColor = "#064794";
+	super_agl_filter.style.backgroundColor = "#064794";
+	extreme_agl_filter.style.backgroundColor = "#064794";
+	
+	int_filter.style.backgroundColor = "#6E3E80";
+	super_int_filter.style.backgroundColor = "#6E3E80";
+	extreme_int_filter.style.backgroundColor = "#6E3E80";
+	
+	phy_filter.style.backgroundColor = "#673A03";
+	super_phy_filter.style.backgroundColor = "#673A03";
+	extreme_phy_filter.style.backgroundColor = "#673A03";
+	
+	str_filter.style.backgroundColor = "#7C1A1E";
+	super_str_filter.style.backgroundColor = "#7C1A1E";
+	extreme_str_filter.style.backgroundColor = "#7C1A1E";
+	
+	teq_filter.style.backgroundColor = "#015907";
+	super_teq_filter.style.backgroundColor = "#015907";
+	extreme_teq_filter.style.backgroundColor = "#015907";
+	
+	super_type_filter.style.backgroundColor = "#494949";
+	extreme_type_filter.style.backgroundColor = "#EEC310";
 }
