@@ -887,7 +887,7 @@ function filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , in
 	}
 }
 
-function defaultAllTypeFilter(){
+function defaultFilter(n){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
 	let extreme_agl_filter = document.getElementById("extreme_agl");
@@ -933,10 +933,7 @@ function defaultAllTypeFilter(){
 	
 	super_type_filter.style.backgroundColor = "#494949";
 	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultFilter(n){
-	defaultAllTypeFilter();
+	
 	let filterTypeList = [];
 	let typeBtn = document.getElementsByClassName("type-btn");
 	for(let i = 0; i < typeBtn.length; i ++){
