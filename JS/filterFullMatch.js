@@ -41,11 +41,9 @@ function filterFullMatch(){
 				for(let i = 0; i < categories.length; i ++){
 					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesOrange.item(j).id)){
 						categories.item(i).style.display = "inline-block";
-						categories.item(i).classList.add("appeared");
 						categories.item(i).classList.add("appearedType");
 					}else{
 						categories.item(i).style.display = "none";
-						categories.item(i).classList.remove("appeared");
 						categories.item(i).classList.remove("appearedType")
 					}
 				}

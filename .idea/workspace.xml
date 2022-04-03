@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="simplified type filter">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="simplified filterType default values">
       <change beforePath="$PROJECT_DIR$/JS/filterFullMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterFullMatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/filterType.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterType.js" afterDir="false" />
     </list>
@@ -113,14 +112,7 @@
       <workItem from="1648757298037" duration="2590000" />
       <workItem from="1648894919495" duration="1873000" />
       <workItem from="1648911571054" duration="3703000" />
-      <workItem from="1648982132672" duration="2531000" />
-    </task>
-    <task id="LOCAL-00004" summary="added 5 more characters with a show all categories button">
-      <created>1647672317631</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1647672317631</updated>
+      <workItem from="1648982132672" duration="3644000" />
     </task>
     <task id="LOCAL-00005" summary="done">
       <created>1647672407921</created>
@@ -458,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648927071431</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="simplified filterType default values">
+      <created>1648985750832</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1648985750832</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +476,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="simplified type filter" />
     <MESSAGE value="simplified type filter and category filter to show and hide" />
     <MESSAGE value="fixed color changing when hover over filter type" />
     <MESSAGE value="minor fixes for partial search" />
@@ -502,6 +500,7 @@
     <MESSAGE value="seperated function filterCategory and filterType in different files" />
     <MESSAGE value="added filter rarity" />
     <MESSAGE value="minor bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor bug fixes" />
+    <MESSAGE value="simplified filterType default values" />
+    <option name="LAST_COMMIT_MESSAGE" value="simplified filterType default values" />
   </component>
 </project>

@@ -61,7 +61,7 @@ function initTypeFilter(){
 				}
 			}
 		}
-		defaultAglFilter();
+		defaultFilter(0);
 	});
 	
 	super_agl_filter.addEventListener('click' , function(){
@@ -100,7 +100,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultSuperAglFilter();
+		defaultFilter(7);
 	});
 	
 	extreme_agl_filter.addEventListener('click' , function(){
@@ -139,7 +139,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultExtremeAglFilter();
+		defaultFilter(12);
 	});
 	
 	int_filter.addEventListener('click' , function(){
@@ -178,7 +178,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultIntFilter();
+		defaultFilter(1);
 	});
 	
 	super_int_filter.addEventListener('click' , function(){
@@ -217,7 +217,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultSuperIntFilter();
+		defaultFilter(8);
 	});
 	
 	extreme_int_filter.addEventListener('click' , function(){
@@ -256,7 +256,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultExtremeIntFilter();
+		defaultFilter(13);
 	});
 	
 	phy_filter.addEventListener('click' , function(){
@@ -295,7 +295,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultPhyFilter();
+		defaultFilter(2);
 	});
 	
 	super_phy_filter.addEventListener('click' , function(){
@@ -334,7 +334,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultSuperPhyFilter();
+		defaultFilter(9);
 	});
 	
 	extreme_phy_filter.addEventListener('click' , function(){
@@ -373,7 +373,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultExtremePhyFilter();
+		defaultFilter(14);
 	});
 	
 	str_filter.addEventListener('click' , function(){
@@ -412,7 +412,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultStrFilter();
+		defaultFilter(3);
 	});
 	
 	super_str_filter.addEventListener('click' , function(){
@@ -451,7 +451,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultSuperStrFilter();
+		defaultFilter(10);
 	});
 	
 	extreme_str_filter.addEventListener('click' , function(){
@@ -490,7 +490,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultExtremeStrFilter();
+		defaultFilter(15);
 	});
 	
 	teq_filter.addEventListener('click' , function(){
@@ -529,7 +529,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultTeqFilter();
+		defaultFilter(4);
 	});
 	
 	super_teq_filter.addEventListener('click' , function(){
@@ -568,7 +568,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultSuperTeqFilter();
+		defaultFilter(11);
 	});
 	
 	extreme_teq_filter.addEventListener('click' , function(){
@@ -607,7 +607,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultExtremeTeqFilter();
+		defaultFilter(16);
 	});
 	
 	super_type_filter.addEventListener('click' , function(){
@@ -646,7 +646,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultSuperFilter();
+		defaultFilter(5);
 	});
 	
 	extreme_type_filter.addEventListener('click' , function(){
@@ -685,7 +685,7 @@ function initTypeFilter(){
 				categoriesBtn.item(i).click();
 			}
 		}
-		defaultExtremeFilter();
+		defaultFilter(6);
 	});
 	hoverFilterType();
 }
@@ -1010,710 +1010,27 @@ function filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , in
 	}
 }
 
-function defaultAglFilter(){
+function defaultAllTypeFilter(){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
 	let extreme_agl_filter = document.getElementById("extreme_agl");
+	
 	let int_filter = document.getElementById("int");
 	let super_int_filter = document.getElementById("super_int");
 	let extreme_int_filter = document.getElementById("extreme_int");
+	
 	let phy_filter = document.getElementById("phy");
 	let super_phy_filter = document.getElementById("super_phy");
 	let extreme_phy_filter = document.getElementById("extreme_phy");
+	
 	let str_filter = document.getElementById("str");
 	let super_str_filter = document.getElementById("super_str");
 	let extreme_str_filter = document.getElementById("extreme_str");
+	
 	let teq_filter = document.getElementById("teq");
 	let super_teq_filter = document.getElementById("super_teq");
 	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
 	
-	agl_filter.style.backgroundColor = "#EEC310";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#064794";
-	
-	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
-	
-	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
-	
-	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
-	
-	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#015907";
-	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultSuperAglFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#EEC310";
-	extreme_agl_filter.style.backgroundColor = "#064794";
-	
-	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
-	
-	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
-	
-	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
-	
-	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#015907";
-	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultExtremeAglFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#EEC310";
-	
-	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
-	
-	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
-	
-	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
-	
-	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#015907";
-	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultIntFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#064794";
-	
-	int_filter.style.backgroundColor = "#EEC310";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
-	
-	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
-	
-	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
-	
-	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#015907";
-	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultSuperIntFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#064794";
-	
-	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#EEC310";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
-	
-	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
-	
-	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
-	
-	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#015907";
-	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultExtremeIntFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#064794";
-	
-	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#EEC310";
-	
-	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
-	
-	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
-	
-	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#015907";
-	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultPhyFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#064794";
-	
-	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
-	
-	phy_filter.style.backgroundColor = "#EEC310";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
-	
-	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
-	
-	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#015907";
-	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultSuperPhyFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#064794";
-	
-	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
-	
-	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#EEC310";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
-	
-	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
-	
-	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#015907";
-	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultExtremePhyFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#064794";
-	
-	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
-	
-	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#EEC310";
-	
-	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
-	
-	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#015907";
-	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultStrFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#064794";
-	
-	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
-	
-	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
-	
-	str_filter.style.backgroundColor = "#EEC310";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
-	
-	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#015907";
-	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultSuperStrFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#064794";
-	
-	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
-	
-	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
-	
-	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#EEC310";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
-	
-	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#015907";
-	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultExtremeStrFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#064794";
-	
-	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
-	
-	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
-	
-	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#EEC310";
-	
-	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#015907";
-	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultTeqFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#064794";
-	
-	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
-	
-	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
-	
-	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
-	
-	teq_filter.style.backgroundColor = "#EEC310";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#015907";
-	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultSuperTeqFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#064794";
-	
-	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
-	
-	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
-	
-	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
-	
-	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#EEC310";
-	extreme_teq_filter.style.backgroundColor = "#015907";
-	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultExtremeTeqFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#064794";
-	
-	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
-	
-	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
-	
-	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
-	
-	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#EEC310";
-	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultSuperFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#064794";
-	
-	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
-	
-	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
-	
-	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
-	
-	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#015907";
-	
-	super_type_filter.style.backgroundColor = "#EEC310";
-	extreme_type_filter.style.backgroundColor = "#494949";
-}
-
-function defaultExtremeFilter(){
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
 	
@@ -1738,5 +1055,15 @@ function defaultExtremeFilter(){
 	extreme_teq_filter.style.backgroundColor = "#015907";
 	
 	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#EEC310";
+	extreme_type_filter.style.backgroundColor = "#494949";
+}
+
+function defaultFilter(n){
+	defaultAllTypeFilter();
+	let filterTypeList = [];
+	let typeBtn = document.getElementsByClassName("type-btn");
+	for(let i = 0; i < typeBtn.length; i ++){
+		filterTypeList[i] = typeBtn.item(i);
+	}
+	filterTypeList[n].style.backgroundColor = "#EEC310";
 }
