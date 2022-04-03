@@ -2,8 +2,8 @@ function filterFullMatch(){
 	let catList = [];
 	let categories = document.getElementsByClassName("categories");
 	let categoriesBtn = document.getElementsByClassName("categories-btn");
-	let typeBtn = document.getElementsByClassName("type-btn");
 	let appearedType = document.getElementsByClassName("appearedType");
+	let appearedRarity = document.getElementsByClassName("appearedRarity");
 	
 	for(let i = 0; i < categoriesBtn.length; i ++){
 		catList[i] = document.getElementsByClassName(categoriesBtn.item(i).id);
@@ -35,19 +35,37 @@ function filterFullMatch(){
 				catList[j].item(i).style.display = "inline-block";
 				catList[j].item(i).classList.add("appeared");
 			}
-
-			if(appearedType.length > 0){
+			
+			if(appearedType.length < 1 && appearedRarity.length > 0){
 				for(let i = 0; i < categories.length; i ++){
-					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesOrange.item(j).id)){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesOrange.item(j).id)){
 						categories.item(i).style.display = "inline-block";
-						categories.item(i).classList.add("appearedType");
 					}else{
 						categories.item(i).style.display = "none";
-						categories.item(i).classList.remove("appearedType")
 					}
 				}
 			}
-			changeDefaultCategoryActiveColors(j,"orange");
+			
+			if(appearedType.length > 0 && appearedRarity.length < 1){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesOrange.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			
+			if(appearedType.length > 0 && appearedRarity.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesOrange.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			changeDefaultCategoryActiveColors(j , "orange");
 		});
 	}
 	
@@ -68,25 +86,36 @@ function filterFullMatch(){
 				catList[j + categoriesOrange.length].item(i).classList.add("appeared");
 			}
 			
-			if(appearedType.length > 0){
+			if(appearedType.length < 1 && appearedRarity.length > 0){
 				for(let i = 0; i < categories.length; i ++){
-					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesGreen.item(j).id)){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesGreen.item(j).id)){
 						categories.item(i).style.display = "inline-block";
-						categories.item(i).classList.add("appeared");
-						categories.item(i).classList.add("appearedType");
 					}else{
 						categories.item(i).style.display = "none";
-						categories.item(i).classList.remove("appeared");
-						categories.item(i).classList.remove("appearedType")
 					}
 				}
 			}
-			for(let i = 0; i < typeBtn.length; i ++){
-				if(typeBtn.item(i).classList.contains("checkedTypeBtn")){
-					typeBtn.item(i).click();
+			
+			if(appearedType.length > 0 && appearedRarity.length < 1){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesGreen.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
 				}
 			}
-			changeDefaultCategoryActiveColors(j,"green");
+			
+			if(appearedType.length > 0 && appearedRarity.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesGreen.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			changeDefaultCategoryActiveColors(j , "green");
 		});
 	}
 	
@@ -108,17 +137,37 @@ function filterFullMatch(){
 				catList[j + categoriesOrange.length + categoriesGreen.length].item(i).style.display = "inline-block";
 				catList[j + categoriesOrange.length + categoriesGreen.length].item(i).classList.add("appeared");
 			}
-			if(appearedType.length > 0){
+			
+			if(appearedType.length < 1 && appearedRarity.length > 0){
 				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				for(let i = 0; i < catList[j].length; i ++){
-					appearedType.item(i).style.display = "inline-block";
-					appearedType.item(i).classList.add("appeared");
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesYellow.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
 				}
 			}
-			changeDefaultCategoryActiveColors(j,"yellow");
+			
+			if(appearedType.length > 0 && appearedRarity.length < 1){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesYellow.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			
+			if(appearedType.length > 0 && appearedRarity.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesYellow.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			changeDefaultCategoryActiveColors(j , "yellow");
 		});
 	}
 	
@@ -140,17 +189,37 @@ function filterFullMatch(){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length].item(i).style.display = "inline-block";
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length].item(i).classList.add("appeared");
 			}
-			if(appearedType.length > 0){
+			
+			if(appearedType.length < 1 && appearedRarity.length > 0){
 				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				for(let i = 0; i < catList[j].length; i ++){
-					appearedType.item(i).style.display = "inline-block";
-					appearedType.item(i).classList.add("appeared");
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesCyan.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
 				}
 			}
-			changeDefaultCategoryActiveColors(j,"cyan");
+			
+			if(appearedType.length > 0 && appearedRarity.length < 1){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesCyan.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			
+			if(appearedType.length > 0 && appearedRarity.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesCyan.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			changeDefaultCategoryActiveColors(j , "cyan");
 		});
 	}
 	
@@ -172,17 +241,37 @@ function filterFullMatch(){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length].item(i).style.display = "inline-block";
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length].item(i).classList.add("appeared");
 			}
-			if(appearedType.length > 0){
+			
+			if(appearedType.length < 1 && appearedRarity.length > 0){
 				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				for(let i = 0; i < catList[j].length; i ++){
-					appearedType.item(i).style.display = "inline-block";
-					appearedType.item(i).classList.add("appeared");
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesBlue.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
 				}
 			}
-			changeDefaultCategoryActiveColors(j,"blue");
+			
+			if(appearedType.length > 0 && appearedRarity.length < 1){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesBlue.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			
+			if(appearedType.length > 0 && appearedRarity.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesBlue.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			changeDefaultCategoryActiveColors(j , "blue");
 		});
 	}
 	
@@ -204,17 +293,37 @@ function filterFullMatch(){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length].item(i).style.display = "inline-block";
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length].item(i).classList.add("appeared");
 			}
-			if(appearedType.length > 0){
+			
+			if(appearedType.length < 1 && appearedRarity.length > 0){
 				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				for(let i = 0; i < catList[j].length; i ++){
-					appearedType.item(i).style.display = "inline-block";
-					appearedType.item(i).classList.add("appeared");
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesPurple.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
 				}
 			}
-			changeDefaultCategoryActiveColors(j,"purple");
+			
+			if(appearedType.length > 0 && appearedRarity.length < 1){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesPurple.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			
+			if(appearedType.length > 0 && appearedRarity.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesPurple.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			changeDefaultCategoryActiveColors(j , "purple");
 		});
 	}
 	
@@ -236,17 +345,37 @@ function filterFullMatch(){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].item(i).style.display = "inline-block";
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].item(i).classList.add("appeared");
 			}
-			if(appearedType.length > 0){
+			
+			if(appearedType.length < 1 && appearedRarity.length > 0){
 				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				for(let i = 0; i < catList[j].length; i ++){
-					appearedType.item(i).style.display = "inline-block";
-					appearedType.item(i).classList.add("appeared");
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesRed.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
 				}
 			}
-			changeDefaultCategoryActiveColors(j,"red");
+			
+			if(appearedType.length > 0 && appearedRarity.length < 1){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesRed.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			
+			if(appearedType.length > 0 && appearedRarity.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesRed.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			changeDefaultCategoryActiveColors(j , "red");
 		});
 	}
 	
@@ -268,17 +397,37 @@ function filterFullMatch(){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].item(i).style.display = "inline-block";
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].item(i).classList.add("appeared");
 			}
-			if(appearedType.length > 0){
+			
+			if(appearedType.length < 1 && appearedRarity.length > 0){
 				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				for(let i = 0; i < catList[j].length; i ++){
-					appearedType.item(i).style.display = "inline-block";
-					appearedType.item(i).classList.add("appeared");
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesDarkGreen.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
 				}
 			}
-			changeDefaultCategoryActiveColors(j,"darkGreen");
+			
+			if(appearedType.length > 0 && appearedRarity.length < 1){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesDarkGreen.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			
+			if(appearedType.length > 0 && appearedRarity.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesDarkGreen.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			changeDefaultCategoryActiveColors(j , "darkGreen");
 		});
 	}
 	
@@ -300,17 +449,37 @@ function filterFullMatch(){
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkBlue.length].item(i).style.display = "inline-block";
 				catList[j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkBlue.length].item(i).classList.add("appeared");
 			}
-			if(appearedType.length > 0){
+			
+			if(appearedType.length < 1 && appearedRarity.length > 0){
 				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				for(let i = 0; i < catList[j].length; i ++){
-					appearedType.item(i).style.display = "inline-block";
-					appearedType.item(i).classList.add("appeared");
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesDarkBlue.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
 				}
 			}
-			changeDefaultCategoryActiveColors(j,"darkBlue");
+			
+			if(appearedType.length > 0 && appearedRarity.length < 1){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesDarkBlue.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			
+			if(appearedType.length > 0 && appearedRarity.length > 0){
+				for(let i = 0; i < categories.length; i ++){
+					if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesDarkBlue.item(j).id)){
+						categories.item(i).style.display = "inline-block";
+					}else{
+						categories.item(i).style.display = "none";
+					}
+				}
+			}
+			changeDefaultCategoryActiveColors(j , "darkBlue");
 		});
 	}
 }
