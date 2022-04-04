@@ -11,7 +11,7 @@ function filterRarity(){
 		rarity = "n";
 		removeAllCheckedRarityBtn();
 		rarity_n.classList.add("checkedRarityBtn");
-		filterInit(rarity);
+		filterRarityInit(rarity);
 		defaultActiveFilter(0);
 	});
 	
@@ -19,7 +19,7 @@ function filterRarity(){
 		rarity = "r";
 		removeAllCheckedRarityBtn();
 		rarity_r.classList.add("checkedRarityBtn");
-		filterInit(rarity);
+		filterRarityInit(rarity);
 		defaultActiveFilter(1);
 	});
 	
@@ -27,7 +27,7 @@ function filterRarity(){
 		rarity = "sr";
 		removeAllCheckedRarityBtn();
 		rarity_sr.classList.add("checkedRarityBtn");
-		filterInit(rarity);
+		filterRarityInit(rarity);
 		defaultActiveFilter(2);
 	});
 	
@@ -35,7 +35,7 @@ function filterRarity(){
 		rarity = "ssr";
 		removeAllCheckedRarityBtn();
 		rarity_ssr.classList.add("checkedRarityBtn");
-		filterInit(rarity);
+		filterRarityInit(rarity);
 		defaultActiveFilter(3);
 	});
 	
@@ -43,7 +43,7 @@ function filterRarity(){
 		rarity = "ur";
 		removeAllCheckedRarityBtn();
 		rarity_ur.classList.add("checkedRarityBtn");
-		filterInit(rarity);
+		filterRarityInit(rarity);
 		defaultActiveFilter(4);
 	});
 	
@@ -51,35 +51,41 @@ function filterRarity(){
 		rarity = "lr";
 		removeAllCheckedRarityBtn();
 		rarity_lr.classList.add("checkedRarityBtn");
-		filterInit(rarity);
+		filterRarityInit(rarity);
 		defaultActiveFilter(5);
 	});
 	
 	hoverRarity();
 }
+function removeAllCheckedRarityBtn(){
+	let rarityBtn = document.getElementsByClassName("rarity-btn");
+	for(let i = 0; i < rarityBtn.length; i ++){
+		rarityBtn.item(i).classList.remove("checkedRarityBtn");
+	}
+}
 
-function filterInit(rarity){
+function filterRarityInit(rarity){
 	let appeared = document.getElementsByClassName("appeared");
 	let appearedType = document.getElementsByClassName("appearedType");
 	
 	if(appeared.length < 1 && appearedType.length < 1){
-		filterDefault(rarity);
+		filterRarityDefault(rarity);
 	}
 	
 	if(appeared.length < 1 && appearedType.length > 0){
-		filterAppearType(rarity);
+		filterRarityAppearType(rarity);
 	}
 	
 	if(appeared.length > 0 && appearedType.length < 1){
-		filterAppear(rarity);
+		filterRarityAppear(rarity);
 	}
 	
 	if(appeared.length > 0 && appearedType.length > 0){
-		filterAppearAndAppearType(rarity);
+		filterRarityAppearAndAppearType(rarity);
 	}
 }
 
-function filterDefault(rarity){
+function filterRarityDefault(rarity){
 	let httpLink;
 	let hostName = window.location.host;
 	
@@ -103,7 +109,7 @@ function filterDefault(rarity){
 	}
 }
 
-function filterAppearType(rarity){
+function filterRarityAppearType(rarity){
 	let httpLink;
 	let hostName = window.location.host;
 	
@@ -340,7 +346,7 @@ function filterAppearType(rarity){
 	}
 }
 
-function filterAppear(rarity){
+function filterRarityAppear(rarity){
 	let httpLink;
 	let hostName = window.location.host;
 	
@@ -364,7 +370,7 @@ function filterAppear(rarity){
 	}
 }
 
-function filterAppearAndAppearType(rarity){
+function filterRarityAppearAndAppearType(rarity){
 	let httpLink;
 	let hostName = window.location.host;
 	
@@ -695,13 +701,6 @@ function hoverRarity(){
 		if(rarity_lr.classList.contains("checkedRarityBtn")){
 			rarity_lr.style.backgroundColor = "#EEC310";
 		}
-	}
-}
-
-function removeAllCheckedRarityBtn(){
-	let rarityBtn = document.getElementsByClassName("rarity-btn");
-	for(let i = 0; i < rarityBtn.length; i ++){
-		rarityBtn.item(i).classList.remove("checkedRarityBtn");
 	}
 }
 

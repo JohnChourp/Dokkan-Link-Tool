@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="now rarity filter works with the all the other filters">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="simplified filterRarity">
       <change beforePath="$PROJECT_DIR$/JS/filterRarity.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterRarity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterType.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterType.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,14 +115,7 @@
       <workItem from="1648982132672" duration="4551000" />
       <workItem from="1648997507954" duration="2250000" />
       <workItem from="1649004654257" duration="11000" />
-      <workItem from="1649061432204" duration="3729000" />
-    </task>
-    <task id="LOCAL-00011" summary="seperated in different pages full and partial match">
-      <created>1647702612496</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1647702612496</updated>
+      <workItem from="1649061432204" duration="4573000" />
     </task>
     <task id="LOCAL-00012" summary="fixed bugs">
       <created>1648244463008</created>
@@ -460,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649064151861</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="simplified filterRarity">
+      <created>1649065264041</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1649065264041</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +479,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="now filterType is working properply" />
     <MESSAGE value="now simple type filters are only show normal type" />
     <MESSAGE value="added super and extreme type filter for full match search" />
     <MESSAGE value="added super and extreme type filter for partial match search" />
@@ -504,6 +503,7 @@
     <MESSAGE value="bug fixes" />
     <MESSAGE value="removed unnecessary classes" />
     <MESSAGE value="now rarity filter works with the all the other filters" />
-    <option name="LAST_COMMIT_MESSAGE" value="now rarity filter works with the all the other filters" />
+    <MESSAGE value="simplified filterRarity" />
+    <option name="LAST_COMMIT_MESSAGE" value="simplified filterRarity" />
   </component>
 </project>
