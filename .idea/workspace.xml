@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="removed unnecessary classes">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="now rarity filter works with the all the other filters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/filterRarity.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterRarity.js" afterDir="false" />
     </list>
@@ -115,14 +115,7 @@
       <workItem from="1648982132672" duration="4551000" />
       <workItem from="1648997507954" duration="2250000" />
       <workItem from="1649004654257" duration="11000" />
-      <workItem from="1649061432204" duration="2577000" />
-    </task>
-    <task id="LOCAL-00010" summary="added partial and full match">
-      <created>1647701303675</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1647701303675</updated>
+      <workItem from="1649061432204" duration="3729000" />
     </task>
     <task id="LOCAL-00011" summary="seperated in different pages full and partial match">
       <created>1647702612496</created>
@@ -460,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649004615604</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="now rarity filter works with the all the other filters">
+      <created>1649064151860</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1649064151861</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +479,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed links http and https for localhost" />
     <MESSAGE value="now filterType is working properply" />
     <MESSAGE value="now simple type filters are only show normal type" />
     <MESSAGE value="added super and extreme type filter for full match search" />
@@ -504,6 +503,7 @@
     <MESSAGE value="simplified category filter default colors" />
     <MESSAGE value="bug fixes" />
     <MESSAGE value="removed unnecessary classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed unnecessary classes" />
+    <MESSAGE value="now rarity filter works with the all the other filters" />
+    <option name="LAST_COMMIT_MESSAGE" value="now rarity filter works with the all the other filters" />
   </component>
 </project>
