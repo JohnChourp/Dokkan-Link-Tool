@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="simplified filterType">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterType.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterFullMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterFullMatch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,14 +116,7 @@
       <workItem from="1648997507954" duration="2250000" />
       <workItem from="1649004654257" duration="11000" />
       <workItem from="1649061432204" duration="4732000" />
-      <workItem from="1649188900544" duration="1055000" />
-    </task>
-    <task id="LOCAL-00013" summary="changed workspace.xml">
-      <created>1648244508371</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1648244508371</updated>
+      <workItem from="1649188900544" duration="4650000" />
     </task>
     <task id="LOCAL-00014" summary="added image button for db_saga">
       <created>1648292509972</created>
@@ -461,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649066084972</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="simplified filterType">
+      <created>1649190193490</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1649190193491</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
