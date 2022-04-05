@@ -1,91 +1,4 @@
 function filterRarity(){
-	let rarity = "";
-	let rarity_n = document.getElementById("rarity_n");
-	let rarity_r = document.getElementById("rarity_r");
-	let rarity_sr = document.getElementById("rarity_sr");
-	let rarity_ssr = document.getElementById("rarity_ssr");
-	let rarity_ur = document.getElementById("rarity_ur");
-	let rarity_lr = document.getElementById("rarity_lr");
-	
-	rarity_n.addEventListener('click' , function(){
-		rarity = "n";
-		removeAllCheckedRarityBtn();
-		rarity_n.classList.add("checkedRarityBtn");
-		filterRarityInit(rarity);
-		defaultActiveFilter(0);
-	});
-	
-	rarity_r.addEventListener('click' , function(){
-		rarity = "r";
-		removeAllCheckedRarityBtn();
-		rarity_r.classList.add("checkedRarityBtn");
-		filterRarityInit(rarity);
-		defaultActiveFilter(1);
-	});
-	
-	rarity_sr.addEventListener('click' , function(){
-		rarity = "sr";
-		removeAllCheckedRarityBtn();
-		rarity_sr.classList.add("checkedRarityBtn");
-		filterRarityInit(rarity);
-		defaultActiveFilter(2);
-	});
-	
-	rarity_ssr.addEventListener('click' , function(){
-		rarity = "ssr";
-		removeAllCheckedRarityBtn();
-		rarity_ssr.classList.add("checkedRarityBtn");
-		filterRarityInit(rarity);
-		defaultActiveFilter(3);
-	});
-	
-	rarity_ur.addEventListener('click' , function(){
-		rarity = "ur";
-		removeAllCheckedRarityBtn();
-		rarity_ur.classList.add("checkedRarityBtn");
-		filterRarityInit(rarity);
-		defaultActiveFilter(4);
-	});
-	
-	rarity_lr.addEventListener('click' , function(){
-		rarity = "lr";
-		removeAllCheckedRarityBtn();
-		rarity_lr.classList.add("checkedRarityBtn");
-		filterRarityInit(rarity);
-		defaultActiveFilter(5);
-	});
-	
-	hoverRarity();
-}
-function removeAllCheckedRarityBtn(){
-	let rarityBtn = document.getElementsByClassName("rarity-btn");
-	for(let i = 0; i < rarityBtn.length; i ++){
-		rarityBtn.item(i).classList.remove("checkedRarityBtn");
-	}
-}
-
-function filterRarityInit(rarity){
-	let appeared = document.getElementsByClassName("appeared");
-	let appearedType = document.getElementsByClassName("appearedType");
-	
-	if(appeared.length < 1 && appearedType.length < 1){
-		filterRarityDefault(rarity);
-	}
-	
-	if(appeared.length < 1 && appearedType.length > 0){
-		filterRarityAppearType(rarity);
-	}
-	
-	if(appeared.length > 0 && appearedType.length < 1){
-		filterRarityAppear(rarity);
-	}
-	
-	if(appeared.length > 0 && appearedType.length > 0){
-		filterRarityAppearAndAppearType(rarity);
-	}
-}
-
-function filterRarityDefault(rarity){
 	let httpLink;
 	let hostName = window.location.host;
 	
@@ -97,7 +10,96 @@ function filterRarityDefault(rarity){
 	
 	let categories = document.getElementsByClassName("categories");
 	let cardRarity = document.getElementsByClassName("card-rarity");
+	let cardType = document.getElementsByClassName("card-type");
+	let appeared = document.getElementsByClassName("appeared");
+	let appearedType = document.getElementsByClassName("appearedType");
+	let rarityBtn = document.getElementsByClassName("rarity-btn");
 	
+	let rarity = "";
+	let rarity_n = document.getElementById("rarity_n");
+	let rarity_r = document.getElementById("rarity_r");
+	let rarity_sr = document.getElementById("rarity_sr");
+	let rarity_ssr = document.getElementById("rarity_ssr");
+	let rarity_ur = document.getElementById("rarity_ur");
+	let rarity_lr = document.getElementById("rarity_lr");
+	
+	rarity_n.addEventListener('click' , function(){
+		rarity = "n";
+		removeAllCheckedRarityBtn(rarityBtn);
+		rarity_n.classList.add("checkedRarityBtn");
+		filterRarityInit(httpLink , hostName , categories , cardRarity , cardType , appeared , appearedType , rarity);
+		defaultActiveFilter(rarityBtn , 0);
+	});
+	
+	rarity_r.addEventListener('click' , function(){
+		rarity = "r";
+		removeAllCheckedRarityBtn(rarityBtn);
+		rarity_r.classList.add("checkedRarityBtn");
+		filterRarityInit(httpLink , hostName , categories , cardRarity , cardType , appeared , appearedType , rarity);
+		defaultActiveFilter(rarityBtn , 1);
+	});
+	
+	rarity_sr.addEventListener('click' , function(){
+		rarity = "sr";
+		removeAllCheckedRarityBtn(rarityBtn);
+		rarity_sr.classList.add("checkedRarityBtn");
+		filterRarityInit(httpLink , hostName , categories , cardRarity , cardType , appeared , appearedType , rarity);
+		defaultActiveFilter(rarityBtn , 2);
+	});
+	
+	rarity_ssr.addEventListener('click' , function(){
+		rarity = "ssr";
+		removeAllCheckedRarityBtn(rarityBtn);
+		rarity_ssr.classList.add("checkedRarityBtn");
+		filterRarityInit(httpLink , hostName , categories , cardRarity , cardType , appeared , appearedType , rarity);
+		defaultActiveFilter(rarityBtn , 3);
+	});
+	
+	rarity_ur.addEventListener('click' , function(){
+		rarity = "ur";
+		removeAllCheckedRarityBtn(rarityBtn);
+		rarity_ur.classList.add("checkedRarityBtn");
+		filterRarityInit(httpLink , hostName , categories , cardRarity , cardType , appeared , appearedType , rarity);
+		defaultActiveFilter(rarityBtn , 4);
+	});
+	
+	rarity_lr.addEventListener('click' , function(){
+		rarity = "lr";
+		removeAllCheckedRarityBtn(rarityBtn);
+		rarity_lr.classList.add("checkedRarityBtn");
+		filterRarityInit(httpLink , hostName , categories , cardRarity , cardType , appeared , appearedType , rarity);
+		defaultActiveFilter(rarityBtn , 5);
+	});
+	
+	hoverRarity(rarity_n , rarity_r , rarity_sr , rarity_ssr , rarity_ur , rarity_lr);
+}
+
+function removeAllCheckedRarityBtn(rarityBtn){
+	for(let i = 0; i < rarityBtn.length; i ++){
+		rarityBtn.item(i).classList.remove("checkedRarityBtn");
+	}
+}
+
+function filterRarityInit(httpLink , hostName , categories , cardRarity , cardType , appeared , appearedType , rarity){
+	
+	if(appeared.length < 1 && appearedType.length < 1){
+		filterRarityDefault(httpLink , hostName , categories , cardRarity , rarity);
+	}
+	
+	if(appeared.length < 1 && appearedType.length > 0){
+		filterRarityAppearType(httpLink , hostName , categories , cardRarity , cardType , rarity);
+	}
+	
+	if(appeared.length > 0 && appearedType.length < 1){
+		filterRarityAppear(httpLink , hostName , categories , cardRarity , rarity);
+	}
+	
+	if(appeared.length > 0 && appearedType.length > 0){
+		filterRarityAppearAndAppearType(httpLink , hostName , categories , cardRarity , cardType , rarity);
+	}
+}
+
+function filterRarityDefault(httpLink , hostName , categories , cardRarity , rarity){
 	for(let i = 0; i < categories.length; i ++){
 		if(cardRarity.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterRarity/char_rarity_" + rarity + ".png"){
 			categories.item(i).style.display = "inline-block";
@@ -109,16 +111,7 @@ function filterRarityDefault(rarity){
 	}
 }
 
-function filterRarityAppearType(rarity){
-	let httpLink;
-	let hostName = window.location.host;
-	
-	if(hostName === "johnchourp.github.io"){
-		httpLink = "https://";
-	}else{
-		httpLink = "http://";
-	}
-	
+function filterRarityAppearType(httpLink , hostName , categories , cardRarity , cardType , rarity){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
 	let extreme_agl_filter = document.getElementById("extreme_agl");
@@ -136,10 +129,6 @@ function filterRarityAppearType(rarity){
 	let extreme_teq_filter = document.getElementById("extreme_teq");
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	let categories = document.getElementsByClassName("categories");
-	let cardRarity = document.getElementsByClassName("card-rarity");
-	let cardType = document.getElementsByClassName("card-type");
 	
 	if(agl_filter.classList.contains("checkedTypeBtn")){
 		for(let i = 0; i < categories.length; i ++){
@@ -346,19 +335,7 @@ function filterRarityAppearType(rarity){
 	}
 }
 
-function filterRarityAppear(rarity){
-	let httpLink;
-	let hostName = window.location.host;
-	
-	if(hostName === "johnchourp.github.io"){
-		httpLink = "https://";
-	}else{
-		httpLink = "http://";
-	}
-	
-	let categories = document.getElementsByClassName("categories");
-	let cardRarity = document.getElementsByClassName("card-rarity");
-	
+function filterRarityAppear(httpLink , hostName , categories , cardRarity , rarity){
 	for(let i = 0; i < cardRarity.length; i ++){
 		if(categories.item(i).classList.contains("appeared") && (cardRarity.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterRarity/char_rarity_" + rarity + ".png")){
 			categories.item(i).style.display = "inline-block";
@@ -370,16 +347,7 @@ function filterRarityAppear(rarity){
 	}
 }
 
-function filterRarityAppearAndAppearType(rarity){
-	let httpLink;
-	let hostName = window.location.host;
-	
-	if(hostName === "johnchourp.github.io"){
-		httpLink = "https://";
-	}else{
-		httpLink = "http://";
-	}
-	
+function filterRarityAppearAndAppearType(httpLink , hostName , categories , cardRarity , cardType , rarity){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
 	let extreme_agl_filter = document.getElementById("extreme_agl");
@@ -397,10 +365,6 @@ function filterRarityAppearAndAppearType(rarity){
 	let extreme_teq_filter = document.getElementById("extreme_teq");
 	let super_type_filter = document.getElementById("super_type");
 	let extreme_type_filter = document.getElementById("extreme_type");
-	
-	let categories = document.getElementsByClassName("categories");
-	let cardRarity = document.getElementsByClassName("card-rarity");
-	let cardType = document.getElementsByClassName("card-type");
 	
 	if(agl_filter.classList.contains("checkedTypeBtn")){
 		for(let i = 0; i < categories.length; i ++){
@@ -611,14 +575,7 @@ function showFilterRarity(){
 	document.getElementsByClassName("rarityFilter").item(0).classList.remove("rarityFilterShow");
 }
 
-function hoverRarity(){
-	let rarity_n = document.getElementById("rarity_n");
-	let rarity_r = document.getElementById("rarity_r");
-	let rarity_sr = document.getElementById("rarity_sr");
-	let rarity_ssr = document.getElementById("rarity_ssr");
-	let rarity_ur = document.getElementById("rarity_ur");
-	let rarity_lr = document.getElementById("rarity_lr");
-	
+function hoverRarity(rarity_n , rarity_r , rarity_sr , rarity_ssr , rarity_ur , rarity_lr){
 	rarity_n.onmouseover = function(){
 		rarity_n.style.backgroundColor = "#919090";
 		if(rarity_n.classList.contains("checkedRarityBtn")){
@@ -704,8 +661,7 @@ function hoverRarity(){
 	}
 }
 
-function defaultActiveFilter(n){
-	let rarityBtn = document.getElementsByClassName("rarity-btn");
+function defaultActiveFilter(rarityBtn , n){
 	for(let i = 0; i < rarityBtn.length; i ++){
 		rarityBtn.item(i).style.backgroundColor = "#494949";
 	}
