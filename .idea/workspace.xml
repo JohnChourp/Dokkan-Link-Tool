@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="removed duplicate character thumb">
-      <change afterPath="$PROJECT_DIR$/CharacterThumb/card_1003560_thumb.png" afterDir="false" />
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="imporved filterReset.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterThumb/card_1001880_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterThumb/card_1003910_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterReset.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterReset.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,15 +19,15 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-type-filters-for-super-and-extreme" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,11 +72,11 @@
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\JS" />
+      <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CSS" />
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterThumb" />
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterBase" />
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterRarity" />
-      <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CharacterType" />
-      <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CategoryThumb" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -114,139 +113,12 @@
       <workItem from="1648757298037" duration="2590000" />
       <workItem from="1648894919495" duration="1873000" />
       <workItem from="1648911571054" duration="3703000" />
-    </task>
-    <task id="LOCAL-00001" summary="First Commit">
-      <created>1647633840402</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1647633840402</updated>
-    </task>
-    <task id="LOCAL-00002" summary="added 5 characters with 2 filter categories">
-      <created>1647638757714</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1647638757714</updated>
-    </task>
-    <task id="LOCAL-00003" summary="renamed some files for better understanding">
-      <created>1647639452526</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1647639452526</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added 5 more characters with a show all categories button">
-      <created>1647672317631</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1647672317631</updated>
-    </task>
-    <task id="LOCAL-00005" summary="done">
-      <created>1647672407921</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1647672407921</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added charInfo.js that inserts data to characters">
-      <created>1647676302296</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1647676302296</updated>
-    </task>
-    <task id="LOCAL-00007" summary="added 15 more characters">
-      <created>1647676997104</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1647676997104</updated>
-    </task>
-    <task id="LOCAL-00008" summary="added all categories avalable">
-      <created>1647686827991</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1647686827991</updated>
-    </task>
-    <task id="LOCAL-00009" summary="added partial and full match">
-      <created>1647701299268</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1647701299268</updated>
-    </task>
-    <task id="LOCAL-00010" summary="added partial and full match">
-      <created>1647701303675</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1647701303675</updated>
-    </task>
-    <task id="LOCAL-00011" summary="seperated in different pages full and partial match">
-      <created>1647702612496</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1647702612496</updated>
-    </task>
-    <task id="LOCAL-00012" summary="fixed bugs">
-      <created>1648244463008</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1648244463008</updated>
-    </task>
-    <task id="LOCAL-00013" summary="changed workspace.xml">
-      <created>1648244508371</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1648244508371</updated>
-    </task>
-    <task id="LOCAL-00014" summary="added image button for db_saga">
-      <created>1648292509972</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1648292509972</updated>
-    </task>
-    <task id="LOCAL-00015" summary="added image button for db_saga and for partial match">
-      <created>1648292631411</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1648292631411</updated>
-    </task>
-    <task id="LOCAL-00016" summary="now orange and green categories are functioning as expected">
-      <created>1648324900252</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1648324900252</updated>
-    </task>
-    <task id="LOCAL-00017" summary="now yellow and cyan categories are working properly">
-      <created>1648328206409</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1648328206409</updated>
-    </task>
-    <task id="LOCAL-00018" summary="now all categories are working properly and full match is complete">
-      <created>1648331642891</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1648331642891</updated>
-    </task>
-    <task id="LOCAL-00019" summary="now categories button are a little pretier">
-      <created>1648367555900</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1648367555900</updated>
+      <workItem from="1648982132672" duration="4551000" />
+      <workItem from="1648997507954" duration="2250000" />
+      <workItem from="1649004654257" duration="11000" />
+      <workItem from="1649061432204" duration="4732000" />
+      <workItem from="1649188900544" duration="5193000" />
+      <workItem from="1649229099659" duration="6767000" />
     </task>
     <task id="LOCAL-00020" summary="added 10 more characters">
       <created>1648371414976</created>
@@ -458,7 +330,140 @@
       <option name="project" value="LOCAL" />
       <updated>1648896885167</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="seperated function filterCategory and filterType in different files">
+      <created>1648921163547</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1648921163548</updated>
+    </task>
+    <task id="LOCAL-00051" summary="added filter rarity">
+      <created>1648921697991</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1648921697991</updated>
+    </task>
+    <task id="LOCAL-00052" summary="minor bug fixes">
+      <created>1648927071431</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1648927071431</updated>
+    </task>
+    <task id="LOCAL-00053" summary="simplified filterType default values">
+      <created>1648985750832</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1648985750832</updated>
+    </task>
+    <task id="LOCAL-00054" summary="simplified even more filter type">
+      <created>1648986886638</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1648986886638</updated>
+    </task>
+    <task id="LOCAL-00055" summary="improved filter type">
+      <created>1648987557338</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1648987557338</updated>
+    </task>
+    <task id="LOCAL-00056" summary="simplified category filter default colors">
+      <created>1648998182880</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1648998182880</updated>
+    </task>
+    <task id="LOCAL-00057" summary="bug fixes">
+      <created>1649004372320</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1649004372320</updated>
+    </task>
+    <task id="LOCAL-00058" summary="removed unnecessary classes">
+      <created>1649004615604</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1649004615604</updated>
+    </task>
+    <task id="LOCAL-00059" summary="now rarity filter works with the all the other filters">
+      <created>1649064151860</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1649064151861</updated>
+    </task>
+    <task id="LOCAL-00060" summary="simplified filterRarity">
+      <created>1649065264041</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1649065264041</updated>
+    </task>
+    <task id="LOCAL-00061" summary="simplified filterType">
+      <created>1649066084972</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1649066084972</updated>
+    </task>
+    <task id="LOCAL-00062" summary="simplified filterType">
+      <created>1649190193490</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1649190193491</updated>
+    </task>
+    <task id="LOCAL-00063" summary="simplified filterFullMatch.js">
+      <created>1649193653181</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1649193653181</updated>
+    </task>
+    <task id="LOCAL-00064" summary="simplified filterType.js">
+      <created>1649231606191</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1649231606191</updated>
+    </task>
+    <task id="LOCAL-00065" summary="improved filterPartialMatch.js">
+      <created>1649234920245</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1649234920245</updated>
+    </task>
+    <task id="LOCAL-00066" summary="fixed partial match">
+      <created>1649237011949</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1649237011949</updated>
+    </task>
+    <task id="LOCAL-00067" summary="removed full match">
+      <created>1649237228898</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1649237228899</updated>
+    </task>
+    <task id="LOCAL-00068" summary="imporved filterReset.js">
+      <created>1649237570980</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1649237570980</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,24 +482,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="minor bug fixes" />
-    <MESSAGE value="simplified activeCategory class added when press a category" />
-    <MESSAGE value="simplified activeCategory even more and now is working properly" />
-    <MESSAGE value="simplified type filter" />
-    <MESSAGE value="simplified type filter and category filter to show and hide" />
-    <MESSAGE value="fixed color changing when hover over filter type" />
-    <MESSAGE value="minor fixes for partial search" />
-    <MESSAGE value="minro fix for filter type" />
-    <MESSAGE value="fixed link for partial match and full match" />
-    <MESSAGE value="fixed links http and https for localhost" />
-    <MESSAGE value="now filterType is working properply" />
-    <MESSAGE value="now simple type filters are only show normal type" />
-    <MESSAGE value="added super and extreme type filter for full match search" />
-    <MESSAGE value="added super and extreme type filter for partial match search" />
-    <MESSAGE value="bug fixing" />
-    <MESSAGE value="added 50 more characters" />
-    <MESSAGE value="added all series 2 and 3 character" />
-    <MESSAGE value="added Series 1 101-200 characters" />
     <MESSAGE value="fixed bond of friendship category" />
     <MESSAGE value="added 201-300 series 1 character also added 3 new categories" />
     <MESSAGE value="added 78 character thumb" />
@@ -502,6 +489,24 @@
     <MESSAGE value="added saiyan saga category" />
     <MESSAGE value="added 70 more character thumb 400-500 series 1" />
     <MESSAGE value="removed duplicate character thumb" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed duplicate character thumb" />
+    <MESSAGE value="seperated function filterCategory and filterType in different files" />
+    <MESSAGE value="added filter rarity" />
+    <MESSAGE value="minor bug fixes" />
+    <MESSAGE value="simplified filterType default values" />
+    <MESSAGE value="simplified even more filter type" />
+    <MESSAGE value="improved filter type" />
+    <MESSAGE value="simplified category filter default colors" />
+    <MESSAGE value="bug fixes" />
+    <MESSAGE value="removed unnecessary classes" />
+    <MESSAGE value="now rarity filter works with the all the other filters" />
+    <MESSAGE value="simplified filterRarity" />
+    <MESSAGE value="simplified filterType" />
+    <MESSAGE value="simplified filterFullMatch.js" />
+    <MESSAGE value="simplified filterType.js" />
+    <MESSAGE value="improved filterPartialMatch.js" />
+    <MESSAGE value="fixed partial match" />
+    <MESSAGE value="removed full match" />
+    <MESSAGE value="imporved filterReset.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="imporved filterReset.js" />
   </component>
 </project>
