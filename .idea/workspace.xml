@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="removed full match" />
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="imporved filterReset.js">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterReset.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterReset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,14 +118,7 @@
       <workItem from="1649004654257" duration="11000" />
       <workItem from="1649061432204" duration="4732000" />
       <workItem from="1649188900544" duration="5193000" />
-      <workItem from="1649229099659" duration="6136000" />
-    </task>
-    <task id="LOCAL-00019" summary="now categories button are a little pretier">
-      <created>1648367555900</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1648367555900</updated>
+      <workItem from="1649229099659" duration="6767000" />
     </task>
     <task id="LOCAL-00020" summary="added 10 more characters">
       <created>1648371414976</created>
@@ -459,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649237228899</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="imporved filterReset.js">
+      <created>1649237570980</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1649237570980</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +482,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added Series 1 101-200 characters" />
     <MESSAGE value="fixed bond of friendship category" />
     <MESSAGE value="added 201-300 series 1 character also added 3 new categories" />
     <MESSAGE value="added 78 character thumb" />
@@ -503,6 +506,7 @@
     <MESSAGE value="improved filterPartialMatch.js" />
     <MESSAGE value="fixed partial match" />
     <MESSAGE value="removed full match" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed full match" />
+    <MESSAGE value="imporved filterReset.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="imporved filterReset.js" />
   </component>
 </project>

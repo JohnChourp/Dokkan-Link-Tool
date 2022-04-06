@@ -118,3 +118,10 @@ function ResetSelectionFilters(){
 	}
 	//rarity
 }
+
+function ShowAllCharacters(){
+	let categories = document.getElementsByClassName("categories");
+	for(let i = 0; i < categories.length; i ++){
+		categories.item(i).style.display = "inline-block";
+	}
+}
