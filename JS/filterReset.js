@@ -1,7 +1,7 @@
 function ResetSelectionFilters(){
+	//categories
 	let categories = document.getElementsByClassName("categories");
 	let categoriesBtn = document.getElementsByClassName("categories-btn");
-	let typeBtn = document.getElementsByClassName("type-btn");
 	
 	for(let i = 0; i < categories.length; i ++){
 		categories.item(i).classList.remove("appeared");
@@ -10,16 +10,58 @@ function ResetSelectionFilters(){
 		categories.item(i).classList.remove("appearedExtremeType");
 	}
 	
-	for(let i = 0; i < typeBtn.length; i ++){
-		typeBtn.item(i).classList.remove("checkedTypeBtn");
+	for(let i = 0; i < categoriesBtn.length; i ++){
+		categoriesBtn.item(i).classList.remove("activeCategory");
 	}
 	
 	for(let i = 0; i < categories.length; i ++){
 		categories.item(i).style.display = "none";
 	}
 	
-	for(let i = 0; i < categoriesBtn.length; i ++){
-		categoriesBtn.item(i).classList.remove("activeCategory");
+	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
+	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
+	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
+	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
+	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
+	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
+	let categoriesRed = document.getElementsByClassName("categories-btn-red");
+	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
+	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
+	
+	for(let i=0;i<categoriesOrange.length;i++){
+		categoriesOrange.item(i).style.backgroundColor = "#83451F";
+	}
+	for(let i=0;i<categoriesGreen.length;i++){
+		categoriesGreen.item(i).style.backgroundColor = "#56941D";
+	}
+	for(let i=0;i<categoriesYellow.length;i++){
+		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
+	}
+	for(let i=0;i<categoriesCyan.length;i++){
+		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
+	}
+	for(let i=0;i<categoriesBlue.length;i++){
+		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
+	}
+	for(let i=0;i<categoriesPurple.length;i++){
+		categoriesPurple.item(i).style.backgroundColor = "#482077";
+	}
+	for(let i=0;i<categoriesRed.length;i++){
+		categoriesRed.item(i).style.backgroundColor = "#881539";
+	}
+	for(let i=0;i<categoriesDarkGreen.length;i++){
+		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
+	}
+	for(let i=0;i<categoriesDarkBlue.length;i++){
+		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
+	}
+	//categories
+	
+	//type
+	let typeBtn = document.getElementsByClassName("type-btn");
+	
+	for(let i = 0; i < typeBtn.length; i ++){
+		typeBtn.item(i).classList.remove("checkedTypeBtn");
 	}
 	
 	let agl_filter = document.getElementById("agl");
@@ -62,42 +104,17 @@ function ResetSelectionFilters(){
 	
 	let extreme_filter = document.getElementById("extreme_type");
 	extreme_filter.style.backgroundColor = "#494949";
+	//type
 	
-	let categoriesOrange = document.getElementsByClassName("categories-btn-orange");
-	let categoriesGreen = document.getElementsByClassName("categories-btn-green");
-	let categoriesYellow = document.getElementsByClassName("categories-btn-yellow");
-	let categoriesCyan = document.getElementsByClassName("categories-btn-cyan");
-	let categoriesBlue = document.getElementsByClassName("categories-btn-blue");
-	let categoriesPurple = document.getElementsByClassName("categories-btn-purple");
-	let categoriesRed = document.getElementsByClassName("categories-btn-red");
-	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
-	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
+	//rarity
+	let rarityBtn = document.getElementsByClassName("rarity-btn");
 	
-	for(let i=0;i<categoriesOrange.length;i++){
-		categoriesOrange.item(i).style.backgroundColor = "#83451F";
+	for(let i = 0; i < rarityBtn.length; i ++){
+		rarityBtn.item(i).style.backgroundColor = "#494949";
 	}
-	for(let i=0;i<categoriesGreen.length;i++){
-		categoriesGreen.item(i).style.backgroundColor = "#56941D";
+	
+	for(let i = 0; i < rarityBtn.length; i ++){
+		rarityBtn.item(i).classList.remove("checkedRarityBtn");
 	}
-	for(let i=0;i<categoriesYellow.length;i++){
-		categoriesYellow.item(i).style.backgroundColor = "#A28E23";
-	}
-	for(let i=0;i<categoriesCyan.length;i++){
-		categoriesCyan.item(i).style.backgroundColor = "#1D6E6E";
-	}
-	for(let i=0;i<categoriesBlue.length;i++){
-		categoriesBlue.item(i).style.backgroundColor = "#1D4477";
-	}
-	for(let i=0;i<categoriesPurple.length;i++){
-		categoriesPurple.item(i).style.backgroundColor = "#482077";
-	}
-	for(let i=0;i<categoriesRed.length;i++){
-		categoriesRed.item(i).style.backgroundColor = "#881539";
-	}
-	for(let i=0;i<categoriesDarkGreen.length;i++){
-		categoriesDarkGreen.item(i).style.backgroundColor = "#17523B";
-	}
-	for(let i=0;i<categoriesDarkBlue.length;i++){
-		categoriesDarkBlue.item(i).style.backgroundColor = "#162669";
-	}
+	//rarity
 }

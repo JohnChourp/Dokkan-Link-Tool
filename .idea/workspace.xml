@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="improved filterPartialMatch.js">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterPartialMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterPartialMatch.js" afterDir="false" />
-    </list>
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="removed full match" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,21 +114,7 @@
       <workItem from="1649004654257" duration="11000" />
       <workItem from="1649061432204" duration="4732000" />
       <workItem from="1649188900544" duration="5193000" />
-      <workItem from="1649229099659" duration="5831000" />
-    </task>
-    <task id="LOCAL-00017" summary="now yellow and cyan categories are working properly">
-      <created>1648328206409</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1648328206409</updated>
-    </task>
-    <task id="LOCAL-00018" summary="now all categories are working properly and full match is complete">
-      <created>1648331642891</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1648331642891</updated>
+      <workItem from="1649229099659" duration="6136000" />
     </task>
     <task id="LOCAL-00019" summary="now categories button are a little pretier">
       <created>1648367555900</created>
@@ -462,7 +445,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649234920245</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="fixed partial match">
+      <created>1649237011949</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1649237011949</updated>
+    </task>
+    <task id="LOCAL-00067" summary="removed full match">
+      <created>1649237228898</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1649237228899</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,8 +478,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added 50 more characters" />
-    <MESSAGE value="added all series 2 and 3 character" />
     <MESSAGE value="added Series 1 101-200 characters" />
     <MESSAGE value="fixed bond of friendship category" />
     <MESSAGE value="added 201-300 series 1 character also added 3 new categories" />
@@ -506,6 +501,8 @@
     <MESSAGE value="simplified filterFullMatch.js" />
     <MESSAGE value="simplified filterType.js" />
     <MESSAGE value="improved filterPartialMatch.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved filterPartialMatch.js" />
+    <MESSAGE value="fixed partial match" />
+    <MESSAGE value="removed full match" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed full match" />
   </component>
 </project>
