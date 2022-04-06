@@ -1,4 +1,4 @@
-function ResetSelectionFilters(n){
+function ResetSelectionFilters(){
 	let categories = document.getElementsByClassName("categories");
 	let categoriesBtn = document.getElementsByClassName("categories-btn");
 	let typeBtn = document.getElementsByClassName("type-btn");
@@ -14,17 +14,8 @@ function ResetSelectionFilters(n){
 		typeBtn.item(i).classList.remove("checkedTypeBtn");
 	}
 	
-	if(n === 0){
-		for(let i = 0; i < categories.length; i ++){
-			categories.item(i).style.display = "inline-block";
-			categories.item(i).classList.add("appeared");
-		}
-	}
-	
-	if(n === 1){
-		for(let i = 0; i < categories.length; i ++){
-			categories.item(i).style.display = "none";
-		}
+	for(let i = 0; i < categories.length; i ++){
+		categories.item(i).style.display = "none";
 	}
 	
 	for(let i = 0; i < categoriesBtn.length; i ++){
