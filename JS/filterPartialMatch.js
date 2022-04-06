@@ -52,6 +52,15 @@ function filterPartialMatch(){
 					categories.item(i).style.display = "none";
 					categories.item(i).classList.remove("appeared");
 				}
+				
+				for(let j = 0; j < categoriesBtn.length; j ++){
+					if(categoriesBtn.item(j).classList.contains("activeCategory")){
+						for(let i = 0; i < catList[j].length; i ++){
+							catList[j].item(i).style.display = "inline-block";
+							catList[j].item(i).classList.add("appeared");
+						}
+					}
+				}
 			}else{
 				categoriesOrange.item(j).classList.add("activeCategory");
 				
@@ -76,16 +85,25 @@ function filterPartialMatch(){
 					categories.item(i).style.display = "none";
 					categories.item(i).classList.remove("appeared");
 				}
+				
+				for(let j = 0; j < categoriesBtn.length; j ++){
+					if(categoriesBtn.item(j).classList.contains("activeCategory")){
+						for(let i = 0; i < catList[j].length; i ++){
+							catList[j].item(i).style.display = "inline-block";
+							catList[j].item(i).classList.add("appeared");
+						}
+					}
+				}
 			}else{
 				categoriesGreen.item(j).classList.add("activeCategory");
 				
-				for(let i = 0; i < catList[j].length; i ++){
-					catList[j].item(i).style.display = "inline-block";
-					catList[j].item(i).classList.add("appeared");
+				for(let i = 0; i < catList[j + categoriesOrange.length].length; i ++){
+					catList[j + categoriesOrange.length].item(i).style.display = "inline-block";
+					catList[j + categoriesOrange.length].item(i).classList.add("appeared");
 				}
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
-				filterInit(appearedType , appearedRarity , categories , categoriesOrange , j)
+				filterInit(appearedType , appearedRarity , categories , categoriesGreen , j)
 			}
 			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
@@ -100,16 +118,25 @@ function filterPartialMatch(){
 					categories.item(i).style.display = "none";
 					categories.item(i).classList.remove("appeared");
 				}
+				
+				for(let j = 0; j < categoriesBtn.length; j ++){
+					if(categoriesBtn.item(j).classList.contains("activeCategory")){
+						for(let i = 0; i < catList[j].length; i ++){
+							catList[j].item(i).style.display = "inline-block";
+							catList[j].item(i).classList.add("appeared");
+						}
+					}
+				}
 			}else{
 				categoriesYellow.item(j).classList.add("activeCategory");
 				
-				for(let i = 0; i < catList[j].length; i ++){
-					catList[j].item(i).style.display = "inline-block";
-					catList[j].item(i).classList.add("appeared");
+				for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length].length; i ++){
+					catList[j + categoriesOrange.length + categoriesGreen.length].item(i).style.display = "inline-block";
+					catList[j + categoriesOrange.length + categoriesGreen.length].item(i).classList.add("appeared");
 				}
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
-				filterInit(appearedType , appearedRarity , categories , categoriesOrange , j)
+				filterInit(appearedType , appearedRarity , categories , categoriesYellow , j)
 			}
 			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
@@ -124,16 +151,25 @@ function filterPartialMatch(){
 					categories.item(i).style.display = "none";
 					categories.item(i).classList.remove("appeared");
 				}
+				
+				for(let j = 0; j < categoriesBtn.length; j ++){
+					if(categoriesBtn.item(j).classList.contains("activeCategory")){
+						for(let i = 0; i < catList[j].length; i ++){
+							catList[j].item(i).style.display = "inline-block";
+							catList[j].item(i).classList.add("appeared");
+						}
+					}
+				}
 			}else{
 				categoriesCyan.item(j).classList.add("activeCategory");
 				
-				for(let i = 0; i < catList[j].length; i ++){
-					catList[j].item(i).style.display = "inline-block";
-					catList[j].item(i).classList.add("appeared");
+				for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length].length; i ++){
+					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length].item(i).style.display = "inline-block";
+					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length].item(i).classList.add("appeared");
 				}
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
-				filterInit(appearedType , appearedRarity , categories , categoriesOrange , j)
+				filterInit(appearedType , appearedRarity , categories , categoriesCyan , j)
 			}
 			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
@@ -148,16 +184,25 @@ function filterPartialMatch(){
 					categories.item(i).style.display = "none";
 					categories.item(i).classList.remove("appeared");
 				}
+				
+				for(let j = 0; j < categoriesBtn.length; j ++){
+					if(categoriesBtn.item(j).classList.contains("activeCategory")){
+						for(let i = 0; i < catList[j].length; i ++){
+							catList[j].item(i).style.display = "inline-block";
+							catList[j].item(i).classList.add("appeared");
+						}
+					}
+				}
 			}else{
 				categoriesBlue.item(j).classList.add("activeCategory");
 				
-				for(let i = 0; i < catList[j].length; i ++){
-					catList[j].item(i).style.display = "inline-block";
-					catList[j].item(i).classList.add("appeared");
+				for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length].length; i ++){
+					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length].item(i).style.display = "inline-block";
+					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length].item(i).classList.add("appeared");
 				}
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
-				filterInit(appearedType , appearedRarity , categories , categoriesOrange , j)
+				filterInit(appearedType , appearedRarity , categories , categoriesBlue , j)
 			}
 			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
@@ -172,16 +217,25 @@ function filterPartialMatch(){
 					categories.item(i).style.display = "none";
 					categories.item(i).classList.remove("appeared");
 				}
+				
+				for(let j = 0; j < categoriesBtn.length; j ++){
+					if(categoriesBtn.item(j).classList.contains("activeCategory")){
+						for(let i = 0; i < catList[j].length; i ++){
+							catList[j].item(i).style.display = "inline-block";
+							catList[j].item(i).classList.add("appeared");
+						}
+					}
+				}
 			}else{
 				categoriesPurple.item(j).classList.add("activeCategory");
 				
-				for(let i = 0; i < catList[j].length; i ++){
-					catList[j].item(i).style.display = "inline-block";
-					catList[j].item(i).classList.add("appeared");
+				for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length].length; i ++){
+					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length].item(i).style.display = "inline-block";
+					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length].item(i).classList.add("appeared");
 				}
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
-				filterInit(appearedType , appearedRarity , categories , categoriesOrange , j)
+				filterInit(appearedType , appearedRarity , categories , categoriesPurple , j)
 			}
 			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
@@ -196,16 +250,25 @@ function filterPartialMatch(){
 					categories.item(i).style.display = "none";
 					categories.item(i).classList.remove("appeared");
 				}
+				
+				for(let j = 0; j < categoriesBtn.length; j ++){
+					if(categoriesBtn.item(j).classList.contains("activeCategory")){
+						for(let i = 0; i < catList[j].length; i ++){
+							catList[j].item(i).style.display = "inline-block";
+							catList[j].item(i).classList.add("appeared");
+						}
+					}
+				}
 			}else{
 				categoriesRed.item(j).classList.add("activeCategory");
 				
-				for(let i = 0; i < catList[j].length; i ++){
-					catList[j].item(i).style.display = "inline-block";
-					catList[j].item(i).classList.add("appeared");
+				for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].length; i ++){
+					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].item(i).style.display = "inline-block";
+					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].item(i).classList.add("appeared");
 				}
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
-				filterInit(appearedType , appearedRarity , categories , categoriesOrange , j)
+				filterInit(appearedType , appearedRarity , categories , categoriesRed , j)
 			}
 			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
@@ -220,16 +283,25 @@ function filterPartialMatch(){
 					categories.item(i).style.display = "none";
 					categories.item(i).classList.remove("appeared");
 				}
+				
+				for(let j = 0; j < categoriesBtn.length; j ++){
+					if(categoriesBtn.item(j).classList.contains("activeCategory")){
+						for(let i = 0; i < catList[j].length; i ++){
+							catList[j].item(i).style.display = "inline-block";
+							catList[j].item(i).classList.add("appeared");
+						}
+					}
+				}
 			}else{
 				categoriesDarkGreen.item(j).classList.add("activeCategory");
 				
-				for(let i = 0; i < catList[j].length; i ++){
-					catList[j].item(i).style.display = "inline-block";
-					catList[j].item(i).classList.add("appeared");
+				for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].length; i ++){
+					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].item(i).style.display = "inline-block";
+					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].item(i).classList.add("appeared");
 				}
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
-				filterInit(appearedType , appearedRarity , categories , categoriesOrange , j)
+				filterInit(appearedType , appearedRarity , categories , categoriesDarkGreen , j)
 			}
 			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
@@ -244,22 +316,30 @@ function filterPartialMatch(){
 					categories.item(i).style.display = "none";
 					categories.item(i).classList.remove("appeared");
 				}
+				
+				for(let j = 0; j < categoriesBtn.length; j ++){
+					if(categoriesBtn.item(j).classList.contains("activeCategory")){
+						for(let i = 0; i < catList[j].length; i ++){
+							catList[j].item(i).style.display = "inline-block";
+							catList[j].item(i).classList.add("appeared");
+						}
+					}
+				}
 			}else{
 				categoriesDarkBlue.item(j).classList.add("activeCategory");
 				
-				for(let i = 0; i < catList[j].length; i ++){
-					catList[j].item(i).style.display = "inline-block";
-					catList[j].item(i).classList.add("appeared");
+				for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkGreen.length].length; i ++){
+					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkGreen.length].item(i).style.display = "inline-block";
+					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkGreen.length].item(i).classList.add("appeared");
 				}
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
-				filterInit(appearedType , appearedRarity , categories , categoriesOrange , j)
+				filterInit(appearedType , appearedRarity , categories , categoriesDarkBlue , j)
 			}
 			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 }
-
 
 function filterInit(appearedType , appearedRarity , categories , categoriesColor , j){
 	if(appearedType.length < 1 && appearedRarity.length > 0){
