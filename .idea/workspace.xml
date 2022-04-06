@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="imporved filterReset.js">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added show all characters button">
+      <change afterPath="$PROJECT_DIR$/JS/utilities.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterReset.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterReset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterPartialMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterPartialMatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-a-filter-rarity" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -118,14 +119,7 @@
       <workItem from="1649004654257" duration="11000" />
       <workItem from="1649061432204" duration="4732000" />
       <workItem from="1649188900544" duration="5193000" />
-      <workItem from="1649229099659" duration="6767000" />
-    </task>
-    <task id="LOCAL-00020" summary="added 10 more characters">
-      <created>1648371414976</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1648371414976</updated>
+      <workItem from="1649229099659" duration="9156000" />
     </task>
     <task id="LOCAL-00021" summary="added 40 more characters">
       <created>1648374141381</created>
@@ -463,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649237570980</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="added show all characters button">
+      <created>1649237972665</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1649237972665</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +483,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed bond of friendship category" />
     <MESSAGE value="added 201-300 series 1 character also added 3 new categories" />
     <MESSAGE value="added 78 character thumb" />
     <MESSAGE value="added 80 more characters" />
@@ -507,6 +507,7 @@
     <MESSAGE value="fixed partial match" />
     <MESSAGE value="removed full match" />
     <MESSAGE value="imporved filterReset.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="imporved filterReset.js" />
+    <MESSAGE value="added show all characters button" />
+    <option name="LAST_COMMIT_MESSAGE" value="added show all characters button" />
   </component>
 </project>
