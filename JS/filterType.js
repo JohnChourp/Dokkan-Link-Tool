@@ -1,4 +1,19 @@
 function initTypeFilter(){
+	let httpLink;
+	let hostName = window.location.host;
+	
+	if(hostName === "johnchourp.github.io"){
+		httpLink = "https://";
+	}else{
+		httpLink = "http://";
+	}
+	
+	let typeBtn = document.getElementsByClassName("type-btn");
+	let appeared = document.getElementsByClassName("appeared");
+	let appearedRarity = document.getElementsByClassName("appearedRarity");
+	let categories = document.getElementsByClassName("categories");
+	let cardType = document.getElementsByClassName("card-type");
+	
 	let type = "";
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");
@@ -20,173 +35,157 @@ function initTypeFilter(){
 	
 	agl_filter.addEventListener('click' , function(){
 		type = "agl";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		agl_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(0);
 	});
 	super_agl_filter.addEventListener('click' , function(){
 		type = "super_agl";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		super_agl_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(7);
 	});
 	extreme_agl_filter.addEventListener('click' , function(){
 		type = "extreme_agl";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		extreme_agl_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(12);
 	});
 	
 	int_filter.addEventListener('click' , function(){
 		type = "int";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		int_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(1);
 	});
 	super_int_filter.addEventListener('click' , function(){
 		type = "super_int";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		super_int_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(8);
 	});
 	extreme_int_filter.addEventListener('click' , function(){
 		type = "extreme_int";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		extreme_int_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(13);
 	});
 	
 	phy_filter.addEventListener('click' , function(){
 		type = "phy";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		phy_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(2);
 	});
 	super_phy_filter.addEventListener('click' , function(){
 		type = "super_phy";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		super_phy_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(9);
 	});
 	extreme_phy_filter.addEventListener('click' , function(){
 		type = "extreme_phy";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		extreme_phy_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(14);
 	});
 	
 	str_filter.addEventListener('click' , function(){
 		type = "str";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		str_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(3);
 	});
 	super_str_filter.addEventListener('click' , function(){
 		type = "super_str";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		super_str_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(10);
 	});
 	extreme_str_filter.addEventListener('click' , function(){
 		type = "extreme_str";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		extreme_str_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(15);
 	});
 	
 	teq_filter.addEventListener('click' , function(){
 		type = "teq";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		teq_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(4);
 	});
 	super_teq_filter.addEventListener('click' , function(){
 		type = "super_teq";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		super_teq_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(11);
 	});
 	extreme_teq_filter.addEventListener('click' , function(){
 		type = "extreme_teq";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		extreme_teq_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(16);
 	});
 	
 	super_type_filter.addEventListener('click' , function(){
 		type = "super_type";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		super_type_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(5);
 	});
 	extreme_type_filter.addEventListener('click' , function(){
 		type = "extreme_type";
-		removeAllCheckedTypeBtn();
+		removeAllCheckedTypeBtn(typeBtn);
 		extreme_type_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
 		defaultFilter(6);
 	});
 	
 	hoverFilterType();
 }
 
-function removeAllCheckedTypeBtn(){
-	let typeBtn = document.getElementsByClassName("type-btn");
+function removeAllCheckedTypeBtn(typeBtn){
 	for(let i = 0; i < typeBtn.length; i ++){
 		typeBtn.item(i).classList.remove("checkedTypeBtn");
 	}
 }
 
-function filterTypeInit(type){
-	let appeared = document.getElementsByClassName("appeared");
-	let appearedRarity = document.getElementsByClassName("appearedRarity");
-	
+function filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type){
 	if(appeared.length < 1 && appearedRarity.length < 1){
-		filterTypeDefault(type);
+		filterTypeDefault(httpLink , hostName , categories , cardType , type);
 	}
 	
 	if(appeared.length < 1 && appearedRarity.length > 0){
-		filterTypeAppearRarity(type);
+		filterTypeAppearRarity(httpLink , hostName , categories , cardType , type);
 	}
 	
 	if(appeared.length > 0 && appearedRarity.length < 1){
-		filterTypeAppear(type);
+		filterTypeAppear(httpLink , hostName , categories , cardType , type);
 	}
 	
 	if(appeared.length > 0 && appearedRarity.length > 0){
-		filterTypeAppearAndAppearRarity(type);
+		filterTypeAppearAndAppearRarity(httpLink , hostName , categories , cardType , type);
 	}
 }
 
-function filterTypeDefault(type){
-	let httpLink;
-	let hostName = window.location.host;
-	
-	if(hostName === "johnchourp.github.io"){
-		httpLink = "https://";
-	}else{
-		httpLink = "http://";
-	}
-	
-	let categories = document.getElementsByClassName("categories");
-	let cardType = document.getElementsByClassName("card-type");
-	
+function filterTypeDefault(httpLink , hostName , categories , cardType , type){
 	if(type !== "super_type" && type !== "extreme_type"){
 		for(let i = 0; i < cardType.length; i ++){
 			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png"){
@@ -224,19 +223,7 @@ function filterTypeDefault(type){
 	}
 }
 
-function filterTypeAppearRarity(type){
-	let httpLink;
-	let hostName = window.location.host;
-	
-	if(hostName === "johnchourp.github.io"){
-		httpLink = "https://";
-	}else{
-		httpLink = "http://";
-	}
-	
-	let categories = document.getElementsByClassName("categories");
-	let cardType = document.getElementsByClassName("card-type");
-	
+function filterTypeAppearRarity(httpLink , hostName , categories , cardType , type){
 	if(type !== "super_type" && type !== "extreme_type"){
 		for(let i = 0; i < cardType.length; i ++){
 			if(categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png")){
@@ -274,19 +261,7 @@ function filterTypeAppearRarity(type){
 	}
 }
 
-function filterTypeAppear(type){
-	let httpLink;
-	let hostName = window.location.host;
-	
-	if(hostName === "johnchourp.github.io"){
-		httpLink = "https://";
-	}else{
-		httpLink = "http://";
-	}
-	
-	let categories = document.getElementsByClassName("categories");
-	let cardType = document.getElementsByClassName("card-type");
-	
+function filterTypeAppear(httpLink , hostName , categories , cardType , type){
 	if(type !== "super_type" && type !== "extreme_type"){
 		for(let i = 0; i < categories.length; i ++){
 			if(categories.item(i).classList.contains("appeared") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png")){
@@ -324,19 +299,7 @@ function filterTypeAppear(type){
 	}
 }
 
-function filterTypeAppearAndAppearRarity(type){
-	let httpLink;
-	let hostName = window.location.host;
-	
-	if(hostName === "johnchourp.github.io"){
-		httpLink = "https://";
-	}else{
-		httpLink = "http://";
-	}
-	
-	let categories = document.getElementsByClassName("categories");
-	let cardType = document.getElementsByClassName("card-type");
-	
+function filterTypeAppearAndAppearRarity(httpLink , hostName , categories , cardType , type){
 	if(type !== "super_type" && type !== "extreme_type"){
 		for(let i = 0; i < categories.length; i ++){
 			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png")){
