@@ -327,70 +327,70 @@ function showActiveCategoryWithDelay(catList , j){
 		}
 		
 		if(i < (catList[j].length / 5.5)){
-			sleep(100).then(() => {
+			sleep(25).then(() => {
 				catList[j].item(i).style.display = "inline-block";
 				catList[j].item(i).classList.add("appeared");
 			})
 		}
 		
 		if(i < (catList[j].length / 5)){
-			sleep(200).then(() => {
+			sleep(50).then(() => {
 				catList[j].item(i).style.display = "inline-block";
 				catList[j].item(i).classList.add("appeared");
 			})
 		}
 		
 		if(i < (catList[j].length / 4.5)){
-			sleep(300).then(() => {
+			sleep(75).then(() => {
 				catList[j].item(i).style.display = "inline-block";
 				catList[j].item(i).classList.add("appeared");
 			})
 		}
 		
 		if(i < (catList[j].length / 4)){
-			sleep(400).then(() => {
+			sleep(100).then(() => {
 				catList[j].item(i).style.display = "inline-block";
 				catList[j].item(i).classList.add("appeared");
 			})
 		}
 		
 		if(i < (catList[j].length / 3.5)){
-			sleep(500).then(() => {
+			sleep(125).then(() => {
 				catList[j].item(i).style.display = "inline-block";
 				catList[j].item(i).classList.add("appeared");
 			})
 		}
 		
 		if(i < (catList[j].length / 3)){
-			sleep(600).then(() => {
+			sleep(150).then(() => {
 				catList[j].item(i).style.display = "inline-block";
 				catList[j].item(i).classList.add("appeared");
 			})
 		}
 		
 		if(i < (catList[j].length / 2.5)){
-			sleep(700).then(() => {
+			sleep(175).then(() => {
 				catList[j].item(i).style.display = "inline-block";
 				catList[j].item(i).classList.add("appeared");
 			})
 		}
 		
 		if(i < (catList[j].length / 2)){
-			sleep(800).then(() => {
+			sleep(200).then(() => {
 				catList[j].item(i).style.display = "inline-block";
 				catList[j].item(i).classList.add("appeared");
 			})
 		}
 		
 		if(i < (catList[j].length / 1.5)){
-			sleep(900).then(() => {
+			sleep(225).then(() => {
 				catList[j].item(i).style.display = "inline-block";
 				catList[j].item(i).classList.add("appeared");
 			})
 		}
 		
 		if(i < (catList[j].length)){
-			sleep(1000).then(() => {
+			sleep(250).then(() => {
 				catList[j].item(i).style.display = "inline-block";
 				catList[j].item(i).classList.add("appeared");
 			})
