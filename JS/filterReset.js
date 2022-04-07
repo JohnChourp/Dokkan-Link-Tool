@@ -121,7 +121,70 @@ function ResetSelectionFilters(){
 
 function ShowAllCharacters(){
 	let categories = document.getElementsByClassName("categories");
+	
 	for(let i = 0; i < categories.length; i ++){
-		categories.item(i).style.display = "inline-block";
+		if(i < (categories.length / 6)){
+			categories.item(i).style.display = "inline-block";
+		}
+		
+		if(i < (categories.length / 5.5)){
+			sleep(100).then(() => {
+				categories.item(i).style.display = "inline-block";
+			})
+		}
+		
+		if(i < (categories.length / 5)){
+			sleep(200).then(() => {
+				categories.item(i).style.display = "inline-block";
+			})
+		}
+		
+		if(i < (categories.length / 4.5)){
+			sleep(300).then(() => {
+				categories.item(i).style.display = "inline-block";
+			})
+		}
+		
+		if(i < (categories.length / 4)){
+			sleep(400).then(() => {
+				categories.item(i).style.display = "inline-block";
+			})
+		}
+		
+		if(i < (categories.length / 3.5)){
+			sleep(500).then(() => {
+				categories.item(i).style.display = "inline-block";
+			})
+		}
+		
+		if(i < (categories.length / 3)){
+			sleep(600).then(() => {
+				categories.item(i).style.display = "inline-block";
+			})
+		}
+		
+		if(i < (categories.length / 2.5)){
+			sleep(700).then(() => {
+				categories.item(i).style.display = "inline-block";
+			})
+		}
+		
+		if(i < (categories.length / 2)){
+			sleep(800).then(() => {
+				categories.item(i).style.display = "inline-block";
+			})
+		}
+		
+		if(i < (categories.length / 1.5)){
+			sleep(900).then(() => {
+				categories.item(i).style.display = "inline-block";
+			})
+		}
+		
+		if(i < (categories.length)){
+			sleep(1000).then(() => {
+				categories.item(i).style.display = "inline-block";
+			})
+		}
 	}
 }
