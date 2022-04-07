@@ -44,14 +44,12 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
 			}else{
 				categoriesOrange.item(j).classList.add("activeCategory");
-				
 				showActiveCategoryWithDelay(catList , j);
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
@@ -73,8 +71,7 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
@@ -101,8 +98,7 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
@@ -129,8 +125,7 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
@@ -157,8 +152,7 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
@@ -185,8 +179,7 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
@@ -213,8 +206,7 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
@@ -241,8 +233,7 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
@@ -269,8 +260,7 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}

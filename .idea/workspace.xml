@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added a showCharactersPer10 function">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="fix bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterCategory.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/filterPartialMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterPartialMatch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterReset.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterReset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterType.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterType.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/utilities.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,14 +118,7 @@
       <workItem from="1649061432204" duration="4732000" />
       <workItem from="1649188900544" duration="5193000" />
       <workItem from="1649229099659" duration="9378000" />
-      <workItem from="1649312707178" duration="5051000" />
-    </task>
-    <task id="LOCAL-00022" summary="bug fix">
-      <created>1648374607772</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1648374607772</updated>
+      <workItem from="1649312707178" duration="6001000" />
     </task>
     <task id="LOCAL-00023" summary="improved filter type">
       <created>1648386236052</created>
@@ -469,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649240531164</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="fix bugs">
+      <created>1649318191674</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1649318191674</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,7 +482,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added 78 character thumb" />
     <MESSAGE value="added 80 more characters" />
     <MESSAGE value="added saiyan saga category" />
     <MESSAGE value="added 70 more character thumb 400-500 series 1" />
@@ -513,6 +506,7 @@
     <MESSAGE value="imporved filterReset.js" />
     <MESSAGE value="added show all characters button" />
     <MESSAGE value="added a showCharactersPer10 function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a showCharactersPer10 function" />
+    <MESSAGE value="fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
   </component>
 </project>
