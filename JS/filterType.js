@@ -598,65 +598,6 @@ function hoverFilterType(){
 	}
 }
 
-function filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter){
-	if(agl_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		agl_filter.click();
-	}
-	if(super_agl_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		super_agl_filter.click();
-	}
-	if(extreme_agl_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		extreme_agl_filter.click();
-	}
-	
-	if(int_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		int_filter.click();
-	}
-	if(super_int_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		super_int_filter.click();
-	}
-	if(extreme_int_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		extreme_int_filter.click();
-	}
-	
-	if(phy_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		phy_filter.click();
-	}
-	if(super_phy_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		super_phy_filter.click();
-	}
-	if(extreme_phy_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		extreme_phy_filter.click();
-	}
-	
-	if(str_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		str_filter.click();
-	}
-	if(super_str_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		super_str_filter.click();
-	}
-	if(extreme_str_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		extreme_str_filter.click();
-	}
-	
-	if(teq_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		teq_filter.click();
-	}
-	if(super_teq_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		super_teq_filter.click();
-	}
-	if(extreme_teq_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		extreme_teq_filter.click();
-	}
-	
-	if(super_type_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		super_type_filter.click();
-	}
-	if(extreme_type_filter.style.backgroundColor.toString() === "rgb(238, 195, 16)"){
-		extreme_type_filter.click();
-	}
-}
-
 function defaultFilter(n){
 	let agl_filter = document.getElementById("agl");
 	let super_agl_filter = document.getElementById("super_agl");

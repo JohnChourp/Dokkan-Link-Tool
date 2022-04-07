@@ -1,3 +1,9 @@
+function sleep(duration){
+	return new Promise(resolve => {
+		setTimeout(resolve , duration)
+	})
+}
+
 function filterPartialMatch(){
 	let catList = [];
 	
@@ -25,24 +31,6 @@ function filterPartialMatch(){
 	let categoriesDarkGreen = document.getElementsByClassName("categories-btn-dark-green");
 	let categoriesDarkBlue = document.getElementsByClassName("categories-btn-dark-blue");
 	
-	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
-	
 	for(let j = 0; j < categoriesOrange.length; j ++){
 		categoriesOrange.item(j).addEventListener('click' , function(){
 			if(categoriesOrange.item(j).classList.contains("activeCategory")){
@@ -56,23 +44,17 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
 			}else{
 				categoriesOrange.item(j).classList.add("activeCategory");
-				
-				for(let i = 0; i < catList[j].length; i ++){
-					catList[j].item(i).style.display = "inline-block";
-					catList[j].item(i).classList.add("appeared");
-				}
+				showActiveCategoryWithDelay(catList , j);
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
 				filterInit(appearedType , appearedRarity , categories , categoriesOrange , j)
 			}
-			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -89,23 +71,17 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
 			}else{
 				categoriesGreen.item(j).classList.add("activeCategory");
-				
-				for(let i = 0; i < catList[j + categoriesOrange.length].length; i ++){
-					catList[j + categoriesOrange.length].item(i).style.display = "inline-block";
-					catList[j + categoriesOrange.length].item(i).classList.add("appeared");
-				}
+				showActiveCategoryWithDelay(catList , j + categoriesOrange.length);
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
 				filterInit(appearedType , appearedRarity , categories , categoriesGreen , j)
 			}
-			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -122,23 +98,17 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
 			}else{
 				categoriesYellow.item(j).classList.add("activeCategory");
-				
-				for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length].length; i ++){
-					catList[j + categoriesOrange.length + categoriesGreen.length].item(i).style.display = "inline-block";
-					catList[j + categoriesOrange.length + categoriesGreen.length].item(i).classList.add("appeared");
-				}
+				showActiveCategoryWithDelay(catList , j + categoriesOrange.length + categoriesGreen.length);
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
 				filterInit(appearedType , appearedRarity , categories , categoriesYellow , j)
 			}
-			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -155,23 +125,17 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
 			}else{
 				categoriesCyan.item(j).classList.add("activeCategory");
-				
-				for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length].length; i ++){
-					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length].item(i).style.display = "inline-block";
-					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length].item(i).classList.add("appeared");
-				}
+				showActiveCategoryWithDelay(catList , j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length);
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
 				filterInit(appearedType , appearedRarity , categories , categoriesCyan , j)
 			}
-			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -188,23 +152,17 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
 			}else{
 				categoriesBlue.item(j).classList.add("activeCategory");
-				
-				for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length].length; i ++){
-					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length].item(i).style.display = "inline-block";
-					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length].item(i).classList.add("appeared");
-				}
+				showActiveCategoryWithDelay(catList , j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length);
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
 				filterInit(appearedType , appearedRarity , categories , categoriesBlue , j)
 			}
-			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -221,23 +179,17 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
 			}else{
 				categoriesPurple.item(j).classList.add("activeCategory");
-				
-				for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length].length; i ++){
-					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length].item(i).style.display = "inline-block";
-					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length].item(i).classList.add("appeared");
-				}
+				showActiveCategoryWithDelay(catList , j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length);
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
 				filterInit(appearedType , appearedRarity , categories , categoriesPurple , j)
 			}
-			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -254,23 +206,17 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
 			}else{
 				categoriesRed.item(j).classList.add("activeCategory");
-				
-				for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].length; i ++){
-					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].item(i).style.display = "inline-block";
-					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length].item(i).classList.add("appeared");
-				}
+				showActiveCategoryWithDelay(catList , j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length);
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
 				filterInit(appearedType , appearedRarity , categories , categoriesRed , j)
 			}
-			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -287,23 +233,17 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
 			}else{
 				categoriesDarkGreen.item(j).classList.add("activeCategory");
-				
-				for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].length; i ++){
-					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].item(i).style.display = "inline-block";
-					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length].item(i).classList.add("appeared");
-				}
+				showActiveCategoryWithDelay(catList , j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length);
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
 				filterInit(appearedType , appearedRarity , categories , categoriesDarkGreen , j)
 			}
-			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 	
@@ -320,23 +260,17 @@ function filterPartialMatch(){
 				for(let j = 0; j < categoriesBtn.length; j ++){
 					if(categoriesBtn.item(j).classList.contains("activeCategory")){
 						for(let i = 0; i < catList[j].length; i ++){
-							catList[j].item(i).style.display = "inline-block";
-							catList[j].item(i).classList.add("appeared");
+							showActiveCategoryWithDelay(catList , j);
 						}
 					}
 				}
 			}else{
 				categoriesDarkBlue.item(j).classList.add("activeCategory");
-				
-				for(let i = 0; i < catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkGreen.length].length; i ++){
-					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkGreen.length].item(i).style.display = "inline-block";
-					catList[j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkGreen.length].item(i).classList.add("appeared");
-				}
+				showActiveCategoryWithDelay(catList , j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkGreen.length);
 			}
 			if(appeared.length > 0 && appearedRarity.length < 1){
 				filterInit(appearedType , appearedRarity , categories , categoriesDarkBlue , j)
 			}
-			filterTypeClick(agl_filter , super_agl_filter , extreme_agl_filter , int_filter , super_int_filter , extreme_int_filter , phy_filter , super_phy_filter , extreme_phy_filter , str_filter , super_str_filter , extreme_str_filter , teq_filter , super_teq_filter , extreme_teq_filter , super_type_filter , extreme_type_filter);
 		});
 	}
 }
@@ -381,6 +315,85 @@ function filterAppearTypeAndAppearRarity(categories , categoriesColor , j){
 			categories.item(i).style.display = "inline-block";
 		}else{
 			categories.item(i).style.display = "none";
+		}
+	}
+}
+
+function showActiveCategoryWithDelay(catList , j){
+	for(let i = 0; i < catList[j].length; i ++){
+		if(i < (catList[j].length / 6)){
+			catList[j].item(i).style.display = "inline-block";
+			catList[j].item(i).classList.add("appeared");
+		}
+		
+		if(i < (catList[j].length / 5.5)){
+			sleep(25).then(() => {
+				catList[j].item(i).style.display = "inline-block";
+				catList[j].item(i).classList.add("appeared");
+			})
+		}
+		
+		if(i < (catList[j].length / 5)){
+			sleep(50).then(() => {
+				catList[j].item(i).style.display = "inline-block";
+				catList[j].item(i).classList.add("appeared");
+			})
+		}
+		
+		if(i < (catList[j].length / 4.5)){
+			sleep(75).then(() => {
+				catList[j].item(i).style.display = "inline-block";
+				catList[j].item(i).classList.add("appeared");
+			})
+		}
+		
+		if(i < (catList[j].length / 4)){
+			sleep(100).then(() => {
+				catList[j].item(i).style.display = "inline-block";
+				catList[j].item(i).classList.add("appeared");
+			})
+		}
+		
+		if(i < (catList[j].length / 3.5)){
+			sleep(125).then(() => {
+				catList[j].item(i).style.display = "inline-block";
+				catList[j].item(i).classList.add("appeared");
+			})
+		}
+		
+		if(i < (catList[j].length / 3)){
+			sleep(150).then(() => {
+				catList[j].item(i).style.display = "inline-block";
+				catList[j].item(i).classList.add("appeared");
+			})
+		}
+		
+		if(i < (catList[j].length / 2.5)){
+			sleep(175).then(() => {
+				catList[j].item(i).style.display = "inline-block";
+				catList[j].item(i).classList.add("appeared");
+			})
+		}
+		
+		if(i < (catList[j].length / 2)){
+			sleep(200).then(() => {
+				catList[j].item(i).style.display = "inline-block";
+				catList[j].item(i).classList.add("appeared");
+			})
+		}
+		
+		if(i < (catList[j].length / 1.5)){
+			sleep(225).then(() => {
+				catList[j].item(i).style.display = "inline-block";
+				catList[j].item(i).classList.add("appeared");
+			})
+		}
+		
+		if(i < (catList[j].length)){
+			sleep(250).then(() => {
+				catList[j].item(i).style.display = "inline-block";
+				catList[j].item(i).classList.add("appeared");
+			})
 		}
 	}
 }
