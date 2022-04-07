@@ -5,21 +5,24 @@
 	<link href="CSS/index.css" rel="stylesheet" type="text/css"/>
 	<link href="CSS/filterCategory.css" rel="stylesheet" type="text/css"/>
 	<link href="CSS/filterType.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/filterClass.css" rel="stylesheet" type="text/css"/>
 	<link href="CSS/filterRarity.css" rel="stylesheet" type="text/css"/>
 	<script src="JS/charInfo.js" type="text/javascript"></script>
 	<script src="JS/filterReset.js" type="text/javascript"></script>
 	<script src="JS/filterType.js" type="text/javascript"></script>
+	<script src="JS/filterClass.js" type="text/javascript"></script>
 	<script src="JS/filterCategory.js" type="text/javascript"></script>
 	<script src="JS/filterRarity.js" type="text/javascript"></script>
 	<script src="JS/filterPartialMatch.js" type="text/javascript"></script>
 	<title>Dokkan Link Tool</title>
 </head>
-<body onload="charInfo(); initTypeFilter(); hoverCategory(); filterRarity(); filterPartialMatch();">
+<body onload="charInfo(); initTypeFilter(); initClassFilter(); hoverCategory(); filterRarity(); filterPartialMatch();">
 <button onclick="ResetSelectionFilters();">Reset All Filters</button>
 <button onclick="ShowAllCharacters();">Show All Characters</button>
-<button onclick="showFilterCategory();" id="select_category" type="button">Show Category</button>
-<button onclick="showFilterType();" id="select_type" type="button">Show Type</button>
-<button onclick="showFilterRarity();" id="select_rarity" type="button">Show Rarity</button>
+<button id="select_category" onclick="showFilterCategory();" type="button">Show Category</button>
+<button id="select_type" onclick="showFilterType();" type="button">Show Type</button>
+<button id="select_class" onclick="showFilterClass();" type="button">Show Class</button>
+<button id="select_rarity" onclick="showFilterRarity();" type="button">Show Rarity</button>
 <div class="rarityFilter rarityFilterShow">
 	<div class="allRarities">
 		<button class="rarity-btn" id="rarity_n" type="button">N</button>
@@ -31,29 +34,15 @@
 	</div>
 </div>
 <div class="typeFilter typeFilterShow">
-	<div>
-		<button class="type-btn" id="agl" type="button">AGL</button>
-		<button class="type-btn" id="int" type="button">INT</button>
-		<button class="type-btn" id="phy" type="button">PHY</button>
-		<button class="type-btn" id="str" type="button">STR</button>
-		<button class="type-btn" id="teq" type="button">TEQ</button>
-		<button class="type-btn" id="super_type" type="button">Super</button>
-		<button class="type-btn" id="extreme_type" type="button">Extreme</button>
-	</div>
-	<div>
-		<button class="type-btn" id="super_agl" type="button">Super AGL</button>
-		<button class="type-btn" id="super_int" type="button">Super INT</button>
-		<button class="type-btn" id="super_phy" type="button">Super PHY</button>
-		<button class="type-btn" id="super_str" type="button">Super STR</button>
-		<button class="type-btn" id="super_teq" type="button">Super TEQ</button>
-	</div>
-	<div>
-		<button class="type-btn" id="extreme_agl" type="button">Extreme AGL</button>
-		<button class="type-btn" id="extreme_int" type="button">Extreme INT</button>
-		<button class="type-btn" id="extreme_phy" type="button">Extreme PHY</button>
-		<button class="type-btn" id="extreme_str" type="button">Extreme STR</button>
-		<button class="type-btn" id="extreme_teq" type="button">Extreme TEQ</button>
-	</div>
+	<button class="type-btn" id="agl" type="button">AGL</button>
+	<button class="type-btn" id="int" type="button">INT</button>
+	<button class="type-btn" id="phy" type="button">PHY</button>
+	<button class="type-btn" id="str" type="button">STR</button>
+	<button class="type-btn" id="teq" type="button">TEQ</button>
+</div>
+<div class="classFilter classFilterShow">
+	<button class="class-btn" id="super_type" type="button">Super</button>
+	<button class="class-btn" id="extreme_type" type="button">Extreme</button>
 </div>
 <div class="CategoriesFilter CategoriesFilterShow">
 	<div class="categoriesOrange">

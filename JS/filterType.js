@@ -16,43 +16,17 @@ function initTypeFilter(){
 	
 	let type = "";
 	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
 	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
 	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
 	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
 	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
 	
 	agl_filter.addEventListener('click' , function(){
 		type = "agl";
 		removeAllCheckedTypeBtn(typeBtn);
 		agl_filter.classList.add("checkedTypeBtn");
 		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(0);
-	});
-	super_agl_filter.addEventListener('click' , function(){
-		type = "super_agl";
-		removeAllCheckedTypeBtn(typeBtn);
-		super_agl_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(7);
-	});
-	extreme_agl_filter.addEventListener('click' , function(){
-		type = "extreme_agl";
-		removeAllCheckedTypeBtn(typeBtn);
-		extreme_agl_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(12);
+		defaultFilterTypeColors(0);
 	});
 	
 	int_filter.addEventListener('click' , function(){
@@ -60,21 +34,7 @@ function initTypeFilter(){
 		removeAllCheckedTypeBtn(typeBtn);
 		int_filter.classList.add("checkedTypeBtn");
 		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(1);
-	});
-	super_int_filter.addEventListener('click' , function(){
-		type = "super_int";
-		removeAllCheckedTypeBtn(typeBtn);
-		super_int_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(8);
-	});
-	extreme_int_filter.addEventListener('click' , function(){
-		type = "extreme_int";
-		removeAllCheckedTypeBtn(typeBtn);
-		extreme_int_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(13);
+		defaultFilterTypeColors(1);
 	});
 	
 	phy_filter.addEventListener('click' , function(){
@@ -82,21 +42,7 @@ function initTypeFilter(){
 		removeAllCheckedTypeBtn(typeBtn);
 		phy_filter.classList.add("checkedTypeBtn");
 		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(2);
-	});
-	super_phy_filter.addEventListener('click' , function(){
-		type = "super_phy";
-		removeAllCheckedTypeBtn(typeBtn);
-		super_phy_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(9);
-	});
-	extreme_phy_filter.addEventListener('click' , function(){
-		type = "extreme_phy";
-		removeAllCheckedTypeBtn(typeBtn);
-		extreme_phy_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(14);
+		defaultFilterTypeColors(2);
 	});
 	
 	str_filter.addEventListener('click' , function(){
@@ -104,21 +50,7 @@ function initTypeFilter(){
 		removeAllCheckedTypeBtn(typeBtn);
 		str_filter.classList.add("checkedTypeBtn");
 		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(3);
-	});
-	super_str_filter.addEventListener('click' , function(){
-		type = "super_str";
-		removeAllCheckedTypeBtn(typeBtn);
-		super_str_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(10);
-	});
-	extreme_str_filter.addEventListener('click' , function(){
-		type = "extreme_str";
-		removeAllCheckedTypeBtn(typeBtn);
-		extreme_str_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(15);
+		defaultFilterTypeColors(3);
 	});
 	
 	teq_filter.addEventListener('click' , function(){
@@ -126,36 +58,7 @@ function initTypeFilter(){
 		removeAllCheckedTypeBtn(typeBtn);
 		teq_filter.classList.add("checkedTypeBtn");
 		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(4);
-	});
-	super_teq_filter.addEventListener('click' , function(){
-		type = "super_teq";
-		removeAllCheckedTypeBtn(typeBtn);
-		super_teq_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(11);
-	});
-	extreme_teq_filter.addEventListener('click' , function(){
-		type = "extreme_teq";
-		removeAllCheckedTypeBtn(typeBtn);
-		extreme_teq_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(16);
-	});
-	
-	super_type_filter.addEventListener('click' , function(){
-		type = "super_type";
-		removeAllCheckedTypeBtn(typeBtn);
-		super_type_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(5);
-	});
-	extreme_type_filter.addEventListener('click' , function(){
-		type = "extreme_type";
-		removeAllCheckedTypeBtn(typeBtn);
-		extreme_type_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
-		defaultFilter(6);
+		defaultFilterTypeColors(4);
 	});
 	
 	hoverFilterType();
@@ -186,153 +89,49 @@ function filterTypeInit(httpLink , hostName , categories , cardType , appeared ,
 }
 
 function filterTypeDefault(httpLink , hostName , categories , cardType , type){
-	if(type !== "super_type" && type !== "extreme_type"){
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}
-		}
-	}
-	
-	if(type === "super_type"){
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_int.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_str.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}
-		}
-	}
-	
-	if(type === "extreme_type"){
-		for(let i = 0; i < cardType.length; i ++){
-			if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png"){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}
+	for(let i = 0; i < cardType.length; i ++){
+		if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png"){
+			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appearedType");
+		}else{
+			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appearedType");
 		}
 	}
 }
 
 function filterTypeAppearRarity(httpLink , hostName , categories , cardType , type){
-	if(type !== "super_type" && type !== "extreme_type"){
-		for(let i = 0; i < cardType.length; i ++){
-			if(categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png")){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}
-		}
-	}
-	
-	if(type === "super_teq"){
-		for(let i = 0; i < cardType.length; i ++){
-			if(categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_int.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_str.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png")){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}
-		}
-	}
-	
-	if(type === "extreme_teq"){
-		for(let i = 0; i < cardType.length; i ++){
-			if(categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png")){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}
+	for(let i = 0; i < cardType.length; i ++){
+		if(categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png")){
+			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appearedType");
+		}else{
+			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appearedType");
 		}
 	}
 }
 
 function filterTypeAppear(httpLink , hostName , categories , cardType , type){
-	if(type !== "super_type" && type !== "extreme_type"){
-		for(let i = 0; i < categories.length; i ++){
-			if(categories.item(i).classList.contains("appeared") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png")){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}
-		}
-	}
-	
-	if(type === "super_teq"){
-		for(let i = 0; i < categories.length; i ++){
-			if(categories.item(i).classList.contains("appeared") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_int.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_str.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png")){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}
-		}
-	}
-	
-	if(type === "extreme_teq"){
-		for(let i = 0; i < categories.length; i ++){
-			if(categories.item(i).classList.contains("appeared") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png")){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}
+	for(let i = 0; i < categories.length; i ++){
+		if(categories.item(i).classList.contains("appeared") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png")){
+			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appearedType");
+		}else{
+			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appearedType");
 		}
 	}
 }
 
 function filterTypeAppearAndAppearRarity(httpLink , hostName , categories , cardType , type){
-	if(type !== "super_type" && type !== "extreme_type"){
-		for(let i = 0; i < categories.length; i ++){
-			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png")){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}
-		}
-	}
-	
-	if(type === "super_teq"){
-		for(let i = 0; i < categories.length; i ++){
-			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_agl.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_int.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_phy.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_str.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_teq.png")){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}
-		}
-	}
-	
-	if(type === "extreme_teq"){
-		for(let i = 0; i < categories.length; i ++){
-			if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_agl.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_int.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_phy.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_str.png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_teq.png")){
-				categories.item(i).style.display = "inline-block";
-				categories.item(i).classList.add("appearedType");
-			}else{
-				categories.item(i).style.display = "none";
-				categories.item(i).classList.remove("appearedType");
-			}
+	for(let i = 0; i < categories.length; i ++){
+		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png")){
+			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appearedType");
+		}else{
+			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appearedType");
 		}
 	}
 }
@@ -343,6 +142,11 @@ function showFilterType(){
 
 function hoverFilterType(){
 	let agl_filter = document.getElementById("agl");
+	let int_filter = document.getElementById("int");
+	let phy_filter = document.getElementById("phy");
+	let str_filter = document.getElementById("str");
+	let teq_filter = document.getElementById("teq");
+	
 	agl_filter.onmouseover = function(){
 		agl_filter.style.backgroundColor = "#0A7FFF";
 		if(agl_filter.classList.contains("checkedTypeBtn")){
@@ -357,37 +161,7 @@ function hoverFilterType(){
 		}
 	}
 	
-	let super_agl_filter = document.getElementById("super_agl");
-	super_agl_filter.onmouseover = function(){
-		super_agl_filter.style.backgroundColor = "#0A7FFF";
-		if(super_agl_filter.classList.contains("checkedTypeBtn")){
-			super_agl_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	super_agl_filter.onmouseout = function(){
-		super_agl_filter.style.backgroundColor = "#064794";
-		if(super_agl_filter.classList.contains("checkedTypeBtn")){
-			super_agl_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	extreme_agl_filter.onmouseover = function(){
-		extreme_agl_filter.style.backgroundColor = "#0A7FFF";
-		if(extreme_agl_filter.classList.contains("checkedTypeBtn")){
-			extreme_agl_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	extreme_agl_filter.onmouseout = function(){
-		extreme_agl_filter.style.backgroundColor = "#064794";
-		if(extreme_agl_filter.classList.contains("checkedTypeBtn")){
-			extreme_agl_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let int_filter = document.getElementById("int");
+	int_filter = document.getElementById("int");
 	int_filter.onmouseover = function(){
 		int_filter.style.backgroundColor = "#B367D7";
 		if(int_filter.classList.contains("checkedTypeBtn")){
@@ -402,37 +176,7 @@ function hoverFilterType(){
 		}
 	}
 	
-	let super_int_filter = document.getElementById("super_int");
-	super_int_filter.onmouseover = function(){
-		super_int_filter.style.backgroundColor = "#B367D7";
-		if(super_int_filter.classList.contains("checkedTypeBtn")){
-			super_int_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	super_int_filter.onmouseout = function(){
-		super_int_filter.style.backgroundColor = "#6E3E80";
-		if(super_int_filter.classList.contains("checkedTypeBtn")){
-			super_int_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let extreme_int_filter = document.getElementById("extreme_int");
-	extreme_int_filter.onmouseover = function(){
-		extreme_int_filter.style.backgroundColor = "#B367D7";
-		if(extreme_int_filter.classList.contains("checkedTypeBtn")){
-			extreme_int_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	extreme_int_filter.onmouseout = function(){
-		extreme_int_filter.style.backgroundColor = "#6E3E80";
-		if(extreme_int_filter.classList.contains("checkedTypeBtn")){
-			extreme_int_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let phy_filter = document.getElementById("phy");
+	phy_filter = document.getElementById("phy");
 	phy_filter.onmouseover = function(){
 		phy_filter.style.backgroundColor = "#C06D06";
 		if(phy_filter.classList.contains("checkedTypeBtn")){
@@ -447,37 +191,7 @@ function hoverFilterType(){
 		}
 	}
 	
-	let super_phy_filter = document.getElementById("super_phy");
-	super_phy_filter.onmouseover = function(){
-		super_phy_filter.style.backgroundColor = "#C06D06";
-		if(super_phy_filter.classList.contains("checkedTypeBtn")){
-			super_phy_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	super_phy_filter.onmouseout = function(){
-		super_phy_filter.style.backgroundColor = "#673A03";
-		if(super_phy_filter.classList.contains("checkedTypeBtn")){
-			super_phy_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	extreme_phy_filter.onmouseover = function(){
-		extreme_phy_filter.style.backgroundColor = "#C06D06";
-		if(extreme_phy_filter.classList.contains("checkedTypeBtn")){
-			extreme_phy_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	extreme_phy_filter.onmouseout = function(){
-		extreme_phy_filter.style.backgroundColor = "#673A03";
-		if(extreme_phy_filter.classList.contains("checkedTypeBtn")){
-			extreme_phy_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let str_filter = document.getElementById("str");
+	str_filter = document.getElementById("str");
 	str_filter.onmouseover = function(){
 		str_filter.style.backgroundColor = "#C72931";
 		if(str_filter.classList.contains("checkedTypeBtn")){
@@ -492,37 +206,7 @@ function hoverFilterType(){
 		}
 	}
 	
-	let super_str_filter = document.getElementById("super_str");
-	super_str_filter.onmouseover = function(){
-		super_str_filter.style.backgroundColor = "#C72931";
-		if(super_str_filter.classList.contains("checkedTypeBtn")){
-			super_str_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	super_str_filter.onmouseout = function(){
-		super_str_filter.style.backgroundColor = "#7C1A1E";
-		if(super_str_filter.classList.contains("checkedTypeBtn")){
-			super_str_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let extreme_str_filter = document.getElementById("extreme_str");
-	extreme_str_filter.onmouseover = function(){
-		extreme_str_filter.style.backgroundColor = "#C72931";
-		if(extreme_str_filter.classList.contains("checkedTypeBtn")){
-			extreme_str_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	extreme_str_filter.onmouseout = function(){
-		extreme_str_filter.style.backgroundColor = "#7C1A1E";
-		if(extreme_str_filter.classList.contains("checkedTypeBtn")){
-			extreme_str_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let teq_filter = document.getElementById("teq");
+	teq_filter = document.getElementById("teq");
 	teq_filter.onmouseover = function(){
 		teq_filter.style.backgroundColor = "#00B712";
 		if(teq_filter.classList.contains("checkedTypeBtn")){
@@ -536,120 +220,26 @@ function hoverFilterType(){
 			teq_filter.style.backgroundColor = "#EEC310";
 		}
 	}
-	
-	let super_teq_filter = document.getElementById("super_teq");
-	super_teq_filter.onmouseover = function(){
-		super_teq_filter.style.backgroundColor = "#00B712";
-		if(super_teq_filter.classList.contains("checkedTypeBtn")){
-			super_teq_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	super_teq_filter.onmouseout = function(){
-		super_teq_filter.style.backgroundColor = "#015907";
-		if(super_teq_filter.classList.contains("checkedTypeBtn")){
-			super_teq_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	extreme_teq_filter.onmouseover = function(){
-		extreme_teq_filter.style.backgroundColor = "#00B712";
-		if(extreme_teq_filter.classList.contains("checkedTypeBtn")){
-			extreme_teq_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	extreme_teq_filter.onmouseout = function(){
-		extreme_teq_filter.style.backgroundColor = "#015907";
-		if(extreme_teq_filter.classList.contains("checkedTypeBtn")){
-			extreme_teq_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let super_filter = document.getElementById("super_type");
-	super_filter.onmouseover = function(){
-		super_filter.style.backgroundColor = "#919090";
-		if(super_filter.classList.contains("checkedTypeBtn")){
-			super_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	super_filter.onmouseout = function(){
-		super_filter.style.backgroundColor = "#494949";
-		if(super_filter.classList.contains("checkedTypeBtn")){
-			super_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	let extreme_filter = document.getElementById("extreme_type");
-	extreme_filter.onmouseover = function(){
-		extreme_filter.style.backgroundColor = "#919090";
-		if(extreme_filter.classList.contains("checkedTypeBtn")){
-			extreme_filter.style.backgroundColor = "#EEC310";
-		}
-	}
-	
-	extreme_filter.onmouseout = function(){
-		extreme_filter.style.backgroundColor = "#494949";
-		if(extreme_filter.classList.contains("checkedTypeBtn")){
-			extreme_filter.style.backgroundColor = "#EEC310";
-		}
-	}
 }
 
-function defaultFilter(n){
+function defaultFilterTypeColors(n){
 	let agl_filter = document.getElementById("agl");
-	let super_agl_filter = document.getElementById("super_agl");
-	let extreme_agl_filter = document.getElementById("extreme_agl");
-	
 	let int_filter = document.getElementById("int");
-	let super_int_filter = document.getElementById("super_int");
-	let extreme_int_filter = document.getElementById("extreme_int");
-	
 	let phy_filter = document.getElementById("phy");
-	let super_phy_filter = document.getElementById("super_phy");
-	let extreme_phy_filter = document.getElementById("extreme_phy");
-	
 	let str_filter = document.getElementById("str");
-	let super_str_filter = document.getElementById("super_str");
-	let extreme_str_filter = document.getElementById("extreme_str");
-	
 	let teq_filter = document.getElementById("teq");
-	let super_teq_filter = document.getElementById("super_teq");
-	let extreme_teq_filter = document.getElementById("extreme_teq");
-	
-	let super_type_filter = document.getElementById("super_type");
-	let extreme_type_filter = document.getElementById("extreme_type");
 	
 	agl_filter.style.backgroundColor = "#064794";
-	super_agl_filter.style.backgroundColor = "#064794";
-	extreme_agl_filter.style.backgroundColor = "#064794";
 	
 	int_filter.style.backgroundColor = "#6E3E80";
-	super_int_filter.style.backgroundColor = "#6E3E80";
-	extreme_int_filter.style.backgroundColor = "#6E3E80";
 	
 	phy_filter.style.backgroundColor = "#673A03";
-	super_phy_filter.style.backgroundColor = "#673A03";
-	extreme_phy_filter.style.backgroundColor = "#673A03";
 	
 	str_filter.style.backgroundColor = "#7C1A1E";
-	super_str_filter.style.backgroundColor = "#7C1A1E";
-	extreme_str_filter.style.backgroundColor = "#7C1A1E";
 	
 	teq_filter.style.backgroundColor = "#015907";
-	super_teq_filter.style.backgroundColor = "#015907";
-	extreme_teq_filter.style.backgroundColor = "#015907";
 	
-	super_type_filter.style.backgroundColor = "#494949";
-	extreme_type_filter.style.backgroundColor = "#494949";
-	
-	let filterTypeList = [];
 	let typeBtn = document.getElementsByClassName("type-btn");
-	for(let i = 0; i < typeBtn.length; i ++){
-		filterTypeList[i] = typeBtn.item(i);
-	}
-	filterTypeList[n].style.backgroundColor = "#EEC310";
+	typeBtn.item(n).style.backgroundColor = "#EEC310";
 }
 

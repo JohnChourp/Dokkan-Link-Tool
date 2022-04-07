@@ -1,4 +1,4 @@
-.rarityFilter {
+.classFilter {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -6,11 +6,11 @@
 	width: 700px;
 }
 
-.rarityFilterShow {
+.classFilterShow {
 	display: none;
 }
 
-.rarity-btn {
+.class-btn {
 	cursor: pointer;
 	margin: 5px 5px 5px 5px;
 	color: #FFF;
@@ -22,30 +22,14 @@
 	border-image-slice: 1;
 }
 
-#rarity_n {
+#super_type {
 	background-color: #494949;
 }
 
-#rarity_r {
+#extreme_type {
 	background-color: #494949;
 }
 
-#rarity_sr {
-	background-color: #494949;
-}
-
-#rarity_ssr {
-	background-color: #494949;
-}
-
-#rarity_ur {
-	background-color: #494949;
-}
-
-#rarity_lr {
-	background-color: #494949;
-}
-
-.checkedRarityBtn {
+.checkedTypeBtn {
 	background-color: #EEC310;
 }
