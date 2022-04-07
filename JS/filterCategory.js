@@ -33,231 +33,99 @@ function filterCategory(){
 	
 	for(let j = 0; j < categoriesOrange.length; j ++){
 		categoriesOrange.item(j).addEventListener('click' , function(){
-			if(appearedType.length < 1 && appearedClass.length < 1 && appearedRarity.length < 1){
-				if(categoriesOrange.item(j).classList.contains("activeCategory")){
-					categoriesOrange.item(j).classList.remove("activeCategory");
-					
-					for(let i = 0; i < categories.length; i ++){
-						categories.item(i).style.display = "none";
-						categories.item(i).classList.remove("appeared");
-					}
-					
-					for(let j = 0; j < categoriesBtn.length; j ++){
-						if(categoriesBtn.item(j).classList.contains("activeCategory")){
-							showActiveCategoryWithDelay(catList , j);
-						}
-					}
-				}else{
-					categoriesOrange.item(j).classList.add("activeCategory");
-					showActiveCategoryWithDelay(catList , j);
-				}
-			}
-			filterInit(appearedType , appearedRarity , appearedClass , categories , categoriesGreen , j);
+			removeActiveCategory(categories , categoriesBtn , catList , categoriesOrange , j);
+			categoriesOrange.item(j).classList.add("activeCategory");
+			filterInit(catList , appearedType , appearedRarity , appearedClass , categories , categoriesOrange , j , j);
 		});
 	}
 	
 	for(let j = 0; j < categoriesGreen.length; j ++){
 		categoriesGreen.item(j).addEventListener('click' , function(){
-			if(categoriesGreen.item(j).classList.contains("activeCategory")){
-				categoriesGreen.item(j).classList.remove("activeCategory");
-				
-				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				
-				for(let j = 0; j < categoriesBtn.length; j ++){
-					if(categoriesBtn.item(j).classList.contains("activeCategory")){
-						for(let i = 0; i < catList[j].length; i ++){
-							showActiveCategoryWithDelay(catList , j);
-						}
-					}
-				}
-			}else{
-				categoriesGreen.item(j).classList.add("activeCategory");
-				showActiveCategoryWithDelay(catList , j + categoriesOrange.length);
-			}
-			filterInit(appearedType , appearedRarity , appearedClass , categories , categoriesGreen , j);
+			removeActiveCategory(categories , categoriesBtn , catList , categoriesGreen , j);
+			categoriesGreen.item(j).classList.add("activeCategory");
+			filterInit(catList , appearedType , appearedRarity , appearedClass , categories , categoriesGreen , j , j + categoriesOrange.length);
 		});
 	}
 	
 	for(let j = 0; j < categoriesYellow.length; j ++){
 		categoriesYellow.item(j).addEventListener('click' , function(){
-			if(categoriesYellow.item(j).classList.contains("activeCategory")){
-				categoriesYellow.item(j).classList.remove("activeCategory");
-				
-				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				
-				for(let j = 0; j < categoriesBtn.length; j ++){
-					if(categoriesBtn.item(j).classList.contains("activeCategory")){
-						for(let i = 0; i < catList[j].length; i ++){
-							showActiveCategoryWithDelay(catList , j);
-						}
-					}
-				}
-			}else{
-				categoriesYellow.item(j).classList.add("activeCategory");
-				showActiveCategoryWithDelay(catList , j + categoriesOrange.length + categoriesGreen.length);
-			}
-			filterInit(appearedType , appearedRarity , appearedClass , categories , categoriesGreen , j);
+			removeActiveCategory(categories , categoriesBtn , catList , categoriesYellow , j);
+			categoriesYellow.item(j).classList.add("activeCategory");
+			filterInit(catList , appearedType , appearedRarity , appearedClass , categories , categoriesYellow , j , j + categoriesOrange.length + categoriesGreen.length);
 		});
 	}
 	
 	for(let j = 0; j < categoriesCyan.length; j ++){
 		categoriesCyan.item(j).addEventListener('click' , function(){
-			if(categoriesCyan.item(j).classList.contains("activeCategory")){
-				categoriesCyan.item(j).classList.remove("activeCategory");
-				
-				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				
-				for(let j = 0; j < categoriesBtn.length; j ++){
-					if(categoriesBtn.item(j).classList.contains("activeCategory")){
-						for(let i = 0; i < catList[j].length; i ++){
-							showActiveCategoryWithDelay(catList , j);
-						}
-					}
-				}
-			}else{
-				categoriesCyan.item(j).classList.add("activeCategory");
-				showActiveCategoryWithDelay(catList , j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length);
-			}
-			filterInit(appearedType , appearedRarity , appearedClass , categories , categoriesGreen , j);
+			removeActiveCategory(categories , categoriesBtn , catList , categoriesCyan , j);
+			categoriesCyan.item(j).classList.add("activeCategory");
+			filterInit(catList , appearedType , appearedRarity , appearedClass , categories , categoriesCyan , j , j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length);
 		});
 	}
 	
 	for(let j = 0; j < categoriesBlue.length; j ++){
 		categoriesBlue.item(j).addEventListener('click' , function(){
-			if(categoriesBlue.item(j).classList.contains("activeCategory")){
-				categoriesBlue.item(j).classList.remove("activeCategory");
-				
-				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				
-				for(let j = 0; j < categoriesBtn.length; j ++){
-					if(categoriesBtn.item(j).classList.contains("activeCategory")){
-						for(let i = 0; i < catList[j].length; i ++){
-							showActiveCategoryWithDelay(catList , j);
-						}
-					}
-				}
-			}else{
-				categoriesBlue.item(j).classList.add("activeCategory");
-				showActiveCategoryWithDelay(catList , j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length);
-			}
-			filterInit(appearedType , appearedRarity , appearedClass , categories , categoriesGreen , j);
+			removeActiveCategory(categories , categoriesBtn , catList , categoriesBlue , j);
+			categoriesBlue.item(j).classList.add("activeCategory");
+			filterInit(catList , appearedType , appearedRarity , appearedClass , categories , categoriesBlue , j , j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length);
 		});
 	}
 	
 	for(let j = 0; j < categoriesPurple.length; j ++){
 		categoriesPurple.item(j).addEventListener('click' , function(){
-			if(categoriesPurple.item(j).classList.contains("activeCategory")){
-				categoriesPurple.item(j).classList.remove("activeCategory");
-				
-				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				
-				for(let j = 0; j < categoriesBtn.length; j ++){
-					if(categoriesBtn.item(j).classList.contains("activeCategory")){
-						for(let i = 0; i < catList[j].length; i ++){
-							showActiveCategoryWithDelay(catList , j);
-						}
-					}
-				}
-			}else{
-				categoriesPurple.item(j).classList.add("activeCategory");
-				showActiveCategoryWithDelay(catList , j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length);
-			}
-			filterInit(appearedType , appearedRarity , appearedClass , categories , categoriesGreen , j);
+			removeActiveCategory(categories , categoriesBtn , catList , categoriesPurple , j);
+			categoriesPurple.item(j).classList.add("activeCategory");
+			filterInit(catList , appearedType , appearedRarity , appearedClass , categories , categoriesPurple , j , j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length);
 		});
 	}
 	
 	for(let j = 0; j < categoriesRed.length; j ++){
 		categoriesRed.item(j).addEventListener('click' , function(){
-			if(categoriesRed.item(j).classList.contains("activeCategory")){
-				categoriesRed.item(j).classList.remove("activeCategory");
-				
-				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				
-				for(let j = 0; j < categoriesBtn.length; j ++){
-					if(categoriesBtn.item(j).classList.contains("activeCategory")){
-						for(let i = 0; i < catList[j].length; i ++){
-							showActiveCategoryWithDelay(catList , j);
-						}
-					}
-				}
-			}else{
-				categoriesRed.item(j).classList.add("activeCategory");
-				showActiveCategoryWithDelay(catList , j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length);
-			}
-			filterInit(appearedType , appearedRarity , appearedClass , categories , categoriesGreen , j);
+			removeActiveCategory(categories , categoriesBtn , catList , categoriesRed , j);
+			categoriesRed.item(j).classList.add("activeCategory");
+			filterInit(catList , appearedType , appearedRarity , appearedClass , categories , categoriesRed , j , j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length);
 		});
 	}
 	
 	for(let j = 0; j < categoriesDarkGreen.length; j ++){
 		categoriesDarkGreen.item(j).addEventListener('click' , function(){
-			if(categoriesDarkGreen.item(j).classList.contains("activeCategory")){
-				categoriesDarkGreen.item(j).classList.remove("activeCategory");
-				
-				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				
-				for(let j = 0; j < categoriesBtn.length; j ++){
-					if(categoriesBtn.item(j).classList.contains("activeCategory")){
-						for(let i = 0; i < catList[j].length; i ++){
-							showActiveCategoryWithDelay(catList , j);
-						}
-					}
-				}
-			}else{
-				categoriesDarkGreen.item(j).classList.add("activeCategory");
-				showActiveCategoryWithDelay(catList , j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length);
-			}
-			filterInit(appearedType , appearedRarity , appearedClass , categories , categoriesGreen , j);
+			removeActiveCategory(categories , categoriesBtn , catList , categoriesDarkGreen , j);
+			categoriesDarkGreen.item(j).classList.add("activeCategory");
+			filterInit(catList , appearedType , appearedRarity , appearedClass , categories , categoriesDarkGreen , j , j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length);
 		});
 	}
 	
 	for(let j = 0; j < categoriesDarkBlue.length; j ++){
 		categoriesDarkBlue.item(j).addEventListener('click' , function(){
-			if(categoriesDarkBlue.item(j).classList.contains("activeCategory")){
-				categoriesDarkBlue.item(j).classList.remove("activeCategory");
-				
-				for(let i = 0; i < categories.length; i ++){
-					categories.item(i).style.display = "none";
-					categories.item(i).classList.remove("appeared");
-				}
-				
-				for(let j = 0; j < categoriesBtn.length; j ++){
-					if(categoriesBtn.item(j).classList.contains("activeCategory")){
-						for(let i = 0; i < catList[j].length; i ++){
-							showActiveCategoryWithDelay(catList , j);
-						}
-					}
-				}
-			}else{
-				categoriesDarkBlue.item(j).classList.add("activeCategory");
-				showActiveCategoryWithDelay(catList , j + categoriesOrange.length + categoriesGreen.length + categoriesCyan.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkGreen.length);
-			}
-			filterInit(appearedType , appearedRarity , appearedClass , categories , categoriesGreen , j);
+			removeActiveCategory(categories , categoriesBtn , catList , categoriesDarkBlue , j);
+			categoriesDarkBlue.item(j).classList.add("activeCategory");
+			filterInit(catList , appearedType , appearedRarity , appearedClass , categories , categoriesDarkBlue , j , j + categoriesOrange.length + categoriesGreen.length + categoriesYellow.length + categoriesCyan.length + categoriesBlue.length + categoriesPurple.length + categoriesRed.length + categoriesDarkGreen.length);
 		});
 	}
 }
 
-function filterInit(appearedType , appearedRarity , appearedClass , categories , categoriesColor , j){
+function removeActiveCategory(categories , categoriesBtn , catList , categoriesColor , j){
+	if(categoriesColor.item(j).classList.contains("activeCategory")){
+		categoriesColor.item(j).classList.remove("activeCategory");
+		
+		for(let i = 0; i < categories.length; i ++){
+			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appeared");
+		}
+		
+		for(let j = 0; j < categoriesBtn.length; j ++){
+			if(categoriesBtn.item(j).classList.contains("activeCategory")){
+				showActiveCategoryWithDelay(catList , j);
+			}
+		}
+	}
+}
+
+function filterInit(catList , appearedType , appearedRarity , appearedClass , categories , categoriesColor , j , jLength){
+	if(appearedType.length < 1 && appearedClass.length < 1 && appearedRarity.length < 1){
+		showActiveCategoryWithDelay(catList , jLength);
+	}
+	
 	if(appearedType.length > 0 && appearedClass.length < 1 && appearedRarity.length < 1){
 		filterAppearType(categories , categoriesColor , j);
 	}
@@ -285,7 +153,7 @@ function filterInit(appearedType , appearedRarity , appearedClass , categories ,
 
 function filterAppearRarity(categories , categoriesColor , j){
 	for(let i = 0; i < categories.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
+		if(categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
 			categories.item(i).style.display = "inline-block";
 		}else{
 			categories.item(i).style.display = "none";
@@ -295,7 +163,7 @@ function filterAppearRarity(categories , categoriesColor , j){
 
 function filterAppearClass(categories , categoriesColor , j){
 	for(let i = 0; i < categories.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
+		if(categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
 			categories.item(i).style.display = "inline-block";
 		}else{
 			categories.item(i).style.display = "none";
@@ -305,7 +173,7 @@ function filterAppearClass(categories , categoriesColor , j){
 
 function filterAppearType(categories , categoriesColor , j){
 	for(let i = 0; i < categories.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
+		if(categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
 			categories.item(i).style.display = "inline-block";
 		}else{
 			categories.item(i).style.display = "none";
@@ -315,7 +183,7 @@ function filterAppearType(categories , categoriesColor , j){
 
 function filterAppearTypeAndAppearRarity(categories , categoriesColor , j){
 	for(let i = 0; i < categories.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
+		if(categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
 			categories.item(i).style.display = "inline-block";
 		}else{
 			categories.item(i).style.display = "none";
@@ -325,7 +193,7 @@ function filterAppearTypeAndAppearRarity(categories , categoriesColor , j){
 
 function filterAppearRarityAndAppearClass(categories , categoriesColor , j){
 	for(let i = 0; i < categories.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
+		if(categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
 			categories.item(i).style.display = "inline-block";
 		}else{
 			categories.item(i).style.display = "none";
@@ -335,7 +203,7 @@ function filterAppearRarityAndAppearClass(categories , categoriesColor , j){
 
 function filterAppearTypeAndAppearClass(categories , categoriesColor , j){
 	for(let i = 0; i < categories.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
+		if(categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
 			categories.item(i).style.display = "inline-block";
 		}else{
 			categories.item(i).style.display = "none";
