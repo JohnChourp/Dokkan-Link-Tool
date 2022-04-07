@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="reduced time dalayed">
-      <change afterPath="$PROJECT_DIR$/CSS/filterClass.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/filterClass.js" afterDir="false" />
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="organized files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/filterCategory.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/filterCategory.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/filterRarity.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/filterRarity.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/filterType.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/filterType.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterRarity.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterRarity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterReset.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterReset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterType.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterCategory.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,21 +122,7 @@
       <workItem from="1649229099659" duration="9378000" />
       <workItem from="1649312707178" duration="6246000" />
       <workItem from="1649320771524" duration="574000" />
-      <workItem from="1649359993843" duration="2630000" />
-    </task>
-    <task id="LOCAL-00025" summary="minor bug fixes">
-      <created>1648403988494</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1648403988494</updated>
-    </task>
-    <task id="LOCAL-00026" summary="simplified activeCategory class added when press a category">
-      <created>1648487453773</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1648487453774</updated>
+      <workItem from="1649359993843" duration="4012000" />
     </task>
     <task id="LOCAL-00027" summary="simplified activeCategory even more and now is working properly">
       <created>1648489431063</created>
@@ -475,7 +453,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649320557457</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="added filter class file">
+      <created>1649362744648</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1649362744648</updated>
+    </task>
+    <task id="LOCAL-00075" summary="organized files">
+      <created>1649362903288</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1649362903288</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,8 +486,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added saiyan saga category" />
-    <MESSAGE value="added 70 more character thumb 400-500 series 1" />
     <MESSAGE value="removed duplicate character thumb" />
     <MESSAGE value="seperated function filterCategory and filterType in different files" />
     <MESSAGE value="added filter rarity" />
@@ -519,6 +509,8 @@
     <MESSAGE value="added a showCharactersPer10 function" />
     <MESSAGE value="fix bugs" />
     <MESSAGE value="reduced time dalayed" />
-    <option name="LAST_COMMIT_MESSAGE" value="reduced time dalayed" />
+    <MESSAGE value="added filter class file" />
+    <MESSAGE value="organized files" />
+    <option name="LAST_COMMIT_MESSAGE" value="organized files" />
   </component>
 </project>
