@@ -161,8 +161,10 @@ function filterAppearRarity(categories , categoriesColor , j){
 	for(let i = 0; i < categories.length; i ++){
 		if(categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
 			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appeared");
 		}else{
 			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appeared");
 		}
 	}
 }
@@ -171,8 +173,10 @@ function filterAppearClass(categories , categoriesColor , j){
 	for(let i = 0; i < categories.length; i ++){
 		if(categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
 			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appeared");
 		}else{
 			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appeared");
 		}
 	}
 }
@@ -181,8 +185,10 @@ function filterAppearType(categories , categoriesColor , j){
 	for(let i = 0; i < categories.length; i ++){
 		if(categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
 			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appeared");
 		}else{
 			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appeared");
 		}
 	}
 }
@@ -191,8 +197,10 @@ function filterAppearTypeAndAppearRarity(categories , categoriesColor , j){
 	for(let i = 0; i < categories.length; i ++){
 		if(categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
 			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appeared");
 		}else{
 			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appeared");
 		}
 	}
 }
@@ -201,8 +209,10 @@ function filterAppearRarityAndAppearClass(categories , categoriesColor , j){
 	for(let i = 0; i < categories.length; i ++){
 		if(categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
 			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appeared");
 		}else{
 			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appeared");
 		}
 	}
 }
@@ -211,8 +221,10 @@ function filterAppearTypeAndAppearClass(categories , categoriesColor , j){
 	for(let i = 0; i < categories.length; i ++){
 		if(categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
 			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appeared");
 		}else{
 			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appeared");
 		}
 	}
 }
@@ -221,8 +233,10 @@ function filterAppearTypeAndAppearRarityAndAppearClass(categories , categoriesCo
 	for(let i = 0; i < categories.length; i ++){
 		if(categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
 			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appeared");
 		}else{
 			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appeared");
 		}
 	}
 }
@@ -308,6 +322,13 @@ function showActiveCategoryWithDelay(catList , j){
 
 function showFilterCategory(){
 	document.getElementsByClassName("CategoriesFilter").item(0).classList.remove("CategoriesFilterShow");
+}
+
+function showAllFilter(){
+	document.getElementsByClassName("CategoriesFilter").item(0).classList.remove("CategoriesFilterShow");
+	document.getElementsByClassName("classFilter").item(0).classList.remove("classFilterShow");
+	document.getElementsByClassName("rarityFilter").item(0).classList.remove("rarityFilterShow");
+	document.getElementsByClassName("typeFilter").item(0).classList.remove("typeFilterShow");
 }
 
 function hoverCategory(){

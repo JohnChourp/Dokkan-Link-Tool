@@ -68,7 +68,7 @@ function filterClassInit(httpLink , hostName , categories , cardType , appeared 
 		filterClassAppearAndAppearRarity(httpLink , hostName , categories , cardType , classType);
 	}
 	
-	if(appeared.length > 0 && appearedType.length < 1 && appearedRarity.length > 0){
+	if(appeared.length < 1 && appearedType.length > 0 && appearedRarity.length > 0){
 		filterClassAppearTypeAndAppearRarity(httpLink , hostName , categories , cardType , classType);
 	}
 	

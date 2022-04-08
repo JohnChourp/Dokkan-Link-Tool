@@ -16,7 +16,8 @@
 	<title>Dokkan Link Tool</title>
 </head>
 <body onload="charInfo(); initTypeFilter(); initClassFilter(); hoverCategory(); filterRarity(); filterCategory();">
-<button onclick="ResetSelectionFilters();">Reset All Filters</button>
+<button onclick="ResetSelectionFilters();">Reset Filters</button>
+<button id="select_all" onclick="showAllFilter();" type="button">Show Filters</button>
 <button onclick="ShowAllCharacters();">Show All Characters</button>
 <button id="select_category" onclick="showFilterCategory();" type="button">Show Category</button>
 <button id="select_type" onclick="showFilterType();" type="button">Show Type</button>

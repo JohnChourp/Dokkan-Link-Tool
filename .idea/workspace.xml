@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="simplified filterClass.js">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="fixed bugs in filterCategory.js and filterType.js">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/charInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/charInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/filterCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterClass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterRarity.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterRarity.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/filterType.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,14 +127,7 @@
       <workItem from="1649312707178" duration="6246000" />
       <workItem from="1649320771524" duration="574000" />
       <workItem from="1649359993843" duration="6094000" />
-      <workItem from="1649392810090" duration="7672000" />
-    </task>
-    <task id="LOCAL-00031" summary="minor fixes for partial search">
-      <created>1648495783481</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1648495783481</updated>
+      <workItem from="1649392810090" duration="11386000" />
     </task>
     <task id="LOCAL-00032" summary="minro fix for filter type">
       <created>1648544351735</created>
@@ -467,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649403641834</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="fixed bugs in filterCategory.js and filterType.js">
+      <created>1649404170240</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1649404170240</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,7 +491,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="simplified filterType default values" />
     <MESSAGE value="simplified even more filter type" />
     <MESSAGE value="improved filter type" />
     <MESSAGE value="simplified category filter default colors" />
@@ -511,6 +515,7 @@
     <MESSAGE value="simplified filter Category" />
     <MESSAGE value="improved filterType.js" />
     <MESSAGE value="simplified filterClass.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="simplified filterClass.js" />
+    <MESSAGE value="fixed bugs in filterCategory.js and filterType.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bugs in filterCategory.js and filterType.js" />
   </component>
 </project>
