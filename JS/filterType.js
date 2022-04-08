@@ -102,6 +102,10 @@ function filterTypeInit(httpLink , hostName , categories , cardType , appeared ,
 	if(appeared.length < 1 && appearedClass.length > 0 && appearedRarity.length > 0){
 		filterTypeAppearClassAndAppearRarity(httpLink , hostName , categories , cardType , type);
 	}
+	
+	if(appeared.length > 0 && appearedClass.length > 0 && appearedRarity.length > 0){
+		filterTypeAppearAndAppearClassAndAppearRarity(httpLink , hostName , categories , cardType , type);
+	}
 }
 
 function filterTypeDefault(httpLink , hostName , categories , cardType , type){
@@ -180,6 +184,18 @@ function filterTypeAppearAppearedAndAppearRarity(httpLink , hostName , categorie
 function filterTypeAppearClassAndAppearRarity(httpLink , hostName , categories , cardType , type){
 	for(let i = 0; i < categories.length; i ++){
 		if(categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png")){
+			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appearedType");
+		}else{
+			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appearedType");
+		}
+	}
+}
+
+function filterTypeAppearAndAppearClassAndAppearRarity(httpLink , hostName , categories , cardType , type){
+	for(let i = 0; i < categories.length; i ++){
+		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedType");
 		}else{

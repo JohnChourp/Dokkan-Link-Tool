@@ -138,6 +138,8 @@ function filterInit(catList , appearedType , appearedRarity , appearedClass , ca
 		filterAppearClass(categories , categoriesColor , j);
 	}
 	
+	
+	
 	if(appearedType.length > 0 && appearedClass.length < 1 && appearedRarity.length > 0){
 		filterAppearTypeAndAppearRarity(categories , categoriesColor , j);
 	}
@@ -148,6 +150,10 @@ function filterInit(catList , appearedType , appearedRarity , appearedClass , ca
 	
 	if(appearedType.length < 1 && appearedClass.length > 0 && appearedRarity.length > 0){
 		filterAppearRarityAndAppearClass(categories , categoriesColor , j);
+	}
+	
+	if(appearedType.length > 0 && appearedClass.length > 0 && appearedRarity.length > 0){
+		filterAppearTypeAndAppearRarityAndAppearClass(categories , categoriesColor , j);
 	}
 }
 
@@ -204,6 +210,16 @@ function filterAppearRarityAndAppearClass(categories , categoriesColor , j){
 function filterAppearTypeAndAppearClass(categories , categoriesColor , j){
 	for(let i = 0; i < categories.length; i ++){
 		if(categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
+			categories.item(i).style.display = "inline-block";
+		}else{
+			categories.item(i).style.display = "none";
+		}
+	}
+}
+
+function filterAppearTypeAndAppearRarityAndAppearClass(categories , categoriesColor , j){
+	for(let i = 0; i < categories.length; i ++){
+		if(categories.item(i).classList.contains("appearedType") && categories.item(i).classList.contains("appearedRarity") && categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains(categoriesColor.item(j).id)){
 			categories.item(i).style.display = "inline-block";
 		}else{
 			categories.item(i).style.display = "none";
