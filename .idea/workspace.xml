@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="fixed bugs in filterCategory.js and filterType.js">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="improved filter rarity">
+      <change afterPath="$PROJECT_DIR$/JS/searchCategory.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/charInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/charInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/filterCategory.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/filterCategory.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/filterCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterCategory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterClass.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterRarity.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterRarity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterType.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterType.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,6 +126,7 @@
       <workItem from="1649320771524" duration="574000" />
       <workItem from="1649359993843" duration="6094000" />
       <workItem from="1649392810090" duration="11386000" />
+      <workItem from="1649448462852" duration="3566000" />
     </task>
     <task id="LOCAL-00032" summary="minro fix for filter type">
       <created>1648544351735</created>
