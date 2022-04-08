@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="improved filterCategory">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="simplified filter Category">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterType.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterType.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,14 +121,8 @@
       <workItem from="1649229099659" duration="9378000" />
       <workItem from="1649312707178" duration="6246000" />
       <workItem from="1649320771524" duration="574000" />
-      <workItem from="1649359993843" duration="5978000" />
-    </task>
-    <task id="LOCAL-00028" summary="simplified type filter">
-      <created>1648489992872</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1648489992872</updated>
+      <workItem from="1649359993843" duration="6094000" />
+      <workItem from="1649392810090" duration="5572000" />
     </task>
     <task id="LOCAL-00029" summary="simplified type filter and category filter to show and hide">
       <created>1648491443725</created>
@@ -466,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649364297586</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="simplified filter Category">
+      <created>1649366137370</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1649366137370</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +486,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="seperated function filterCategory and filterType in different files" />
     <MESSAGE value="added filter rarity" />
     <MESSAGE value="minor bug fixes" />
     <MESSAGE value="simplified filterType default values" />
@@ -510,6 +510,7 @@
     <MESSAGE value="added filter class file" />
     <MESSAGE value="organized files" />
     <MESSAGE value="improved filterCategory" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved filterCategory" />
+    <MESSAGE value="simplified filter Category" />
+    <option name="LAST_COMMIT_MESSAGE" value="simplified filter Category" />
   </component>
 </project>

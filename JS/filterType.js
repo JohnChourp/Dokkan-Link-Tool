@@ -10,6 +10,8 @@ function initTypeFilter(){
 	
 	let typeBtn = document.getElementsByClassName("type-btn");
 	let appeared = document.getElementsByClassName("appeared");
+	let appearedType = document.getElementsByClassName("appearedType");
+	let appearedClass = document.getElementsByClassName("appearedClass");
 	let appearedRarity = document.getElementsByClassName("appearedRarity");
 	let categories = document.getElementsByClassName("categories");
 	let cardType = document.getElementsByClassName("card-type");
@@ -23,68 +25,82 @@ function initTypeFilter(){
 	
 	agl_filter.addEventListener('click' , function(){
 		type = "agl";
-		removeAllCheckedTypeBtn(typeBtn);
+		removeAllCheckedTypeBtn(httpLink , hostName , type , categories , cardType , typeBtn);
 		agl_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedType , appearedClass , appearedRarity , type);
 		defaultFilterTypeColors(0);
 	});
 	
 	int_filter.addEventListener('click' , function(){
 		type = "int";
-		removeAllCheckedTypeBtn(typeBtn);
+		removeAllCheckedTypeBtn(httpLink , hostName , type , categories , cardType , typeBtn);
 		int_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedType , appearedClass , appearedRarity , type);
 		defaultFilterTypeColors(1);
 	});
 	
 	phy_filter.addEventListener('click' , function(){
 		type = "phy";
-		removeAllCheckedTypeBtn(typeBtn);
+		removeAllCheckedTypeBtn(httpLink , hostName , type , categories , cardType , typeBtn);
 		phy_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedType , appearedClass , appearedRarity , type);
 		defaultFilterTypeColors(2);
 	});
 	
 	str_filter.addEventListener('click' , function(){
 		type = "str";
-		removeAllCheckedTypeBtn(typeBtn);
+		removeAllCheckedTypeBtn(httpLink , hostName , type , categories , cardType , typeBtn);
 		str_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedType , appearedClass , appearedRarity , type);
 		defaultFilterTypeColors(3);
 	});
 	
 	teq_filter.addEventListener('click' , function(){
 		type = "teq";
-		removeAllCheckedTypeBtn(typeBtn);
+		removeAllCheckedTypeBtn(httpLink , hostName , type , categories , cardType , typeBtn);
 		teq_filter.classList.add("checkedTypeBtn");
-		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type);
+		filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedType , appearedClass , appearedRarity , type);
 		defaultFilterTypeColors(4);
 	});
 	
 	hoverFilterType();
 }
 
-function removeAllCheckedTypeBtn(typeBtn){
+function removeAllCheckedTypeBtn(httpLink , hostName , type , categories , cardType , typeBtn){
 	for(let i = 0; i < typeBtn.length; i ++){
 		typeBtn.item(i).classList.remove("checkedTypeBtn");
 	}
 }
 
-function filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedRarity , type){
-	if(appeared.length < 1 && appearedRarity.length < 1){
+function filterTypeInit(httpLink , hostName , categories , cardType , appeared , appearedType , appearedClass , appearedRarity , type){
+	if(appeared.length < 1 && appearedClass.length < 1 && appearedRarity.length < 1){
 		filterTypeDefault(httpLink , hostName , categories , cardType , type);
 	}
 	
-	if(appeared.length < 1 && appearedRarity.length > 0){
+	if(appeared.length > 0 && appearedClass.length < 1 && appearedRarity.length < 1){
+		filterTypeAppearAppeared(httpLink , hostName , categories , cardType , type);
+	}
+	
+	if(appeared.length < 1 && appearedClass.length > 0 && appearedRarity.length < 1){
+		filterTypeAppearClass(httpLink , hostName , categories , cardType , type);
+	}
+	
+	if(appeared.length < 1 && appearedClass.length < 1 && appearedRarity.length > 0){
 		filterTypeAppearRarity(httpLink , hostName , categories , cardType , type);
 	}
 	
-	if(appeared.length > 0 && appearedRarity.length < 1){
-		filterTypeAppear(httpLink , hostName , categories , cardType , type);
+	
+	
+	if(appeared.length > 0 && appearedClass.length > 0 && appearedRarity.length < 1){
+		filterTypeAppearAppearedAndAppearClass(httpLink , hostName , categories , cardType , type);
 	}
 	
-	if(appeared.length > 0 && appearedRarity.length > 0){
-		filterTypeAppearAndAppearRarity(httpLink , hostName , categories , cardType , type);
+	if(appeared.length > 0 && appearedClass.length < 1 && appearedRarity.length > 0){
+		filterTypeAppearAppearedAndAppearRarity(httpLink , hostName , categories , cardType , type);
+	}
+	
+	if(appeared.length < 1 && appearedClass.length > 0 && appearedRarity.length > 0){
+		filterTypeAppearClassAndAppearRarity(httpLink , hostName , categories , cardType , type);
 	}
 }
 
@@ -100,9 +116,22 @@ function filterTypeDefault(httpLink , hostName , categories , cardType , type){
 	}
 }
 
+function filterTypeAppearAppeared(httpLink , hostName , categories , cardType , type){
+	for(let i = 0; i < cardType.length; i ++){
+		if(categories.item(i).classList.contains("appeared") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png")){
+			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appearedType");
+		}else{
+			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appearedType");
+			
+		}
+	}
+}
+
 function filterTypeAppearRarity(httpLink , hostName , categories , cardType , type){
 	for(let i = 0; i < cardType.length; i ++){
-		if(categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png")){
+		if(categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedType");
 		}else{
@@ -112,9 +141,9 @@ function filterTypeAppearRarity(httpLink , hostName , categories , cardType , ty
 	}
 }
 
-function filterTypeAppear(httpLink , hostName , categories , cardType , type){
-	for(let i = 0; i < categories.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png")){
+function filterTypeAppearClass(httpLink , hostName , categories , cardType , type){
+	for(let i = 0; i < cardType.length; i ++){
+		if(categories.item(i).classList.contains("appearedClass") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedType");
 		}else{
@@ -124,9 +153,33 @@ function filterTypeAppear(httpLink , hostName , categories , cardType , type){
 	}
 }
 
-function filterTypeAppearAndAppearRarity(httpLink , hostName , categories , cardType , type){
+function filterTypeAppearAppearedAndAppearClass(httpLink , hostName , categories , cardType , type){
 	for(let i = 0; i < categories.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png")){
+		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedClass") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png")){
+			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appearedType");
+		}else{
+			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appearedType");
+		}
+	}
+}
+
+function filterTypeAppearAppearedAndAppearRarity(httpLink , hostName , categories , cardType , type){
+	for(let i = 0; i < categories.length; i ++){
+		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png")){
+			categories.item(i).style.display = "inline-block";
+			categories.item(i).classList.add("appearedType");
+		}else{
+			categories.item(i).style.display = "none";
+			categories.item(i).classList.remove("appearedType");
+		}
+	}
+}
+
+function filterTypeAppearClassAndAppearRarity(httpLink , hostName , categories , cardType , type){
+	for(let i = 0; i < categories.length; i ++){
+		if(categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedType");
 		}else{
@@ -230,13 +283,9 @@ function defaultFilterTypeColors(n){
 	let teq_filter = document.getElementById("teq");
 	
 	agl_filter.style.backgroundColor = "#064794";
-	
 	int_filter.style.backgroundColor = "#6E3E80";
-	
 	phy_filter.style.backgroundColor = "#673A03";
-	
 	str_filter.style.backgroundColor = "#7C1A1E";
-	
 	teq_filter.style.backgroundColor = "#015907";
 	
 	let typeBtn = document.getElementsByClassName("type-btn");
