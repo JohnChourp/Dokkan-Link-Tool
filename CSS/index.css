@@ -1,6 +1,7 @@
 :root {
 	--nav-load-time: 500ms;
 }
+
 body {
 	background-color: #343A40;
 }
@@ -17,8 +18,8 @@ body {
 }
 
 .char-base-type-margin {
-	margin-top:50px;
-	margin-left:50px;
+	margin-top: 50px;
+	margin-left: 50px;
 }
 
 .card-thumb {
@@ -28,7 +29,7 @@ body {
 
 .card-thumb-margin {
 	margin-top: -108px;
-	margin-left:40px;
+	margin-left: 40px;
 }
 
 .card-type {
@@ -37,7 +38,7 @@ body {
 }
 
 .card-type-margin {
-	margin-left:120px;
+	margin-left: 120px;
 	margin-top: -125px;
 }
 
@@ -47,8 +48,8 @@ body {
 }
 
 .card-rarity-margin {
-	margin-left:45px;
-	margin-top:30px;
+	margin-left: 45px;
+	margin-top: 30px;
 }
 
 .categories {

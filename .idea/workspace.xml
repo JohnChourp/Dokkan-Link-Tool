@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="fix bugs">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="fixed bugs in filterCategory.js and filterType.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/filterPartialMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterPartialMatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/charInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/charInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterClass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterRarity.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterRarity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterType.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-a-filter-rarity" />
+        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-load-the-characters-with-timestops-so-that-it-dosen't-lag-the-site" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +63,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CSS" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -68,6 +73,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool\CSS" />
       <recent name="C:\Users\jonhi\Documents\github\Dokkan-Link-Tool" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -118,70 +124,10 @@
       <workItem from="1649061432204" duration="4732000" />
       <workItem from="1649188900544" duration="5193000" />
       <workItem from="1649229099659" duration="9378000" />
-      <workItem from="1649312707178" duration="6001000" />
-    </task>
-    <task id="LOCAL-00023" summary="improved filter type">
-      <created>1648386236052</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1648386236052</updated>
-    </task>
-    <task id="LOCAL-00024" summary="now all categories work properply with the type filter">
-      <created>1648400792378</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1648400792378</updated>
-    </task>
-    <task id="LOCAL-00025" summary="minor bug fixes">
-      <created>1648403988494</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1648403988494</updated>
-    </task>
-    <task id="LOCAL-00026" summary="simplified activeCategory class added when press a category">
-      <created>1648487453773</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1648487453774</updated>
-    </task>
-    <task id="LOCAL-00027" summary="simplified activeCategory even more and now is working properly">
-      <created>1648489431063</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1648489431063</updated>
-    </task>
-    <task id="LOCAL-00028" summary="simplified type filter">
-      <created>1648489992872</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1648489992872</updated>
-    </task>
-    <task id="LOCAL-00029" summary="simplified type filter and category filter to show and hide">
-      <created>1648491443725</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1648491443725</updated>
-    </task>
-    <task id="LOCAL-00030" summary="fixed color changing when hover over filter type">
-      <created>1648494824500</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1648494824500</updated>
-    </task>
-    <task id="LOCAL-00031" summary="minor fixes for partial search">
-      <created>1648495783481</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1648495783481</updated>
+      <workItem from="1649312707178" duration="6246000" />
+      <workItem from="1649320771524" duration="574000" />
+      <workItem from="1649359993843" duration="6094000" />
+      <workItem from="1649392810090" duration="11386000" />
     </task>
     <task id="LOCAL-00032" summary="minro fix for filter type">
       <created>1648544351735</created>
@@ -463,7 +409,70 @@
       <option name="project" value="LOCAL" />
       <updated>1649318191674</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="fix bugs">
+      <created>1649320400166</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1649320400166</updated>
+    </task>
+    <task id="LOCAL-00073" summary="reduced time dalayed">
+      <created>1649320557457</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1649320557457</updated>
+    </task>
+    <task id="LOCAL-00074" summary="added filter class file">
+      <created>1649362744648</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1649362744648</updated>
+    </task>
+    <task id="LOCAL-00075" summary="organized files">
+      <created>1649362903288</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1649362903288</updated>
+    </task>
+    <task id="LOCAL-00076" summary="improved filterCategory">
+      <created>1649364297586</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1649364297586</updated>
+    </task>
+    <task id="LOCAL-00077" summary="simplified filter Category">
+      <created>1649366137370</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1649366137370</updated>
+    </task>
+    <task id="LOCAL-00078" summary="improved filterType.js">
+      <created>1649401974006</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1649401974007</updated>
+    </task>
+    <task id="LOCAL-00079" summary="simplified filterClass.js">
+      <created>1649403641834</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1649403641834</updated>
+    </task>
+    <task id="LOCAL-00080" summary="fixed bugs in filterCategory.js and filterType.js">
+      <created>1649404170240</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1649404170240</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,14 +491,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added 80 more characters" />
-    <MESSAGE value="added saiyan saga category" />
-    <MESSAGE value="added 70 more character thumb 400-500 series 1" />
-    <MESSAGE value="removed duplicate character thumb" />
-    <MESSAGE value="seperated function filterCategory and filterType in different files" />
-    <MESSAGE value="added filter rarity" />
-    <MESSAGE value="minor bug fixes" />
-    <MESSAGE value="simplified filterType default values" />
     <MESSAGE value="simplified even more filter type" />
     <MESSAGE value="improved filter type" />
     <MESSAGE value="simplified category filter default colors" />
@@ -507,6 +508,14 @@
     <MESSAGE value="added show all characters button" />
     <MESSAGE value="added a showCharactersPer10 function" />
     <MESSAGE value="fix bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
+    <MESSAGE value="reduced time dalayed" />
+    <MESSAGE value="added filter class file" />
+    <MESSAGE value="organized files" />
+    <MESSAGE value="improved filterCategory" />
+    <MESSAGE value="simplified filter Category" />
+    <MESSAGE value="improved filterType.js" />
+    <MESSAGE value="simplified filterClass.js" />
+    <MESSAGE value="fixed bugs in filterCategory.js and filterType.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bugs in filterCategory.js and filterType.js" />
   </component>
 </project>
