@@ -1,12 +1,11 @@
 .CategoriesFilter {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: flex-start;
 }
 
 .CategoriesFilterShow {
 	display: none;
 }
-
 
 .CategoriesSearch {
 	margin-top: 20px;
