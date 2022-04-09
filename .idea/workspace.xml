@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="removed unnecessary for in search category">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="done">
+      <change afterPath="$PROJECT_DIR$/JS/searchCharacter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/filterCategory.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/filterCategory.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterReset.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterReset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-load-the-characters-with-timestops-so-that-it-dosen't-lag-the-site" />
+        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-a-search-function-to-be-able-to-search-category-name" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -123,14 +128,7 @@
       <workItem from="1649359993843" duration="6094000" />
       <workItem from="1649392810090" duration="11386000" />
       <workItem from="1649448462852" duration="3840000" />
-      <workItem from="1649496963012" duration="637000" />
-    </task>
-    <task id="LOCAL-00034" summary="fixed links http and https for localhost">
-      <created>1648545651380</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1648545651380</updated>
+      <workItem from="1649496963012" duration="7974000" />
     </task>
     <task id="LOCAL-00035" summary="now filterType is working properply">
       <created>1648547094308</created>
@@ -468,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649452307731</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="done">
+      <created>1649497972001</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1649497972001</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +492,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="simplified category filter default colors" />
     <MESSAGE value="bug fixes" />
     <MESSAGE value="removed unnecessary classes" />
     <MESSAGE value="now rarity filter works with the all the other filters" />
@@ -512,6 +516,7 @@
     <MESSAGE value="fixed bugs in filterCategory.js and filterType.js" />
     <MESSAGE value="added a simple search category function" />
     <MESSAGE value="removed unnecessary for in search category" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed unnecessary for in search category" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
 </project>

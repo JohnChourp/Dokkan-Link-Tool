@@ -14,6 +14,7 @@
 	<script src="JS/filterClass.js" type="text/javascript"></script>
 	<script src="JS/filterRarity.js" type="text/javascript"></script>
 	<script src="JS/searchCategory.js" type="text/javascript"></script>
+	<script src="JS/searchCharacter.js" type="text/javascript"></script>
 	<title>Dokkan Link Tool</title>
 </head>
 <body onload="charInfo(); initTypeFilter(); initClassFilter(); hoverCategory(); filterRarity(); filterCategory();">
@@ -47,159 +48,228 @@
 </div>
 <div class="CategoriesSearch CategoriesSearchShow">
 	<input id="category-search-id" onkeyup="searchCategory();" placeholder="Search for Category..."
-	       title="Type in a name" type="text">
+	       title="Type in a category" type="text">
 </div>
 <div class="CategoriesFilter CategoriesFilterShow">
 	<div class="categoriesOrange">
-		<button class="categories-btn categories-btn-orange" id="ds" type="button"><span class="categories-btn-name gradient-text-filter">DB Saga</span>
+		<button class="categories-btn categories-btn-orange" id="ds" type="button"><span
+				class="categories-btn-name gradient-text-filter">DB Saga</span>
 		</button>
-		<button class="categories-btn categories-btn-orange" id="ssag" type="button"><span class="categories-btn-name gradient-text-filter">Saiyan Saga</span>
+		<button class="categories-btn categories-btn-orange" id="ssag" type="button"><span
+				class="categories-btn-name gradient-text-filter">Saiyan Saga</span>
 		</button>
-		<button class="categories-btn categories-btn-orange" id="pns" type="button"><span class="categories-btn-name gradient-text-filter">Planet Namek Saga</span>
+		<button class="categories-btn categories-btn-orange" id="pns" type="button"><span
+				class="categories-btn-name gradient-text-filter">Planet Namek Saga</span>
 		</button>
-		<button class="categories-btn categories-btn-orange" id="acs" type="button"><span class="categories-btn-name gradient-text-filter">Androids/Cell Saga</span>
+		<button class="categories-btn categories-btn-orange" id="acs" type="button"><span
+				class="categories-btn-name gradient-text-filter">Androids/Cell Saga</span>
 		</button>
-		<button class="categories-btn categories-btn-orange" id="mbs" type="button"><span class="categories-btn-name gradient-text-filter">Majin Buu Saga</span>
+		<button class="categories-btn categories-btn-orange" id="mbs" type="button"><span
+				class="categories-btn-name gradient-text-filter">Majin Buu Saga</span>
 		</button>
-		<button class="categories-btn categories-btn-orange" id="fs" type="button"><span class="categories-btn-name gradient-text-filter">Future Saga</span>
+		<button class="categories-btn categories-btn-orange" id="fs" type="button"><span
+				class="categories-btn-name gradient-text-filter">Future Saga</span>
 		</button>
-		<button class="categories-btn categories-btn-orange" id="uss" type="button"><span class="categories-btn-name gradient-text-filter">Universe Survival Saga</span>
+		<button class="categories-btn categories-btn-orange" id="uss" type="button"><span
+				class="categories-btn-name gradient-text-filter">Universe Survival Saga</span>
 		</button>
-		<button class="categories-btn categories-btn-orange" id="sds" type="button"><span class="categories-btn-name gradient-text-filter">Shadow Dragon Saga</span>
+		<button class="categories-btn categories-btn-orange" id="sds" type="button"><span
+				class="categories-btn-name gradient-text-filter">Shadow Dragon Saga</span>
 		</button>
 	</div>
 	<div class="categoriesGreen">
-		<button class="categories-btn categories-btn-green" id="ps" type="button"><span class="categories-btn-name gradient-text-filter">Pure Saiyans</span>
+		<button class="categories-btn categories-btn-green" id="ps" type="button"><span
+				class="categories-btn-name gradient-text-filter">Pure Saiyans</span>
 		</button>
-		<button class="categories-btn categories-btn-green" id="hs" type="button"><span class="categories-btn-name gradient-text-filter">Hybrid Saiyans</span>
+		<button class="categories-btn categories-btn-green" id="hs" type="button"><span
+				class="categories-btn-name gradient-text-filter">Hybrid Saiyans</span>
 		</button>
-		<button class="categories-btn categories-btn-green" id="e" type="button"><span class="categories-btn-name gradient-text-filter">Earthlings</span>
+		<button class="categories-btn categories-btn-green" id="e" type="button"><span
+				class="categories-btn-name gradient-text-filter">Earthlings</span>
 		</button>
-		<button class="categories-btn categories-btn-green" id="n" type="button"><span class="categories-btn-name gradient-text-filter">Namekians</span>
+		<button class="categories-btn categories-btn-green" id="n" type="button"><span
+				class="categories-btn-name gradient-text-filter">Namekians</span>
 		</button>
-		<button class="categories-btn categories-btn-green" id="a" type="button"><span class="categories-btn-name gradient-text-filter">Androids</span>
+		<button class="categories-btn categories-btn-green" id="a" type="button"><span
+				class="categories-btn-name gradient-text-filter">Androids</span>
 		</button>
-		<button class="categories-btn categories-btn-green" id="alf" type="button"><span class="categories-btn-name gradient-text-filter">Artificial Life Forms</span>
+		<button class="categories-btn categories-btn-green" id="alf" type="button"><span
+				class="categories-btn-name gradient-text-filter">Artificial Life Forms</span>
 		</button>
-		<button class="categories-btn categories-btn-green" id="gfa" type="button"><span class="categories-btn-name gradient-text-filter">Goku's Family</span>
+		<button class="categories-btn categories-btn-green" id="gfa" type="button"><span
+				class="categories-btn-name gradient-text-filter">Goku's Family</span>
 		</button>
-		<button class="categories-btn categories-btn-green" id="vf" type="button"><span class="categories-btn-name gradient-text-filter">Vegeta's Family</span>
+		<button class="categories-btn categories-btn-green" id="vf" type="button"><span
+				class="categories-btn-name gradient-text-filter">Vegeta's Family</span>
 		</button>
-		<button class="categories-btn categories-btn-green" id="wb" type="button"><span class="categories-btn-name gradient-text-filter">Wicked Bloodline</span>
+		<button class="categories-btn categories-btn-green" id="wb" type="button"><span
+				class="categories-btn-name gradient-text-filter">Wicked Bloodline</span>
 		</button>
-		<button class="categories-btn categories-btn-green" id="y" type="button"><span class="categories-btn-name gradient-text-filter">Youth</span>
+		<button class="categories-btn categories-btn-green" id="y" type="button"><span
+				class="categories-btn-name gradient-text-filter">Youth</span>
 		</button>
-		<button class="categories-btn categories-btn-green" id="pg" type="button"><span class="categories-btn-name gradient-text-filter">Peppy Gals</span>
+		<button class="categories-btn categories-btn-green" id="pg" type="button"><span
+				class="categories-btn-name gradient-text-filter">Peppy Gals</span>
 		</button>
 	</div>
 	<div class="categoriesYellow">
-		<button class="categories-btn categories-btn-yellow" id="ssa" type="button"><span class="categories-btn-name gradient-text-filter">Super Saiyans</span>
+		<button class="categories-btn categories-btn-yellow" id="ssa" type="button"><span
+				class="categories-btn-name gradient-text-filter">Super Saiyans</span>
 		</button>
-		<button class="categories-btn categories-btn-yellow" id="ss2" type="button"><span class="categories-btn-name gradient-text-filter">Super Saiyan 2</span>
+		<button class="categories-btn categories-btn-yellow" id="ss2" type="button"><span
+				class="categories-btn-name gradient-text-filter">Super Saiyan 2</span>
 		</button>
-		<button class="categories-btn categories-btn-yellow" id="ss3" type="button"><span class="categories-btn-name gradient-text-filter">Super Saiyan 3</span>
+		<button class="categories-btn categories-btn-yellow" id="ss3" type="button"><span
+				class="categories-btn-name gradient-text-filter">Super Saiyan 3</span>
 		</button>
-		<button class="categories-btn categories-btn-yellow" id="bss" type="button"><span class="categories-btn-name gradient-text-filter">Beyond Super Saiyan</span>
+		<button class="categories-btn categories-btn-yellow" id="bss" type="button"><span
+				class="categories-btn-name gradient-text-filter">Beyond Super Saiyan</span>
 		</button>
-		<button class="categories-btn categories-btn-yellow" id="f" type="button"><span class="categories-btn-name gradient-text-filter">Fusion</span>
+		<button class="categories-btn categories-btn-yellow" id="f" type="button"><span
+				class="categories-btn-name gradient-text-filter">Fusion</span>
 		</button>
-		<button class="categories-btn categories-btn-yellow" id="p" type="button"><span class="categories-btn-name gradient-text-filter">Potara</span>
+		<button class="categories-btn categories-btn-yellow" id="p" type="button"><span
+				class="categories-btn-name gradient-text-filter">Potara</span>
 		</button>
-		<button class="categories-btn categories-btn-yellow" id="ff" type="button"><span class="categories-btn-name gradient-text-filter">Fused Fighters</span>
+		<button class="categories-btn categories-btn-yellow" id="ff" type="button"><span
+				class="categories-btn-name gradient-text-filter">Fused Fighters</span>
 		</button>
-		<button class="categories-btn categories-btn-yellow" id="gfo" type="button"><span class="categories-btn-name gradient-text-filter">Giant Form</span>
+		<button class="categories-btn categories-btn-yellow" id="gfo" type="button"><span
+				class="categories-btn-name gradient-text-filter">Giant Form</span>
 		</button>
-		<button class="categories-btn categories-btn-yellow" id="tbo" type="button"><span class="categories-btn-name gradient-text-filter">Transformation Boost</span>
+		<button class="categories-btn categories-btn-yellow" id="tbo" type="button"><span
+				class="categories-btn-name gradient-text-filter">Transformation Boost</span>
 		</button>
-		<button class="categories-btn categories-btn-yellow" id="pa" type="button"><span class="categories-btn-name gradient-text-filter">Power Absorption</span>
+		<button class="categories-btn categories-btn-yellow" id="pa" type="button"><span
+				class="categories-btn-name gradient-text-filter">Power Absorption</span>
 		</button>
-		<button class="categories-btn categories-btn-yellow" id="k" type="button"><span class="categories-btn-name gradient-text-filter">Kamehameha</span>
+		<button class="categories-btn categories-btn-yellow" id="k" type="button"><span
+				class="categories-btn-name gradient-text-filter">Kamehameha</span>
 		</button>
 	</div>
 	<div class="categoriesCyan">
-		<button class="categories-btn categories-btn-cyan" id="rog" type="button"><span class="categories-btn-name gradient-text-filter">Realm of Gods</span>
+		<button class="categories-btn categories-btn-cyan" id="rog" type="button"><span
+				class="categories-btn-name gradient-text-filter">Realm of Gods</span>
 		</button>
-		<button class="categories-btn categories-btn-cyan" id="fp" type="button"><span class="categories-btn-name gradient-text-filter">Full Power</span>
+		<button class="categories-btn categories-btn-cyan" id="fp" type="button"><span
+				class="categories-btn-name gradient-text-filter">Full Power</span>
 		</button>
-		<button class="categories-btn categories-btn-cyan" id="gap" type="button"><span class="categories-btn-name gradient-text-filter">Giant Ape Power</span>
+		<button class="categories-btn categories-btn-cyan" id="gap" type="button"><span
+				class="categories-btn-name gradient-text-filter">Giant Ape Power</span>
 		</button>
-		<button class="categories-btn categories-btn-cyan" id="mp" type="button"><span class="categories-btn-name gradient-text-filter">Majin Power</span>
+		<button class="categories-btn categories-btn-cyan" id="mp" type="button"><span
+				class="categories-btn-name gradient-text-filter">Majin Power</span>
 		</button>
-		<button class="categories-btn categories-btn-cyan" id="pc" type="button"><span class="categories-btn-name gradient-text-filter">Powerful Comeback</span>
+		<button class="categories-btn categories-btn-cyan" id="pc" type="button"><span
+				class="categories-btn-name gradient-text-filter">Powerful Comeback</span>
 		</button>
-		<button class="categories-btn categories-btn-cyan" id="ma" type="button"><span class="categories-btn-name gradient-text-filter">Miraculous Awakening</span>
+		<button class="categories-btn categories-btn-cyan" id="ma" type="button"><span
+				class="categories-btn-name gradient-text-filter">Miraculous Awakening</span>
 		</button>
-		<button class="categories-btn categories-btn-cyan" id="cbam" type="button"><span class="categories-btn-name gradient-text-filter">Corroded Body and Mind</span>
+		<button class="categories-btn categories-btn-cyan" id="cbam" type="button"><span
+				class="categories-btn-name gradient-text-filter">Corroded Body and Mind</span>
 		</button>
-		<button class="categories-btn categories-btn-cyan" id="rg" type="button"><span class="categories-btn-name gradient-text-filter">Rapid Growth</span>
+		<button class="categories-btn categories-btn-cyan" id="rg" type="button"><span
+				class="categories-btn-name gradient-text-filter">Rapid Growth</span>
 		</button>
-		<button class="categories-btn categories-btn-cyan" id="me" type="button"><span class="categories-btn-name gradient-text-filter">Mastered Evolution</span>
+		<button class="categories-btn categories-btn-cyan" id="me" type="button"><span
+				class="categories-btn-name gradient-text-filter">Mastered Evolution</span>
 		</button>
-		<button class="categories-btn categories-btn-cyan" id="tl" type="button"><span class="categories-btn-name gradient-text-filter">Time Limit</span>
+		<button class="categories-btn categories-btn-cyan" id="tl" type="button"><span
+				class="categories-btn-name gradient-text-filter">Time Limit</span>
 		</button>
-		<button class="categories-btn categories-btn-cyan" id="ftc" type="button"><span class="categories-btn-name gradient-text-filter">Final Trump Card</span>
+		<button class="categories-btn categories-btn-cyan" id="ftc" type="button"><span
+				class="categories-btn-name gradient-text-filter">Final Trump Card</span>
 		</button>
 	</div>
 	<div class="categoriesBlue">
-		<button class="categories-btn categories-btn-blue" id="wr" type="button"><span class="categories-btn-name gradient-text-filter">Worthy Rivals</span>
+		<button class="categories-btn categories-btn-blue" id="wr" type="button"><span
+				class="categories-btn-name gradient-text-filter">Worthy Rivals</span>
 		</button>
-		<button class="categories-btn categories-btn-blue" id="se" type="button"><span class="categories-btn-name gradient-text-filter">Sworn Enemies</span>
+		<button class="categories-btn categories-btn-blue" id="se" type="button"><span
+				class="categories-btn-name gradient-text-filter">Sworn Enemies</span>
 		</button>
-		<button class="categories-btn categories-btn-blue" id="jf" type="button"><span class="categories-btn-name gradient-text-filter">Joined Forces</span>
+		<button class="categories-btn categories-btn-blue" id="jf" type="button"><span
+				class="categories-btn-name gradient-text-filter">Joined Forces</span>
 		</button>
-		<button class="categories-btn categories-btn-blue" id="sb" type="button"><span class="categories-btn-name gradient-text-filter">Siblings' Bond</span>
+		<button class="categories-btn categories-btn-blue" id="sb" type="button"><span
+				class="categories-btn-name gradient-text-filter">Siblings' Bond</span>
 		</button>
-		<button class="categories-btn categories-btn-blue" id="bofr" type="button"><span class="categories-btn-name gradient-text-filter">Bond of Friendship</span>
+		<button class="categories-btn categories-btn-blue" id="bofr" type="button"><span
+				class="categories-btn-name gradient-text-filter">Bond of Friendship</span>
 		</button>
-		<button class="categories-btn categories-btn-blue" id="bomad" type="button"><span class="categories-btn-name gradient-text-filter">Bond of Master and Disciple</span>
+		<button class="categories-btn categories-btn-blue" id="bomad" type="button"><span
+				class="categories-btn-name gradient-text-filter">Bond of Master and Disciple</span>
 		</button>
 	</div>
 	<div class="categoriesPurple">
-		<button class="categories-btn categories-btn-purple" id="gf" type="button"><span class="categories-btn-name gradient-text-filter">Ginyu Force</span>
+		<button class="categories-btn categories-btn-purple" id="gf" type="button"><span
+				class="categories-btn-name gradient-text-filter">Ginyu Force</span>
 		</button>
-		<button class="categories-btn categories-btn-purple" id="tba" type="button"><span class="categories-btn-name gradient-text-filter">Team Bardock</span>
+		<button class="categories-btn categories-btn-purple" id="tba" type="button"><span
+				class="categories-btn-name gradient-text-filter">Team Bardock</span>
 		</button>
-		<button class="categories-btn categories-btn-purple" id="u6" type="button"><span class="categories-btn-name gradient-text-filter">Universe 6</span>
+		<button class="categories-btn categories-btn-purple" id="u6" type="button"><span
+				class="categories-btn-name gradient-text-filter">Universe 6</span>
 		</button>
-		<button class="categories-btn categories-btn-purple" id="rou7" type="button"><span class="categories-btn-name gradient-text-filter">Representatives of Universe 7</span>
+		<button class="categories-btn categories-btn-purple" id="rou7" type="button"><span
+				class="categories-btn-name gradient-text-filter">Representatives of Universe 7</span>
 		</button>
-		<button class="categories-btn categories-btn-purple" id="u11" type="button"><span class="categories-btn-name gradient-text-filter">Universe 11</span>
+		<button class="categories-btn categories-btn-purple" id="u11" type="button"><span
+				class="categories-btn-name gradient-text-filter">Universe 11</span>
 		</button>
-		<button class="categories-btn categories-btn-purple" id="gh" type="button"><span class="categories-btn-name gradient-text-filter">GT Heroes</span>
+		<button class="categories-btn categories-btn-purple" id="gh" type="button"><span
+				class="categories-btn-name gradient-text-filter">GT Heroes</span>
 		</button>
-		<button class="categories-btn categories-btn-purple" id="gb" type="button"><span class="categories-btn-name gradient-text-filter">GT Bosses</span>
+		<button class="categories-btn categories-btn-purple" id="gb" type="button"><span
+				class="categories-btn-name gradient-text-filter">GT Bosses</span>
 		</button>
-		<button class="categories-btn categories-btn-purple" id="mh" type="button"><span class="categories-btn-name gradient-text-filter">Movie Heroes</span>
+		<button class="categories-btn categories-btn-purple" id="mh" type="button"><span
+				class="categories-btn-name gradient-text-filter">Movie Heroes</span>
 		</button>
-		<button class="categories-btn categories-btn-purple" id="mb" type="button"><span class="categories-btn-name gradient-text-filter">Movie Bosses</span>
+		<button class="categories-btn categories-btn-purple" id="mb" type="button"><span
+				class="categories-btn-name gradient-text-filter">Movie Bosses</span>
 		</button>
-		<button class="categories-btn categories-btn-purple" id="ts" type="button"><span class="categories-btn-name gradient-text-filter">Turtle School</span>
+		<button class="categories-btn categories-btn-purple" id="ts" type="button"><span
+				class="categories-btn-name gradient-text-filter">Turtle School</span>
 		</button>
-		<button class="categories-btn categories-btn-purple" id="wt" type="button"><span class="categories-btn-name gradient-text-filter">World Tournament</span>
+		<button class="categories-btn categories-btn-purple" id="wt" type="button"><span
+				class="categories-btn-name gradient-text-filter">World Tournament</span>
 		</button>
 	</div>
 	<div class="categoriesRed">
-		<button class="categories-btn categories-btn-red" id="lcw" type="button"><span class="categories-btn-name gradient-text-filter">Low-Class Warrior</span>
+		<button class="categories-btn categories-btn-red" id="lcw" type="button"><span
+				class="categories-btn-name gradient-text-filter">Low-Class Warrior</span>
 		</button>
-		<button class="categories-btn categories-btn-red" id="gw" type="button"><span class="categories-btn-name gradient-text-filter">Gifted Warriors</span>
+		<button class="categories-btn categories-btn-red" id="gw" type="button"><span
+				class="categories-btn-name gradient-text-filter">Gifted Warriors</span>
 		</button>
-		<button class="categories-btn categories-btn-red" id="ow" type="button"><span class="categories-btn-name gradient-text-filter">Otherworld Warriors</span>
+		<button class="categories-btn categories-btn-red" id="ow" type="button"><span
+				class="categories-btn-name gradient-text-filter">Otherworld Warriors</span>
 		</button>
-		<button class="categories-btn categories-btn-red" id="rw" type="button"><span class="categories-btn-name gradient-text-filter">Resurrected Warriors</span>
+		<button class="categories-btn categories-btn-red" id="rw" type="button"><span
+				class="categories-btn-name gradient-text-filter">Resurrected Warriors</span>
 		</button>
-		<button class="categories-btn categories-btn-red" id="stw" type="button"><span class="categories-btn-name gradient-text-filter">Space-Traveling Warriors</span>
+		<button class="categories-btn categories-btn-red" id="stw" type="button"><span
+				class="categories-btn-name gradient-text-filter">Space-Traveling Warriors</span>
 		</button>
-		<button class="categories-btn categories-btn-red" id="tt" type="button"><span class="categories-btn-name gradient-text-filter">Time Travelers</span>
+		<button class="categories-btn categories-btn-red" id="tt" type="button"><span
+				class="categories-btn-name gradient-text-filter">Time Travelers</span>
 		</button>
-		<button class="categories-btn categories-btn-red" id="dbs" type="button"><span class="categories-btn-name gradient-text-filter">Dragon Ball Seekers</span>
+		<button class="categories-btn categories-btn-red" id="dbs" type="button"><span
+				class="categories-btn-name gradient-text-filter">Dragon Ball Seekers</span>
 		</button>
-		<button class="categories-btn categories-btn-red" id="sf" type="button"><span class="categories-btn-name gradient-text-filter">Storied Figures</span>
+		<button class="categories-btn categories-btn-red" id="sf" type="button"><span
+				class="categories-btn-name gradient-text-filter">Storied Figures</span>
 		</button>
-		<button class="categories-btn categories-btn-red" id="le" type="button"><span class="categories-btn-name gradient-text-filter">Legendary Existence</span>
+		<button class="categories-btn categories-btn-red" id="le" type="button"><span
+				class="categories-btn-name gradient-text-filter">Legendary Existence</span>
 		</button>
-		<button class="categories-btn categories-btn-red" id="s" type="button"><span class="categories-btn-name gradient-text-filter">Saviors</span>
+		<button class="categories-btn categories-btn-red" id="s" type="button"><span
+				class="categories-btn-name gradient-text-filter">Saviors</span>
 		</button>
-		<button class="categories-btn categories-btn-red" id="doj" type="button"><span class="categories-btn-name gradient-text-filter">Defenders of Justice</span>
+		<button class="categories-btn categories-btn-red" id="doj" type="button"><span
+				class="categories-btn-name gradient-text-filter">Defenders of Justice</span>
 		</button>
 	</div>
 	<div class="categoriesDarkGreen">
@@ -235,69 +305,74 @@
 				class="categories-btn-name gradient-text-filter">Worldwide Chaos</span></button>
 	</div>
 	<div class="categoriesDarkBlue">
-		<button class="categories-btn categories-btn-dark-blue" id="c" type="button"><span class="categories-btn-name gradient-text-filter">Crossover</span>
+		<button class="categories-btn categories-btn-dark-blue" id="c" type="button"><span
+				class="categories-btn-name gradient-text-filter">Crossover</span>
 		</button>
 		<button class="categories-btn categories-btn-dark-blue" id="dbh" type="button"><span
 				class="categories-btn-name gradient-text-filter">Dragon Ball Heroes</span></button>
 	</div>
 </div>
+<div class="CharacterSearch CharacterSearchShow">
+	<input id="character-search-id" onkeyup="searchCharacter();" placeholder="Search for Character..."
+	       title="Type in a name" type="text">
+</div>
 <div class="container-cards" style="display:none">
 	<div class="flex-cards">
-		<div class="categories ps gfa ssa k ts bofr">
+		<div class="categories ps gfa ssa k ts bofr" data-char="Super Saiyan Goku Supreme Warrior Awakened">
 			<div class="char-base-type-margin">agl</div>
 			<div class="card-thumb-margin">1000010</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">ssr</div>
 		</div>
-		<div class="categories hs gfa y er ssag">
+		<div class="categories hs gfa y er ssag" data-char="Gohan Kid Slumbering Strength">
 			<div class="char-base-type-margin">teq</div>
 			<div class="card-thumb-margin">2000020</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">r</div>
 		</div>
-		<div class="categories ps vf ssa acs gw me">
+		<div class="categories ps vf ssa acs gw me" data-char="Super Saiyan Vegeta Pride Regained">
 			<div class="char-base-type-margin">teq</div>
 			<div class="card-thumb-margin">1000020</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">ssr</div>
 		</div>
-		<div class="categories lcw pns ps gfa k s ts bofr">
+		<div class="categories lcw pns ps gfa k s ts bofr" data-char="Goku The Saiyan Among Us">
 			<div class="char-base-type-margin">str</div>
 			<div class="card-thumb-margin">1000030</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories tbo wb tc ide gw pd se">
+		<div class="categories tbo wb tc ide gw pd se" data-char="Frieza 1st Form Severance of All Hope">
 			<div class="char-base-type-margin">int</div>
 			<div class="card-thumb-margin">2000040</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories ps dbs vf tc ide stw gw pd bofa ssag">
+		<div class="categories ps dbs vf tc ide stw gw pd bofa ssag" data-char="Vegeta Genius of War">
 			<div class="char-base-type-margin">teq</div>
 			<div class="card-thumb-margin">1000040</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories ps vf y tc stw gw">
+		<div class="categories ps vf y tc stw gw" data-char="Vegeta Kid Prince of Destiny">
 			<div class="char-base-type-margin">int</div>
 			<div class="card-thumb-margin">2000050</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories pns tb wb tc ide stw gw pd se">
+		<div class="categories pns tb wb tc ide stw gw pd se" data-char="Frieza 1st Form Emperor of Iniquity">
 			<div class="char-base-type-margin">str</div>
 			<div class="card-thumb-margin">1000050</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories ps dbs vf tc ide stw gw pd ab bofa ssag">
+		<div class="categories ps dbs vf tc ide stw gw pd ab bofa ssag" data-char="Vegeta Saiyan Elite">
 			<div class="char-base-type-margin">agl</div>
 			<div class="card-thumb-margin">2000060</div>
 			<div class="card-type-margin">normal</div>
 			<div class="card-rarity-margin">sr</div>
 		</div>
-		<div class="categories pns tb wb tc ide stw gw pd se">
+		<div class="categories pns tb wb tc ide stw gw pd se" data-char="Frieza 1st Form Despair's Onslaught">
 			<div class="char-base-type-margin">str</div>
 			<div class="card-thumb-margin">1000060</div>
 			<div class="card-type-margin">normal</div>

@@ -170,4 +170,5 @@ function ShowAllCharacters(){
 			})
 		}
 	}
+	document.getElementsByClassName("CharacterSearch").item(0).classList.remove("CharacterSearchShow");
 }
