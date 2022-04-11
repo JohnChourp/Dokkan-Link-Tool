@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="simplifed searchCategory.js and added searchCharacter.js">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added name to the first 500 characters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/charInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/charInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/searchCharacter.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/searchCharacter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,14 +128,8 @@
       <workItem from="1649392810090" duration="11386000" />
       <workItem from="1649448462852" duration="3840000" />
       <workItem from="1649496963012" duration="8885000" />
-      <workItem from="1649595035334" duration="10446000" />
-    </task>
-    <task id="LOCAL-00036" summary="now simple type filters are only show normal type">
-      <created>1648549283731</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1648549283731</updated>
+      <workItem from="1649595035334" duration="10622000" />
+      <workItem from="1649654868023" duration="4787000" />
     </task>
     <task id="LOCAL-00037" summary="added super and extreme type filter for full match search">
       <created>1648570472566</created>
@@ -470,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649505648908</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="added name to the first 500 characters">
+      <created>1649607756885</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1649607756885</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="removed unnecessary classes" />
     <MESSAGE value="now rarity filter works with the all the other filters" />
     <MESSAGE value="simplified filterRarity" />
     <MESSAGE value="simplified filterType" />
@@ -514,6 +517,7 @@
     <MESSAGE value="removed unnecessary for in search category" />
     <MESSAGE value="done" />
     <MESSAGE value="simplifed searchCategory.js and added searchCharacter.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="simplifed searchCategory.js and added searchCharacter.js" />
+    <MESSAGE value="added name to the first 500 characters" />
+    <option name="LAST_COMMIT_MESSAGE" value="added name to the first 500 characters" />
   </component>
 </project>

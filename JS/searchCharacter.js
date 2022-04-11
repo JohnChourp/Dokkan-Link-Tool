@@ -1,6 +1,6 @@
 function searchCharacter(){
-	let itemsData = 'data-char';
-	let filterItems = document.querySelectorAll('[' + itemsData + ']');
+	let dataChar = 'data-char';
+	let dataCharItems = document.querySelectorAll('[' + dataChar + ']');
 	let categories = document.getElementsByClassName("categories");
 	let characterSearchId = document.getElementById("character-search-id");
 	
@@ -9,7 +9,7 @@ function searchCharacter(){
 	}
 	
 	for(let i = 0; i < categories.length; i ++){
-		if(filterItems[i].getAttribute('data-char').toLowerCase().indexOf(characterSearchId.value.toLowerCase()) >= 0){
+		if(dataCharItems[i].getAttribute(dataChar).toLowerCase().indexOf(characterSearchId.value.toLowerCase()) >= 0){
 			categories.item(i).style.display = "inline-block";
 		}else{
 			categories.item(i).style.display = "none";

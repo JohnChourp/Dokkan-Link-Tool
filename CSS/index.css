@@ -12,9 +12,8 @@ body {
 	flex-wrap: wrap;
 }
 
-.char-base-type {
-	height: 90px;
-	width: 90px;
+.categories {
+	animation: nav-load var(--nav-load-time) ease-in;
 }
 
 .char-base-type-margin {
@@ -22,19 +21,9 @@ body {
 	margin-left: 50px;
 }
 
-.card-thumb {
-	height: 110px;
-	width: 110px;
-}
-
 .card-thumb-margin {
 	margin-top: -108px;
 	margin-left: 40px;
-}
-
-.card-type {
-	height: 40px;
-	width: 40px;
 }
 
 .card-type-margin {
@@ -42,18 +31,29 @@ body {
 	margin-top: -125px;
 }
 
-.card-rarity {
-	height: 45px;
-	width: 45px;
-}
-
 .card-rarity-margin {
 	margin-left: 45px;
 	margin-top: 30px;
 }
 
-.categories {
-	animation: nav-load var(--nav-load-time) ease-in;
+.char-base-type {
+	height: 90px;
+	width: 90px;
+}
+
+.card-thumb {
+	height: 110px;
+	width: 110px;
+}
+
+.card-type {
+	height: 40px;
+	width: 40px;
+}
+
+.card-rarity {
+	height: 45px;
+	width: 45px;
 }
 
 @keyframes nav-load {
