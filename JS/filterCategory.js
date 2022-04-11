@@ -328,6 +328,7 @@ function showFilterCategory(){
 function showAllFilter(){
 	document.getElementsByClassName("CategoriesFilter").item(0).classList.remove("CategoriesFilterShow");
 	document.getElementsByClassName("CategoriesSearch").item(0).classList.remove("CategoriesSearchShow");
+	document.getElementsByClassName("CharacterSearch").item(0).classList.remove("CharacterSearchShow");
 	document.getElementsByClassName("classFilter").item(0).classList.remove("classFilterShow");
 	document.getElementsByClassName("rarityFilter").item(0).classList.remove("rarityFilterShow");
 	document.getElementsByClassName("typeFilter").item(0).classList.remove("typeFilterShow");

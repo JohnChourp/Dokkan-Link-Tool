@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="removed unnecessary for in search category">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added the first 200 characters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-load-the-characters-with-timestops-so-that-it-dosen't-lag-the-site" />
+        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-a-search-function-to-be-able-to-search-category-name" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -123,56 +124,12 @@
       <workItem from="1649359993843" duration="6094000" />
       <workItem from="1649392810090" duration="11386000" />
       <workItem from="1649448462852" duration="3840000" />
-      <workItem from="1649496963012" duration="637000" />
-    </task>
-    <task id="LOCAL-00034" summary="fixed links http and https for localhost">
-      <created>1648545651380</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1648545651380</updated>
-    </task>
-    <task id="LOCAL-00035" summary="now filterType is working properply">
-      <created>1648547094308</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1648547094308</updated>
-    </task>
-    <task id="LOCAL-00036" summary="now simple type filters are only show normal type">
-      <created>1648549283731</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1648549283731</updated>
-    </task>
-    <task id="LOCAL-00037" summary="added super and extreme type filter for full match search">
-      <created>1648570472566</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1648570472566</updated>
-    </task>
-    <task id="LOCAL-00038" summary="added super and extreme type filter for partial match search">
-      <created>1648571175201</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1648571175201</updated>
-    </task>
-    <task id="LOCAL-00039" summary="bug fixing">
-      <created>1648572077303</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1648572077303</updated>
-    </task>
-    <task id="LOCAL-00040" summary="added 50 more characters">
-      <created>1648577224700</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1648577224700</updated>
+      <workItem from="1649496963012" duration="8885000" />
+      <workItem from="1649595035334" duration="10622000" />
+      <workItem from="1649654868023" duration="9301000" />
+      <workItem from="1649664757841" duration="734000" />
+      <workItem from="1649665962792" duration="595000" />
+      <workItem from="1649693942787" duration="9847000" />
     </task>
     <task id="LOCAL-00041" summary="added all series 2 and 3 character">
       <created>1648626575432</created>
@@ -468,7 +425,56 @@
       <option name="project" value="LOCAL" />
       <updated>1649452307731</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="done">
+      <created>1649497972001</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1649497972001</updated>
+    </task>
+    <task id="LOCAL-00084" summary="simplifed searchCategory.js and added searchCharacter.js">
+      <created>1649505648908</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1649505648908</updated>
+    </task>
+    <task id="LOCAL-00085" summary="added name to the first 500 characters">
+      <created>1649607756885</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1649607756885</updated>
+    </task>
+    <task id="LOCAL-00086" summary="organized index.html and now all the information for the character are better imported from js">
+      <created>1649659850701</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1649659850701</updated>
+    </task>
+    <task id="LOCAL-00087" summary="simplified charInfo.js">
+      <created>1649664430059</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1649664430059</updated>
+    </task>
+    <task id="LOCAL-00088" summary="minor bug fixes">
+      <created>1649665199834</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1649665199834</updated>
+    </task>
+    <task id="LOCAL-00089" summary="added the first 200 characters">
+      <created>1649701444249</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1649701444250</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,13 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="simplified category filter default colors" />
-    <MESSAGE value="bug fixes" />
-    <MESSAGE value="removed unnecessary classes" />
-    <MESSAGE value="now rarity filter works with the all the other filters" />
-    <MESSAGE value="simplified filterRarity" />
-    <MESSAGE value="simplified filterType" />
-    <MESSAGE value="simplified filterFullMatch.js" />
     <MESSAGE value="simplified filterType.js" />
     <MESSAGE value="improved filterPartialMatch.js" />
     <MESSAGE value="fixed partial match" />
@@ -512,6 +511,13 @@
     <MESSAGE value="fixed bugs in filterCategory.js and filterType.js" />
     <MESSAGE value="added a simple search category function" />
     <MESSAGE value="removed unnecessary for in search category" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed unnecessary for in search category" />
+    <MESSAGE value="done" />
+    <MESSAGE value="simplifed searchCategory.js and added searchCharacter.js" />
+    <MESSAGE value="added name to the first 500 characters" />
+    <MESSAGE value="organized index.html and now all the information for the character are better imported from js" />
+    <MESSAGE value="simplified charInfo.js" />
+    <MESSAGE value="minor bug fixes" />
+    <MESSAGE value="added the first 200 characters" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the first 200 characters" />
   </component>
 </project>
