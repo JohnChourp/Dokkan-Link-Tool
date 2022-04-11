@@ -12,356 +12,87 @@ function charInfo(){
 	let categories = document.getElementsByClassName("categories");
 	
 	function addCharThumbImage(charThumbImage , i , charThumbImageDiv){
-		charThumbImage.classList.add("card-thumb");
 		charThumbImage.src = "CharacterThumb/card_" + dataIdItems[i].getAttribute(dataId) + "_thumb.png";
-		charThumbImageDiv.classList.add("card-thumb-margin");
 		charThumbImageDiv.appendChild(charThumbImage);
 		categories.item(i).appendChild(charThumbImageDiv);
 	}
 	
 	for(let i = 0; i < categories.length; i ++){
 		let charBaseTypeDiv = document.createElement("div");
+		charBaseTypeDiv.classList.add("char-base-type-margin");
 		let charThumbImageDiv = document.createElement("div");
-		let charClassImageDiv = document.createElement("div");
+		charThumbImageDiv.classList.add("card-thumb-margin");
+		let charTypeImageDiv = document.createElement("div");
+		charTypeImageDiv.classList.add("card-type-margin");
 		let charRarityImageDiv = document.createElement("div");
-		
+		charRarityImageDiv.classList.add("card-rarity-margin");
 		let charBaseTypeImage = document.createElement("img");
+		charBaseTypeImage.classList.add("char-base-type");
 		let charThumbImage = document.createElement("img");
+		charThumbImage.classList.add("card-thumb");
 		let charTypeImage = document.createElement("img");
+		charTypeImage.classList.add("card-type");
 		let charRarityImage = document.createElement("img");
-
+		charRarityImage.classList.add("card-rarity");
+		
 		if(dataTypeItems[i].getAttribute(dataType) === "agl"){
 			if(((dataRarityItems[i].getAttribute(dataRarity) === "lr") || (dataRarityItems[i].getAttribute(dataRarity) === "ur") || (dataRarityItems[i].getAttribute(dataRarity) === "ssr"))){
-				charBaseTypeImage.classList.add("char-base-type");
 				charBaseTypeImage.src = "CharacterBase/char_base_agl.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
 			}
-			if((dataRarityItems[i].getAttribute(dataRarity) === "sr")){
-				charBaseTypeImage.classList.add("char-base-type");
-				charBaseTypeImage.src = "CharacterBase/char_base_agl_sr.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
-			}
-			if((dataRarityItems[i].getAttribute(dataRarity) === "r")){
-				charBaseTypeImage.classList.add("char-base-type");
-				charBaseTypeImage.src = "CharacterBase/char_base_agl_r.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
-			}
-			if((dataRarityItems[i].getAttribute(dataRarity) === "n")){
-				charBaseTypeImage.classList.add("char-base-type");
-				charBaseTypeImage.src = "CharacterBase/char_base_agl_n.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
-			}
-			
-			addCharThumbImage(charThumbImage , i , charThumbImageDiv);
-			
-			if(dataClassItems[i].getAttribute(dataClass) === "normal"){
-				charTypeImage.classList.add("card-type");
-				charTypeImage.src = "CharacterType/char_type_agl.png";
-				charClassImageDiv.classList.add("card-type-margin");
-				charClassImageDiv.appendChild(charTypeImage);
-				categories.item(i).appendChild(charClassImageDiv);
-			}
-			
-			if(dataClassItems[i].getAttribute(dataClass) === "super"){
-				charTypeImage.classList.add("card-type");
-				charTypeImage.src = "CharacterType/char_type_super_agl.png";
-				charClassImageDiv.classList.add("card-type-margin");
-				charClassImageDiv.appendChild(charTypeImage);
-				categories.item(i).appendChild(charClassImageDiv);
-			}
-			
-			if(dataClassItems[i].getAttribute(dataClass) === "extreme"){
-				charTypeImage.classList.add("card-type");
-				charTypeImage.src = "CharacterType/char_type_extreme_agl.png";
-				charClassImageDiv.classList.add("card-type-margin");
-				charClassImageDiv.appendChild(charTypeImage);
-				categories.item(i).appendChild(charClassImageDiv);
+			if((dataRarityItems[i].getAttribute(dataRarity) === "sr") || (dataRarityItems[i].getAttribute(dataRarity) === "r") || (dataRarityItems[i].getAttribute(dataRarity) === "n")){
+				charBaseTypeImage.src = "CharacterBase/char_base_agl_" + dataRarityItems[i].getAttribute(dataRarity) + ".png";
 			}
 		}
 		
 		if(dataTypeItems[i].getAttribute(dataType) === "int"){
 			if((dataRarityItems[i].getAttribute(dataRarity) === "lr") || (dataRarityItems[i].getAttribute(dataRarity) === "ur") || (dataRarityItems[i].getAttribute(dataRarity) === "ssr")){
-				charBaseTypeImage.classList.add("char-base-type");
 				charBaseTypeImage.src = "CharacterBase/char_base_int.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
 			}
-			if((dataRarityItems[i].getAttribute(dataRarity) === "sr")){
-				charBaseTypeImage.classList.add("char-base-type");
-				charBaseTypeImage.src = "CharacterBase/char_base_int_sr.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
-			}
-			if((dataRarityItems[i].getAttribute(dataRarity) === "r")){
-				charBaseTypeImage.classList.add("char-base-type");
-				charBaseTypeImage.src = "CharacterBase/char_base_int_r.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
-			}
-			if((dataRarityItems[i].getAttribute(dataRarity) === "n")){
-				charBaseTypeImage.classList.add("char-base-type");
-				charBaseTypeImage.src = "CharacterBase/char_base_int_n.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
-			}
-			
-			addCharThumbImage(charThumbImage , i , charThumbImageDiv);
-			
-			if(dataClassItems[i].getAttribute(dataClass) === "normal"){
-				charTypeImage.classList.add("card-type");
-				charTypeImage.src = "CharacterType/char_type_int.png";
-				charClassImageDiv.classList.add("card-type-margin");
-				charClassImageDiv.appendChild(charTypeImage);
-				categories.item(i).appendChild(charClassImageDiv);
-			}
-			
-			if(dataClassItems[i].getAttribute(dataClass) === "super"){
-				charTypeImage.classList.add("card-type");
-				charTypeImage.src = "CharacterType/char_type_super_int.png";
-				charClassImageDiv.classList.add("card-type-margin");
-				charClassImageDiv.appendChild(charTypeImage);
-				categories.item(i).appendChild(charClassImageDiv);
-			}
-			
-			if(dataClassItems[i].getAttribute(dataClass) === "extreme"){
-				charTypeImage.classList.add("card-type");
-				charTypeImage.src = "CharacterType/char_type_extreme_int.png";
-				charClassImageDiv.classList.add("card-type-margin");
-				charClassImageDiv.appendChild(charTypeImage);
-				categories.item(i).appendChild(charClassImageDiv);
+			if((dataRarityItems[i].getAttribute(dataRarity) === "sr") || (dataRarityItems[i].getAttribute(dataRarity) === "r") || (dataRarityItems[i].getAttribute(dataRarity) === "n")){
+				charBaseTypeImage.src = "CharacterBase/char_base_int_" + dataRarityItems[i].getAttribute(dataRarity) + ".png";
 			}
 		}
 		
 		if(dataTypeItems[i].getAttribute(dataType) === "phy"){
 			if((dataRarityItems[i].getAttribute(dataRarity) === "lr") || (dataRarityItems[i].getAttribute(dataRarity) === "ur") || (dataRarityItems[i].getAttribute(dataRarity) === "ssr")){
-				charBaseTypeImage.classList.add("char-base-type");
 				charBaseTypeImage.src = "CharacterBase/char_base_phy.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
 			}
-			if((dataRarityItems[i].getAttribute(dataRarity) === "sr")){
-				charBaseTypeImage.classList.add("char-base-type");
-				charBaseTypeImage.src = "CharacterBase/char_base_phy_sr.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
-			}
-			if((dataRarityItems[i].getAttribute(dataRarity) === "r")){
-				charBaseTypeImage.classList.add("char-base-type");
-				charBaseTypeImage.src = "CharacterBase/char_base_phy_r.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
-			}
-			if((dataRarityItems[i].getAttribute(dataRarity) === "n")){
-				charBaseTypeImage.classList.add("char-base-type");
-				charBaseTypeImage.src = "CharacterBase/char_base_phy_n.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
-			}
-			
-			addCharThumbImage(charThumbImage , i , charThumbImageDiv);
-			
-			if(dataClassItems[i].getAttribute(dataClass) === "normal"){
-				charTypeImage.classList.add("card-type");
-				charTypeImage.src = "CharacterType/char_type_phy.png";
-				charClassImageDiv.classList.add("card-type-margin");
-				charClassImageDiv.appendChild(charTypeImage);
-				categories.item(i).appendChild(charClassImageDiv);
-			}
-			
-			if(dataClassItems[i].getAttribute(dataClass) === "super"){
-				charTypeImage.classList.add("card-type");
-				charTypeImage.src = "CharacterType/char_type_super_phy.png";
-				charClassImageDiv.classList.add("card-type-margin");
-				charClassImageDiv.appendChild(charTypeImage);
-				categories.item(i).appendChild(charClassImageDiv);
-			}
-			
-			if(dataClassItems[i].getAttribute(dataClass) === "extreme"){
-				charTypeImage.classList.add("card-type");
-				charTypeImage.src = "CharacterType/char_type_extreme_phy.png";
-				charClassImageDiv.classList.add("card-type-margin");
-				charClassImageDiv.appendChild(charTypeImage);
-				categories.item(i).appendChild(charClassImageDiv);
+			if((dataRarityItems[i].getAttribute(dataRarity) === "sr") || (dataRarityItems[i].getAttribute(dataRarity) === "r") || (dataRarityItems[i].getAttribute(dataRarity) === "n")){
+				charBaseTypeImage.src = "CharacterBase/char_base_phy_" + dataRarityItems[i].getAttribute(dataRarity) + ".png";
 			}
 		}
 		
 		if(dataTypeItems[i].getAttribute(dataType) === "str"){
 			if((dataRarityItems[i].getAttribute(dataRarity) === "lr") || (dataRarityItems[i].getAttribute(dataRarity) === "ur") || (dataRarityItems[i].getAttribute(dataRarity) === "ssr")){
-				charBaseTypeImage.classList.add("char-base-type");
 				charBaseTypeImage.src = "CharacterBase/char_base_str.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
 			}
-			if((dataRarityItems[i].getAttribute(dataRarity) === "sr")){
-				charBaseTypeImage.classList.add("char-base-type");
-				charBaseTypeImage.src = "CharacterBase/char_base_str_sr.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
-			}
-			if((dataRarityItems[i].getAttribute(dataRarity) === "r")){
-				charBaseTypeImage.classList.add("char-base-type");
-				charBaseTypeImage.src = "CharacterBase/char_base_str_r.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
-			}
-			if((dataRarityItems[i].getAttribute(dataRarity) === "n")){
-				charBaseTypeImage.classList.add("char-base-type");
-				charBaseTypeImage.src = "CharacterBase/char_base_str_n.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
-			}
-			
-			addCharThumbImage(charThumbImage , i , charThumbImageDiv);
-			
-			if(dataClassItems[i].getAttribute(dataClass) === "normal"){
-				charTypeImage.classList.add("card-type");
-				charTypeImage.src = "CharacterType/char_type_str.png";
-				charClassImageDiv.classList.add("card-type-margin");
-				charClassImageDiv.appendChild(charTypeImage);
-				categories.item(i).appendChild(charClassImageDiv);
-			}
-			
-			if(dataClassItems[i].getAttribute(dataClass) === "super"){
-				charTypeImage.classList.add("card-type");
-				charTypeImage.src = "CharacterType/char_type_super_str.png";
-				charClassImageDiv.classList.add("card-type-margin");
-				charClassImageDiv.appendChild(charTypeImage);
-				categories.item(i).appendChild(charClassImageDiv);
-			}
-			
-			if(dataClassItems[i].getAttribute(dataClass) === "extreme"){
-				charTypeImage.classList.add("card-type");
-				charTypeImage.src = "CharacterType/char_type_extreme_str.png";
-				charClassImageDiv.classList.add("card-type-margin");
-				charClassImageDiv.appendChild(charTypeImage);
-				categories.item(i).appendChild(charClassImageDiv);
+			if((dataRarityItems[i].getAttribute(dataRarity) === "sr") || (dataRarityItems[i].getAttribute(dataRarity) === "r") || (dataRarityItems[i].getAttribute(dataRarity) === "n")){
+				charBaseTypeImage.src = "CharacterBase/char_base_str_" + dataRarityItems[i].getAttribute(dataRarity) + ".png";
 			}
 		}
 		
 		if(dataTypeItems[i].getAttribute(dataType) === "teq"){
 			if((dataRarityItems[i].getAttribute(dataRarity) === "lr") || (dataRarityItems[i].getAttribute(dataRarity) === "ur") || (dataRarityItems[i].getAttribute(dataRarity) === "ssr")){
-				charBaseTypeImage.classList.add("char-base-type");
 				charBaseTypeImage.src = "CharacterBase/char_base_teq.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
 			}
-			if((dataRarityItems[i].getAttribute(dataRarity) === "sr")){
-				charBaseTypeImage.classList.add("char-base-type");
-				charBaseTypeImage.src = "CharacterBase/char_base_teq_sr.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
-			}
-			if((dataRarityItems[i].getAttribute(dataRarity) === "r")){
-				charBaseTypeImage.classList.add("char-base-type");
-				charBaseTypeImage.src = "CharacterBase/char_base_teq_r.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
-			}
-			if((dataRarityItems[i].getAttribute(dataRarity) === "n")){
-				charBaseTypeImage.classList.add("char-base-type");
-				charBaseTypeImage.src = "CharacterBase/char_base_teq_n.png";
-				charBaseTypeDiv.classList.add("char-base-type-margin");
-				charBaseTypeDiv.appendChild(charBaseTypeImage);
-				categories.item(i).appendChild(charBaseTypeDiv);
-			}
-			
-			addCharThumbImage(charThumbImage , i , charThumbImageDiv);
-			
-			if(dataClassItems[i].getAttribute(dataClass) === "normal"){
-				charTypeImage.classList.add("card-type");
-				charTypeImage.src = "CharacterType/char_type_teq.png";
-				charClassImageDiv.classList.add("card-type-margin");
-				charClassImageDiv.appendChild(charTypeImage);
-				categories.item(i).appendChild(charClassImageDiv);
-			}
-			
-			if(dataClassItems[i].getAttribute(dataClass) === "super"){
-				charTypeImage.classList.add("card-type");
-				charTypeImage.src = "CharacterType/char_type_super_teq.png";
-				charClassImageDiv.classList.add("card-type-margin");
-				charClassImageDiv.appendChild(charTypeImage);
-				categories.item(i).appendChild(charClassImageDiv);
-			}
-			
-			if(dataClassItems[i].getAttribute(dataClass) === "extreme"){
-				charTypeImage.classList.add("card-type");
-				charTypeImage.src = "CharacterType/char_type_extreme_teq.png";
-				charClassImageDiv.classList.add("card-type-margin");
-				charClassImageDiv.appendChild(charTypeImage);
-				categories.item(i).appendChild(charClassImageDiv);
+			if((dataRarityItems[i].getAttribute(dataRarity) === "sr") || (dataRarityItems[i].getAttribute(dataRarity) === "r") || (dataRarityItems[i].getAttribute(dataRarity) === "n")){
+				charBaseTypeImage.src = "CharacterBase/char_base_teq_" + dataRarityItems[i].getAttribute(dataRarity) + ".png";
 			}
 		}
 		
-		if(dataRarityItems[i].getAttribute(dataRarity) === "lr"){
-			charRarityImage.classList.add("card-rarity");
-			charRarityImage.src = "CharacterRarity/char_rarity_lr.png";
-			charRarityImageDiv.classList.add("card-rarity-margin");
-			charRarityImageDiv.appendChild(charRarityImage);
-			categories.item(i).appendChild(charRarityImageDiv);
-		}
+		charTypeImage.src = "CharacterType/char_type_" + dataClassItems[i].getAttribute(dataClass) + "_" + dataTypeItems[i].getAttribute(dataType) + ".png";
+		charRarityImage.src = "CharacterRarity/char_rarity_" + dataRarityItems[i].getAttribute(dataRarity) + ".png";
 		
-		if(dataRarityItems[i].getAttribute(dataRarity) === "ur"){
-			charRarityImage.classList.add("card-rarity");
-			charRarityImage.src = "CharacterRarity/char_rarity_ur.png";
-			charRarityImageDiv.classList.add("card-rarity-margin");
-			charRarityImageDiv.appendChild(charRarityImage)
-			categories.item(i).appendChild(charRarityImageDiv);
-		}
+		charBaseTypeDiv.appendChild(charBaseTypeImage);
+		categories.item(i).appendChild(charBaseTypeDiv);
 		
-		if(dataRarityItems[i].getAttribute(dataRarity) === "ssr"){
-			charRarityImage.classList.add("card-rarity");
-			charRarityImage.src = "CharacterRarity/char_rarity_ssr.png";
-			charRarityImageDiv.classList.add("card-rarity-margin");
-			charRarityImageDiv.appendChild(charRarityImage)
-			categories.item(i).appendChild(charRarityImageDiv);
-		}
+		addCharThumbImage(charThumbImage , i , charThumbImageDiv);
 		
-		if(dataRarityItems[i].getAttribute(dataRarity) === "sr"){
-			charRarityImage.classList.add("card-rarity");
-			charRarityImage.src = "CharacterRarity/char_rarity_sr.png";
-			charRarityImageDiv.classList.add("card-rarity-margin");
-			charRarityImageDiv.appendChild(charRarityImage)
-			categories.item(i).appendChild(charRarityImageDiv);
-		}
+		charTypeImageDiv.appendChild(charTypeImage);
+		categories.item(i).appendChild(charTypeImageDiv);
 		
-		if(dataRarityItems[i].getAttribute(dataRarity) === "r"){
-			charRarityImage.classList.add("card-rarity");
-			charRarityImage.src = "CharacterRarity/char_rarity_r.png";
-			charRarityImageDiv.classList.add("card-rarity-margin");
-			charRarityImageDiv.appendChild(charRarityImage)
-			categories.item(i).appendChild(charRarityImageDiv);
-		}
-		
-		if(dataRarityItems[i].getAttribute(dataRarity) === "n"){
-			charRarityImage.classList.add("card-rarity");
-			charRarityImage.src = "CharacterRarity/char_rarity_n.png";
-			charRarityImageDiv.classList.add("card-rarity-margin");
-			charRarityImageDiv.appendChild(charRarityImage)
-			categories.item(i).appendChild(charRarityImageDiv);
-		}
+		charRarityImageDiv.appendChild(charRarityImage);
+		categories.item(i).appendChild(charRarityImageDiv);
 	}
 }
 
