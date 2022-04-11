@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="organized index.html and now all the information for the character are better imported from js">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="simplified charInfo.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterType/char_type_agl.png" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterType/char_type_normal_agl.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterType/char_type_int.png" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterType/char_type_normal_int.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterType/char_type_phy.png" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterType/char_type_normal_phy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterType/char_type_str.png" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterType/char_type_normal_str.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CharacterType/char_type_teq.png" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterType/char_type_normal_teq.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/charInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/charInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/filterType.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/filterType.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,14 +127,8 @@
       <workItem from="1649448462852" duration="3840000" />
       <workItem from="1649496963012" duration="8885000" />
       <workItem from="1649595035334" duration="10622000" />
-      <workItem from="1649654868023" duration="8736000" />
-    </task>
-    <task id="LOCAL-00038" summary="added super and extreme type filter for partial match search">
-      <created>1648571175201</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1648571175201</updated>
+      <workItem from="1649654868023" duration="9301000" />
+      <workItem from="1649664757841" duration="396000" />
     </task>
     <task id="LOCAL-00039" summary="bug fixing">
       <created>1648572077303</created>
@@ -477,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649659850701</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="simplified charInfo.js">
+      <created>1649664430059</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1649664430059</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +492,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="simplified filterRarity" />
     <MESSAGE value="simplified filterType" />
     <MESSAGE value="simplified filterFullMatch.js" />
     <MESSAGE value="simplified filterType.js" />
@@ -521,6 +516,7 @@
     <MESSAGE value="simplifed searchCategory.js and added searchCharacter.js" />
     <MESSAGE value="added name to the first 500 characters" />
     <MESSAGE value="organized index.html and now all the information for the character are better imported from js" />
-    <option name="LAST_COMMIT_MESSAGE" value="organized index.html and now all the information for the character are better imported from js" />
+    <MESSAGE value="simplified charInfo.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="simplified charInfo.js" />
   </component>
 </project>
