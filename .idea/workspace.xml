@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added the first 200 characters">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added all the characters with the data attributes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-a-search-function-to-be-able-to-search-category-name" />
+        <entry key="$PROJECT_DIR$" value="As-an-admin-i-want-to-add-a-search-function-to-be-able-to-search-characters-name" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -129,14 +128,8 @@
       <workItem from="1649654868023" duration="9301000" />
       <workItem from="1649664757841" duration="734000" />
       <workItem from="1649665962792" duration="595000" />
-      <workItem from="1649693942787" duration="9847000" />
-    </task>
-    <task id="LOCAL-00041" summary="added all series 2 and 3 character">
-      <created>1648626575432</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1648626575432</updated>
+      <workItem from="1649693942787" duration="9968000" />
+      <workItem from="1649705351209" duration="313000" />
     </task>
     <task id="LOCAL-00042" summary="added Series 1 101-200 characters">
       <created>1648661231533</created>
@@ -474,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649701444250</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="added all the characters with the data attributes">
+      <created>1649705089448</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1649705089449</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="simplified filterType.js" />
     <MESSAGE value="improved filterPartialMatch.js" />
     <MESSAGE value="fixed partial match" />
     <MESSAGE value="removed full match" />
@@ -518,6 +517,7 @@
     <MESSAGE value="simplified charInfo.js" />
     <MESSAGE value="minor bug fixes" />
     <MESSAGE value="added the first 200 characters" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the first 200 characters" />
+    <MESSAGE value="added all the characters with the data attributes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added all the characters with the data attributes" />
   </component>
 </project>
