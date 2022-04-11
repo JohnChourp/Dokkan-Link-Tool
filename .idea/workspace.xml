@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="minor bug fixes">
+    <list default="true" id="b6a64559-0b35-4c6f-9244-ae6931ad86f1" name="Changes" comment="added the first 200 characters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -129,14 +129,7 @@
       <workItem from="1649654868023" duration="9301000" />
       <workItem from="1649664757841" duration="734000" />
       <workItem from="1649665962792" duration="595000" />
-      <workItem from="1649693942787" duration="6209000" />
-    </task>
-    <task id="LOCAL-00040" summary="added 50 more characters">
-      <created>1648577224700</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1648577224700</updated>
+      <workItem from="1649693942787" duration="9847000" />
     </task>
     <task id="LOCAL-00041" summary="added all series 2 and 3 character">
       <created>1648626575432</created>
@@ -474,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649665199834</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="added the first 200 characters">
+      <created>1649701444249</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1649701444250</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="simplified filterFullMatch.js" />
     <MESSAGE value="simplified filterType.js" />
     <MESSAGE value="improved filterPartialMatch.js" />
     <MESSAGE value="fixed partial match" />
@@ -518,6 +517,7 @@
     <MESSAGE value="organized index.html and now all the information for the character are better imported from js" />
     <MESSAGE value="simplified charInfo.js" />
     <MESSAGE value="minor bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor bug fixes" />
+    <MESSAGE value="added the first 200 characters" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the first 200 characters" />
   </component>
 </project>
