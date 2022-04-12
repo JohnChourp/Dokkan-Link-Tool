@@ -4,7 +4,10 @@ function filterRarity(){
 	
 	if(hostName === "johnchourp.github.io"){
 		httpLink = "https://";
+		hostName = window.location.host + "/Dokkan-Link-Tool";
+
 	}else{
+		hostName = window.location.host;
 		httpLink = "http://";
 	}
 	
@@ -120,7 +123,7 @@ function filterRarityInit(httpLink , hostName , categories , cardRarity , cardTy
 
 function filterRarityDefault(httpLink , hostName , categories , cardRarity , rarity){
 	for(let i = 0; i < categories.length; i ++){
-		if(cardRarity.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterRarity/char_rarity_" + rarity + ".png"){
+		if(cardRarity.item(i).src === httpLink + hostName + "/CharacterRarity/char_rarity_" + rarity + ".png"){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedRarity");
 		}else{
@@ -132,7 +135,7 @@ function filterRarityDefault(httpLink , hostName , categories , cardRarity , rar
 
 function filterRarityAppear(httpLink , hostName , categories , cardRarity , rarity){
 	for(let i = 0; i < cardRarity.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && (cardRarity.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterRarity/char_rarity_" + rarity + ".png")){
+		if(categories.item(i).classList.contains("appeared") && (cardRarity.item(i).src === httpLink + hostName + "/CharacterRarity/char_rarity_" + rarity + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedRarity");
 		}else{
@@ -144,7 +147,7 @@ function filterRarityAppear(httpLink , hostName , categories , cardRarity , rari
 
 function filterRarityAppearClass(httpLink , hostName , categories , cardRarity , cardType , rarity){
 	for(let i = 0; i < cardRarity.length; i ++){
-		if(categories.item(i).classList.contains("appearedClass") && (cardRarity.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterRarity/char_rarity_" + rarity + ".png")){
+		if(categories.item(i).classList.contains("appearedClass") && (cardRarity.item(i).src === httpLink + hostName + "/CharacterRarity/char_rarity_" + rarity + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedRarity");
 		}else{
@@ -156,7 +159,7 @@ function filterRarityAppearClass(httpLink , hostName , categories , cardRarity ,
 
 function filterRarityAppearType(httpLink , hostName , categories , cardRarity , cardType , rarity){
 	for(let i = 0; i < cardRarity.length; i ++){
-		if(categories.item(i).classList.contains("appearedType") && (cardRarity.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterRarity/char_rarity_" + rarity + ".png")){
+		if(categories.item(i).classList.contains("appearedType") && (cardRarity.item(i).src === httpLink + hostName + "/CharacterRarity/char_rarity_" + rarity + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedRarity");
 		}else{
@@ -168,7 +171,7 @@ function filterRarityAppearType(httpLink , hostName , categories , cardRarity , 
 
 function filterRarityAppearAndAppearClass(httpLink , hostName , categories , cardRarity , cardType , rarity){
 	for(let i = 0; i < cardRarity.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedClass") && (cardRarity.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterRarity/char_rarity_" + rarity + ".png")){
+		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedClass") && (cardRarity.item(i).src === httpLink + hostName + "/CharacterRarity/char_rarity_" + rarity + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedRarity");
 		}else{
@@ -180,7 +183,7 @@ function filterRarityAppearAndAppearClass(httpLink , hostName , categories , car
 
 function filterRarityAppearAndAppearType(httpLink , hostName , categories , cardRarity , cardType , rarity){
 	for(let i = 0; i < cardRarity.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && (cardRarity.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterRarity/char_rarity_" + rarity + ".png")){
+		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedType") && (cardRarity.item(i).src === httpLink + hostName + "/CharacterRarity/char_rarity_" + rarity + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedRarity");
 		}else{
@@ -192,7 +195,7 @@ function filterRarityAppearAndAppearType(httpLink , hostName , categories , card
 
 function filterRarityAppearClassAndAppearType(httpLink , hostName , categories , cardRarity , cardType , rarity){
 	for(let i = 0; i < cardRarity.length; i ++){
-		if(categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains("appearedType") && (cardRarity.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterRarity/char_rarity_" + rarity + ".png")){
+		if(categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains("appearedType") && (cardRarity.item(i).src === httpLink + hostName + "/CharacterRarity/char_rarity_" + rarity + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedRarity");
 		}else{
@@ -204,7 +207,7 @@ function filterRarityAppearClassAndAppearType(httpLink , hostName , categories ,
 
 function filterRarityAppearAndAppearClassAndAppearType(httpLink , hostName , categories , cardRarity , cardType , rarity){
 	for(let i = 0; i < cardRarity.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains("appearedType") && (cardRarity.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterRarity/char_rarity_" + rarity + ".png")){
+		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains("appearedType") && (cardRarity.item(i).src === httpLink + hostName + "/CharacterRarity/char_rarity_" + rarity + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedRarity");
 		}else{

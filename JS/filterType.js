@@ -4,7 +4,10 @@ function initTypeFilter(){
 	
 	if(hostName === "johnchourp.github.io"){
 		httpLink = "https://";
+		hostName = window.location.host + "/Dokkan-Link-Tool";
+
 	}else{
+		hostName = window.location.host;
 		httpLink = "http://";
 	}
 	
@@ -110,7 +113,7 @@ function filterTypeInit(httpLink , hostName , categories , cardType , appeared ,
 
 function filterTypeDefault(httpLink , hostName , categories , cardType , type){
 	for(let i = 0; i < cardType.length; i ++){
-		if(cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png"){
+		if(cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_extreme_" + type + ".png"){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedType");
 		}else{
@@ -122,7 +125,7 @@ function filterTypeDefault(httpLink , hostName , categories , cardType , type){
 
 function filterTypeAppearAppeared(httpLink , hostName , categories , cardType , type){
 	for(let i = 0; i < cardType.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png")){
+		if(categories.item(i).classList.contains("appeared") && (cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_extreme_" + type + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedType");
 		}else{
@@ -135,7 +138,7 @@ function filterTypeAppearAppeared(httpLink , hostName , categories , cardType , 
 
 function filterTypeAppearRarity(httpLink , hostName , categories , cardType , type){
 	for(let i = 0; i < cardType.length; i ++){
-		if(categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png")){
+		if(categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_extreme_" + type + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedType");
 		}else{
@@ -147,7 +150,7 @@ function filterTypeAppearRarity(httpLink , hostName , categories , cardType , ty
 
 function filterTypeAppearClass(httpLink , hostName , categories , cardType , type){
 	for(let i = 0; i < cardType.length; i ++){
-		if(categories.item(i).classList.contains("appearedClass") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png")){
+		if(categories.item(i).classList.contains("appearedClass") && (cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_extreme_" + type + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedType");
 		}else{
@@ -159,7 +162,7 @@ function filterTypeAppearClass(httpLink , hostName , categories , cardType , typ
 
 function filterTypeAppearAppearedAndAppearClass(httpLink , hostName , categories , cardType , type){
 	for(let i = 0; i < categories.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedClass") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png")){
+		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedClass") && (cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_extreme_" + type + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedType");
 		}else{
@@ -171,7 +174,7 @@ function filterTypeAppearAppearedAndAppearClass(httpLink , hostName , categories
 
 function filterTypeAppearAppearedAndAppearRarity(httpLink , hostName , categories , cardType , type){
 	for(let i = 0; i < categories.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png")){
+		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_extreme_" + type + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedType");
 		}else{
@@ -183,7 +186,7 @@ function filterTypeAppearAppearedAndAppearRarity(httpLink , hostName , categorie
 
 function filterTypeAppearClassAndAppearRarity(httpLink , hostName , categories , cardType , type){
 	for(let i = 0; i < categories.length; i ++){
-		if(categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png")){
+		if(categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_extreme_" + type + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedType");
 		}else{
@@ -195,7 +198,7 @@ function filterTypeAppearClassAndAppearRarity(httpLink , hostName , categories ,
 
 function filterTypeAppearAndAppearClassAndAppearRarity(httpLink , hostName , categories , cardType , type){
 	for(let i = 0; i < categories.length; i ++){
-		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/Dokkan-Link-Tool/CharacterType/char_type_extreme_" + type + ".png")){
+		if(categories.item(i).classList.contains("appeared") && categories.item(i).classList.contains("appearedClass") && categories.item(i).classList.contains("appearedRarity") && (cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_normal_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_super_" + type + ".png" || cardType.item(i).src === httpLink + hostName + "/CharacterType/char_type_extreme_" + type + ".png")){
 			categories.item(i).style.display = "inline-block";
 			categories.item(i).classList.add("appearedType");
 		}else{
